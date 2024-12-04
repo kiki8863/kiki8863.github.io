@@ -1,0 +1,237 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('../fonts/icomoon.eot?lfaijn');
+  src:  url('../fonts/icomoon.eot?lfaijn#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?lfaijn') format('truetype'),
+    url('../fonts/icomoon.woff?lfaijn') format('woff'),
+    url('../fonts/icomoon.svg?lfaijn#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  /* speak: never; */
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-menu:before { 
+    content: "\e900";
+    font-size: 25px;
+    color:#7d7d90;
+}
+
+.icon-reboot:before {
+    content: "\e901";
+    font-size: 25px;
+    color: #7d7d90;
+}
+
+.icon-osd:before {
+
+    content: "\e902";
+    font-size: 24px;
+    color: #7d7d90;
+
+}
+
+.icon-log:before {
+
+    content: "\e903";
+    font-size: 28px;
+    color: #7d7d90;
+
+}
+
+.icon-recording:before {
+
+    content: "\e904";
+    font-size: 27px;
+    color: #7d7d90;
+
+}
+
+.icon-capture:before {
+
+    content: "\e905";
+    font-size: 27px;
+    color: #7d7d90;
+
+}
+
+.icon-write:before {
+
+    content: "\e906";
+    font-size: 22px;
+    color: #7d7d90;
+
+}
+
+.icon-exit:before {
+    position: relative;
+    left:-2px;
+    top:-2px;
+    content: "\e907";
+    font-size: 32px;
+    color: #7d7d90;
+
+}
+
+.icon-connect:before {
+
+    content: "\e908";
+    font-size: 28px;
+    color: #7d7d90;
+
+}
+
+.icon-disconnect:before {
+
+    content: "\e909";
+    font-size: 26px;
+    color: #e12c1e;
+}
+
+.icon-battery:before {
+
+    content: "\e90a";
+    font-size: 20px;
+    color: #7d7d90;
+}
+
+.icon-key:before {
+
+    content: "\e90b";
+    font-size: 29px;
+    color: #7d7d90;
+}
+
+.icon-ok-btn:before {
+
+    content: "\e90c";
+    font-size: 28px;
+    color: #7d7d90;
+}
+
+.icon-cancel-btn:before {
+
+    content: "\e90d";
+    font-size: 28px;
+    color: #7d7d90;
+
+}
+
+.icon-arrow:before {
+
+    content: "\e90e";
+    font-size: 14px;
+    color: #fff;
+
+}
+
+
+.icon-headphone:before {
+
+    content: "\e90f";
+    font-size: 18px;
+    color: #7d7d90;
+
+}
+
+.icon-connect-ok:before {
+    position:absolute;
+    top:-7px;
+    right:-4px;
+    content: "\e910";
+    font-size: 28px;
+    color: #22dd7a;
+
+}
+
+.a_connect{
+    display:inline-block;
+    position:relative;
+    top:-3px;
+    margin-right:20px;
+}
+
+.a_d_connect {
+    display: inline-block;
+    position: relative;
+    top: -3px;
+    margin-right: 20px;
+}
+
+.a_d_connect .icon-disconnect:before {
+    position: absolute;
+    top: -7px;
+    right: -4px;
+}
+
+.remote_section .a_d_connect{
+    text-align:center;
+}
+
+.remote_section .a_d_connect .icon-disconnect:before{
+    top: -7px;
+    right: -9px;
+}
+
+.b_connect,
+.d_connect{
+        position: relative;
+        top: 0;
+    }
+
+.remote_section .b_connect,
+.remote_section .d_connect{
+    margin-right: 12px;
+}
+
+.b_connect .icon-connect:before{
+    color:#22dd7a;
+}
+
+.b_connect:hover .rtool_tip,
+.d_connect:hover .rtool_tip,
+.a_d_connect:hover .rtool_tip,
+.a_connect:hover .rtool_tip{
+    display:block;
+}
+.rtool_tip{
+    z-index:1;
+    position:absolute;
+    left:calc(-50% - 5px);
+    display:block;
+    width:auto;
+    min-width:70px;
+    padding:2px 5px;
+    border-radius:3px;
+    color:#cbcbcd;
+    font-size:12px;
+    background: rgba(8,13,25,0.9);
+    display:none;
+    
+}
+
+.b_connect:hover .rtool_tip,
+.d_connect:hover .rtool_tip{
+    bottom: -30px;
+}
+
+.a_connect:hover .rtool_tip ,
+.a_d_connect:hover .rtool_tip {
+    bottom: -20px;
+    left: calc(-50% - 15px);
+    min-width: 90px;
+}

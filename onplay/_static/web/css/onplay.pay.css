@@ -1,0 +1,307 @@
+@charset "UTF-8";
+
+@font-face {
+  font-family:"SCDream4";
+  src: url('/_static/font/SCDream4.otf') format('embedded-opentype'),
+       url('/_static/font/SCDream4.woff') format('woff'),
+       url('/_static/font/SCDream4.ttf') format('truetype'),
+       url('/_static/font/SCDream4.woff') format('woff');
+  font-style: normal;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family:"HGGGothicssi";
+  src: url('/_static/font/HGGGothicssi-40g.otf') format('embedded-opentype'),
+       url('/_static/font/HGGGothicssi-40g.woff') format('woff'),
+       url('/_static/font/HGGGothicssi-40g.ttf') format('truetype'),
+       url('/_static/font/HGGGothicssi-40g.woff') format('woff');
+  font-style: normal;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family:"Roboto";
+  src: url('/_static/font/Roboto-Medium.otf') format('embedded-opentype'),
+       url('/_static/font/Roboto-Medium.woff') format('woff'),
+       url('/_static/font/Roboto-Medium.ttf') format('truetype'),
+       url('/_static/font/Roboto-Medium.woff') format('woff');
+  font-style: normal;
+  font-weight: 400;
+}
+
+/* 포인트 충전 */
+.charge_point_wrap{clear:both;width:1132px;padding:12px;}
+.charge_top_banner{overflow:hidden;width:1130px;height:190px;margin-bottom:12px;border:1px solid #eaeff3;}
+.r_charge_item_wrap{width:1130px;padding:29px 0 29px 23px;margin-bottom:16px;border:1px solid #eaeff3;background:#fdfeff;}
+.r_charge_item_wrap:after{content:"";display:block;clear:both;}
+.r_charge_item_wrap .r_item{position:relative;float:left;width:526px;height:295px;padding:70px 0 0 0;margin-right:32px;background:url('/_static/web/images/charge/charge_content_1906_v2.png') no-repeat 0 -120px;}
+.r_charge_item_wrap .r_item:last-child{margin:0;}
+.r_charge_item_wrap .r_flag{position:absolute;top:18px;left:-10px;display:block;width:180px;height:43px;padding-left:15px;line-height:34px;font-size:.8125rem;color:#fff;background:url('/_static/web/images/charge/charge_content_1906_v2.png') no-repeat 0 0;}
+.r_charge_item_wrap .p_txt_area{width:466px;height:98px;padding-top:38px;margin:0 auto;text-align:center;background:#f6fbfa;}
+.r_charge_item_wrap .point, .r_charge_item_wrap .b_point{display:inline-block;padding-top:4px;font-size:.8125rem;color:#333;vertical-align:top;}
+.r_charge_item_wrap .num{font-size:1.5rem;}
+.r_charge_item_wrap .b_point{text-align:center;}
+.r_charge_item_wrap .ico_p{display:inline-block;width:14px;height:14px;margin:0 2px 0 5px;background:url('/_static/web/images/charge/charge_content_1906_v2.png') no-repeat -300px 0;}
+.r_charge_item_wrap .ico_m{position:relative;top:-8px;display:inline-block;width:44px;height:36px;background:url('/_static/web/images/charge/charge_content_1906_v2.png') no-repeat -340px 0;vertical-align:top;}
+.r_charge_item_wrap .t_color{display:block;padding-top:3px;color:#66879a;font-size:.75rem;}
+.r_charge_item_wrap .mileage{display:inline-block;padding-top:4px;vertical-align:top;}
+.r_charge_item_wrap .btm{overflow:hidden;width:100%;padding:27px 0 0 30px;}
+.r_charge_item_wrap .per{float:left;display:block;width:85px;height:72px;margin-right:17px;color:#fff;text-align:center;line-height:54px;font-size:1.0625rem;background:url('/_static/web/images/charge/charge_content_1906_v2.png') no-repeat -400px 0;}
+.r_charge_item_wrap .per .per-txt{float:left;margin-top:-90px;margin-left:9px;font-size:1rem;font-weight:normal;color:#F44336;}
+.r_charge_item_wrap .t_sum{float:left;padding-top:8px;margin-right:35px;}
+.r_charge_item_wrap .d_sum{display:block;margin-bottom:6px;color:#7c7e7c;text-decoration:line-through;font-size:1.1875rem;line-height:1.1875rem;}
+.r_charge_item_wrap .sum{display:block;color:#594e3f;font-size:1.75rem;line-height:1.75rem;letter-spacing:-1px;}
+.r_charge_item_wrap .e_ico{position:relative;top:-1px;display:inline-block;width:40px;height:13px;background:url('/_static/web/images/charge/charge_content_1906_v2.png') no-repeat -550px -70px;vertical-align:middle;}
+.r_charge_item_wrap .btn_get{float:left;display:block;width:216px;height:58px;margin-top:8px;text-indent:-9999px;background:url('/_static/web/images/charge/charge_content_1906_v2.png') no-repeat -550px 0;cursor:pointer;}
+.r_charge_item_wrap .btn_get:hover{opacity:0.7;}
+
+.charge_item_wrap{width:1130px;padding:78px 0 0 24px;border:1px solid #eaeff3;border-bottom:none;font-family:"SCDream4", SCDream4 , sans-serif;background:#fdfeff;}
+.charge_item_wrap:after{content:'';display:block;clear:both;}
+.charge_item{position:relative;float:left;width:205px;height:719px;margin-right:16px;border:1px solid #b2d0f5;box-shadow:1px 1px 3px #f8f9fa;}
+.charge_item:hover{opacity:0.7;}
+.charge_item.style1{border-color:#a493fd;}
+.charge_item.v50000{margin-right:0;}
+.charge_item.v45000{margin-right:0;}
+.charge_item .top{height:198px;padding-top:30px;margin-bottom:30px;background:url('/_static/web/images/charge/ch_item_bg_1.jpg') no-repeat -23px 0;}
+.charge_item.style1 .top{height:210px;margin-bottom:12px;background:url('/_static/web/images/charge/ch_item_bg_2.jpg') no-repeat -1px 0;}
+.charge_item.style2 .top{padding-top:60px;}
+.charge_item .d_flag{position:absolute;top:-18px;left:-10px;display:block;width:180px;height:43px;text-indent:-9999px;background:url('/_static/web/images/charge/charge_content_1906.png') no-repeat 0 0;}
+.charge_item .h_flag{z-index:1;position:absolute;top:-34px;left:-29px;display:block;width:261px;height:55px;text-indent:-9999px;background:url('/_static/web/images/charge/charge_content_1906_v2.png') no-repeat -535px -120px;}
+.charge_item .btn_get{display:block;width:150px;height:48px;margin:0 auto;border-radius:24px;text-align:center;color:#fff;font-size:1rem;font-weight:500;cursor:pointer;line-height:48px;background:#6886e7;}
+.charge_item.style1 .btn_get{background:#3757be;}
+.charge_item .sum_area{text-align:center;}
+.charge_item .d_sum{display:inline-block;padding-bottom:8px;text-align:center;color:#fff;text-decoration:line-through;}
+.charge_item .d_sum span{font-size:1.25rem;line-height:1.25rem;}
+.charge_item .p_ico{display:inline-block;width:55px;height:19px;margin-left:5px;margin-bottom:10px;padding-left:19px;font-size:.875rem;line-height:21px;color:#fff;background:url('/_static/web/images/charge/charge_content_1906_v2.png') no-repeat -490px 0;}
+.charge_item .sum{margin-top:8px;padding-bottom:22px;text-align:center;color:#616d75;font-size:1.187rem;}
+.charge_item .sum span{font-size:1.81rem;line-height:1.81rem;color:#24364d;letter-spacing:-1px;}
+.charge_item .total_save_point{width:154px;height:263px;margin:0 auto;}
+.charge_item .point{display:block;margin-bottom:30px;color:#656565;}
+.charge_item .s_point{display:block;padding-top:10px;font-size:.8125rem;}
+.charge_item .bar{display:block;width:100%;margin-bottom:30px;border:1px dashed #ccc;}
+.charge_item .num{display:inline-block;font-family:"SCDream4", SCDream4 , sans-serif;font-size:1.5rem;line-height:1.75rem;}
+.charge_item .ico_p{display:block;width:14px;height:14px;margin:18px 0;background:url('/_static/web/images/charge/charge_content_1906_v2.png') no-repeat -300px 0;}
+.charge_item .ico_p.type1{margin:20px 0;}
+.charge_item .ico_m{display:block;width:44px;height:36px;margin:15px 0 5px 0;background:url('/_static/web/images/charge/charge_content_1906_v2.png') no-repeat -340px 0;}
+.charge_item .b_point{color:#416cf8;font-family:'Roboto', sans-serif;letter-spacing: -1px;}
+.charge_item .b_point.style1{color:#6d50ff;}
+.charge_item .t_color{display:block;padding-top:5px;color:#a6bbff;font-family:"SCDream4", SCDream4 , sans-serif;font-size:.8125rem;font-weight: bold;}
+.charge_item .style1 .t_color{color:#6d50ff;}
+.charge_item .s_txt{display:block;padding-top:5px;color:#656565;font-family:"SCDream4", SCDream4 , sans-serif;font-size:.785rem;font-weight: bold;}
+.charge_item .mileage{height:28px;color:#ff9f22;}
+.charge_item .e_ico{position:relative;top:-1px;display:block;width:40px;height:13px;margin-bottom:5px;background:url('/_static/web/images/charge/charge_content_1906_v2.png') no-repeat -600px -70px;vertical-align:middle;}
+.charge_point_wrap .b_txt{padding:5px 0;font-size:.785rem;color:#8e9aa5;text-align:right;background:#fff;}
+.charge_notice{width:1130px;padding:30px 0 30px 30px;border:1px solid #eaeff3;font-weight:300;background:#f0f4f7;}
+.charge_notice:after{content:'';display:block;clear:both;}
+.charge_notice .tit{margin-bottom:18px;font-size:.785rem;color:#86939f;font-weight:bold;}
+.charge_notice ol{float:left;width:520px;margin-right:10px;color:#86939f;font-size:.75rem;}
+.charge_notice ol li{clear:both;margin-bottom:5px;line-height:18px;}
+.charge_notice ol li:after{content:'';display:block;clear:both;}
+.charge_notice .num{display:block;float:left;width:15px;margin-right:5px;}
+.charge_notice .txt{display:block;float:left;width:488px;}
+
+.btm_pay_btn_wrap{width:1130px;height:92px;padding-top:21px;text-align:center;background:#f8f9fa;}
+.btm_pay_btn_wrap .pay_e_btn{overflow:hidden;display:inline-block;width:270px;height:50px;margin-right:8px;border-radius:8px;border:1px solid;background:#fff;cursor:pointer;}
+.btm_pay_btn_wrap .pay_e_btn:hover{opacity:0.8;}
+.btm_pay_btn_wrap .pay_e_btn.flat{border-color:#0c58ff;}
+.btm_pay_btn_wrap .pay_e_btn.mileage{border-color:#32921f;}
+.btm_pay_btn_wrap .pay_e_btn.coupon{border-color:#005c9d;}
+.btm_pay_btn_wrap .pay_e_btn.flat a{color:#0c58ff;}
+.btm_pay_btn_wrap .pay_e_btn.mileage a{color:#32921f;}
+.btm_pay_btn_wrap .pay_e_btn.coupon a{color:#005c9d;}
+.btm_pay_btn_wrap .pay_e_btn .ico_area{float:left;display:block;width:60px;height:48px;border-right:1px solid;background:url('/_static/web/images/charge/btm_pay_btn.png') no-repeat;}
+.pay_e_btn.flat .ico_area{border-color:#0c58ff;background-color:#0f64ff;background-position:0 0;}
+.pay_e_btn.mileage .ico_area{border-color:#32921f;background-color:#47ab2c;background-position:-60px 0;}
+.pay_e_btn.coupon .ico_area{border-color:#005c9d;background-color:#007ab5;background-position:-120px 0;}
+.pay_e_btn .txt{float:left;width:208px;line-height:48px;font-size:16px;letter-spacing:-1px;font-weight:500;}
+
+/* 정액제 */
+.flat_item_wrap{width:1130px;padding:0 0 20px 0;border:1px solid #eaeff3;border-bottom:none;background:#fdfeff;}
+.flat_item_wrap .top{width:1084px;border-bottom:1px solid #ebebeb;margin:0 auto;color:#0f3261;font-weight: bold;line-height:50px;}
+.flat_item{width:1084px;margin:20px auto;}
+.flat_item:after{content:'';display:block;clear:both;}
+.flat_item.type3{margin-bottom:20px;}
+.flat_item .type_name{float:left;width:213px;height:170px;padding-top:66px;border-radius:9px 0 0 9px;font-family:"SCDream4", SCDream4 , sans-serif;font-weight:500;line-height:32px;text-align:center;color:#fff;font-size:1.125rem;background:#604def;}
+.flat_item.type2 .type_name{padding-top:56px;background:#7f4def;}
+.flat_item.type3 .type_name{padding-top:56px;background:#a84def;}
+.flat_item .e_ico{display:block;width:40px;height:15px;margin:0 auto 10px auto;font-size:.75rem;line-height:15px;letter-spacing:0;color:#604def;background:#c7f035;}
+.flat_item .flat_ico{position:relative;top:3px;display:inline-block;width:33px;height:21px;margin-right:5px;background:url('/_static/web/images/charge/charge_content_1906_v2.png') no-repeat -540px -220px;}
+.flat_item .p_ico{position:relative;top:3px;display:inline-block;width:38px;height:20px;margin-right:3px;background:url('/_static/web/images/charge/charge_content_1906_v2.png') no-repeat;}
+.flat_item.type2 .p_ico{background-position:-540px -260px;}
+.flat_item.type3 .p_ico{background-position:-540px -290px;}
+.flat_item .s_txt{display:block;font-size:.9375rem;letter-spacing:0;}
+.flat_item .info_area{float:left;width:871px;border:1px solid #e6e6e6;border-radius:0 9px 9px 0;border-left:none;}
+.flat_item .info_area .item{overflow:hidden;height:84px;}
+.flat_item .info_area .item:first-child{border-bottom:1px solid #e6e6e6;}
+.flat_item .info_area .name{float:left;width:259px;text-align:center;color:#333;line-height:83px;font-size:1rem;font-weight:500;background:#f9f9f9;}
+.flat_item .info_area .t_purple{color:#604def;}
+.flat_item .info_area .sum_area{float:left;width:611px;padding:19px 34px 0 0;text-align:right;}
+.flat_item .info_area .d_ico{display:inline-block;width:60px;height:22px;padding:0 0 0 22px;margin-right:7px;text-align:left;font-size:.9375rem;color:#fff;line-height:22px;background:#ff3e70 url('/_static/web/images/charge/charge_content_1906_v2.png') no-repeat -487px 2px;}
+.flat_item .info_area .d_sum{display:inline-block;color:#ff92ae;text-decoration:line-through;font-size:.785rem;}
+.flat_item .info_area .d_sum .num{font-size:1.0625rem;}
+.flat_item .info_area .t_sum{display:inline-block;width:110px;font-size:.8125rem;color:#333;}
+.flat_item .info_area .num{font-family:'DIN_pro', sans-serif;}
+.flat_item .info_area .t_sum .num{position:relative;top:1px;font-size:1.5rem;color:#f50e4a;}
+.flat_item .info_area .btn_get{display:inline-block;width:119px;height:46px;margin-left:55px;border:1px solid;border-radius:3px;text-align:center;color:#604def;font-weight:500;line-height:44px;font-size:.9375rem;cursor:pointer;}
+.flat_item.type2 .btn_get{color:#7f4def;border-color:#7f4def;}
+.flat_item.type3 .btn_get{color:#a84def;border-color:#a84def;}
+.flat_item .info_area .btn_get:hover{opacity:0.7;color:#fff;background:#604def;}
+.flat_item.type2 .info_area .btn_get:hover{background:#7f4def;}
+.flat_item.type3 .info_area .btn_get:hover{background:#a84def;}
+
+/* 결제 팝업 */
+.modal-dialog.charge{width:823px;max-width:823px;}
+.charge .modal-content{border-color:#f0f2f3;border-radius:0;}
+.charge .modal-header{height:79px;padding:30px 0 0 34px;border-bottom:1px solid #e3e3e3;border-radius:0;color:#111;}
+.charge .modal-header .modal-title{font-size:1.125rem;font-family:'Noto Sans KR', Noto Sans KR, sans-serif;}
+.charge .m_close{position:absolute;top:28px;right:35px;appearance:none;-webkit-appearance:none;width:23px;height:23px;border:none;background:url('/_static/web/images/common/sub_common.png') no-repeat -200px -100px;cursor:pointer;}
+.charge_type{position:relative;width:821px;background:#e6f1ff;}
+.charge_type:after{content:'';display:block;clear:both;}
+.charge_type .type_chioce{position:absolute;float:left;width:489px;height:100%;padding:24px 34px;border-right:1px solid #e3e3e3;background:#fff;}
+.charge_type .s_tit{margin-bottom:8px;font-size:.875rem;color:#333;}
+.charge_type .t_red{position:absolute;top:27px;right:15px;font-size:.687rem;color:#f1537c;}
+.charge_type .type_list{border:1px solid #7ab7ff;}
+.charge_type .type_list li{border-bottom:1px solid #7ab7ff;}
+.charge_type .type_list li:last-child{border-bottom:none;}
+.charge_type .type_list li.b_none{border:none;}
+.charge_type li.active .t_area{display:block;}
+.charge_type li.active .t_btn .arrow{background-position:-200px -70px;}
+.charge_type li.active .t_btn{border-bottom:1px solid #bedcff;}
+.charge_type .t_btn{position:relative;width:100%;height:61px;padding:21px 0 0 15px;cursor:pointer;font-family:'SCDream4', sans-serif;}
+.charge_type .t_btn .ico{position:relative;display:inline-block;margin-right:10px;vertical-align:top;background:url('/_static/web/images/common/sub_common.png') no-repeat;}
+.charge_type .type100 .ico{width:26px;height:19px;background-position:0 -200px;}
+.charge_type .type200 .ico{top:-2px;width:26px;height:22px;background-position:-30px -200px;}
+.charge_type .type300 .ico{top:-2px;left:3px;width:19px;height:24px;background-position:-60px -200px;}
+.charge_type .type400 .ico{width:24px;height:17px;background-position:-90px -200px;}
+.charge_type .type500 .ico{width:26px;height:18px;background-position:-120px -200px;}
+.charge_type .t_btn .name{display:inline-block;padding-top:1px;color:#2a3f5a;font-size:.875rem;}
+.charge_type .type3 .name{padding-top:3px;}
+.charge_type .t_btn .arrow{position:absolute;top:25px;right:20px;display:block;width:15px;height:8px;background:url('/_static/web/images/common/sub_common.png') no-repeat -220px -70px;}
+.charge_type .t_area{position:relative;display:none;overflow:hidden;min-height:70px;padding:24px 0 10px 0;border-top:1px solid #ecf2f6;background:#edf5ff;}
+.charge_type .t_area .r_area{display:block;float:left;width:138px;padding:0 0 15px 20px;}
+.charge_type .t_area .label_style{font-size:.75rem;color:#333;letter-spacing:-1px;line-height:.75rem;}
+.charge_type .r_area .r_btn{position:relative;top:-1px;appearance:none;-webkit-appearance:none;display:inline-block;width:13px;height:13px;margin:0 5px 0 0;background:url('/_static/web/images/common/sub_common.png') 0 -230px;vertical-align:middle;}
+.charge_type .r_area .r_btn:checked{background-position:-20px -230px;}
+.charge_type .k_pay_ico{position:relative;top:1px;display:inline-block;width:43px;height:18px;margin-right:5px;vertical-align:top;background:url('/_static/web/images/common/sub_common.png') no-repeat -120px -275px;}
+.charge_type .charge_info{float:right;width:332px;height:785px;padding:24px 0 187px 26px;}
+.charge_type .charge_info.f_h_style{height:700px;}
+.charge_type .info_detail{width:283px;padding-bottom:25px;border:1px solid #7ab7ff;background:#fff;}
+.charge_type .info_detail .i_area{width:233px;padding:20px 0;margin:0 auto;background:url('/_static/web/images/common/bg_charge_line.png') repeat-x left bottom;}
+.charge_type .i_tit{margin-bottom:18px;color:#333;font-size:.875rem;}
+.charge_type .i_tit .s_txt{font-size:.75rem;}
+.charge_type .i_list span{display:inline-block;width:50%;font-size:.75rem;}
+.charge_type .i_list .txt{text-align:left;color:#323232;}
+.charge_type .i_list .p_num{text-align:right;color:#656565;}
+.charge_type .t_point{padding-top:20px;text-align:right;font-size:.9375rem;color:#444;}
+.charge_type .t_point .num{font-size:1.1875rem;font-family:'DIN_pro', sans-serif;color:#008aff;}
+.charge_type .sum_area{padding:20px 0 0 0;text-align:right;}
+.charge_type .sum_area .d_sum{font-size:.75rem;color:#666;}
+.charge_type .sum_area .sum{color:#ff95a5;text-decoration:line-through;}
+.charge_type .sum_area .t_sum{padding-top:8px;font-size:.9375rem;color:#444;font-weight: bold;}
+.charge_type .sum_area .num{font-size:1.6875rem;line-height:1.6875rem;color:#ff0042;font-family:'SCDream4', sans-serif;}
+.charge_type .c_area{width:233px;padding:20px 0 50px 0;margin:0 auto;}
+.charge_type .c_txt{overflow:hidden;margin-bottom:10px;}
+.charge_type .c_txt .c_box{float:left;appearance:none;-webkit-appearance:none;display:inline-block;width:22px;height:22px;margin:0 10px 0 0;vertical-align:top;background:url('/_static/web/images/common/sub_common.png') no-repeat -60px -170px;}
+.charge_type .c_txt .c_box:checked{background-position:-90px -170px;}
+.charge_type .c_txt .label_style{float:left;width:190px;font-size:.75rem;color:#555;letter-spacing:-0.5px;line-height:20px;}
+.charge_type .c_txt .b_txt{font-size:.8125rem;color:#333;}
+.charge_type .c_txt .m_txt{display:inline-block;margin-left:5px;border-bottom:1px solid #999;line-height:14px;letter-spacing:0.5px;color:#9a9a9a;font-size:.687rem;cursor:pointer;}
+.charge_type .c_term_area{overflow-y:scroll;width:233px;height:64px;margin-bottom:25px;border:1px solid #e6e6e6;background:#f2f2f2;}
+.charge_type .btn_charge{display:block;width:233px;height:52px;margin:0 auto;line-height:52px;text-align:center;color:#fff;font-size:1rem;font-weight:500;cursor:pointer;background:#3d8eee;}
+
+
+/* vip 결제 페이지 */
+.charge_point_wrap .pay_tit{margin-bottom:20px;color:#555;font-size:19px;letter-spacing:-1px;font-weight:bold;line-height:19px;}
+.charge_point_wrap .pay_tit .bar{display:inline-block;width:4px;height:19px;margin-right:8px;background:#555;vertical-align:top;}
+.r_pay_item_wrap{width:1130px;padding:20px;margin-bottom:12px;background:#fff;}
+.r_pay_item_wrap:after{content:'';display:block;clear:both;}
+.r_p_item{position:relative;float:left;width:536px;}
+.r_p_item .r_p_flag{position:absolute;top:-8px;right:20px;display:block;width:86px;height:47px;text-indent:-9999px;background:url('/_static/web/images/charge/pay_vip_2011.png') no-repeat 0 0;}
+.r_p_item .top{overflow:hidden;width:100%;height:90px;padding:20px 0 0 21px;border-radius:12px 12px 0 0;}
+.r_p_item.vip_14500 .top{background:#cf78fc;}
+.r_p_item.vip_23500 .top{background:#7f4def;}
+.charge_point_wrap .ico_coin{display:inline-block;width:34px;height:29px;margin-right:9px;background:url('/_static/web/images/charge/pay_vip_2011.png') no-repeat 0 -340px;}
+.r_p_item .ico_coin{float:left;}
+.r_p_item .point_into{float:left;color:#fff;}
+.r_p_item .t_point{position:relative;top:-2px;height:34px;margin-bottom:8px;font-size:15px;line-height:34px;}
+.r_p_item .t_point .num{font-family:"Roboto", sans-serif;font-size:34px;line-height:34px;font-weight:bold;}
+.r_p_item .detail{font-family:"HGGGothicssi";font-size:16px;}
+.r_p_item .detail .num{font-size:18px;}
+.r_p_item .btm{width:100%;height:80px;padding:11px 0 0 55px;border:4px solid;border-radius:0 0 12px 12px;}
+.r_p_item.vip_14500 .btm{border-color:#cf78fc;}
+.r_p_item.vip_23500 .btm{border-color:#7f4def;}
+.r_p_item.vip_14500{margin-right:18px;}
+.r_p_item .d_sum{display:inline-block;padding-top:15px;margin-right:8px;color:#c6c6c6;text-decoration:line-through;font-size:13px;vertical-align:top;}
+.r_p_item .d_sum .num{font-size:15px;}
+.r_p_item .sum{display:inline-block;padding-top:15px;margin-right:20px;font-size:15px;color:#3f3838;vertical-align:top;}
+.r_p_item .sum .num{font-family:"Roboto", sans-serif;font-size:26px;font-weight:bold;}
+.charge_point_wrap .per{display:inline-block;width:56px;height:50px;margin-right:20px;font-family:"HGGGothicssi";color:#fff;text-align:center;line-height:30px;vertical-align:top;background:url('/_static/web/images/charge/pay_vip_2011.png') no-repeat -50px -340px;}
+.charge_point_wrap .per .s_txt{font-size:12px;}
+.charge_point_wrap .btn_pay{display:inline-block;width:178px;height:50px;border-radius:25px;line-height:50px;font-size:18px;font-weight:500;vertical-align:top;text-align:center;color:#fff;cursor:pointer;}
+.charge_point_wrap .btn_pay:hover{opacity:0.8;}
+.charge_point_wrap .vip_14500 .btn_pay{background:#cf78fc;}
+.charge_point_wrap .vip_23500 .btn_pay{background:#7f4def;}
+.charge_point_wrap .pay_item .btn_pay{background:#3dcccc;}
+.pay_item_wrap{position:relative;width:1130px;padding:20px;background:#fff;}
+.pay_item{width:1092px;margin-bottom:16px;}
+.pay_item:after{content:'';display:block;clear:both;}
+.pay_item .p_l_area{position:relative;float:left;width:336px;height:140px;background:url('/_static/web/images/charge/pay_vip_2011.png') no-repeat 0 -180px;}
+.pay_item.vip_5000 .p_l_area{height:100px;background-position:0 -60px;}
+.pay_item.vip_5000 .t_point{margin:0;}
+.pay_item .ico_coin{position:relative;top:4px;}
+.pay_item .t_point_area{position:absolute;top:50%;left:62px;transform:translate(0, -50%);}
+.pay_item .t_point{height:34px;margin-bottom:10px;font-size:14px;line-height:34px;color:#fff;font-weight:500;vertical-align:top;}
+.pay_item .t_point .num{font-family:"Roboto", sans-serif;font-size:34px;line-height:34px;font-weight:bold;}
+.pay_item .ico_2x{display:block;width:173px;height:26px;text-indent:-9999px;background:url('/_static/web/images/charge/pay_vip_2011.png') no-repeat -120px -340px;}
+.pay_item .ico_best{position:absolute;top:-8px;right:23px;display:block;width:78px;height:49px;text-indent:-9999px;background:url('/_static/web/images/charge/pay_vip_2011.png') no-repeat -100px 0;}
+.pay_item .p_r_area{float:left;width:756px;height:140px;padding-left:50px;border:4px solid #3dcccc;border-left:none;border-radius:0 12px 12px 0;}
+.pay_item.vip_5000 .p_r_area{height:100px;}
+.pay_item.vip_5000 .point_into{padding-top:13px;}
+.pay_item .point_into{float:left;width:476px;padding:23px 0 0 0;margin-right:30px;}
+.pay_item .point_into .p_top{width:100%;height:34px;padding:0 20px 0 24px;line-height:33px;border-radius:4px;font-size:16px;color:#828282;background:#f2f2f2;}
+.pay_item .bar{position:relative;top:3px;display:inline-block;width:1px;height:16px;margin-left:13px;background:#b4b4b4;}
+.pay_item .num_area{display:inline-block;width:380px;font-family:"HGGGothicssi";font-size:12px;text-align:right;}
+.pay_item .num_area .num{margin-right:2px;font-size:18px;}
+.pay_item .point_into .p_btm{padding:10px 0 0 0;text-align:right;}
+.pay_item .btn_pay{height:60px;margin-top:35px;border-radius:30px;line-height:60px;}
+.pay_item.vip_5000 .btn_pay{margin-top:14px;}
+.pay_item .d_sum{display:inline-block;padding-top:15px;margin-left:16px;color:#808080;text-decoration:line-through;font-size:13px;vertical-align:top;}
+.pay_item .d_sum .num{font-size:18px;}
+.pay_item .sum{display:inline-block;padding-top:15px;margin-left:20px;font-size:15px;color:#174D4D;vertical-align:top;}
+.pay_item .sum .num{font-family:"Roboto", sans-serif;font-size:26px;font-weight:bold;}
+
+
+
+.pay_item .ico_add{display:block;width:144px;height:26px;text-indent:-9999px;background:url('/_static/web/images/charge/pay_point_2011.png') no-repeat -120px -340px;}
+.pay_item.v5000 .p_l_area{height:100px;background-position:0 -60px;}
+.pay_item.v5000 .t_point{margin:0;}
+.pay_item.v5000 .p_r_area{height:100px;}
+.pay_item.v5000 .point_into{padding-top:13px;}
+.pay_item.v5000 .btn_pay{margin-top:14px;}
+
+.v_point_2011{}
+.charge_point_wrap .v_point_2011 .per,
+.v_point_2011 .pay_item .p_l_area,
+.v_point_2011 .pay_item .ico_best{background-image:url('/_static/web/images/charge/pay_point_2011.png');}
+.v_point_2011 .pay_item .p_r_area{border-color:#ffa703;}
+.v_point_2011 .pay_item .btn_pay{background:#e88009;}
+.v_point_2011 .pay_item .sum{color:#ca3c0d;}
+.v_point_2011 .pay_item.v10000 .t_point_area{height:33px;}
+.v_point_2011 .pay_item.v20000 .btn_pay{background:#dc2009;}
+.v_point_2011 .pay_item.v20000 .p_l_area{background-position:-350px -180px;}
+.v_point_2011 .pay_item.v20000 .p_r_area{border-color:#ff6c0f;}
+.charge_point_wrap .v_point_2011 .v20000 .per{background-position:-280px -340px;}
+
+.p_type_area{position:absolute;top:25px;right:20px;}
+.p_type_area ul{overflow:hidden;}
+.p_type_area li{float:left;margin-left:10px;color:#777;font-size:12px;}
+.p_type_area .ico{position:relative;top:-2px;display:inline-block;width:16px;height:16px;margin-right:5px;border-radius:50%;font-family:"HGGGothicssi";font-size:10px;line-height:16px;text-align:center;color:#fff;}
+.p_type_area .type1 .ico{background:#68c2f6;}
+.p_type_area .type2 .ico{background:#8969d6;}
+.p_type_area .type3 .ico{background:#53d7ad;}
+.p_type_area .type4 .ico{background:#c569d6;}
+.p_type_area .type5 .ico{background:#ffd200;}
+.p_type_area .type6 .ico{background:#f17849;}
+
+

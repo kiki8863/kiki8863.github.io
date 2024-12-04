@@ -1,0 +1,1049 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KRView</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/bootstrap-4.3.1.min.css">
+    <link rel="stylesheet" href="css/custom-icon.css">
+    <link rel="stylesheet" href="css/krview_v2.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&family=Ubuntu&display=swap"
+        rel="stylesheet">
+</head>
+<body>
+    <div class="wrap">
+        <div class="screen_wrap">
+            <div class="log_enter_area active mover" style="display:none;">
+                <span class="btn_close">
+                    <i class="icon-disconnect"></i>
+                </span>
+                <span class="btn_save">저장</span>
+                <textarea name="" id="" class="t_a_style" placeholder="로그를 입력하세요"></textarea>
+            </div>
+            <div class="disconnected_area" style="display: none;"></div>
+            <!-- header -->
+            <div class="s_header">
+                <h1 class="logo"><img src="logo.png" alt=""></h1>
+                <div class="menu_wrap">
+                    <!-- 230911 비디오 디코더 정보 영역 추가 -->
+                    <!--  
+                        영역 보일 경우 class on 추가 
+                        토글 버튼은 왼쪽 HDMI랑 똑같이! 
+                    -->
+                    <span class="decoder_info on">
+                        <span class="t_btn on"><img src="images/toggle_on.png" alt=""></span>
+                        <div class="decoder_info_wrap">
+                            <p>1. 디코더 정보 내용 정보 1개당 1줄 씩</p>
+                            <p>2. 디코더 정보 내용 정보 1개당 1줄 씩</p>
+                            <p>3. 디코더 정보 내용 정보 1개당 1줄 씩</p>
+                            <p>4. 디코더 정보 내용 정보 1개당 1줄 씩</p>
+                        </div>
+                    </span>
+                    <div class="recording_area" id="recordingArea">
+                        <!-- 스크린 녹화 진행중일때 클래스 active 추가 -->
+                        <span class="on_area">
+                            <span class="circle"></span>
+                            <span class="txt">녹화중</span>
+                            <span class="stop_btn" onclick="commands.stopScreenRecording();">
+                                <span class="icon"></span>
+                            </span>
+                        </span>
+                        <span class="m_btn mt_style" onclick="commands.startScreenRecording();">
+                            <span class="m_icon"><i class="icon-recording"></i></span>
+                        </span>
+                    </div>
+                    <span class="m_btn mt_style" onclick="commands.screenCapture();">
+                        <span class="m_icon"><i class="icon-capture"></i></span>
+                    </span>
+                    <span class="m_btn mt_style" onclick="ui.showDisconnectModal();">
+                        <span class="m_icon"><i class="icon-exit"></i></span>
+                    </span>
+                    <span class="bar"></span>
+                    <div class="t_menu_area">
+                        <span class="m_btn"><i class="icon-menu"></i></span>
+                        <div class="t_menu_list">
+                            <ul>
+                                <li onclick="ui.showRebootModal();">
+                                    <span class="m_icon"><i class="icon-reboot"></i></span>
+                                    <span class="m_name">셋톱 재연결</span>
+                                </li>
+                                <li onclick="ui.showOsdModal();">
+                                    <span class="m_icon"><i class="icon-osd"></i></span>
+                                    <span class="m_name">TV에 메시지 보내기</span>
+                                </li>
+                                <li class="line"></li>
+                                <li class="depth1">
+                                    <span class="m_icon"><i class="icon-log"></i></span>
+                                    <span class="m_name">셋톱 로그 수집</span>
+                                    <span class="arrow"></span>
+                                    <span class="bg"></span>
+                                    <div class="depth2">
+                                        <ul>
+                                            <li onclick="ui.showLogModal();">
+                                                <span id="UPLOAD_LOG">ADB 로그</span>
+                                            </li>
+                                            <!-- 아직 미 구현된 Vendor Log Display none.. -->
+                                            <li style="display: none;">
+                                                <span>Vendor Log</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li onclick="commands.startScreenRecording();">
+                                    <span class="m_icon"><i class="icon-recording"></i></span>
+                                    <span class="m_name">상담화면 동영상 녹화</span>
+                                </li>
+                                <li onclick="commands.screenCapture();">
+                                    <span class="m_icon"><i class="icon-capture"></i></span>
+                                    <span class="m_name" id="screenCapture">상담화면 이미지 캡처</span>
+                                </li>
+                                <li class="line"></li>
+                                <li onclick="ui.showCSLogModal();">
+                                    <span class="m_icon"><i class="icon-write"></i></span>
+                                    <span class="m_name">상담 메모 입력</span>
+                                </li>
+                                <li class="line"></li>
+                                <li onclick="ui.showDisconnectModal();">
+                                    <span class="m_icon"><i class="icon-exit"></i></span>
+                                    <span class="m_name">셋톱 연결 종료</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- //header -->
+            <div class="s_content">
+                <div class="left_area">
+                    <!-- 정보 영역 -->
+                    <div class="l_info_area">
+                        <div class="info_section">
+                            <h2 class="info_tit">STB 정보</h2>
+                            <dl class="info_content">
+                                <dt>모델명</dt>
+                                <dd>
+                                    <span>UHD 4K</span>
+                                </dd>
+                                <dt>제조사</dt>
+                                <dd>
+                                    <span>Kaonmedia Co., Ltd</span>
+                                </dd>
+                                <dt>MAC</dt>
+                                <dd>
+                                    <span>23:52:23:1A:45:1C</span>
+                                </dd>
+                                <dt>일련번호</dt>
+                                <dd>
+                                    <span>122323452322AD23</span>
+                                </dd>
+                                <dt>소프트웨어 버전 번호</dt>
+                                <dd>
+                                    <span>02.01.0246</span>
+                                </dd>
+                            </dl>
+                        </div>
+                        <div class="info_section">
+                            <h2 class="info_tit">TV 정보</h2>
+                            <dl class="info_content">
+                                <dt>제품명</dt>
+                                <dd>
+                                    <span>MON-SIS330</span>
+                                </dd>
+                                <dt>제조사</dt>
+                                <dd>
+                                    <span>LG전자</span>
+                                </dd>
+                                <dt>제조년도</dt>
+                                <dd>
+                                    <span>2022</span>
+                                </dd>
+                                <dt>해상도</dt>
+                                <dd>
+                                    <span>1920 X 1080</span>
+                                </dd>
+                            </dl>
+                        </div>
+                        <div class="info_section">
+                            <h2 class="info_tit">HDMI 정보</h2>
+                            <dl class="info_content">
+                                <dt>HDMI 연결상태</dt>
+                                <dd>
+                                    <span class="t_green">Connected</span>
+                                </dd>
+                                <dt>'TV 전원 동기화</dt>
+                                <dd>
+                                    <!-- 켰을때 -->
+                                    <span class="t_btn on"><img src="images/toggle_on.png" alt=""></span> 
+                                    <!-- 껐을때 -->
+                                    <!-- <span class="t_btn off"><img src="images/toggle_off.png" alt=""></span> -->
+                                    <span class="txt">ON</span>
+                                </dd>
+                                <dt class="s_ib">HDMI EDID</dt>
+                                <dd class="s_ib">
+                                    <span class="layer_btn">
+                                        <span class="arrow"></span>
+                                    </span>
+                                    <div class="layer_wrap">
+                                        <h3 class="l_tit">HDMI EDID</h3>
+                                        <div class="l_content">
+                                            EDID 정보
+                                        </div>
+                                    </div>
+                                </dd>
+                            </dl>
+                        </div>
+                    </div>
+                    <!-- //정보 영역 -->
+                    <!-- 화면 영역 -->
+                    <div class="screen_area">
+                        <div class="inner">
+                            <div class="loader_wrap">
+                                <span class="loader_bar"></span>
+                            </div>
+                            <div class="new_session_area" style="display:none;">
+                                <span class="btn_new_s">새 상담 연결</span>
+                            </div>
+                            <img src="images/screen.jpg" alt="">
+                        </div>
+                    </div>
+                    <!-- //화면 영역 -->
+                    <!-- 차트 영역 -->
+                    <div class="chart_wrap">
+                        <div class="chart_section">
+                            <h3 class="chart_tit">CPU 사용률</h3>
+                            <div class="chart_num">
+                                <p><span class="num">78</span>%</p>
+                            </div>
+                            <div class="chart_area">
+                                <img src="images/chart_1.png" alt="">
+                            </div>
+                        </div>
+                        <div class="chart_section">
+                            <h3 class="chart_tit">CPU 온도</h3>
+                            <div class="chart_num">
+                                <p><span class="num">98</span>℃</p>
+                            </div>
+                            <div class="chart_area">
+                                <img src="images/chart_2.png" alt="">
+                            </div>
+                        </div>
+                        <div class="chart_section">
+                            <h3 class="chart_tit">메모리 사용률</h3>
+                            <div class="chart_num">
+                                <p class="p_t_style"><span class="num">78</span>%</p>
+                                <dl>
+                                    <dt>Total</dt>
+                                    <dd>100GB</dd>
+                                </dl>
+                                <dl>
+                                    <dt>Free</dt>
+                                    <dd>44GB</dd>
+                                </dl>
+                                <dl>
+                                    <dt>Used</dt>
+                                    <dd>56GB</dd>
+                                </dl>
+                            </div>
+                            <div class="chart_area">
+                                <img src="images/chart_3.png" alt="">
+                            </div>
+                        </div>
+                        <div class="chart_section type4">
+                            <h3 class="chart_tit">디스크 사용률</h3>
+                            <div class="chart_num">
+                                <dl class="p_t_style">
+                                    <dt>Total</dt>
+                                    <dd>100GB</dd>
+                                </dl>
+                                <dl>
+                                    <dt>Free</dt>
+                                    <dd>44GB</dd>
+                                </dl>
+                                <dl>
+                                    <dt>Used</dt>
+                                    <dd>56GB</dd>
+                                </dl>
+                            </div>
+                            <div class="chart_area">
+                                <img src=images/chart_4.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <!-- //차트 영역 -->
+                </div>
+                <div class="right_area">
+                    <!-- 상담 이력 -->
+                    <!-- active 추가시 위치 이동 -->
+                    <div class="slide_wrap" style="display:block;">
+                        <div class="s_btn">
+                            <span class="arrow"></span>
+                        </div>
+                        <span class="bg"></span>
+                        <div class="slide_content">
+                            <div class="top">
+                                <div class="tab_btn_wrap">
+                                    <span class="tab_btn active">원격 제어 바로 보기</span>
+                                    <span class="tab_btn ">상담 메모 이력 보기</span>
+                                    <span class="tab_btn ">원격 제어 이력 보기</span>
+                                </div>
+                            </div>
+                            <div class="tab_content_wrap">
+                                <div class="tab_content">
+                                    <div class="date_wrap">
+                                        <span class="m_btn prev"><i class="icon icon-arrow"></i></span>
+                                        <span class="m_btn next"><i class="icon icon-arrow"></i></span>
+                                        <div class="slide_area">
+                                            <span class="date active">2022.08.21</span>
+                                            <span class="date">2022.08.22</span>
+                                            <span class="date">2022.08.23</span>
+                                            <span class="date">2022.08.24</span>
+                                            <span class="date">2022.08.25</span>
+                                        </div>
+                                    </div>
+                                    <div class="log_wrap">
+                                        <div class="log connected">
+                                            <span class="date">2022.08.16 14:23:01</span>
+                                            <p class="txt">Session with CSR [hello 001] has been connected.</p>
+                                        </div>
+                                        <div class="c_logs">
+                                            <span class="line"></span>
+                                            <span class="name">Customer Service Log</span>
+                                            <p class="txt">
+                                                The customer can't reach a specific menu due to outdated remote control.
+                                                Customer has been guided to purchase a new remote control.
+                                                Customer may further request assistance after purchasing a new remote control. Customer has weak
+                                                signal frequency
+                                                because the customer
+                                                resides in mountainous area.
+                                            </p>
+                                        </div>
+                                        <div class="log">
+                                            <span class="date">2022.08.16 14:23:01</span>
+                                            <p class="txt">CSR has changed the HDMI-CEC status from On to Off.</p>
+                                        </div>
+                                        <div class="log">
+                                            <span class="date">2022.08.16 14:23:01</span>
+                                            <p class="txt">화면 녹화 <span class="link">2022081634561 / 50MB</span></p>
+                                        </div>
+                                        <div class="log disconnected">
+                                            <span class="date">2022.08.16 14:23:01</span>
+                                            <p class="txt">Session has been disconnected.</p>
+                                        </div>
+                                        <div class="log">
+                                            <span class="date">2022.08.16 14:23:01</span>
+                                            <p class="txt">CSR has changed the HDMI-CEC status from On to Off.</p>
+                                        </div>
+                                        <div class="log">
+                                            <span class="date">2022.08.16 14:23:01</span>
+                                            <p class="txt">스크린 캡쳐가 저장 되었습니다. <span class="link">capture_img.jpg / 1MB</span></p>
+                                        </div>
+                                        <div class="log disconnected">
+                                            <span class="date">2022.08.16 14:23:01</span>
+                                            <p class="txt">Session has been disconnected.</p>
+                                        </div>
+                                        <div class="log">
+                                            <span class="date">2022.08.16 14:23:01</span>
+                                            <p class="txt">CSR has changed the HDMI-CEC status from On to Off.</p>
+                                        </div>
+                                        <div class="log">
+                                            <span class="date">2022.08.16 14:23:01</span>
+                                            <p class="txt">스크린 캡쳐가 저장 되었습니다. <span class="link">capture_img.jpg / 1MB</span></p>
+                                        </div>
+                                        <div class="log disconnected">
+                                            <span class="date">2022.08.16 14:23:01</span>
+                                            <p class="txt">Session has been disconnected.</p>
+                                        </div>
+                                        <div class="log">
+                                            <span class="date">2022.08.16 14:23:01</span>
+                                            <p class="txt">CSR has changed the HDMI-CEC status from On to Off.</p>
+                                        </div>
+                                        <div class="log">
+                                            <span class="date">2022.08.16 14:23:01</span>
+                                            <p class="txt">스크린 캡쳐가 저장 되었습니다. <span class="link">capture_img.jpg / 1MB</span></p>
+                                        </div>
+                                        <div class="log disconnected">
+                                            <span class="date">2022.08.16 14:23:01</span>
+                                            <p class="txt">Session has been disconnected.</p>
+                                        </div>
+                                        <div class="log">
+                                            <span class="date">2022.08.16 14:23:01</span>
+                                            <p class="txt">CSR has changed the HDMI-CEC status from On to Off.</p>
+                                        </div>
+                                        <div class="log">
+                                            <span class="date">2022.08.16 14:23:01</span>
+                                            <p class="txt">스크린 캡쳐가 저장 되었습니다. <span class="link">capture_img.jpg / 1MB</span></p>
+                                        </div>
+                                        <div class="log disconnected">
+                                            <span class="date">2022.08.16 14:23:01</span>
+                                            <p class="txt">Session has been disconnected.</p>
+                                        </div>
+                                        <div class="log">
+                                            <span class="date">2022.08.16 14:23:01</span>
+                                            <p class="txt">CSR has changed the HDMI-CEC status from On to Off.</p>
+                                        </div>
+                                        <div class="log">
+                                            <span class="date">2022.08.16 14:23:01</span>
+                                            <p class="txt">스크린 캡쳐가 저장 되었습니다. <span class="link">capture_img.jpg / 1MB</span></p>
+                                        </div>
+                                        <div class="log disconnected">
+                                            <span class="date">2022.08.16 14:23:01</span>
+                                            <p class="txt">Session has been disconnected.</p>
+                                        </div>
+                                        <div class="log">
+                                            <span class="date">2022.08.16 14:23:01</span>
+                                            <p class="txt">CSR has changed the HDMI-CEC status from On to Off.</p>
+                                        </div>
+                                        <div class="log">
+                                            <span class="date">2022.08.16 14:23:01</span>
+                                            <p class="txt">스크린 캡쳐가 저장 되었습니다. <span class="link">capture_img.jpg / 1MB</span></p>
+                                        </div>
+                                        <div class="log disconnected">
+                                            <span class="date">2022.08.16 14:23:01</span>
+                                            <p class="txt">Session has been disconnected.</p>
+                                        </div>
+                                        <div class="log">
+                                            <span class="date">2022.08.16 14:23:01</span>
+                                            <p class="txt">CSR has changed the HDMI-CEC status from On to Off.</p>
+                                        </div>
+                                        <div class="log">
+                                            <span class="date">2022.08.16 14:23:01</span>
+                                            <p class="txt">스크린 캡쳐가 저장 되었습니다. <span class="link">capture_img.jpg / 1MB</span></p>
+                                        </div>
+                                        <div class="log disconnected">
+                                            <span class="date">2022.08.16 14:23:01</span>
+                                            <p class="txt">Session has been disconnected.</p>
+                                        </div>
+                                        <div class="log">
+                                            <span class="date">2022.08.16 14:23:01</span>
+                                            <p class="txt">CSR has changed the HDMI-CEC status from On to Off.</p>
+                                        </div>
+                                        <div class="log">
+                                            <span class="date">2022.08.16 14:23:01</span>
+                                            <p class="txt">스크린 캡쳐가 저장 되었습니다. <span class="link">capture_img.jpg / 1MB</span></p>
+                                        </div>
+                                        <div class="log disconnected">
+                                            <span class="date">2022.08.16 14:23:01</span>
+                                            <p class="txt">Session has been disconnected.</p>
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- //상담 이력 -->
+                    <div class="remote_contol_wrap">
+                        <div class="top main">
+                            <!-- 연결 되었을 때  -->
+                            <span class="b_connect">
+                                <span class="r_icon">
+                                    <i class="icon-connect"></i>
+                                </span>
+                                <span class="rtool_tip">연결중</span>
+                            </span>
+                            <!-- //연결 되었을 때  -->
+                            <!-- 연결 안 되었을 때  -->
+                            <span class="d_connect" style="display:none;">
+                                <span class="r_icon">
+                                    <i class="icon-connect"></i><i class="icon-disconnect"></i>
+                                </span>
+                                <span class="rtool_tip">연결안됨</span>
+                            </span>
+                            <!-- 연결 안 되었을 때  -->
+                            <!-- 혼자듣기  켜짐 -->
+                            <span class="a_connect" style="display:none;">
+                                <span class="r_icon">
+                                    <i class="icon-headphone"></i><i class="icon-connect-ok"></i>
+                                </span>
+                                <span class="rtool_tip">혼자 듣기 켜짐</span>
+                            </span>
+                            <!-- //혼자듣기 켜짐   -->
+                            <!-- 혼자듣기  켜짐 -->
+                            <span class="a_d_connect">
+                                <span class="r_icon">
+                                    <i class="icon-headphone"></i><i class="icon-disconnect"></i>
+                                </span>
+                                <span class="rtool_tip">혼자 듣기 꺼짐</span>
+                            </span>
+                            <!-- //혼자듣기 켜짐   -->
+
+                            <span class="b_status type_4">
+                                <!-- 
+
+                                    배터리 0  클래스 type_0
+                                    배터리 1 ~ 25  클래스 type_1
+                                    배터리 26~ 50  클래스 type_2
+                                    배터리 51 ~ 75  클래스 type_3
+                                    배터리 76 ~ 90  클래스 type_4
+                                    배터리 91 ~ 100  클래스 type_5
+
+                                -->
+                                <span class="battery">
+                                    <i class="icon-battery"></i>
+                                    <span class="b_block style1"></span>
+                                    <span class="b_block style2"></span>
+                                    <span class="b_block style3"></span>
+                                    <span class="b_block style4"></span>
+                                    <span class="b_block style5"></span>
+                                </span>
+                                <span class="num"><span>88</span> %</span>
+                            </span>
+                        </div>
+                        <div class="key_wrap">
+                            <!--
+                                키 버튼 클릭시 key_wrap에 active 클래스 추가 
+                                리스트 영역 노출
+                            -->
+                            <span class="key_btn"><i class="icon-key"></i></span>
+                            <div class="key_area">
+                                <div class="top">
+                                    <span class="btn_ok"><i class="icon-ok-btn"></i></span>
+                                    <span class="btn_cancel"><i class="icon-cancel-btn"></i></span>
+                                </div>
+                                <div class="key_list">
+                                    <ul>
+                                        <li>
+                                            <span class="key">
+                                                <span class="key_name">Back</span>
+                                                <span class="btn_delete"><i class="icon-disconnect"></i></span>
+                                            </span>
+                                        </li>
+                                        <li>
+                                            <span class="key">
+                                                <span class="key_name">TV-Radio</span>
+                                                <span class="btn_delete"><i class="icon-disconnect"></i></span>
+                                            </span>
+                                        </li>
+                                        <li>
+                                            <span class="key">
+                                                <span class="key_name">Media</span>
+                                                <span class="btn_delete"><i class="icon-disconnect"></i></span>
+                                            </span>
+                                        </li>
+                                        <li>
+                                            <span class="key">
+                                                <span class="key_name">OK</span>
+                                                <span class="btn_delete"><i class="icon-disconnect"></i></span>
+                                            </span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="remote_area type_ott active">
+                            <img src="images/RCU-OTT_add_key.png" alt="OTT 리모컨 이미지">
+                            <span class="r_btn type1">
+                                전원 All
+                                <span class="rtool_tip">지원하지 않는 버튼입니다.</span>
+                            </span>
+                            <span class="r_btn type2">TV 전원</span>
+                            <span class="r_btn type3">셋톱 전원</span>
+                            <span class="r_btn type4">홈트 Now</span>
+                            <span class="r_btn type5">아이들나라</span>
+                            <span class="r_btn type6">한눈에 쇼핑</span>
+                            <span class="r_btn type7">디즈니 +</span>
+                            <span class="r_btn type8">Youtube</span>
+                            <span class="r_btn type9">NETFLIX</span>
+                            <span class="r_btn type10">구글 검색</span>
+                            <span class="r_btn type11">마이앱</span>
+                            <span class="r_btn type12">클로바</span>
+                            <span class="r_btn type13">이전</span>
+                            <span class="r_btn type14">홈</span>
+                            <span class="r_btn type15">나가기</span>
+                            <span class="r_btn type16">음량 +</span>
+                            <span class="r_btn type17">음량 -</span>
+                            <span class="r_btn type18">채널 △</span>
+                            <span class="r_btn type19">채널 ▽</span>
+                            <span class="r_btn type20">방향키 ▲</span>
+                            <span class="r_btn type21">방향키 ◀</span>
+                            <span class="r_btn type22">방향키 ▶</span>
+                            <span class="r_btn type23">방향키 ▼</span>
+                            <span class="r_btn type24">확인</span>
+                            <span class="r_btn type25">녹색</span>
+                            <span class="r_btn type26">옵션</span>
+                            <span class="r_btn type27">편성표</span>
+                            <span class="r_btn type28">1</span>
+                            <span class="r_btn type29">2</span>
+                            <span class="r_btn type30">3</span>
+                            <span class="r_btn type31">4</span>
+                            <span class="r_btn type32">5</span>
+                            <span class="r_btn type33">6</span>
+                            <span class="r_btn type34">7</span>
+                            <span class="r_btn type35">8</span>
+                            <span class="r_btn type36">9</span>
+                            <span class="r_btn type37">한영특</span>
+                            <span class="r_btn type38 ">0</span>
+                            <span class="r_btn type39 ">지우기</span>
+                        </div>
+                        <div class="remote_area type_disney" style="display:none;">
+                            <img src="images/RCU-disney.png" alt="디즈니 리모컨 이미지">
+                            <span class="r_btn type1">전원 All</span>
+                            <span class="r_btn type2">TV 전원</span>
+                            <span class="r_btn type3">셋톱 전원</span>
+                            <span class="r_btn type4">디즈니</span>
+                            <span class="r_btn type5">아이들나라</span>
+                            <span class="r_btn type6">넷플릭스</span>
+                            <span class="r_btn type7">클로바 검색</span>
+                            <span class="r_btn type8">구글 검색</span>
+                            <span class="r_btn type9">녹색</span>
+                            <span class="r_btn type10">홈</span>
+                            <span class="r_btn type11">옵션</span>
+                            <span class="r_btn type12">음량 +</span>
+                            <span class="r_btn type13">음량 -</span>
+                            <span class="r_btn type14">채널 △</span>
+                            <span class="r_btn type15">채널 ▽</span>
+                            <span class="r_btn type16">방향키 ▲</span>
+                            <span class="r_btn type17">방향키 ◀</span>
+                            <span class="r_btn type18">방향키 ▶</span>
+                            <span class="r_btn type19">방향키 ▼</span>
+                            <span class="r_btn type20">확인</span>
+                            <span class="r_btn type21">이전</span>
+                            <span class="r_btn type22">한눈에 쇼핑</span>
+                            <span class="r_btn type23">종료</span>
+                            <span class="r_btn type24">1</span>
+                            <span class="r_btn type25">2</span>
+                            <span class="r_btn type26">3</span>
+                            <span class="r_btn type27">4</span>
+                            <span class="r_btn type28">5</span>
+                            <span class="r_btn type29">6</span>
+                            <span class="r_btn type30">7</span>
+                            <span class="r_btn type31">8</span>
+                            <span class="r_btn type32">9</span>
+                            <span class="r_btn type33">한영특</span>
+                            <span class="r_btn type34">0</span>
+                            <span class="r_btn type35">지우기</span>
+                        </div>
+                        <div class="remote_area type_tving" style="display:none;">
+                            <img src="images/RCU-tving.png" alt="티빙 리모컨 이미지">
+                            <span class="r_btn type1">전원 All</span>
+                            <span class="r_btn type2">TV 전원</span>
+                            <span class="r_btn type3">셋톱 전원</span>
+                            <span class="r_btn type4">티빙</span>
+                            <span class="r_btn type5">아이들나라</span>
+                            <span class="r_btn type6">넷플릭스</span>
+                            <span class="r_btn type7">클로바 검색</span>
+                            <span class="r_btn type8">구글 검색</span>
+                            <span class="r_btn type9">녹색</span>
+                            <span class="r_btn type10">홈</span>
+                            <span class="r_btn type11">옵션</span>
+                            <span class="r_btn type12">음량 +</span>
+                            <span class="r_btn type13">음량 -</span>
+                            <span class="r_btn type14">채널 △</span>
+                            <span class="r_btn type15">채널 ▽</span>
+                            <span class="r_btn type16">방향키 ▲</span>
+                            <span class="r_btn type17">방향키 ◀</span>
+                            <span class="r_btn type18">방향키 ▶</span>
+                            <span class="r_btn type19">방향키 ▼</span>
+                            <span class="r_btn type20">확인</span>
+                            <span class="r_btn type21">이전</span>
+                            <span class="r_btn type22">한눈에 쇼핑</span>
+                            <span class="r_btn type23">종료</span>
+                            <span class="r_btn type24">1</span>
+                            <span class="r_btn type25">2</span>
+                            <span class="r_btn type26">3</span>
+                            <span class="r_btn type27">4</span>
+                            <span class="r_btn type28">5</span>
+                            <span class="r_btn type29">6</span>
+                            <span class="r_btn type30">7</span>
+                            <span class="r_btn type31">8</span>
+                            <span class="r_btn type32">9</span>
+                            <span class="r_btn type33">한영특</span>
+                            <span class="r_btn type34">0</span>
+                            <span class="r_btn type35">지우기</span>
+                        </div>
+                        <div class="remote_area type_b808" style="display:none;">
+                            <img src="images/RCU-b808-hw4.png" alt="b808 리모컨 이미지">
+                            <span class="r_btn type1">전원 All</span>
+                            <span class="r_btn type2">TV 전원</span>
+                            <span class="r_btn type3">셋톱 전원</span>
+                            <span class="r_btn type4">구글검색</span>
+                            <span class="r_btn type5">아이들나라</span>
+                            <span class="r_btn type6">클로바 검색</span>
+                            <span class="r_btn type7">이전</span>
+                            <span class="r_btn type8">메뉴</span>
+                            <span class="r_btn type9">종료</span>
+                            <span class="r_btn type10">음량 +</span>
+                            <span class="r_btn type11">음량 -</span>
+                            <span class="r_btn type12">채널 △</span>
+                            <span class="r_btn type13">채널 ▽</span>
+                            <span class="r_btn type14">방향키 ▲</span>
+                            <span class="r_btn type15">방향키 ◀</span>
+                            <span class="r_btn type16">방향키 ▶</span>
+                            <span class="r_btn type17">방향키 ▼</span>
+                            <span class="r_btn type18">확인</span>
+                            <span class="r_btn type19">녹색</span>
+                            <span class="r_btn type20">넷플릭스</span>
+                            <span class="r_btn type21">옵션</span>
+                            <span class="r_btn type22">1</span>
+                            <span class="r_btn type23">2</span>
+                            <span class="r_btn type24">3</span>
+                            <span class="r_btn type25">4</span>
+                            <span class="r_btn type26">5</span>
+                            <span class="r_btn type27">6</span>
+                            <span class="r_btn type28">7</span>
+                            <span class="r_btn type29">8</span>
+                            <span class="r_btn type30">9</span>
+                            <span class="r_btn type31">한영특</span>
+                            <span class="r_btn type32">0</span>
+                            <span class="r_btn type33">지우기</span>
+                        </div>
+                        <div class="remote_area type_0" style="display:none;">
+                            <img src="images/RCU-0.png" alt="0 리모컨 이미지">
+                            <span class="r_btn type1">전원 All</span>
+                            <span class="r_btn type2">TV 전원</span>
+                            <span class="r_btn type3">셋톱 전원</span>
+                            <span class="r_btn type4">구글검색</span>
+                            <span class="r_btn type5">아이들나라</span>
+                            <span class="r_btn type6">이전</span>
+                            <span class="r_btn type7">홈</span>
+                            <span class="r_btn type8">종료</span>
+                            <span class="r_btn type9">음량 +</span>
+                            <span class="r_btn type10">음량 -</span>
+                            <span class="r_btn type11">채널 △</span>
+                            <span class="r_btn type12">채널 ▽</span>
+                            <span class="r_btn type13">방향키 ▲</span>
+                            <span class="r_btn type14">방향키 ◀</span>
+                            <span class="r_btn type15">방향키 ▶</span>
+                            <span class="r_btn type16">방향키 ▼</span>
+                            <span class="r_btn type17">확인</span>
+                            <span class="r_btn type18">녹색</span>
+                            <span class="r_btn type19">검색</span>
+                            <span class="r_btn type20">옵션</span>
+                            <span class="r_btn type21">1</span>
+                            <span class="r_btn type22">2</span>
+                            <span class="r_btn type23">3</span>
+                            <span class="r_btn type24">4</span>
+                            <span class="r_btn type25">5</span>
+                            <span class="r_btn type26">6</span>
+                            <span class="r_btn type27">7</span>
+                            <span class="r_btn type28">8</span>
+                            <span class="r_btn type29">9</span>
+                            <span class="r_btn type30">한영특</span>
+                            <span class="r_btn type31">0</span>
+                            <span class="r_btn type32">지우기</span>
+                        </div>
+                        <!-- 리모컨 선택 영역 -->
+                        <div class="remote_select" display:block;>
+                            <div class="remote_list">
+                                <ul>
+                                    <li class="active">
+                                        <span class="rc_btn"></span>
+                                        <div class="remote_section">
+                                            <div class="top">
+                                                <span class="b_connect">
+                                                    <span class="r_icon">
+                                                        <i class="icon-connect"></i>
+                                                    </span>
+                                                    <!-- <span class="txt">connected</span> -->
+                                                </span>
+                                                <span class="a_d_connect">
+                                                    <span class="r_icon">
+                                                        <i class="icon-headphone"></i><i class="icon-disconnect"></i>
+                                                    </span>
+                                                    <span class="rtool_tip">혼자 듣기 꺼짐</span>
+                                                </span>
+                                                <span class="b_status type_4">
+                                                    <span class="battery">
+                                                        <i class="icon-battery"></i>
+                                                        <span class="b_block style1"></span>
+                                                        <span class="b_block style2"></span>
+                                                        <span class="b_block style3"></span>
+                                                        <span class="b_block style4"></span>
+                                                        <span class="b_block style5"></span>
+                                                    </span>
+                                                    <span class="num">88%</span>
+                                                </span>
+                                            </div>
+                                            <div class="btm">
+                                                <span class="img">
+                                                    <img src="images/RCU_p_1.png" alt="">
+                                                </span>
+                                                <div class="info">
+                                                    <dl>
+                                                        <dt>리모컨 이름</dt>
+                                                        <dd>LGU 2ND UHD RCU</dd>
+                                                    </dl>
+                                                    <dl>
+                                                        <dt>HW 버전</dt>
+                                                        <dd>0.4</dd>
+                                                    </dl>
+                                                    <dl>
+                                                        <dt>제조사</dt>
+                                                        <dd>리모트솔루션</dd>
+                                                    </dl>
+                                                    <dl>
+                                                        <dt>MAC</dt>
+                                                        <dd>21:43:12:8A:CD:11</dd>
+                                                    </dl>
+                                                    <dl>
+                                                        <dt>SW 버전</dt>
+                                                        <dd>0.E</dd>
+                                                    </dl>
+                                                </div>
+                                                <span class="btn_select">선택</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="on">
+                                        <span class="rc_btn"></span>
+                                        <div class="remote_section">
+                                            <div class="top">
+                                                <span class="d_connect">
+                                                    <span class="r_icon">
+                                                        <i class="icon-connect"></i><i class="icon-disconnect"></i>
+                                                    </span>
+                                                    <span class="txt">연결 해지</span>
+                                                </span>
+                                                <span class="b_status type_0">
+                                                    <span class="battery ">
+                                                        <i class="icon-battery"></i>
+                                                        <span></span>
+                                                    </span>
+                                                    <span class="num"><span>0</span>%</span>
+                                                </span>
+                                            </div>
+                                            <div class="btm">
+                                                <span class="img">
+                                                    <img src="RCU_p_1.png" alt="">
+                                                </span>
+                                                <div class="info">
+                                                    <dl>
+                                                        <dt>RCU Name</dt>
+                                                        <dd>LGU 2ND UHD RCU</dd>
+                                                    </dl>
+                                                    <dl>
+                                                        <dt>HW Version</dt>
+                                                        <dd>0.4</dd>
+                                                    </dl>
+                                                    <dl>
+                                                        <dt>제조사</dt>
+                                                        <dd>리모트솔루션</dd>
+                                                    </dl>
+                                                    <dl>
+                                                        <dt>MAC</dt>
+                                                        <dd>21:43:12:8A:CD:11</dd>
+                                                    </dl>
+                                                    <dl>
+                                                        <dt>SW Version</dt>
+                                                        <dd>0.E</dd>
+                                                    </dl>
+                                                </div>
+                                                <span class="btn_select">Select</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <span class="rc_btn"></span>
+                                        <div class="remote_section">
+                                            <div class="top">
+                                                <span class="d_connect">
+                                                    <span class="r_icon">
+                                                        <i class="icon-connect"></i><i class="icon-disconnect"></i>
+                                                    </span>
+                                                    <span class="txt">disconnected</span>
+                                                </span>
+                                                <span class="b_status  type_0">
+                                                    <span class="battery">
+                                                        <i class="icon-battery"></i>
+                                                        <span class="b_block style1"></span>
+                                                        <span class="b_block style2"></span>
+                                                        <span class="b_block style3"></span>
+                                                        <span class="b_block style4"></span>
+                                                        <span class="b_block style5"></span>
+                                                    </span>
+                                                    <span class="num"><span>0</span>%</span>
+                                                </span>
+                                            </div>
+                                            <div class="btm">
+                                                <span class="img">
+                                                    <img src="RCU_p_1.png" alt="">
+                                                </span>
+                                                <div class="info">
+                                                    <dl>
+                                                        <dt>RCU Name</dt>
+                                                        <dd>LGU 2ND UHD RCU</dd>
+                                                    </dl>
+                                                    <dl>
+                                                        <dt>HW Version</dt>
+                                                        <dd>0.4</dd>
+                                                    </dl>
+                                                    <dl>
+                                                        <dt>제조사</dt>
+                                                        <dd>리모트솔루션</dd>
+                                                    </dl>
+                                                    <dl>
+                                                        <dt>MAC</dt>
+                                                        <dd>21:43:12:8A:CD:11</dd>
+                                                    </dl>
+                                                    <dl>
+                                                        <dt>SW Version</dt>
+                                                        <dd>0.E</dd>
+                                                    </dl>
+                                                </div>
+                                                <span class="btn_select">Select</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <span class="rc_btn"></span>
+                                        <div class="remote_section">
+                                            <div class="top">
+                                                <span class="d_connect">
+                                                    <span class="r_icon">
+                                                        <i class="icon-connect"></i><i class="icon-disconnect"></i>
+                                                    </span>
+                                                    <span class="txt">disconnected</span>
+                                                </span>
+                                                <span class="b_status type_0">
+                                                    <span class="battery">
+                                                        <i class="icon-battery"></i>
+                                                        <span class="b_block style1"></span>
+                                                        <span class="b_block style2"></span>
+                                                        <span class="b_block style3"></span>
+                                                        <span class="b_block style4"></span>
+                                                        <span class="b_block style5"></span>
+                                                    </span>
+                                                    <span class="num"><span>0</span>%</span>
+                                                </span>
+                                            </div>
+                                            <div class="btm">
+                                                <span class="img">
+                                                    <img src="RCU_p_1.png" alt="">
+                                                </span>
+                                                <div class="info">
+                                                    <dl>
+                                                        <dt>RCU Name</dt>
+                                                        <dd>LGU 2ND UHD RCU</dd>
+                                                    </dl>
+                                                    <dl>
+                                                        <dt>HW Version</dt>
+                                                        <dd>0.4</dd>
+                                                    </dl>
+                                                    <dl>
+                                                        <dt>제조사</dt>
+                                                        <dd>리모트솔루션</dd>
+                                                    </dl>
+                                                    <dl>
+                                                        <dt>MAC</dt>
+                                                        <dd>21:43:12:8A:CD:11</dd>
+                                                    </dl>
+                                                    <dl>
+                                                        <dt>SW Version</dt>
+                                                        <dd>0.E</dd>
+                                                    </dl>
+                                                </div>
+                                                <span class="btn_select">Select</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <span class="rc_btn"></span>
+                                        <div class="remote_section">
+                                            <div class="top">
+                                                <span class="d_connect">
+                                                    <span class="r_icon">
+                                                        <i class="icon-connect"></i><i class="icon-disconnect"></i>
+                                                    </span>
+                                                    <span class="txt">disconnected</span>
+                                                </span>
+                                                <span class="b_status type_0">
+                                                    <span class="battery">
+                                                        <i class="icon-battery"></i>
+                                                        <span class="b_block style1"></span>
+                                                        <span class="b_block style2"></span>
+                                                        <span class="b_block style3"></span>
+                                                        <span class="b_block style4"></span>
+                                                        <span class="b_block style5"></span>
+                                                    </span>
+                                                    <span class="num"><span>0</span>%</span>
+                                                </span>
+                                            </div>
+                                            <div class="btm">
+                                                <span class="img">
+                                                    <img src="RCU_p_1.png" alt="">
+                                                </span>
+                                                <div class="info">
+                                                    <dl>
+                                                        <dt>RCU Name</dt>
+                                                        <dd>LGU 2ND UHD RCU</dd>
+                                                    </dl>
+                                                    <dl>
+                                                        <dt>HW Version</dt>
+                                                        <dd>0.4</dd>
+                                                    </dl>
+                                                    <dl>
+                                                        <dt>제조사</dt>
+                                                        <dd>리모트솔루션</dd>
+                                                    </dl>
+                                                    <dl>
+                                                        <dt>MAC</dt>
+                                                        <dd>21:43:12:8A:CD:11</dd>
+                                                    </dl>
+                                                    <dl>
+                                                        <dt>SW Version</dt>
+                                                        <dd>0.E</dd>
+                                                    </dl>
+                                                </div>
+                                                <span class="btn_select">Select</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- //리모컨 선택 영역 -->
+                    </div>
+                    <p class="a_txt">Agent Version : <span>LGUA4T01</span></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    const draggable = ($target) => {
+            let isPress = false,
+                prevPosX = 0,
+                prevPosY = 0;
+
+            $target.onmousedown = start;
+            $target.onmouseup = end;
+
+            // 상위 영역
+            window.onmousemove = move;
+
+            function start(e) {
+                prevPosX = e.clientX;
+                prevPosY = e.clientY;
+
+                isPress = true;
+            }
+
+            function move(e) {
+                if (!isPress) return;
+
+                const posX = prevPosX - e.clientX;
+                const posY = prevPosY - e.clientY;
+
+                prevPosX = e.clientX;
+                prevPosY = e.clientY;
+
+                $target.style.left = ($target.offsetLeft - posX) + "px";
+                $target.style.top = ($target.offsetTop - posY) + "px";
+            }
+
+            function end() {
+                isPress = false;
+            }
+        }
+
+        window.onload = () => {
+            const $target = document.querySelector(".mover");
+
+            draggable($target);
+        }
+
+</script>
+
+</html>

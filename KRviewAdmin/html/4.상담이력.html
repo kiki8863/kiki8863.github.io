@@ -1,0 +1,772 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KRview ADMIN</title>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/bootstrap-4.3.1.min.css">
+    <link rel="stylesheet" href="../css/custom-icon.css">
+    <link rel="stylesheet" href="../css/krview_admin_style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Gothic+A1:wght@200;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+<!-- wrap -->
+<div class="wrap">
+    <!-- header -->
+    <div class="header">
+        <h1 class="a_logo"><img src="../images/a_logo.png" alt="kRview"><span class="l_txt">관리자 페이지</span></h1>
+        <div class="top_menu_area">
+            <div class="user_name">
+                <p class="txt">반갑습니다, <span class="user_name">관리자님</span>!</p>
+                <span class="img_icon"><img src="../images/profile-img.png" alt="profile-img"></span>
+            </div>
+            <div class="menu_list">
+                <span class="arrow"></span>
+                <ul class="menu">
+                    <li><span class="cursor">로그아웃</span><span class="l_bar"></span></li>
+                    <li><span class="cursor">회원 정보</span><span class="l_bar"></span></li>
+                    <li><span class="cursor">비밀번호 변경</span><span class="l_bar"></span></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- //header -->
+    <!-- container -->
+    <div class="container">
+        <!-- lnb -->
+        <div class="lnb">
+            <ul>
+                <li class="">
+                    <span class="bg_circle">
+                        <i class="icon-lnb-chart"></i>
+                        <span class="n_name">상담 통계</span>
+                    </span>   
+                </li>
+                <li class="active">
+                    <span class="bg_circle">
+                        <i class="icon-lnb-history"></i>
+                        <span class="n_name">상담 이력</span>
+                    </span>
+                </li>
+                <li>
+                    <span class="bg_circle">
+                        <i class="icon-lnb-account"></i>
+                        <span class="n_name">계정 관리</span>
+                    </span>
+                </li>
+                <li>
+                    <span class="bg_circle">
+                        <i class="icon-lnb-company"></i>
+                        <span class="n_name">제조사 관리</span>
+                    </span>
+                </li>
+                <li>
+                    <span class="bg_circle">
+                        <i class="icon-lnb-device"></i>
+                        <span class="n_name">장치 관리</span>
+                    </span>
+                </li>
+            </ul>
+        </div>
+        <!-- //lnb -->
+        <!-- content -->
+        <div class="content">
+            <div class="c_top">
+                <h2 class="sub_tit">상담 이력 </h2>
+                <div class="btn_area">
+                    <span class="t_btn search">
+                        <span class="txt">검색</span>
+                    </span>
+                </div>
+            </div>
+            <div class="c_inner row">
+                <div class="col-6 pl-0 pr-0">
+                    <div class="h_100">
+                        <div class="section">
+                            <div class="search_form">
+                                <div class="search_section size4">
+                                    <div class="">
+                                        <input type="text" value="날짜(시작 시간)" class="i_style">
+                                        <span class="btn"><i class="icon-calender"></i></span>
+                                    </div>
+                                </div>
+                                <div class="search_section size2">
+                                    <select name="" id="" class="select_style">
+                                        <option value="">모델명</option>
+                                    </select>
+                                </div>
+                                <div class="search_section size2">
+                                    <select name="" id="" class="select_style">
+                                        <option value="">상담원</option>
+                                    </select>
+                                </div>
+                                <div class="search_section size4">
+                                    <input type="text" value="MAC" class="i_style">
+                                </div>
+                                <span class="btn_search">검색</span>
+                            </div>
+                            <div class="tbl_wrap has_btn_style">
+                                <ul class="tbl_style">
+                                    <li class="top">
+                                        <div class="t1">
+                                            <span>MAC 주소</span>
+                                        </div>
+                                        <div class="t2">
+                                            <span>모델명</span>
+                                        </div>
+                                        <div class="t3">
+                                            <span>날짜(시작 시간)</span>
+                                        </div>
+                                        <div class="t4">
+                                            <span>날짜(종료 시간)</span>
+                                        </div>
+                                        <div class="t5 center">
+                                            <span>상담원</span>
+                                        </div>
+                                        <div class="t6 center">
+                                            <span>동작</span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="t1">
+                                            <span>12:34:56:78:9A:B</span>
+                                        </div>
+                                        <div class="t2">
+                                            <span>KSTB6200</span>
+                                        </div>
+                                        <div class="t3">
+                                            <span>23-01-17 09:36:05</span>
+                                        </div>
+                                        <div class="t4">
+                                            <span>23-01-17 09:40:48</span>
+                                        </div>
+                                        <div class="t5 center">
+                                            <span>Jiwon Cho</span>
+                                        </div>
+                                        <div class="t6 center">
+                                            <button class="a_btn">
+                                                <i class="icon-delete"></i>
+                                            </button>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="t1">
+                                            <span>12:34:56:78:9A:B</span>
+                                        </div>
+                                        <div class="t2">
+                                            <span>KSTB6200</span>
+                                        </div>
+                                        <div class="t3">
+                                            <span>23-01-17 09:36:05</span>
+                                        </div>
+                                        <div class="t4">
+                                            <span>23-01-17 09:40:48</span>
+                                        </div>
+                                        <div class="t5 center">
+                                            <span>Jiwon Cho</span>
+                                        </div>
+                                        <div class="t6 center">
+                                            <button class="a_btn">
+                                                <i class="icon-delete"></i>
+                                            </button>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="t1">
+                                            <span>12:34:56:78:9A:B</span>
+                                        </div>
+                                        <div class="t2">
+                                            <span>KSTB6200</span>
+                                        </div>
+                                        <div class="t3">
+                                            <span>23-01-17 09:36:05</span>
+                                        </div>
+                                        <div class="t4">
+                                            <span>23-01-17 09:40:48</span>
+                                        </div>
+                                        <div class="t5 center">
+                                            <span>Jiwon Cho</span>
+                                        </div>
+                                        <div class="t6 center">
+                                            <button class="a_btn">
+                                                <i class="icon-delete"></i>
+                                            </button>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="t1">
+                                            <span>12:34:56:78:9A:B</span>
+                                        </div>
+                                        <div class="t2">
+                                            <span>KSTB6200</span>
+                                        </div>
+                                        <div class="t3">
+                                            <span>23-01-17 09:36:05</span>
+                                        </div>
+                                        <div class="t4">
+                                            <span>23-01-17 09:40:48</span>
+                                        </div>
+                                        <div class="t5 center">
+                                            <span>Jiwon Cho</span>
+                                        </div>
+                                        <div class="t6 center">
+                                            <button class="a_btn">
+                                                <i class="icon-delete"></i>
+                                            </button>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="t1">
+                                            <span>12:34:56:78:9A:B</span>
+                                        </div>
+                                        <div class="t2">
+                                            <span>KSTB6200</span>
+                                        </div>
+                                        <div class="t3">
+                                            <span>23-01-17 09:36:05</span>
+                                        </div>
+                                        <div class="t4">
+                                            <span>23-01-17 09:40:48</span>
+                                        </div>
+                                        <div class="t5 center">
+                                            <span>Jiwon Cho</span>
+                                        </div>
+                                        <div class="t6 center">
+                                            <button class="a_btn">
+                                                <i class="icon-delete"></i>
+                                            </button>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="t1">
+                                            <span>12:34:56:78:9A:B</span>
+                                        </div>
+                                        <div class="t2">
+                                            <span>KSTB6200</span>
+                                        </div>
+                                        <div class="t3">
+                                            <span>23-01-17 09:36:05</span>
+                                        </div>
+                                        <div class="t4">
+                                            <span>23-01-17 09:40:48</span>
+                                        </div>
+                                        <div class="t5 center">
+                                            <span>Jiwon Cho</span>
+                                        </div>
+                                        <div class="t6 center">
+                                            <button class="a_btn">
+                                                <i class="icon-delete"></i>
+                                            </button>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="t1">
+                                            <span>12:34:56:78:9A:B</span>
+                                        </div>
+                                        <div class="t2">
+                                            <span>KSTB6200</span>
+                                        </div>
+                                        <div class="t3">
+                                            <span>23-01-17 09:36:05</span>
+                                        </div>
+                                        <div class="t4">
+                                            <span>23-01-17 09:40:48</span>
+                                        </div>
+                                        <div class="t5 center">
+                                            <span>Jiwon Cho</span>
+                                        </div>
+                                        <div class="t6 center">
+                                            <button class="a_btn">
+                                                <i class="icon-delete"></i>
+                                            </button>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="t1">
+                                            <span>12:34:56:78:9A:B</span>
+                                        </div>
+                                        <div class="t2">
+                                            <span>KSTB6200</span>
+                                        </div>
+                                        <div class="t3">
+                                            <span>23-01-17 09:36:05</span>
+                                        </div>
+                                        <div class="t4">
+                                            <span>23-01-17 09:40:48</span>
+                                        </div>
+                                        <div class="t5 center">
+                                            <span>Jiwon Cho</span>
+                                        </div>
+                                        <div class="t6 center">
+                                            <button class="a_btn">
+                                                <i class="icon-delete"></i>
+                                            </button>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="t1">
+                                            <span>12:34:56:78:9A:B</span>
+                                        </div>
+                                        <div class="t2">
+                                            <span>KSTB6200</span>
+                                        </div>
+                                        <div class="t3">
+                                            <span>23-01-17 09:36:05</span>
+                                        </div>
+                                        <div class="t4">
+                                            <span>23-01-17 09:40:48</span>
+                                        </div>
+                                        <div class="t5 center">
+                                            <span>Jiwon Cho</span>
+                                        </div>
+                                        <div class="t6 center">
+                                            <button class="a_btn">
+                                                <i class="icon-delete"></i>
+                                            </button>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="t1">
+                                            <span>12:34:56:78:9A:B</span>
+                                        </div>
+                                        <div class="t2">
+                                            <span>KSTB6200</span>
+                                        </div>
+                                        <div class="t3">
+                                            <span>23-01-17 09:36:05</span>
+                                        </div>
+                                        <div class="t4">
+                                            <span>23-01-17 09:40:48</span>
+                                        </div>
+                                        <div class="t5 center">
+                                            <span>Jiwon Cho</span>
+                                        </div>
+                                        <div class="t6 center">
+                                            <button class="a_btn">
+                                                <i class="icon-delete"></i>
+                                            </button>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="t1">
+                                            <span>12:34:56:78:9A:B</span>
+                                        </div>
+                                        <div class="t2">
+                                            <span>KSTB6200</span>
+                                        </div>
+                                        <div class="t3">
+                                            <span>23-01-17 09:36:05</span>
+                                        </div>
+                                        <div class="t4">
+                                            <span>23-01-17 09:40:48</span>
+                                        </div>
+                                        <div class="t5 center">
+                                            <span>Jiwon Cho</span>
+                                        </div>
+                                        <div class="t6 center">
+                                            <button class="a_btn">
+                                                <i class="icon-delete"></i>
+                                            </button>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="t1">
+                                            <span>12:34:56:78:9A:B</span>
+                                        </div>
+                                        <div class="t2">
+                                            <span>KSTB6200</span>
+                                        </div>
+                                        <div class="t3">
+                                            <span>23-01-17 09:36:05</span>
+                                        </div>
+                                        <div class="t4">
+                                            <span>23-01-17 09:40:48</span>
+                                        </div>
+                                        <div class="t5 center">
+                                            <span>Jiwon Cho</span>
+                                        </div>
+                                        <div class="t6 center">
+                                            <button class="a_btn">
+                                                <i class="icon-delete"></i>
+                                            </button>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="t1">
+                                            <span>12:34:56:78:9A:B</span>
+                                        </div>
+                                        <div class="t2">
+                                            <span>KSTB6200</span>
+                                        </div>
+                                        <div class="t3">
+                                            <span>23-01-17 09:36:05</span>
+                                        </div>
+                                        <div class="t4">
+                                            <span>23-01-17 09:40:48</span>
+                                        </div>
+                                        <div class="t5 center">
+                                            <span>Jiwon Cho</span>
+                                        </div>
+                                        <div class="t6 center">
+                                            <button class="a_btn">
+                                                <i class="icon-delete"></i>
+                                            </button>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="t1">
+                                            <span>12:34:56:78:9A:B</span>
+                                        </div>
+                                        <div class="t2">
+                                            <span>KSTB6200</span>
+                                        </div>
+                                        <div class="t3">
+                                            <span>23-01-17 09:36:05</span>
+                                        </div>
+                                        <div class="t4">
+                                            <span>23-01-17 09:40:48</span>
+                                        </div>
+                                        <div class="t5 center">
+                                            <span>Jiwon Cho</span>
+                                        </div>
+                                        <div class="t6 center">
+                                            <button class="a_btn">
+                                                <i class="icon-delete"></i>
+                                            </button>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="t1">
+                                            <span>12:34:56:78:9A:B</span>
+                                        </div>
+                                        <div class="t2">
+                                            <span>KSTB6200</span>
+                                        </div>
+                                        <div class="t3">
+                                            <span>23-01-17 09:36:05</span>
+                                        </div>
+                                        <div class="t4">
+                                            <span>23-01-17 09:40:48</span>
+                                        </div>
+                                        <div class="t5 center">
+                                            <span>Jiwon Cho</span>
+                                        </div>
+                                        <div class="t6 center">
+                                            <button class="a_btn">
+                                                <i class="icon-delete"></i>
+                                            </button>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="t1">
+                                            <span>12:34:56:78:9A:B</span>
+                                        </div>
+                                        <div class="t2">
+                                            <span>KSTB6200</span>
+                                        </div>
+                                        <div class="t3">
+                                            <span>23-01-17 09:36:05</span>
+                                        </div>
+                                        <div class="t4">
+                                            <span>23-01-17 09:40:48</span>
+                                        </div>
+                                        <div class="t5 center">
+                                            <span>Jiwon Cho</span>
+                                        </div>
+                                        <div class="t6 center">
+                                            <button class="a_btn">
+                                                <i class="icon-delete"></i>
+                                            </button>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="t1">
+                                            <span>12:34:56:78:9A:B</span>
+                                        </div>
+                                        <div class="t2">
+                                            <span>KSTB6200</span>
+                                        </div>
+                                        <div class="t3">
+                                            <span>23-01-17 09:36:05</span>
+                                        </div>
+                                        <div class="t4">
+                                            <span>23-01-17 09:40:48</span>
+                                        </div>
+                                        <div class="t5 center">
+                                            <span>Jiwon Cho</span>
+                                        </div>
+                                        <div class="t6 center">
+                                            <button class="a_btn">
+                                                <i class="icon-delete"></i>
+                                            </button>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="t1">
+                                            <span>12:34:56:78:9A:B</span>
+                                        </div>
+                                        <div class="t2">
+                                            <span>KSTB6200</span>
+                                        </div>
+                                        <div class="t3">
+                                            <span>23-01-17 09:36:05</span>
+                                        </div>
+                                        <div class="t4">
+                                            <span>23-01-17 09:40:48</span>
+                                        </div>
+                                        <div class="t5 center">
+                                            <span>Jiwon Cho</span>
+                                        </div>
+                                        <div class="t6 center">
+                                            <button class="a_btn">
+                                                <i class="icon-delete"></i>
+                                            </button>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="t1">
+                                            <span>12:34:56:78:9A:B</span>
+                                        </div>
+                                        <div class="t2">
+                                            <span>KSTB6200</span>
+                                        </div>
+                                        <div class="t3">
+                                            <span>23-01-17 09:36:05</span>
+                                        </div>
+                                        <div class="t4">
+                                            <span>23-01-17 09:40:48</span>
+                                        </div>
+                                        <div class="t5 center">
+                                            <span>Jiwon Cho</span>
+                                        </div>
+                                        <div class="t6 center">
+                                            <button class="a_btn">
+                                                <i class="icon-delete"></i>
+                                            </button>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="col-6 pl-0 pr-0">
+                    <div class="section pt-style mr-0">
+                        <h3 class="sub_tit">실시간 일일 통계</h3>
+                        <div class="time_area">
+                            2023.02.10 11:46:36
+                        </div>
+                        <div class="box_area style_h mb-3">
+                            <div class="box style4 width_4">
+                                <dl>
+                                    <dt> 원격접속 시도 수</dt>
+                                    <dd><span class="num">314</span></dd>
+                                </dl>
+                            </div>
+                            <div class="box style4 width_4">
+                                <dl>
+                                    <dt>현 연결 상태(busy)</dt>
+                                    <dd><span class="num">14</span></dd>
+                                </dl>
+                            </div>
+                            <div class="box style4 width_4">
+                                <dl>
+                                    <dt>완료 수</dt>
+                                    <dd><span class="num">10</span></dd>
+                                </dl>
+                            </div>
+                            <div class="box style4 width_4 mr-0">
+                                <dl>
+                                    <dt>드롭 수(비정상 종료)</dt>
+                                    <dd><span class="num">10</span></dd>
+                                </dl>
+                            </div>
+                            <div class="box style5 width_2">
+                                <dl>
+                                    <dt>최소시간 / 평균시간 / 최대시간</dt>
+                                    <dd>
+                                        <span class="num">210</span>초 <span class="slash">/</span> <span class="num">3</span>분 <span class="num">51</span>초  <span class="slash">/</span>  <span class="num">25</span>분 <span class="num">31</span>초
+                                    </dd>
+                                </dl>
+                            </div>
+                            <div class="box style5 width_2 mr-0">
+                                <dl>
+                                    <dt>로그 추출 건 수 / 화면 캡쳐 건 수 / 동영상 녹화 건 수</dt>
+                                    <dd>
+                                        <span class="num">56</span>건 <span class="slash">/</span> <span class="num">312</span>건 <span class="slash">/</span> <span class="num">56</span>건
+                                    </dd>
+                                </dl>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-6 pr-0">
+                            <div class="section pt-style mb-3">
+                                <h3 class="sub_tit">단말 기본 정보</h3>
+                                <div class="info_list">
+                                    <div class="line">
+                                        <span class="type">제조사</span>
+                                        <span class="info">Kaonmedia Co., Ltd</span>
+                                    </div>
+                                    <div class="line">
+                                        <span class="type">일련번호</span>
+                                        <span class="info">1223342524233</span>
+                                    </div>
+                                    <div class="line">
+                                        <span class="type">IP 주소</span>
+                                        <span class="info">211.23.12.43</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="section pt-style mb-3">
+                                <h3 class="sub_tit">디스플레이 정보</h3>
+                                <div class="info_list">
+                                    <div class="line">
+                                        <span class="type">제품명 (제조사 / 제조년도)</span>
+                                        <span class="info">MON-SIS330(LG전자/2022)</span>
+                                    </div>
+                                    <div class="line">
+                                        <span class="type">해상도</span>
+                                        <span class="info">1920 * 1080</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="section pt-style mb-3">
+                                <h3 class="sub_tit">HDMI 정보</h3>
+                                <div class="info_list">
+                                    <div class="line">
+                                        <span class="type">연결 상태</span>
+                                        <span class="info">Connected</span>
+                                    </div>
+                                    <div class="line">
+                                        <span class="type">HDMI-CEC 상태</span>
+                                        <span class="info">ON</span>
+                                    </div>
+                                    <div class="line">
+                                        <span class="type">HDMI EDID</span>
+                                        <span class="info"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="section pt-style">
+                                <h3 class="sub_tit">블루투스 리모컨 정보</h3>
+                                <div class="info_list">
+                                    <div class="top_txt">
+                                        <span>HW 0.4</span><span>SW 0.2</span>
+                                    </div>
+                                    <div class="line">
+                                        <span class="type">RCU Name(제조사)</span>
+                                        <span class="info">LGU 2ND UHD RCU(리모트 솔루션)</span>
+                                    </div>
+                                    <div class="line">
+                                        <span class="type">페어링 상태</span>
+                                        <span class="info">Connected</span>
+                                    </div>
+                                    <div class="line">
+                                        <span class="type">배터리 잔여량</span>
+                                        <span class="info">22%(2.88V)</span>
+                                    </div>
+                                    <div class="line">
+                                        <span class="type">MAC</span>
+                                        <span class="info">21:43:12:8A:CD:11</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 pl-0 pr-0 mr-0">
+                            <div class="section pt-style mb-3 pr-0">
+                                <h3 class="sub_tit">동작 내역</h3>
+                                <div class="log_history_area">
+                                    <div class="log_line connected">
+                                        <span class="date">2022.08.16 14:23:01</span>
+                                        <span class="txt">상담원 [hello 001]의 세션이 연결되었습니다.</span>
+                                    </div>
+                                    <div class="log_line">
+                                        <p class="log">
+                                            <span class="date">2022.08.16 14:23:01</span>
+                                            <span class="txt">상담원이 HDMI-CEC 상태를 On → Off로 변경하였습니다.</span>
+                                        </p>
+                                        <p class="log">
+                                            <span class="date">2022.08.16 14:23:01</span>
+                                            <span class="txt">화면 녹화 시작</span>
+                                        </p>
+                                        <p class="log">
+                                            <span class="date">2022.08.16 14:23:01</span>
+                                            <span class="txt">스크린샷 캡쳐 <span class="link">capture_img.jpg / 1MB</span></span>
+                                        </p>
+                                        <p class="log">
+                                            <span class="date">2022.08.16 14:23:01</span>
+                                            <span class="txt">리모컨(홈)</span>
+                                        </p>
+                                        <p class="log">
+                                            <span class="date">2022.08.16 14:23:01</span>
+                                            <span class="txt">리모컨(우)</span>
+                                        </p>
+                                        <p class="log">
+                                            <span class="date">2022.08.16 14:23:01</span>
+                                            <span class="txt">리모컨(우)</span>
+                                        </p>
+                                        <p class="log">
+                                            <span class="date">2022.08.16 14:23:01</span>
+                                            <span class="txt">리모컨(우)</span>
+                                        </p>
+                                        <p class="log">
+                                            <span class="date">2022.08.16 14:23:01</span>
+                                            <span class="txt">리모컨(우)</span>
+                                        </p>
+                                        <p class="log">
+                                            <span class="date">2022.08.16 14:23:01</span>
+                                            <span class="txt">리모컨(우)</span>
+                                        </p>
+                                        <p class="log">
+                                            <span class="date">2022.08.16 14:23:01</span>
+                                            <span class="txt">리모컨(우)</span>
+                                        </p>
+                                        <p class="log">
+                                            <span class="date">2022.08.16 14:23:01</span>
+                                            <span class="txt">리모컨(우)</span>
+                                        </p>
+                                        <p class="log">
+                                            <span class="date">2022.08.16 14:23:01</span>
+                                            <span class="txt">로그 파일 가져오기 <span class="link">2220901130201.log / 1MB</span></span>
+                                        </p>
+                                        <p class="log">
+                                            <span class="date">2022.08.16 14:23:01</span>
+                                            <span class="txt">리모컨(우)</span>
+                                        </p>
+                                    </div>
+                                
+                                    <div class="log_line disconnected">
+                                        <span class="date">2022.08.16 14:23:01</span>
+                                        <span class="txt">세션 연결이 종료되었습니다.</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="section pt-style pr-0">
+                                <h3 class="sub_tit">상담 일지</h3>
+                                <div class="log_txt_area">
+                                    <p>Customer Service Logs Customer Service Logs Customer Service Logs Customer Service Logs Customer Service Logs
+                                        Customer
+                                        Service Logs Customer Service Logs Customer Service Logs Customer Service Logs Customer Service Logs Customer
+                                        Service
+                                        Logs Customer Service Logs Customer Service Logs Customer Service Logs Customer Service Logs</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        <!-- //content -->
+    </div>
+    <!-- //container -->
+</div>
+<!-- //wrap -->
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.0.min.js"></script>
+
+</body>
+</html>

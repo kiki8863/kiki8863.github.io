@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KRMS NEXT</title>
+        <link href="../assets/css/reset.css" rel="stylesheet">
+        <link href="../assets/css/bootstrap.min.css" rel="stylesheet">
+        <link href="../assets/css/form-validation.css" rel="stylesheet">
+        <link
+            href="https://fonts.googleapis.com/css2?family=Gothic+A1:wght@200;400;500;700&family=Noto+Sans+KR:wght@300;400;500;700&display=swap"
+            rel="stylesheet">
+        <link rel="stylesheet" href="../assets/css/custom-icon.css">
+        <link rel="stylesheet" href="../assets/css/krms_style.css">
+</head>
+<body>
+    <!-- wrap -->
+<div class="wrap">
+    <!-- header -->
+    <header class="header">
+        <span class="menu_open_btn s_cursor">
+            <!-- <i class="icon-menu"></i> -->
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </span>
+        <h1 class="logo">
+            <a href="#"><i class="icon-logo"></i></a>
+        </h1>
+        <div class="status_area">
+            <!--
+                서버 정상일 때  기본  server / 오류 있을 경우  error 클래스 추가 
+                네트워크 장애 기본 network / 오류 있을 경우  error 클래스 추가 
+            -->
+            <div class="server">
+                <span class="txt">서버</span>
+                <span class="icon_p">
+                    <i class="icon-top-server"></i>
+                    <i class="icon-top-connect"></i>
+                    <i class="icon-top-disconnect"></i>
+                </span>
+            </div>
+            <span class="bar"></span>
+            <div class="network error">
+                <span class="txt">네트워크</span>
+                <span class="icon_p">
+                    <i class="icon-top-network"></i>
+                </span>
+            </div>
+        </div>
+        <div class="top_user_area">
+            <div class="user_name">
+                <span class="name">David Kim</span>
+                <div class="icon">
+                    <i class="icon-top-account"></i>
+                </div>
+            </div>
+            <!-- 메뉴 오픈 active 클래스 추가 -->
+            <div class="top_m_wrap" style="display:none;">
+                <!-- <span class="top_m_btn s_cursor">
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                </span> -->
+                <div class="top_m_area">
+                    <div class="user_info">
+                        <span class="name">David Kim</span>
+                        <p class="role">Admin</p>
+                        <p class="user_email">emma.ko@kaonmedia.com</p>
+                        <p class="login_time">마지막 로그인 : <span class=>2023.07.19 11:30</span></p>
+                    </div>
+                    <div class="top_menu">
+                        <ul>
+                            <li>
+                                <span class="s_cursor">Edit Name</span>
+                            </li>
+                            <li>
+                                <span class="s_cursor">Reset Password</span>
+                            </li>
+                            <li class="n_h_style">
+                                <form action="">
+                                    <fieldset>
+                                        <label class="toggle_btn_wrap">
+                                            <span class="switch_label">Login Timeout</span>
+                                            <input role="switch" type="checkbox" class="toggle_btn"/>
+                                        </label>
+                                    </fieldset>
+                                </form>
+                                <!-- <div class="form-check form-switch">
+                                    <label class="form-check-label" for="flexSwitchCheckDefault"></label>
+                                    <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+                                </div> -->
+                            </li>
+                            <li>
+                                <span class="s_cursor">
+                                    Logout
+                                    <i class="icon-top-logout"></i>
+                                </span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="ver_txt">
+                        <span>Ver. KRMS 1.03.23</span>
+                    </div>
+                </div>
+                
+            </div>
+        </div>    
+    </header>
+    <!-- //header -->
+    <!-- container -->
+    <!-- 
+        lnb 접힐 경우 container 에 클래스 fold 추가
+     -->
+    <div class="container">
+        <!-- lnb -->
+        <nav class="lnb">
+            <ul>
+                <li class="menu active">
+                    <div class="inner">
+                        <span class="lnb_icon">
+                            <i class="icon-lnb-dashboard"></i>
+                        </span>
+                        <span class="m_name">대시보드</span>
+                    </div>
+                </li>
+                <li class="menu">
+                    <div class="inner">
+                        <span class="lnb_icon">
+                            <i class="icon-lnb-device"></i>
+                        </span>
+                        <span class="m_name">장치</span>
+                    </div>
+                </li>
+                <li class="menu">
+                    <div class="inner">
+                        <span class="lnb_icon">
+                            <i class="icon-lnb-dashboard"></i>
+                        </span>
+                        <span class="m_name">정책</span>
+                        <span class="arrow">
+                            <i class="icon-arrow-back"></i>
+                        </span>
+                    </div>
+                    <ul class="depth2">
+                        <li class="i_menu active">
+                            <span class="bar"></span>
+                            <span class=text">프로비저닝</span>
+                        </li>
+                        <li class="i_menu">
+                            <span class="bar"></span>
+                            <span class=text">서브 프로파일</span>
+                        </li>
+                    </ul>
+                </li>
+                <li class="menu">
+                    <div class="inner">
+                        <span class="lnb_icon">
+                            <i class="icon-lnb-dashboard"></i>
+                        </span>
+                        <span class="m_name">통계</span>
+                    </div>
+                </li>
+                <li class="menu">
+                    <div class="inner">
+                        <span class="lnb_icon">
+                            <i class="icon-lnb-dashboard"></i>
+                        </span>
+                        <span class="m_name">전산 정보</span>
+                    </div>
+                    <ul class="depth2">
+                        <li class="i_menu">
+                            <span class="bar"></span>
+                            <span class=text">SO 정보</span>
+                        </li>
+                        <li class="i_menu">
+                            <span class="bar"></span>
+                            <span class=text">가입자 정보</span>
+                        </li>
+                        <li class="i_menu">
+                            <span class="bar"></span>
+                            <span class=text">망 장애</span>
+                        </li>
+                    </ul>
+                </li>
+                <li class="menu">
+                    <div class="inner">
+                        <span class="lnb_icon">
+                            <i class="icon-lnb-dashboard"></i>
+                        </span>
+                        <span class="m_name">파일 및 로그</span>
+                    </div>
+                    <ul class="depth2">
+                        <li class="i_menu">
+                            <span class="bar"></span>
+                            <span class=text">파일 저장소</span>
+                        </li>
+                        <li class="i_menu">
+                            <span class="bar"></span>
+                            <span class=text">단말 시스템 로그</span>
+                        </li>
+                    </ul>
+                </li>
+                <li class="menu">
+                    <div class="inner">
+                        <span class="lnb_icon">
+                            <i class="icon-lnb-dashboard"></i>
+                        </span>
+                        <span class="m_name">관리</span>
+                    </div>
+                    <ul class="depth2">
+                        <li class="i_menu">
+                            <span class="bar"></span>
+                            <span class=text">롤 / 계정</span>
+                        </li>
+                        <li class="i_menu">
+                            <span class="bar"></span>
+                            <span class=text">장치</span>
+                        </li>
+                        <li class="i_menu">
+                            <span class="bar"></span>
+                            <span class=text">코드</span>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        <!-- //lnb -->
+        <!-- content -->
+        <div class="content">
+            <div class="stats_num_style_wrap">
+                <h3 class="stats_sub_title">장치 보유 현황</h3>
+                <div class="stats_num_flex_wrap">
+                    <div class="stats_num">
+                        <span class="type_txt">총</span>
+                        <span class="type_num"><span class="num">143,234</span> 대</span>
+                    </div>
+                    <div class="stats_num">
+                        <span class="type_txt">K1200UA</span>
+                        <span class="type_num"><span class="num">98,234</span> 대</span>
+                    </div>
+                    <div class="stats_num">
+                        <span class="type_txt">K1100UA</span>
+                        <span class="type_num"><span class="num">48,000</span> 대</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="dashboard_flex_wrap">
+                <!-- 앱 재기동 그래프 -->
+                <div class="dash_chart_area">
+                    <h4 class="chart_tit">앱 재기동</h4>
+                    <div class="type_line"> 
+                        <div class="type green">
+                            <span class="dot"></span><span class="type_name">Hello TV</span>
+                            <p class="num_status"><span class="num">21</span>건 / <span class="num">7</span> 대</p>
+                        </div>
+                        <div class="type blue">
+                            <span class="dot"></span><span class="type_name">SD&S Agent</span>
+                            <p class="num_status"><span class="num">7</span>건 / <span class="num">5</span> 대</p>
+                        </div>
+                    </div>
+                    <div class="chart_area">
+                        <img src="../assets/images/temp/dashboard_graph_1.png" alt="">
+
+                    </div>
+                </div>
+                <!-- //앱 재기동 그래프 -->
+                <!-- 앱 오류 그래프 -->
+                <div class="dash_chart_area">
+                    <h4 class="chart_tit">앱 오류</h4>
+                    <div class="type_line">
+                        <div class="type green">
+                            <span class="dot"></span><span class="type_name">Hello TV</span>
+                            <p class="num_status"><span class="num">21</span>건 / <span class="num">7</span> 대</p>
+                        </div>
+                        <div class="type blue">
+                            <span class="dot"></span><span class="type_name">SD&S Agent</span>
+                            <p class="num_status"><span class="num">7</span>건 / <span class="num">5</span> 대</p>
+                        </div>
+                        <div class="type pink">
+                            <span class="dot"></span><span class="type_name">FCC</span>
+                            <p class="num_status"><span class="num">9</span>건 / <span class="num">9</span> 대</p>
+                        </div>
+                    </div>
+                    <div class="chart_area">
+                        <img src="../assets/images/temp/dashboard_graph_2.png" alt="">
+                    </div>
+                </div>
+                <!-- //앱 오류 그래프 -->
+                <!-- 장치 품질 로그 그래프 -->
+                <div class="dash_chart_area mr-0">
+                    <h4 class="chart_tit">장치 품질 로그</h4>
+                    <div class="type_line">
+                        <div class="type green">
+                            <span class="dot"></span><span class="type_name">PCR lock</span>
+                            <p class="num_status"><span class="num">21</span>건 / <span class="num">7</span> 대</p>
+                        </div>
+                        <div class="type blue">
+                            <span class="dot"></span><span class="type_name">디코딩 오류</span>
+                            <p class="num_status"><span class="num">7</span>건 / <span class="num">5</span> 대</p>
+                        </div>
+                        <div class="type pink">
+                            <span class="dot"></span><span class="type_name">RTP 오류</span>
+                            <p class="num_status"><span class="num">9</span>건 / <span class="num">9</span> 대</p>
+                        </div>
+                        <div class="type yellow">
+                            <span class="dot"></span><span class="type_name">스트림 끊김</span>
+                            <p class="num_status"><span class="num">8</span>건 / <span class="num">8</span> 대</p>
+                        </div>
+                        <div class="type purple">
+                            <span class="dot"></span><span class="type_name">IF config</span>
+                            <p class="num_status"><span class="num">15</span>건 / <span class="num">5</span> 대</p>
+                        </div>
+                    </div>
+                    <div class="chart_area">
+                        <img src="../assets/images/temp/dashboard_graph_3.png" alt="">
+                
+                    </div>
+                </div>
+                <!-- //장치 품질 로그 그래프 -->
+            </div>
+            <div class="dashboard_flex_wrap">
+                <!-- 소프트웨어 버전 -->
+                <div class="dash_chart_area size_s">
+                    <h4 class="chart_tit">소프트웨어 버전</h4>
+                    <div class="type_choice style">
+                        <input type="radio" name="type" checked><label>K1200UA</label>
+                        <input type="radio" name="type"><label>K1100UA</label>
+                    </div>
+                    <div class="type_line style_c">
+                        <div class="type green">
+                            <span class="dot"></span><span class="type_name">00.00.0014</span>
+                        </div>
+                        <div class="type blue">
+                            <span class="dot"></span><span class="type_name">00.00.0015</span>
+                        </div>
+                        <div class="type pink">
+                            <span class="dot"></span><span class="type_name">00.00.0016</span>
+                        </div>
+                        <div class="type blue">
+                            <span class="dot"></span><span class="type_name">00.00.0017</span>
+                        </div>
+                        <div class="type blue">
+                            <span class="dot"></span><span class="type_name">00.00.0018</span>
+                        </div>
+                        <div class="type blue">
+                            <span class="dot"></span><span class="type_name">00.00.0019</span>
+                        </div>
+                    </div>
+                    <div class="chart_area">
+                        <img src="../assets/images/temp/dashboard_graph_4.png" alt="">
+                
+                    </div>
+                </div>
+                <!-- //소프트웨어 버전 -->
+                <!-- 장치 개통 -->
+                <div class="dash_chart_area size_s">
+                    <h4 class="chart_tit">장치 개통</h4>
+                    <div class="type_line">
+                        <div class="type green">
+                            <span class="dot"></span><span class="type_name">장치개통</span>
+                        </div>
+                        <div class="type blue">
+                            <span class="dot"></span><span class="type_name">전산개통</span>
+                        </div>
+                        <div class="type pink">
+                            <span class="dot"></span><span class="type_name">일시정지</span>
+                        </div>
+                        <div class="type yellow">
+                            <span class="dot"></span><span class="type_name">해지</span>
+                        </div>
+                    </div>
+                    <div class="chart_area">
+                        <img src="../assets/images/temp/dashboard_graph_5.png" alt="">
+                    
+                    </div>
+                </div>
+                <!-- //장치 개통-->
+                <!-- 장치 미개통 -->
+                <div class="dash_chart_area size_l">
+                    <h4 class="chart_tit">장치 미개통</h4>
+                    <div class="top_info_area">
+                        <p class="total_num">총 <span class="num">12</span>대</p>
+                        <div class="dropdown">
+                            <button class="d_btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                양천방송
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">양천방송</a></li>
+                                <li><a class="dropdown-item" href="#">강원방송</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="tbl_wrap">
+                        <table class="table tbl_style">
+                            <thead>
+                                <tr>
+                                    <th class="t_title" scope="col">
+                                        <div class="block">
+                                            요청일시
+                                        </div>
+                                    </th>
+                                    <th class="t_title" scope="col">
+                                        <div class="block">
+                                            SMS Tag
+                                        </div>
+                                    </th>
+                                    <th class="t_title" scope="col">
+                                        <div class="block">
+                                            Host MAC
+                                        </div>
+                                    </th>
+                                    <th class="t_title" scope="col">
+                                        <div class="block">
+                                            모델명
+                                        </div>
+                                    </th>
+                                    <th class="t_title" scope="col">
+                                        <div class="block">
+                                            SO명
+                                        </div>
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <span>23.02.20 05:37:13</span>
+                                    </td>
+                                    <td>
+                                        <span>110019512417</span>
+                                    </td>
+                                    <td>
+                                        <span>1834AF02F63D</span>
+                                    </td>
+                                    <td>
+                                        <span>K1200UA</span>
+                                    </td>
+                                    <td>
+                                        <span>양천방송</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <span>23.02.20 05:37:13</span>
+                                    </td>
+                                    <td>
+                                        <span>110019512417</span>
+                                    </td>
+                                    <td>
+                                        <span>1834AF02F63D</span>
+                                    </td>
+                                    <td>
+                                        <span>K1200UA</span>
+                                    </td>
+                                    <td>
+                                        <span>양천방송</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <span>23.02.20 05:37:13</span>
+                                    </td>
+                                    <td>
+                                        <span>110019512417</span>
+                                    </td>
+                                    <td>
+                                        <span>1834AF02F63D</span>
+                                    </td>
+                                    <td>
+                                        <span>K1200UA</span>
+                                    </td>
+                                    <td>
+                                        <span>양천방송</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <span>23.02.20 05:37:13</span>
+                                    </td>
+                                    <td>
+                                        <span>110019512417</span>
+                                    </td>
+                                    <td>
+                                        <span>1834AF02F63D</span>
+                                    </td>
+                                    <td>
+                                        <span>K1200UA</span>
+                                    </td>
+                                    <td>
+                                        <span>양천방송</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <span>23.02.20 05:37:13</span>
+                                    </td>
+                                    <td>
+                                        <span>110019512417</span>
+                                    </td>
+                                    <td>
+                                        <span>1834AF02F63D</span>
+                                    </td>
+                                    <td>
+                                        <span>K1200UA</span>
+                                    </td>
+                                    <td>
+                                        <span>양천방송</span>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <!-- //장치 미개통-->
+            </div>
+        </div>
+        <!-- //content -->
+    </div>
+    <!-- //container -->
+    <!--  알람  팝업-->
+    <div class="modal w_400" tabindex="-1" style="display:block;">
+        <div class="modal-dialog siren">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">2024.01.12 15:30</h5>
+                    <span class="btn-close"></span>
+                </div>
+                <div class="modal-body">
+                    <div class="siren_wrap">
+                        <span class="siren_img">
+                            <i class="icon-siren"></i>
+                        </span>
+                        <p class="error_type">앱 오류</p>
+                        <div class="error_detail">
+                            ( <span>HelloTv</span>, <span>FCC</span> , <span>HelloTv</span>, <span>FCC</span> , <span>HelloTv</span> , <span>FCC</span> , <span>HelloTv</span>, <span>FCC</span> )
+                       </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- // 테스트 팝업 -->
+</div>
+<script src="../assets/js/bootstrap.bundle.min.js"></script>
+<script src="../assets/js/form-validation.js"></script>
+</body>
+</html>

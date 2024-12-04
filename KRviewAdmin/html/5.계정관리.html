@@ -1,0 +1,1494 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KRview ADMIN</title>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/bootstrap-4.3.1.min.css">
+    <link rel="stylesheet" href="../css/custom-icon.css">
+    <link rel="stylesheet" href="../css/krview_admin_style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Gothic+A1:wght@200;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+<!-- wrap -->
+<div class="wrap">
+    <!-- header -->
+    <div class="header">
+        <h1 class="a_logo"><img src="../images/a_logo.png" alt="kRview"><span class="l_txt">관리자 페이지</span></h1>
+        <div class="top_menu_area">
+            <div class="user_name">
+                <p class="txt">반갑습니다, <span class="user_name">관리자님</span>!</p>
+                <span class="img_icon"><img src="../images/profile-img.png" alt="profile-img"></span>
+            </div>
+            <div class="menu_list">
+                <span class="arrow"></span>
+                <ul class="menu">
+                    <li><span class="cursor">로그아웃</span><span class="l_bar"></span></li>
+                    <li><span class="cursor">회원 정보</span><span class="l_bar"></span></li>
+                    <li><span class="cursor">비밀번호 변경</span><span class="l_bar"></span></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- //header -->
+    <!-- container -->
+    <div class="container">
+        <!-- lnb -->
+        <div class="lnb">
+            <ul>
+                <li class="">
+                    <span class="bg_circle">
+                        <i class="icon-lnb-chart"></i>
+                        <span class="n_name">상담 통계</span>
+                    </span>   
+                </li>
+                <li>
+                    <span class="bg_circle">
+                        <i class="icon-lnb-history"></i>
+                        <span class="n_name">상담 이력</span>
+                    </span>
+                </li>
+                <li class="active">
+                    <span class="bg_circle">
+                        <i class="icon-lnb-account"></i>
+                        <span class="n_name">계정 관리</span>
+                    </span>
+                </li>
+                <li>
+                    <span class="bg_circle">
+                        <i class="icon-lnb-company"></i>
+                        <span class="n_name">제조사 관리</span>
+                    </span>
+                </li>
+                <li>
+                    <span class="bg_circle">
+                        <i class="icon-lnb-device"></i>
+                        <span class="n_name">장치 관리</span>
+                    </span>
+                </li>
+            </ul>
+        </div>
+        <!-- //lnb -->
+        <!-- content -->
+        <div class="content">
+            <div class="c_top">
+                <h2 class="sub_tit">계정 관리 </h2>
+                <div class="btn_area">
+                    <span class="t_btn add">
+                        <i class="icon-plus"></i>
+                        <span class="txt">계정 추가</span>
+                    </span>
+                    <span class="t_btn search">
+                        <span class="txt">검색</span>
+                    </span>
+                </div>
+                <div class="btn_area float-right save">
+                    <span class="t_btn cancel">
+                        <span class="txt">취소</span>
+                    </span>
+                    <span class="t_btn save">
+                        <span class="txt">저장</span>
+                    </span>
+                </div>
+            </div>
+            <div class="c_inner row">
+                <div class="col-7 pl-0 pr-0">
+                    <div class="h_100">
+                        <div class="section">
+                            <div class="search_form">
+                                <div class="search_section size2">
+                                    <select name="" id="" class="select_style">
+                                        <option value="">비활성화</option>
+                                        <option value="">활성화</option>
+                                    </select>
+                                </div>
+                                <div class="search_section size4">
+                                    <input type="text" value="" class="i_style" placeholder="이메일">
+                                </div>
+                                <div class="search_section size4">
+                                    <input type="text" value="" class="i_style" placeholder="이름">
+                                </div>
+                                <span class="btn_search">검색</span>
+                            </div>
+                            <div class="tbl_wrap main">
+                                <ul class="tbl_style">
+                                    <li class="top">
+                                        <div class="t1">
+                                            <span>이메일</span>
+                                        </div>
+                                        <div class="t2">
+                                            <span>이름</span>
+                                        </div>
+                                        <div class="t3">
+                                            <span>전화번호</span>
+                                        </div>
+                                        <div class="t4">
+                                            <span>계정 유형</span>
+                                        </div>
+                                        <div class="t5 center">
+                                            <span>수정된 날짜</span>
+                                        </div>
+                                        <div class="t6 center">
+                                            <span>동작</span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="t1">
+                                            <span>jwcho@kaonmediacom</span>
+                                        </div>
+                                        <div class="t2">
+                                            <span>Jiwon Cho</span>
+                                        </div>
+                                        <div class="t3">
+                                            <span>010-1234-5678</span>
+                                        </div>
+                                        <div class="t4">
+                                            <span>CRM Manager</span>
+                                        </div>
+                                        <div class="t5 center">
+                                            <span>22-09-15 09:36</span>
+                                        </div>
+                                        <div class="t6 center">
+                                            <button class="a_btn">
+                                                <i class="icon-pw-reset"></i>
+                                            </button>
+                                            <button class="a_btn">
+                                                <i class="icon-edit"></i>
+                                            </button>
+                                            <button class="a_btn">
+                                                <!-- 
+                                                    
+                                                    비활성화 일때   btn-icon-off
+                                                    활성화 일때   btn-icon-on
+                                                
+                                                -->
+                                                <span class="btn-icon-off"></span>
+                                            </button>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="t1">
+                                            <span>jwcho@kaonmediacom</span>
+                                        </div>
+                                        <div class="t2">
+                                            <span>Jiwon Cho</span>
+                                        </div>
+                                        <div class="t3">
+                                            <span>010-1234-5678</span>
+                                        </div>
+                                        <div class="t4">
+                                            <span>CRM Manager</span>
+                                        </div>
+                                        <div class="t5 center">
+                                            <span>22-09-15 09:36</span>
+                                        </div>
+                                        <div class="t6 center">
+                                            <button class="a_btn">
+                                                <i class="icon-pw-reset"></i>
+                                            </button>
+                                            <button class="a_btn">
+                                                <i class="icon-edit"></i>
+                                            </button>
+                                            <button class="a_btn">
+                                                <span class="btn-icon-off"></span>
+                                            </button>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="t1">
+                                            <span>jwcho@kaonmediacom</span>
+                                        </div>
+                                        <div class="t2">
+                                            <span>Jiwon Cho</span>
+                                        </div>
+                                        <div class="t3">
+                                            <span>010-1234-5678</span>
+                                        </div>
+                                        <div class="t4">
+                                            <span>CRM Manager</span>
+                                        </div>
+                                        <div class="t5 center">
+                                            <span>22-09-15 09:36</span>
+                                        </div>
+                                        <div class="t6 center">
+                                            <button class="a_btn">
+                                                <i class="icon-pw-reset"></i>
+                                            </button>
+                                            <button class="a_btn">
+                                                <i class="icon-edit"></i>
+                                            </button>
+                                            <button class="a_btn">
+                                                <span class="btn-icon-off"></span>
+                                            </button>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="t1">
+                                            <span>jwcho@kaonmediacom</span>
+                                        </div>
+                                        <div class="t2">
+                                            <span>Jiwon Cho</span>
+                                        </div>
+                                        <div class="t3">
+                                            <span>010-1234-5678</span>
+                                        </div>
+                                        <div class="t4">
+                                            <span>CRM Manager</span>
+                                        </div>
+                                        <div class="t5 center">
+                                            <span>22-09-15 09:36</span>
+                                        </div>
+                                        <div class="t6 center">
+                                            <button class="a_btn">
+                                                <i class="icon-pw-reset"></i>
+                                            </button>
+                                            <button class="a_btn">
+                                                <i class="icon-edit"></i>
+                                            </button>
+                                            <button class="a_btn">
+                                                <span class="btn-icon-off"></span>
+                                            </button>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="t1">
+                                            <span>jwcho@kaonmediacom</span>
+                                        </div>
+                                        <div class="t2">
+                                            <span>Jiwon Cho</span>
+                                        </div>
+                                        <div class="t3">
+                                            <span>010-1234-5678</span>
+                                        </div>
+                                        <div class="t4">
+                                            <span>CRM Manager</span>
+                                        </div>
+                                        <div class="t5 center">
+                                            <span>22-09-15 09:36</span>
+                                        </div>
+                                        <div class="t6 center">
+                                            <button class="a_btn">
+                                                <i class="icon-pw-reset"></i>
+                                            </button>
+                                            <button class="a_btn">
+                                                <i class="icon-edit"></i>
+                                            </button>
+                                            <button class="a_btn">
+                                                <span class="btn-icon-off"></span>
+                                            </button>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="t1">
+                                            <span>jwcho@kaonmediacom</span>
+                                        </div>
+                                        <div class="t2">
+                                            <span>Jiwon Cho</span>
+                                        </div>
+                                        <div class="t3">
+                                            <span>010-1234-5678</span>
+                                        </div>
+                                        <div class="t4">
+                                            <span>CRM Manager</span>
+                                        </div>
+                                        <div class="t5 center">
+                                            <span>22-09-15 09:36</span>
+                                        </div>
+                                        <div class="t6 center">
+                                            <button class="a_btn">
+                                                <i class="icon-pw-reset"></i>
+                                            </button>
+                                            <button class="a_btn">
+                                                <i class="icon-edit"></i>
+                                            </button>
+                                            <button class="a_btn">
+                                                <span class="btn-icon-off"></span>
+                                            </button>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="t1">
+                                            <span>jwcho@kaonmediacom</span>
+                                        </div>
+                                        <div class="t2">
+                                            <span>Jiwon Cho</span>
+                                        </div>
+                                        <div class="t3">
+                                            <span>010-1234-5678</span>
+                                        </div>
+                                        <div class="t4">
+                                            <span>CRM Manager</span>
+                                        </div>
+                                        <div class="t5 center">
+                                            <span>22-09-15 09:36</span>
+                                        </div>
+                                        <div class="t6 center">
+                                            <button class="a_btn">
+                                                <i class="icon-pw-reset"></i>
+                                            </button>
+                                            <button class="a_btn">
+                                                <i class="icon-edit"></i>
+                                            </button>
+                                            <button class="a_btn">
+                                                <span class="btn-icon-off"></span>
+                                            </button>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="t1">
+                                            <span>jwcho@kaonmediacom</span>
+                                        </div>
+                                        <div class="t2">
+                                            <span>Jiwon Cho</span>
+                                        </div>
+                                        <div class="t3">
+                                            <span>010-1234-5678</span>
+                                        </div>
+                                        <div class="t4">
+                                            <span>CRM Manager</span>
+                                        </div>
+                                        <div class="t5 center">
+                                            <span>22-09-15 09:36</span>
+                                        </div>
+                                        <div class="t6 center">
+                                            <button class="a_btn">
+                                                <i class="icon-pw-reset"></i>
+                                            </button>
+                                            <button class="a_btn">
+                                                <i class="icon-edit"></i>
+                                            </button>
+                                            <button class="a_btn">
+                                                <span class="btn-icon-off"></span>
+                                            </button>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="t1">
+                                            <span>jwcho@kaonmediacom</span>
+                                        </div>
+                                        <div class="t2">
+                                            <span>Jiwon Cho</span>
+                                        </div>
+                                        <div class="t3">
+                                            <span>010-1234-5678</span>
+                                        </div>
+                                        <div class="t4">
+                                            <span>CRM Manager</span>
+                                        </div>
+                                        <div class="t5 center">
+                                            <span>22-09-15 09:36</span>
+                                        </div>
+                                        <div class="t6 center">
+                                            <button class="a_btn">
+                                                <i class="icon-pw-reset"></i>
+                                            </button>
+                                            <button class="a_btn">
+                                                <i class="icon-edit"></i>
+                                            </button>
+                                            <button class="a_btn">
+                                                <span class="btn-icon-off"></span>
+                                            </button>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="t1">
+                                            <span>jwcho@kaonmediacom</span>
+                                        </div>
+                                        <div class="t2">
+                                            <span>Jiwon Cho</span>
+                                        </div>
+                                        <div class="t3">
+                                            <span>010-1234-5678</span>
+                                        </div>
+                                        <div class="t4">
+                                            <span>CRM Manager</span>
+                                        </div>
+                                        <div class="t5 center">
+                                            <span>22-09-15 09:36</span>
+                                        </div>
+                                        <div class="t6 center">
+                                            <button class="a_btn">
+                                                <i class="icon-pw-reset"></i>
+                                            </button>
+                                            <button class="a_btn">
+                                                <i class="icon-edit"></i>
+                                            </button>
+                                            <button class="a_btn">
+                                                <span class="btn-icon-off"></span>
+                                            </button>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="t1">
+                                            <span>jwcho@kaonmediacom</span>
+                                        </div>
+                                        <div class="t2">
+                                            <span>Jiwon Cho</span>
+                                        </div>
+                                        <div class="t3">
+                                            <span>010-1234-5678</span>
+                                        </div>
+                                        <div class="t4">
+                                            <span>CRM Manager</span>
+                                        </div>
+                                        <div class="t5 center">
+                                            <span>22-09-15 09:36</span>
+                                        </div>
+                                        <div class="t6 center">
+                                            <button class="a_btn">
+                                                <i class="icon-pw-reset"></i>
+                                            </button>
+                                            <button class="a_btn">
+                                                <i class="icon-edit"></i>
+                                            </button>
+                                            <button class="a_btn">
+                                                <span class="btn-icon-off"></span>
+                                            </button>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="t1">
+                                            <span>jwcho@kaonmediacom</span>
+                                        </div>
+                                        <div class="t2">
+                                            <span>Jiwon Cho</span>
+                                        </div>
+                                        <div class="t3">
+                                            <span>010-1234-5678</span>
+                                        </div>
+                                        <div class="t4">
+                                            <span>CRM Manager</span>
+                                        </div>
+                                        <div class="t5 center">
+                                            <span>22-09-15 09:36</span>
+                                        </div>
+                                        <div class="t6 center">
+                                            <button class="a_btn">
+                                                <i class="icon-pw-reset"></i>
+                                            </button>
+                                            <button class="a_btn">
+                                                <i class="icon-edit"></i>
+                                            </button>
+                                            <button class="a_btn">
+                                                <span class="btn-icon-off"></span>
+                                            </button>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="t1">
+                                            <span>jwcho@kaonmediacom</span>
+                                        </div>
+                                        <div class="t2">
+                                            <span>Jiwon Cho</span>
+                                        </div>
+                                        <div class="t3">
+                                            <span>010-1234-5678</span>
+                                        </div>
+                                        <div class="t4">
+                                            <span>CRM Manager</span>
+                                        </div>
+                                        <div class="t5 center">
+                                            <span>22-09-15 09:36</span>
+                                        </div>
+                                        <div class="t6 center">
+                                            <button class="a_btn">
+                                                <i class="icon-pw-reset"></i>
+                                            </button>
+                                            <button class="a_btn">
+                                                <i class="icon-edit"></i>
+                                            </button>
+                                            <button class="a_btn">
+                                                <span class="btn-icon-off"></span>
+                                            </button>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="t1">
+                                            <span>jwcho@kaonmediacom</span>
+                                        </div>
+                                        <div class="t2">
+                                            <span>Jiwon Cho</span>
+                                        </div>
+                                        <div class="t3">
+                                            <span>010-1234-5678</span>
+                                        </div>
+                                        <div class="t4">
+                                            <span>CRM Manager</span>
+                                        </div>
+                                        <div class="t5 center">
+                                            <span>22-09-15 09:36</span>
+                                        </div>
+                                        <div class="t6 center">
+                                            <button class="a_btn">
+                                                <i class="icon-pw-reset"></i>
+                                            </button>
+                                            <button class="a_btn">
+                                                <i class="icon-edit"></i>
+                                            </button>
+                                            <button class="a_btn">
+                                                <span class="btn-icon-off"></span>
+                                            </button>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="t1">
+                                            <span>jwcho@kaonmediacom</span>
+                                        </div>
+                                        <div class="t2">
+                                            <span>Jiwon Cho</span>
+                                        </div>
+                                        <div class="t3">
+                                            <span>010-1234-5678</span>
+                                        </div>
+                                        <div class="t4">
+                                            <span>CRM Manager</span>
+                                        </div>
+                                        <div class="t5 center">
+                                            <span>22-09-15 09:36</span>
+                                        </div>
+                                        <div class="t6 center">
+                                            <button class="a_btn">
+                                                <i class="icon-pw-reset"></i>
+                                            </button>
+                                            <button class="a_btn">
+                                                <i class="icon-edit"></i>
+                                            </button>
+                                            <button class="a_btn">
+                                                <span class="btn-icon-off"></span>
+                                            </button>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="t1">
+                                            <span>jwcho@kaonmediacom</span>
+                                        </div>
+                                        <div class="t2">
+                                            <span>Jiwon Cho</span>
+                                        </div>
+                                        <div class="t3">
+                                            <span>010-1234-5678</span>
+                                        </div>
+                                        <div class="t4">
+                                            <span>CRM Manager</span>
+                                        </div>
+                                        <div class="t5 center">
+                                            <span>22-09-15 09:36</span>
+                                        </div>
+                                        <div class="t6 center">
+                                            <button class="a_btn">
+                                                <i class="icon-pw-reset"></i>
+                                            </button>
+                                            <button class="a_btn">
+                                                <i class="icon-edit"></i>
+                                            </button>
+                                            <button class="a_btn">
+                                                <span class="btn-icon-off"></span>
+                                            </button>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="t1">
+                                            <span>jwcho@kaonmediacom</span>
+                                        </div>
+                                        <div class="t2">
+                                            <span>Jiwon Cho</span>
+                                        </div>
+                                        <div class="t3">
+                                            <span>010-1234-5678</span>
+                                        </div>
+                                        <div class="t4">
+                                            <span>CRM Manager</span>
+                                        </div>
+                                        <div class="t5 center">
+                                            <span>22-09-15 09:36</span>
+                                        </div>
+                                        <div class="t6 center">
+                                            <button class="a_btn">
+                                                <i class="icon-pw-reset"></i>
+                                            </button>
+                                            <button class="a_btn">
+                                                <i class="icon-edit"></i>
+                                            </button>
+                                            <button class="a_btn">
+                                                <span class="btn-icon-off"></span>
+                                            </button>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="t1">
+                                            <span>jwcho@kaonmediacom</span>
+                                        </div>
+                                        <div class="t2">
+                                            <span>Jiwon Cho</span>
+                                        </div>
+                                        <div class="t3">
+                                            <span>010-1234-5678</span>
+                                        </div>
+                                        <div class="t4">
+                                            <span>CRM Manager</span>
+                                        </div>
+                                        <div class="t5 center">
+                                            <span>22-09-15 09:36</span>
+                                        </div>
+                                        <div class="t6 center">
+                                            <button class="a_btn">
+                                                <i class="icon-pw-reset"></i>
+                                            </button>
+                                            <button class="a_btn">
+                                                <i class="icon-edit"></i>
+                                            </button>
+                                            <button class="a_btn">
+                                                <span class="btn-icon-off"></span>
+                                            </button>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="t1">
+                                            <span>jwcho@kaonmediacom</span>
+                                        </div>
+                                        <div class="t2">
+                                            <span>Jiwon Cho</span>
+                                        </div>
+                                        <div class="t3">
+                                            <span>010-1234-5678</span>
+                                        </div>
+                                        <div class="t4">
+                                            <span>CRM Manager</span>
+                                        </div>
+                                        <div class="t5 center">
+                                            <span>22-09-15 09:36</span>
+                                        </div>
+                                        <div class="t6 center">
+                                            <button class="a_btn">
+                                                <i class="icon-pw-reset"></i>
+                                            </button>
+                                            <button class="a_btn">
+                                                <i class="icon-edit"></i>
+                                            </button>
+                                            <button class="a_btn">
+                                                <span class="btn-icon-off"></span>
+                                            </button>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="t1">
+                                            <span>jwcho@kaonmediacom</span>
+                                        </div>
+                                        <div class="t2">
+                                            <span>Jiwon Cho</span>
+                                        </div>
+                                        <div class="t3">
+                                            <span>010-1234-5678</span>
+                                        </div>
+                                        <div class="t4">
+                                            <span>CRM Manager</span>
+                                        </div>
+                                        <div class="t5 center">
+                                            <span>22-09-15 09:36</span>
+                                        </div>
+                                        <div class="t6 center">
+                                            <button class="a_btn">
+                                                <i class="icon-pw-reset"></i>
+                                            </button>
+                                            <button class="a_btn">
+                                                <i class="icon-edit"></i>
+                                            </button>
+                                            <button class="a_btn">
+                                                <span class="btn-icon-off"></span>
+                                            </button>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="t1">
+                                            <span>jwcho@kaonmediacom</span>
+                                        </div>
+                                        <div class="t2">
+                                            <span>Jiwon Cho</span>
+                                        </div>
+                                        <div class="t3">
+                                            <span>010-1234-5678</span>
+                                        </div>
+                                        <div class="t4">
+                                            <span>CRM Manager</span>
+                                        </div>
+                                        <div class="t5 center">
+                                            <span>22-09-15 09:36</span>
+                                        </div>
+                                        <div class="t6 center">
+                                            <button class="a_btn">
+                                                <i class="icon-pw-reset"></i>
+                                            </button>
+                                            <button class="a_btn">
+                                                <i class="icon-edit"></i>
+                                            </button>
+                                            <button class="a_btn">
+                                                <span class="btn-icon-off"></span>
+                                            </button>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-5 pl-0 pr-0 position-relative">
+                    <!-- 계정 정보-->
+                    <div class="section pt-style mr-0" >
+                        <h3 class="sub_tit">계정 정보</h3>
+                        <span class="btn_more" id="btnViewAccount">
+                            <i class="icon-more"></i>
+                        </span>
+                        <div class="s_inner">
+                            <table class="info_tbl_style">
+                                <tr>
+                                    <th>마지막 로그인 시간</th>
+                                    <td>22.09.20 10:27:03</td>
+                                    <th>마지막 로그아웃 시간</th>
+                                    <td>22.09.20 11:30:03</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                    <!--//계정 정보-->
+                    <!-- 계정 정보 더보기-->
+                    <div class="section pt-style more_style mr-0 account" >
+                        <h3 class="sub_tit">계정 정보</h3>
+                        <span class="btn_close" id="btnCloseAccount">
+                            <i class="icon-close"></i>
+                        </span>
+                        <div class="s_inner">
+                            <table class="info_tbl_style">
+                                <tr>
+                                    <th>마지막 로그인 시간</th>
+                                    <td>22.09.20 10:27:03</td>
+                                    <th>마지막 로그아웃 시간</th>
+                                    <td>22.09.20 11:30:03</td>
+                                </tr>
+                                <tr>
+                                    <th class="bg_style"></th>
+                                    <td>22.09.20 10:27:03</td>
+                                    <th class="bg_style"></th>
+                                    <td>22.09.20 11:30:03</td>
+                                </tr>
+                                <tr>
+                                    <th class="bg_style"></th>
+                                    <td>22.09.20 10:27:03</td>
+                                    <th class="bg_style"></th>
+                                    <td>22.09.20 11:30:03</td>
+                                </tr>
+                                <tr>
+                                    <th class="bg_style"></th>
+                                    <td>22.09.20 10:27:03</td>
+                                    <th class="bg_style"></th>
+                                    <td>22.09.20 11:30:03</td>
+                                </tr>
+                                <tr>
+                                    <th class="bg_style"></th>
+                                    <td>22.09.20 10:27:03</td>
+                                    <th class="bg_style"></th>
+                                    <td>22.09.20 11:30:03</td>
+                                </tr>
+                                <tr>
+                                    <th class="bg_style"></th>
+                                    <td>22.09.20 10:27:03</td>
+                                    <th class="bg_style"></th>
+                                    <td>22.09.20 11:30:03</td>
+                                </tr>
+                                <tr>
+                                    <th class="bg_style"></th>
+                                    <td>22.09.20 10:27:03</td>
+                                    <th class="bg_style"></th>
+                                    <td>22.09.20 11:30:03</td>
+                                </tr>
+                                <tr>
+                                    <th class="bg_style"></th>
+                                    <td>22.09.20 10:27:03</td>
+                                    <th class="bg_style"></th>
+                                    <td>22.09.20 11:30:03</td>
+                                </tr>
+                                <tr>
+                                    <th class="bg_style"></th>
+                                    <td>22.09.20 10:27:03</td>
+                                    <th class="bg_style"></th>
+                                    <td>22.09.20 11:30:03</td>
+                                </tr>
+                                <tr>
+                                    <th class="bg_style"></th>
+                                    <td>22.09.20 10:27:03</td>
+                                    <th class="bg_style"></th>
+                                    <td>22.09.20 11:30:03</td>
+                                </tr>
+                                <tr>
+                                    <th class="bg_style"></th>
+                                    <td>22.09.20 10:27:03</td>
+                                    <th class="bg_style"></th>
+                                    <td>22.09.20 11:30:03</td>
+                                </tr>
+                                <tr>
+                                    <th class="bg_style"></th>
+                                    <td>22.09.20 10:27:03</td>
+                                    <th class="bg_style"></th>
+                                    <td>22.09.20 11:30:03</td>
+                                </tr>
+                                <tr>
+                                    <th class="bg_style"></th>
+                                    <td>22.09.20 10:27:03</td>
+                                    <th class="bg_style"></th>
+                                    <td>22.09.20 11:30:03</td>
+                                </tr>
+                                <tr>
+                                    <th class="bg_style"></th>
+                                    <td>22.09.20 10:27:03</td>
+                                    <th class="bg_style"></th>
+                                    <td>22.09.20 11:30:03</td>
+                                </tr>
+                                <tr>
+                                    <th class="bg_style"></th>
+                                    <td>22.09.20 10:27:03</td>
+                                    <th class="bg_style"></th>
+                                    <td>22.09.20 11:30:03</td>
+                                </tr>
+                                <tr>
+                                    <th class="bg_style"></th>
+                                    <td>22.09.20 10:27:03</td>
+                                    <th class="bg_style"></th>
+                                    <td>22.09.20 11:30:03</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                    <!--//계정 정보 더보기 -->
+                    <!-- 계정 통계 정보-->
+                    <div class="section pt-style  mr-0">
+                        <h3 class="sub_tit">계정 통계 정보</h3>
+                        <div class="date_select_area p_style">
+                            <div class="i_block">
+                                <input type="text" value="2023-01-17 ~ 2023-01-23" class="i_style size1">
+                                <span class="btn"><i class="icon-calender"></i></span>
+                            </div>
+                        </div>
+                        <span class="btn_more" id="btnViewAccountStatistics">
+                            <i class="icon-more"></i>
+                        </span>
+                        <div class="s_inner">
+                            <div class="a_chart_area size_100">
+                                <h4 class="c_tit">일자별 상담 건 수</h4>
+                                <img src="../images/graph1.jpg" alt="">
+                            </div>
+                            <div class="a_chart_area size_50 style1">
+                                <h4 class="c_tit">일자별 총 상담 시간</h4>
+                                <img src="../images/graph2.jpg" alt="">
+                            </div>
+                            <div class="a_chart_area size_50">
+                                <h4 class="c_tit">Model별 상담 건 수(1주일 기준)</h4>
+                                <img src="../images/graph3.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <!-- //계정 통계 정보-->
+                    <!-- 계정 통계 정보 더보기-->
+                    <div class="section pt-style more_style mr-0 account_statistics">
+                        <h3 class="sub_tit">계정 통계 정보</h3>
+                        <div class="date_select_area p_style">
+                            <div class="i_block">
+                                <input type="text" value="2023-01-17 ~ 2023-01-23" class="i_style size1">
+                                <span class="btn"><i class="icon-calender"></i></span>
+                            </div>
+                        </div>
+                        <span class="btn_close" id="btnCloseAccountStatistics">
+                            <i class="icon-cancel"></i>
+                        </span>
+                        <div class="s_inner">
+                            <div class="tbl_wrap has_btn_style size1">
+                                <ul class="tbl_style">
+                                    <li class="top">
+                                        <div class="t1">
+                                            <span>일시</span>
+                                        </div>
+                                        <div class="t2">
+                                            <span>상담 건 수</span>
+                                        </div>
+                                        <div class="t3">
+                                            <span>상담 시간</span>
+                                        </div>
+                                        <div class="t4">
+                                            <span>상담 모델</span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="t1">
+                                            <span>2022.11.22</span>
+                                        </div>
+                                        <div class="t2">
+                                            <span>53</span>
+                                        </div>
+                                        <div class="t3">
+                                            <span>07:32:24</span>
+                                        </div>
+                                        <div class="t4">
+                                            <span>KSTB2020</span>
+                                            <span class="num_list_wrap">
+                                                <span class="total_num">+6</span>
+                                                <div class="num_list">
+                                                    <ul>
+                                                        <li>KSTB2020 <span class>6</span>건</li>
+                                                        <li>KSTB2020 <span>6</span>건</li>
+                                                        <li>KSTB2020 <span>6</span>건</li>
+                                                        <li>KSTB2020 <span>6</span>건</li>
+                                                        <li>KSTB2020 <span>6</span>건</li>
+                                                        <li>KSTB2020 <span>6</span>건</li>
+                                                    </ul>
+                                                </div>
+                                            </span>
+                                        </div>
+                                        
+                                    </li>
+                                    <li>
+                                        <div class="t1">
+                                            <span>2022.11.22</span>
+                                        </div>
+                                        <div class="t2">
+                                            <span>53</span>
+                                        </div>
+                                        <div class="t3">
+                                            <span>07:32:24</span>
+                                        </div>
+                                        <div class="t4">
+                                            <span>KSTB2020</span>
+                                            <span class="num_list_wrap">
+                                                <span class="total_num">+6</span>
+                                                <div class="num_list" style="display:block;">
+                                                    <span class="arrow"></span>
+                                                    <ul>
+                                                        <li>KSTB2020 <span class>6</span>건</li>
+                                                        <li>KSTB2020 <span>6</span>건</li>
+                                                        <li>KSTB2020 <span>6</span>건</li>
+                                                        <li>KSTB2020 <span>6</span>건</li>
+                                                        <li>KSTB2020 <span>6</span>건</li>
+                                                        <li>KSTB2020 <span>6</span>건</li>
+                                                    </ul>
+                                                </div>
+                                            </span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="t1">
+                                            <span>2022.11.22</span>
+                                        </div>
+                                        <div class="t2">
+                                            <span>53</span>
+                                        </div>
+                                        <div class="t3">
+                                            <span>07:32:24</span>
+                                        </div>
+                                        <div class="t4">
+                                            <span>KSTB2020</span>
+                                            <span class="num_list_wrap">
+                                                <span class="total_num">+6</span>
+                                                <div class="num_list">
+                                                    <span class="arrow"></span>
+                                                    <ul>
+                                                        <li>KSTB2020 <span class>6</span>건</li>
+                                                        <li>KSTB2020 <span>6</span>건</li>
+                                                        <li>KSTB2020 <span>6</span>건</li>
+                                                        <li>KSTB2020 <span>6</span>건</li>
+                                                        <li>KSTB2020 <span>6</span>건</li>
+                                                        <li>KSTB2020 <span>6</span>건</li>
+                                                    </ul>
+                                                </div>
+                                            </span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="t1">
+                                            <span>2022.11.22</span>
+                                        </div>
+                                        <div class="t2">
+                                            <span>53</span>
+                                        </div>
+                                        <div class="t3">
+                                            <span>07:32:24</span>
+                                        </div>
+                                        <div class="t4">
+                                            <span>KSTB2020</span>
+                                            <span class="num_list_wrap">
+                                                <span class="total_num">+6</span>
+                                                <div class="num_list">
+                                                    <span class="arrow"></span>
+                                                    <ul>
+                                                        <li>KSTB2020 <span class>6</span>건</li>
+                                                        <li>KSTB2020 <span>6</span>건</li>
+                                                        <li>KSTB2020 <span>6</span>건</li>
+                                                        <li>KSTB2020 <span>6</span>건</li>
+                                                        <li>KSTB2020 <span>6</span>건</li>
+                                                        <li>KSTB2020 <span>6</span>건</li>
+                                                    </ul>
+                                                </div>
+                                            </span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="t1">
+                                            <span>2022.11.22</span>
+                                        </div>
+                                        <div class="t2">
+                                            <span>53</span>
+                                        </div>
+                                        <div class="t3">
+                                            <span>07:32:24</span>
+                                        </div>
+                                        <div class="t4">
+                                            <span>KSTB2020</span>
+                                            <span class="num_list_wrap">
+                                                <span class="total_num">+6</span>
+                                                <div class="num_list">
+                                                    <span class="arrow"></span>
+                                                    <ul>
+                                                        <li>KSTB2020 <span class>6</span>건</li>
+                                                        <li>KSTB2020 <span>6</span>건</li>
+                                                        <li>KSTB2020 <span>6</span>건</li>
+                                                        <li>KSTB2020 <span>6</span>건</li>
+                                                        <li>KSTB2020 <span>6</span>건</li>
+                                                        <li>KSTB2020 <span>6</span>건</li>
+                                                    </ul>
+                                                </div>
+                                            </span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="t1">
+                                            <span>2022.11.22</span>
+                                        </div>
+                                        <div class="t2">
+                                            <span>53</span>
+                                        </div>
+                                        <div class="t3">
+                                            <span>07:32:24</span>
+                                        </div>
+                                        <div class="t4">
+                                            <span>KSTB2020</span>
+                                            <span class="num_list_wrap">
+                                                <span class="total_num">+6</span>
+                                                <div class="num_list">
+                                                    <span class="arrow"></span>
+                                                    <ul>
+                                                        <li>KSTB2020 <span class>6</span>건</li>
+                                                        <li>KSTB2020 <span>6</span>건</li>
+                                                        <li>KSTB2020 <span>6</span>건</li>
+                                                        <li>KSTB2020 <span>6</span>건</li>
+                                                        <li>KSTB2020 <span>6</span>건</li>
+                                                        <li>KSTB2020 <span>6</span>건</li>
+                                                    </ul>
+                                                </div>
+                                            </span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="t1">
+                                            <span>2022.11.22</span>
+                                        </div>
+                                        <div class="t2">
+                                            <span>53</span>
+                                        </div>
+                                        <div class="t3">
+                                            <span>07:32:24</span>
+                                        </div>
+                                        <div class="t4">
+                                            <span>KSTB2020</span>
+                                            <span class="num_list_wrap">
+                                                <span class="total_num">+6</span>
+                                                <div class="num_list">
+                                                    <span class="arrow"></span>
+                                                    <ul>
+                                                        <li>KSTB2020 <span class>6</span>건</li>
+                                                        <li>KSTB2020 <span>6</span>건</li>
+                                                        <li>KSTB2020 <span>6</span>건</li>
+                                                        <li>KSTB2020 <span>6</span>건</li>
+                                                        <li>KSTB2020 <span>6</span>건</li>
+                                                        <li>KSTB2020 <span>6</span>건</li>
+                                                    </ul>
+                                                </div>
+                                            </span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="t1">
+                                            <span>2022.11.22</span>
+                                        </div>
+                                        <div class="t2">
+                                            <span>53</span>
+                                        </div>
+                                        <div class="t3">
+                                            <span>07:32:24</span>
+                                        </div>
+                                        <div class="t4">
+                                            <span>KSTB2020</span>
+                                            <span class="num_list_wrap">
+                                                <span class="total_num">+6</span>
+                                                <div class="num_list">
+                                                    <span class="arrow"></span>
+                                                    <ul>
+                                                        <li>KSTB2020 <span class>6</span>건</li>
+                                                        <li>KSTB2020 <span>6</span>건</li>
+                                                        <li>KSTB2020 <span>6</span>건</li>
+                                                        <li>KSTB2020 <span>6</span>건</li>
+                                                        <li>KSTB2020 <span>6</span>건</li>
+                                                        <li>KSTB2020 <span>6</span>건</li>
+                                                    </ul>
+                                                </div>
+                                            </span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="t1">
+                                            <span>2022.11.22</span>
+                                        </div>
+                                        <div class="t2">
+                                            <span>53</span>
+                                        </div>
+                                        <div class="t3">
+                                            <span>07:32:24</span>
+                                        </div>
+                                        <div class="t4">
+                                            <span>KSTB2020</span>
+                                            <span class="num_list_wrap">
+                                                <span class="total_num">+6</span>
+                                                <div class="num_list">
+                                                    <span class="arrow"></span>
+                                                    <ul>
+                                                        <li>KSTB2020 <span class>6</span>건</li>
+                                                        <li>KSTB2020 <span>6</span>건</li>
+                                                        <li>KSTB2020 <span>6</span>건</li>
+                                                        <li>KSTB2020 <span>6</span>건</li>
+                                                        <li>KSTB2020 <span>6</span>건</li>
+                                                        <li>KSTB2020 <span>6</span>건</li>
+                                                    </ul>
+                                                </div>
+                                            </span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="t1">
+                                            <span>2022.11.22</span>
+                                        </div>
+                                        <div class="t2">
+                                            <span>53</span>
+                                        </div>
+                                        <div class="t3">
+                                            <span>07:32:24</span>
+                                        </div>
+                                        <div class="t4">
+                                            <span>KSTB2020</span>
+                                            <span class="num_list_wrap">
+                                                <span class="total_num">+6</span>
+                                                <div class="num_list">
+                                                    <span class="arrow"></span>
+                                                    <ul>
+                                                        <li>KSTB2020 <span class>6</span>건</li>
+                                                        <li>KSTB2020 <span>6</span>건</li>
+                                                        <li>KSTB2020 <span>6</span>건</li>
+                                                        <li>KSTB2020 <span>6</span>건</li>
+                                                        <li>KSTB2020 <span>6</span>건</li>
+                                                        <li>KSTB2020 <span>6</span>건</li>
+                                                    </ul>
+                                                </div>
+                                            </span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="t1">
+                                            <span>2022.11.22</span>
+                                        </div>
+                                        <div class="t2">
+                                            <span>53</span>
+                                        </div>
+                                        <div class="t3">
+                                            <span>07:32:24</span>
+                                        </div>
+                                        <div class="t4">
+                                            <span>KSTB2020</span>
+                                            <span class="num_list_wrap">
+                                                <span class="total_num">+6</span>
+                                                <div class="num_list">
+                                                    <span class="arrow"></span>
+                                                    <ul>
+                                                        <li>KSTB2020 <span class>6</span>건</li>
+                                                        <li>KSTB2020 <span>6</span>건</li>
+                                                        <li>KSTB2020 <span>6</span>건</li>
+                                                        <li>KSTB2020 <span>6</span>건</li>
+                                                        <li>KSTB2020 <span>6</span>건</li>
+                                                        <li>KSTB2020 <span>6</span>건</li>
+                                                    </ul>
+                                                </div>
+                                            </span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="t1">
+                                            <span>2022.11.22</span>
+                                        </div>
+                                        <div class="t2">
+                                            <span>53</span>
+                                        </div>
+                                        <div class="t3">
+                                            <span>07:32:24</span>
+                                        </div>
+                                        <div class="t4">
+                                            <span>KSTB2020</span>
+                                            <span class="num_list_wrap">
+                                                <span class="total_num">+6</span>
+                                                <div class="num_list">
+                                                    <span class="arrow"></span>
+                                                    <ul>
+                                                        <li>KSTB2020 <span class>6</span>건</li>
+                                                        <li>KSTB2020 <span>6</span>건</li>
+                                                        <li>KSTB2020 <span>6</span>건</li>
+                                                        <li>KSTB2020 <span>6</span>건</li>
+                                                        <li>KSTB2020 <span>6</span>건</li>
+                                                        <li>KSTB2020 <span>6</span>건</li>
+                                                    </ul>
+                                                </div>
+                                            </span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="t1">
+                                            <span>2022.11.22</span>
+                                        </div>
+                                        <div class="t2">
+                                            <span>53</span>
+                                        </div>
+                                        <div class="t3">
+                                            <span>07:32:24</span>
+                                        </div>
+                                        <div class="t4">
+                                            <span>KSTB2020</span>
+                                            <span class="num_list_wrap">
+                                                <span class="total_num">+6</span>
+                                                <div class="num_list">
+                                                    <span class="arrow"></span>
+                                                    <ul>
+                                                        <li>KSTB2020 <span class>6</span>건</li>
+                                                        <li>KSTB2020 <span>6</span>건</li>
+                                                        <li>KSTB2020 <span>6</span>건</li>
+                                                        <li>KSTB2020 <span>6</span>건</li>
+                                                        <li>KSTB2020 <span>6</span>건</li>
+                                                        <li>KSTB2020 <span>6</span>건</li>
+                                                    </ul>
+                                                </div>
+                                            </span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="t1">
+                                            <span>2022.11.22</span>
+                                        </div>
+                                        <div class="t2">
+                                            <span>53</span>
+                                        </div>
+                                        <div class="t3">
+                                            <span>07:32:24</span>
+                                        </div>
+                                        <div class="t4">
+                                            <span>KSTB2020</span>
+                                            <span class="num_list_wrap">
+                                                <span class="total_num">+6</span>
+                                                <div class="num_list">
+                                                    <span class="arrow"></span>
+                                                    <ul>
+                                                        <li>KSTB2020 <span class>6</span>건</li>
+                                                        <li>KSTB2020 <span>6</span>건</li>
+                                                        <li>KSTB2020 <span>6</span>건</li>
+                                                        <li>KSTB2020 <span>6</span>건</li>
+                                                        <li>KSTB2020 <span>6</span>건</li>
+                                                        <li>KSTB2020 <span>6</span>건</li>
+                                                    </ul>
+                                                </div>
+                                            </span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="t1">
+                                            <span>2022.11.22</span>
+                                        </div>
+                                        <div class="t2">
+                                            <span>53</span>
+                                        </div>
+                                        <div class="t3">
+                                            <span>07:32:24</span>
+                                        </div>
+                                        <div class="t4">
+                                            <span>KSTB2020</span>
+                                            <span class="num_list_wrap">
+                                                <span class="total_num">+6</span>
+                                                <div class="num_list">
+                                                    <span class="arrow"></span>
+                                                    <ul>
+                                                        <li>KSTB2020 <span class>6</span>건</li>
+                                                        <li>KSTB2020 <span>6</span>건</li>
+                                                        <li>KSTB2020 <span>6</span>건</li>
+                                                        <li>KSTB2020 <span>6</span>건</li>
+                                                        <li>KSTB2020 <span>6</span>건</li>
+                                                        <li>KSTB2020 <span>6</span>건</li>
+                                                    </ul>
+                                                </div>
+                                            </span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="t1">
+                                            <span>2022.11.22</span>
+                                        </div>
+                                        <div class="t2">
+                                            <span>53</span>
+                                        </div>
+                                        <div class="t3">
+                                            <span>07:32:24</span>
+                                        </div>
+                                        <div class="t4">
+                                            <span>KSTB2020</span>
+                                            <span class="num_list_wrap">
+                                                <span class="total_num">+6</span>
+                                                <div class="num_list">
+                                                    <span class="arrow"></span>
+                                                    <ul>
+                                                        <li>KSTB2020 <span class>6</span>건</li>
+                                                        <li>KSTB2020 <span>6</span>건</li>
+                                                        <li>KSTB2020 <span>6</span>건</li>
+                                                        <li>KSTB2020 <span>6</span>건</li>
+                                                        <li>KSTB2020 <span>6</span>건</li>
+                                                        <li>KSTB2020 <span>6</span>건</li>
+                                                    </ul>
+                                                </div>
+                                            </span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="t1">
+                                            <span>2022.11.22</span>
+                                        </div>
+                                        <div class="t2">
+                                            <span>53</span>
+                                        </div>
+                                        <div class="t3">
+                                            <span>07:32:24</span>
+                                        </div>
+                                        <div class="t4">
+                                            <span>KSTB2020</span>
+                                            <span class="num_list_wrap">
+                                                <span class="total_num">+6</span>
+                                                <div class="num_list">
+                                                    <span class="arrow"></span>
+                                                    <ul>
+                                                        <li>KSTB2020 <span class>6</span>건</li>
+                                                        <li>KSTB2020 <span>6</span>건</li>
+                                                        <li>KSTB2020 <span>6</span>건</li>
+                                                        <li>KSTB2020 <span>6</span>건</li>
+                                                        <li>KSTB2020 <span>6</span>건</li>
+                                                        <li>KSTB2020 <span>6</span>건</li>
+                                                    </ul>
+                                                </div>
+                                            </span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="t1">
+                                            <span>2022.11.22</span>
+                                        </div>
+                                        <div class="t2">
+                                            <span>53</span>
+                                        </div>
+                                        <div class="t3">
+                                            <span>07:32:24</span>
+                                        </div>
+                                        <div class="t4">
+                                            <span>KSTB2020</span>
+                                            <span class="num_list_wrap">
+                                                <span class="total_num">+6</span>
+                                                <div class="num_list">
+                                                    <span class="arrow"></span>
+                                                    <ul>
+                                                        <li>KSTB2020 <span class>6</span>건</li>
+                                                        <li>KSTB2020 <span>6</span>건</li>
+                                                        <li>KSTB2020 <span>6</span>건</li>
+                                                        <li>KSTB2020 <span>6</span>건</li>
+                                                        <li>KSTB2020 <span>6</span>건</li>
+                                                        <li>KSTB2020 <span>6</span>건</li>
+                                                    </ul>
+                                                </div>
+                                            </span>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!--//계정 통계 정보 더보기 -->
+                    <!-- 계정 등록-->
+                    <div class="section add_style add_account mr-0">
+                        <span class="t_bar"></span>
+                        <h3 class="m_tit">계정 등록</h3>
+                        <form action="#" class="add_form">
+                            <fieldset>
+                                <div class="line">
+                                    <div class="label_area">
+                                        <label for="">이메일<span class="t_red">*</span></label>
+                                    </div>
+                                    <div class="input_area">
+                                        <input type="text" class="a_input_style" placeholder="이메일 주소를 입력해 주세요" value="">
+                                    </div>
+                                </div>
+                                <div class="line">
+                                    <div class="label_area">
+                                        <label for="">비밀번호<span class="t_red">*</span></label>
+                                    </div>
+                                    <div class="input_area">
+                                        <input type="password" class="a_input_style" placeholder="비밀번호를 입력해 주세요" value="">
+                                    </div>
+                                </div>
+                                <div class="line">
+                                    <div class="label_area">
+                                        <label for="">이름<span class="t_red">*</span></label>
+                                    </div>
+                                    <div class="input_area">
+                                        <input type="text" class="a_input_style" placeholder="이름을 입력해 주세요" value="">
+                                    </div>
+                                </div>
+                                <div class="line">
+                                    <div class="label_area">
+                                        <label for="">전화번호</label>
+                                    </div>
+                                    <div class="input_area">
+                                        <input type="text" class="a_input_style" placeholder="전화번호를 입력해 주세요"
+                                            value="">
+                                    </div>
+                                </div>
+                                <div class="line">
+                                    <div class="label_area">
+                                        <label for="">계정 유형<span class="t_red">*</span></label>
+                                    </div>
+                                    <div class="input_area">
+                                        <select name="" id="" placeholder="Select Role" class="a_select_style">
+                                            <option value="" disabled selected>계정 유형을 선택해 주세요</option>
+                                            <option value="">CRM Manager</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </fieldset>
+                        </form>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        <!-- //content -->
+    </div>
+    <!-- //container -->
+</div>
+<!-- //wrap -->
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.0.min.js"></script>
+<script type="text/javascript" src="script.js"></script>
+</body>
+</html>

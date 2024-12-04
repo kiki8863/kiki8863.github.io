@@ -1,0 +1,1357 @@
+
+/* 페이스북 이벤트 */
+.e_content .e_view.facebook{height:1165px;padding-top:60px;background:url('http://static.filecast.co.kr/_img/event/bg_facebook.jpg') no-repeat 0 0;}
+.e_view.facebook .top{width:500px;height:225px;margin:0 auto;text-indent:-9999px;background:url('http://static.filecast.co.kr/_img/event/e_face_txt.png') no-repeat 0 0;}
+.e_view.facebook .event_500P{margin-top:320px;text-indent:-9999px;}
+.e_view.facebook .event_500P .f_btn_area{position:relative;width:5000px;height:50px;margin:100px auto 0 auto;}
+.e_view.facebook .event_500P .txt{width:465px;height:50px;margin:40px auto 0 auto;background:url('http://static.filecast.co.kr/_img/event/e_face_txt.png') no-repeat 0 -242px;}
+.e_view.facebook > p{width:453px;height:18px;margin:60px auto 0 auto;background:url('http://static.filecast.co.kr/_img/event/e_face_txt.png') no-repeat 0 -430px;text-indent:-9999px;}
+.e_view.facebook .btn_go_face{cursor:pointer;display:block;width:283px;height:36px;margin:25px auto 0 auto;background:url('http://static.filecast.co.kr/_img/event/e_face_txt.png') no-repeat 0 -301px;text-indent:-9999px;}
+.e_view.facebook .btn_go_face:hover{opacity:0.7;}
+.e_view.facebook .btm{width:485px;height:60px;margin:75px auto;text-indent:-9999px;background:url('http://static.filecast.co.kr/_img/event/e_face_txt.png') no-repeat 0 -361px;}
+#event-fb-over-layer{text-indent:-9999px;}
+
+/* 판매자 이벤트 */
+.e_content .e_view.seller{height:1295px;padding:95px 0 0 1px;background:url('http://static.filecast.co.kr/_img/event/bg_seller.jpg') no-repeat 0 0;}
+.e_view.seller .top{width:548px;height:360px;margin:0 auto 505px auto;text-indent:-9999px;background:url('http://static.filecast.co.kr/_img/event/seller_txt.png') no-repeat 0 0;}
+.e_view.seller > p{width:553px;height:70px;margin:0 auto 40px auto;text-indent:-9999px;background:url('http://static.filecast.co.kr/_img/event/seller_txt.png') no-repeat 0 -360px;}
+.e_view.seller .btn_go_seller{display:block;width:254px;height:48px;margin:0 auto 70px auto;cursor:pointer;text-indent:-9999px;background:url('http://static.filecast.co.kr/_img/event/seller_txt.png') no-repeat 0 -430px;}
+.e_view.seller .btn_go_seller:hover{opacity:0.7;}
+.e_view.seller .btm{width:466px;height:82px;margin:0 auto;text-indent:-9999px;background:url('http://static.filecast.co.kr/_img/event/seller_txt.png') no-repeat 0 -477px;}
+
+/* 판매자 리뉴얼 */
+.e_content .e_view.seller{height:1186px;padding:0;background:url('http://static.filecast.co.kr/_img/event/bg_seller2.jpg') no-repeat 0 0;}
+.e_view.seller .top{width:827px;height:405px;margin:0;text-indent:-9999px;background:url('http://static.filecast.co.kr/_img/event/seller_txt2.png') no-repeat 0 0;}
+.e_view.seller > p{width:690px;height:108px;margin-top:400px;text-indent:-9999px;background:url('http://static.filecast.co.kr/_img/event/seller_txt2.png') no-repeat 0 -404px;}
+.e_view.seller .btn_go_seller{display:block;width:326px;height:59px;margin:0 auto 70px auto;cursor:pointer;text-indent:-9999px;background:url('http://static.filecast.co.kr/_img/event/seller_txt2.png') no-repeat 0 -516px;}
+.e_view.seller .btn_go_seller:hover{opacity:0.7;}
+.e_view.seller .btm{width:466px;height:82px;margin:0 auto;text-indent:-9999px;background:url('http://static.filecast.co.kr/_img/event/seller_txt2.png') no-repeat 0 -579px;}
+
+/* 판매자 2016 */
+.e_content .e_view.seller.t1601{position:relative;height:988px;padding:0;background:url('http://static.filecast.co.kr/_img/event/bg_seller3.jpg') no-repeat 0 0;}
+.e_view.seller.t1601 .top, .e_view.seller.t1601 .btm, .e_view.seller.t1601 > p{display:none;}
+.e_view.seller.t1601 .btn_go_seller{position:absolute;top:755px;left:263px;display:block;width:298px;height:54px;background:url('http://static.filecast.co.kr/_img/event/seller_btn.png') no-repeat 0 0;}
+.e_view.seller.t1601 .btn_go_seller:hover{opacity:0.7;}
+
+/* 판매자 2016 */
+.e_content .e_view.seller.t1601.v2{position:relative;height:1026px;padding:0;background:url('http://static.filecast.co.kr/_img/event/bg_seller4.jpg') no-repeat 0 0;}
+.e_view.seller.t1601.v2 .btn_go_seller{top:795px;}
+
+/* 앱리뷰 이벤트 */
+.e_content .e_view.app{position:relative;clear:both;height:2365px;background:url('http://static.filecast.co.kr/_img/event/bg_app.jpg') no-repeat 0 0;text-indent:-9999px;}
+.e_content .e_view.app .app_use{text-indent:-9999px;}
+.e_content .e_view.app .btn_google{position:absolute;top:393px;left:115px;display:block;width:290px;height:62px;text-indent:-9999px;cursor:pointer;}
+
+/* 출석체크이벤트 */
+.e_attend{position:relative;width:827px;height:1494px;background:url('http://static.filecast.co.kr/_img/event/bg_attend1702.jpg') no-repeat 0 0;}
+.a_head{position:relative;top:100px;text-indent:-9999px;}
+.a_head h3{width:330px;height:160px;margin-left:78px;background:url('http://static.filecast.co.kr/_img/event/attend1702.png') no-repeat 0 0;}
+.a_head p{display:none;}
+.a_head p.txt{display:block;width:300px;height:18px;margin:15px 0 20px 78px;background:url('http://static.filecast.co.kr/_img/event/attend1702.png') no-repeat -5px -175px;}
+.a_head .btn_attend{display:block;width:185px;height:47px;margin-left:78px;text-indent:-9999px;background:url('http://static.filecast.co.kr/_img/event/attend1702.png') no-repeat -341px 0;}
+.a_head .btn_attend:hover, .a_head .btn_attend.active{opacity:0.7;}
+.a_content{position:relative;width:827px;height:856px;top:180px;}
+.a_content ol{width:642px;height:153px;margin:0 auto;text-indent:-9999px;background:url('http://static.filecast.co.kr/_img/event/attend1702.png') no-repeat 0 -202px;}
+.select_month{position:relative;width:194px;height:24px;margin:0 auto;}
+.select_month ul li a{z-index:3;position:absolute;display:block;top:5px;width:15px;height:15px;font-size:14px;font-weight:bold;color:#24b6e5;}
+.select_month ul li.m_prev a{left:0;}
+.select_month ul li.m_next a{right:0;}
+.select_month p{padding-left:35px;font-size:21px;color:#fff;}
+.c_tbl_style{width:655px;padding-top:15px;margin:0 auto;}
+.c_tbl_style table{width:649px;border:1px solid #68927d;}
+.c_tbl_style table .week{background:rgba(15, 119, 125, 0.4);}
+.c_tbl_style table th, .c_tbl_style table td{width:92px;border-left:1px solid #68927d;}
+.c_tbl_style table th{height:34px;}
+.c_tbl_style table th span{display:block;width:42px;height:15px;margin:0 auto;text-indent:-9999px;background:url('http://static.filecast.co.kr/_img/event/attend1702.png') no-repeat;}
+.c_tbl_style table th .sun{background-position:-451px -70px;}
+.c_tbl_style table th .mon{background-position:-451px -85px;}
+.c_tbl_style table th .tue{background-position:-451px -100px;}
+.c_tbl_style table th .wed{background-position:-451px -115px;}
+.c_tbl_style table th .thu{background-position:-451px -129px;}
+.c_tbl_style table th .fri{background-position:-451px -144px;}
+.c_tbl_style table th .sat{background-position:-451px -159px;}
+.c_tbl_style table td{position:relative;width:92px;height:95px;border-top:1px solid #68927d;}
+.c_tbl_style table td div{margin:1px auto;height:95px;}
+.c_tbl_style table td div.today{border:1px solid #ffe400;margin:0;}
+.c_tbl_style table td div.today span{top:6px;left:9px;color:#ffe400;font-weight:bold;letter-spacing:-1px;}
+.c_tbl_style table td div span{position:absolute;display:block;top:7px;left:10px;color:#87b39e;}
+.c_tbl_style table td div .ico_attend{width:69px;height:68px;top:18px;left:13px;background:url('http://static.filecast.co.kr/_img/event/attend1702.png') no-repeat -347px -70px;opacity:0.5;}
+.c_tbl_style table td div.today .ico_attend{top:17px;left:12px;opacity:1;}
+.a_calendar > p{position:absolute;bottom:0px;left:0;width:827px;color:#87b39e;text-align:center;}
+.a_calendar > p span{color:#fff;font-weight:bold;}
+.a_calendar > p span.total{color:#87b39e;font-weight:normal;}
+.a_txt{position:absolute;bottom:30px;left:200px;width:432px;height:85px;text-indent:-9999px;background:url('http://static.filecast.co.kr/_img/event/attend1702.png') no-repeat 0 -366px;}
+
+/* 모두의파일캐스트 이벤트 */
+.e_content .e_view.cross{position:relative;height:837px;background:url('http://static.filecast.co.kr/_img/event/bg_cross.jpg') no-repeat 0 0;}
+.e_content .e_view.cross .go_down{position:absolute;display:block;left:227px;top:670px;width:373px;height:49px;cursor:pointer;text-indent:-9999px;}
+
+/* 자녀안심서비스 이벤트 */
+.e_content .e_view.child{position:relative;height:1722px;background:url('http://static.filecast.co.kr/_img/event/child1604.jpg') no-repeat 0 0;text-indent:-9999px;}
+
+.e_content .e_view.children{position:relative;height:1521px;background:url('http://static.filecast.co.kr/_img/event/bg_children.jpg') no-repeat 0 0;text-indent:-9999px;}
+
+/* 무료쿠폰받기 레이어 */
+.charge_coupon{position:relative;width:826px;height:629px;margin-left:-100px;background:url('http://static.filecast.co.kr/_img/charge/coupon_get.png') no-repeat 0 0;}
+.charge_coupon a{display:block;width:24px;height:24px;top:113px;right:80px;background:none;}
+.charge_coupon span{position:absolute;display:block;width:216px;height:48px;bottom:65px;left:311px;background:none;text-indent:-9999px;cursor:pointer;}
+
+/* 쿠폰연장이벤트 */
+.pop_layer.point_e{width:682px;}
+.pop_layer.point_e h1{text-align:center;font-weight:normal;color:#929292;}
+.pop_layer.point_e h1 b{color:#fff;}
+.pop_layer.point_e h1 .point, .pop_layer.point_e h1 .day{color:#ffc30d;}
+.pop_layer.point_e .btn_close{top:10px;}
+.point_e .event_c{overflow:hidden;position:relative;width:682px;height:433px;border-radius:0 0 8px 8px;}
+.point_e .event_c p{display:none;text-indent:-9999px;}
+.point_e .event_c .event_c_get{position:absolute;left:40px;top:333px;display:block;width:602px;height:55px;text-indent:-9999px;cursor:pointer;}
+.point_e .event_c .event_close{position:absolute;right:15px;bottom:3px;display:block;width:204px;height:15px;cursor:pointer;}
+.pop_layer.event_c{position:relative;width:927px;}
+.pop_layer.event_c h1{font-weight:normal;}
+.pop_layer.event_c h1 span{font-weight:bold;color:#24b6e5;}
+.pop_layer.event_c .num{font-family:tahoma;}
+.pop_layer.event_c .btn_close{top:10px;}
+.pop_layer .e_top{width:927px;padding:30px 30px 0 30px;}
+.pop_layer .e_top.type1{padding-top:20px; }
+.pop_layer .e_top > div{overflow:hidden;width:870px;height:119px;margin:0 auto;margin-bottom:15px;border:3px solid #c6d4db;}
+.pop_layer .e_top .tit{width:100%;padding:11px 0 10px 0;border-bottom:1px solid #d3e2e8;text-align:center;font-size:12px;color:#757879;background:#e8f0f3;}
+.pop_layer .e_top .con{width:100%;padding:22px 0;background:#f0f5f7;}
+.pop_layer .e_top .con span{display:block;width:529px;height:32px;margin:0 auto;text-indent:-9999px;background:url('http://static.filecast.co.kr/_img/event/c_extension1.png') no-repeat 0 0;}
+.pop_layer .e_top p{text-align:center;font-weight:bold;color:#010101;letter-spacing:-1px;font-size:15px;}
+.pop_layer .e_top p b{font-weight:normal;}
+.pop_layer .e_top p .total{color:#c94479;}
+.pop_layer .e_top p .point{color:#fe8915;}
+.pop_layer .e_top p .fix{color:#21b2e3;}
+.pop_layer .e_top .bg{display:block;width:15px;height:10px;margin:15px auto;background:url('http://static.filecast.co.kr/_img/common/common_160705.png') no-repeat -17px 0;}
+.pop_layer .c_btm{overflow:hidden;width:927px;/* height:268px; */border-top:1px solid #e6e6e6;}
+.pop_layer .c_btm h2{margin-bottom:20px;font-weight:bold;font-size:15px;}
+.pop_layer .c_btm .c_left{overflow:hidden;position:relative;float:left;width:628px;padding:32px 0 30px 30px;border-radius:0 0 0 8px;background:#f9f9f9;}
+.pop_layer .c_btm .c_left ul li{float:left;margin:0 10px 10px 0;}
+.pop_layer .c_btm .c_left ul li span{display:block;width:132px;padding:5px 0;border:1px solid #00a6d4;letter-spacing:1px;border-radius:5px;color:#24b6e5;font-size:14px;text-align:center;background:#fff;font-weight:bold;}
+.pop_layer .c_btm .c_left ul li span:hover, .pop_layer .c_btm .c_left ul li.active span{border-color:#fff;color:#fff;background:#24b6e5;}
+.pop_layer .c_btm .c_left .paypal{cursor:pointer;position:absolute;top:27px;right:40px;padding:3px 9px;border:1px solid #b6b9ba;border-radius:4px;color:#fff;background:#c4c7c8;font-size:11px;}
+.pop_layer .c_btm .c_left .paypal:hover{opacity:0.7;}
+.pop_layer .c_btm .c_right{float:right;width:299px;padding:32px 0 10px 33px;border-radius:0 0 8px 0;border-left:1px solid #e6e6e6;background:url('http://static.filecast.co.kr/_img/charge/bg_layer.png') repeat;}
+.pop_layer .c_btm .c_right dl{width:238px;color:#757879;font-size:12px;}
+.pop_layer .c_btm .c_right dl dt{clear:both;float:left;width:118px;padding-left:4px;margin-bottom:15px;font-weight:normal;}
+.pop_layer .c_btm .c_right dl .top{padding-bottom:10px;border-bottom:1px solid #dfe9ed;}
+.pop_layer .c_btm .c_right dl dd{float:right;width:120px;text-align:right;margin-bottom:15px;}
+.pop_layer .c_btm .c_right dl dd span{display:inline-block;margin-right:2px;font-weight:bold;color:#010101;font-size:14px;letter-spacing:1px;}
+.pop_layer .c_btm .c_right dl dd.top span{color:#a9acad;text-decoration:line-through;}
+.pop_layer .c_btm .c_right dl dt.total{padding-top:18px;color:#c94479;}
+.pop_layer .c_btm .c_right dl .total{border-top:1px solid #dfe9ed;}
+.pop_layer .c_btm .c_right dl .total .num{padding-top:8px;font-size:23px;color:#c94479;letter-spacing:-1px;}
+.pop_layer .c_btm .c_right dl .tax{display:block;font-weight:normal;color:#00a9d8;font-size:12px;letter-spacing:-1px;}
+
+/* 첫결제 이벤트팝업 */
+.pop_layer.first_c{position:relative;width:640px;height:450px;border:1px solid #000;background:url('http://static.filecast.co.kr/_img/charge/popup_first.jpg') no-repeat 0 0;text-indent:-9999px;}
+.pop_layer.first_c > span{position:absolute;display:block;cursor:pointer;}
+.pop_layer.first_c .btn_first_c{width:560px;height:55px;left:40px;bottom:45px;}
+.pop_layer.first_c .btn_n_close{width:208px;height:17px;right:15px;bottom:5px;}
+
+/* 충전 팝업 */
+.pop_layer.c_1512{position:relative;width:640px;height:450px;border:1px solid #000;background:url('http://static.filecast.co.kr/_img/charge/popup1512.jpg') no-repeat 0 0;text-indent:-9999px;}
+.pop_layer.c_1512 span{position:absolute;display:block;cursor:pointer;}
+.pop_layer.c_1512 .btn_get{width:560px;height:55px;left:40px;bottom:45px;}
+.pop_layer.c_1512 .btn_n_close{width:208px;height:17px;right:15px;bottom:5px;}
+
+/* 본인인증이벤트 */
+.e_content .e_view.self{position:relative;width:827px;height:1115px;background:url('http://static.filecast.co.kr/_img/event/bg_self.jpg') no-repeat 0 0;}
+.e_view.self .top, .e_view .btm, .e_view.self p{text-indent:-9999px;}
+.e_view.self .btn_self{position:absolute;left:158px;bottom:242px;display:block;width:508px;height:66px;background:url('http://static.filecast.co.kr/_img/event/btn_self.png') no-repeat 0 0;text-indent:-9999px;cursor:pointer;}
+.e_view.self .btn_self:hover{opacity:0.7;}
+
+/* 새해 선물받기 레이어 */
+.e_newyear{position:relative;width:642px;height:481px;border-radius:10px;}
+.e_newyear img{display:block;border-radius:10px;}
+.e_newyear h1, .e_newyear p{text-indent:-9999px;display:none;}
+.e_newyear .btn_gift{position:absolute;display:block;bottom:40px;left:120px;width:404px;height:167px;background:url('http://static.filecast.co.kr/_img/event/btn_gift.png') no-repeat 0 0;cursor:pointer;}
+.e_newyear .btn_gift:hover{opacity:0.9;}
+.e_newyear .gift_layer{display:none;z-index:3;position:absolute;top:25px;left:120px;width:406px;height:455px;background:url('http://static.filecast.co.kr/_img/event/popup_gift1601.png') no-repeat 0 0;}
+.e_newyear .gift_layer .btn_go_gift{position:absolute;bottom:140px;left:80px;text-indent:-9999px;display:block;width:229px;height:58px;background:url('http://static.filecast.co.kr/_img/event/btn_go_gift.png') no-repeat 0 0;cursor:pointer;}
+.e_newyear .gift_layer .btn_go_gift:hover{opacity:0.7;}
+.e_newyear .btn_close{background:none;}
+.e_newyear > span{position:absolute;display:block;cursor:pointer;text-indent:-9999px;}
+.e_newyear .btn_n_close{width:208px;height:17px;right:15px;bottom:5px;}
+
+/* 콘텐츠 10원 이벤트 레이어*/
+.e_10content{position:relative;width:646px;height:515px;}
+.e_10content .btn_filecast{display:block;position:absolute;width:455px;height:52px;top:406px;left:95px;cursor:pointer;text-indent:-9999px;}
+.e_10content .btn_n_close{display:block;position:absolute;width:208px;height:17px;right:15px;bottom:5px;}
+.e_10content .btn_close{top:10px;right:10px;width:25px;height:25px;background:none;}
+.txt10{clear:both;width:780px;padding:0;overflow:hidden;height:34px;margin:0 auto;border-radius:4px;text-align:center;font-size:12px;font-weight:bold;color:#fff;background:url('http://static.filecast.co.kr/_img/sub/bg_subtext1603.png') no-repeat 0 0;}
+.txt10 li{padding:9px 0 8px 0;}
+.txt10 .t_blue{color:#fffc00;}
+
+/* 콘텐츠 10원 이벤트 */
+.e_content .e_view.contents10{position:relative;width:827px;height:842px;background:url('http://static.filecast.co.kr/_img/event/bg_content10.jpg') no-repeat 0 0;}
+.e_view.contents10 h3, .e_view.contents10 p{display:none;}
+.e_view.contents10 .btn_contents10{display:block;position:absolute;top:720px;left:150px;width:524px;height:60px;text-indent:-9999px;cursor:pointer;background:url('http://static.filecast.co.kr/_img/event/btn_content10.png') no-repeat 0 0;}
+.e_view.contents10 .btn_contents10:hover{opacity:0.7;}
+
+/* 키즈관 */
+.e_content .e_view.kids_1601{position:relative;width:827px;height:2679px;background:url('http://static.filecast.co.kr/_img/event/bg_kids1601.jpg') no-repeat 0 0;}
+.kids_1601_top{width:827px;height:755px;text-indent:-9999px;}
+.kids_1601_content{overflow:hidden;padding:0 0 0 50px;}
+.kids_1601_content .kids_b a{float:left;display:block;width:338px;height:249px;margin:0 47px 30px 0;}
+.kids_1601_content .kids_s a{float:left;display:block;width:218px;height:198px;margin:0 35px 30px 0; }
+.kids_1601_content .kids_b a, .kids_1601_content .kids_s a{text-indent:-9999px;cursor:pointer;background:url('http://static.filecast.co.kr/_img/event/kids_conImg1.png') no-repeat;}
+.kids_1601_content .kids_b:hover, .kids_1601_content .kids_s:hover{opacity:0.8;}
+.kids_b.type1 a{background-position:0 0;}
+.kids_b.type2 a{background-position:0 -255px;}
+.kids_b.type3 a{background-position:0 -510px;}
+.kids_b.type4 a{background-position:0 -765px;}
+.kids_b.type5 a{background-position:0 -1025px;}
+.kids_b.type6 a{background-position:0 -1280px;}
+.kids_s.type1 a{background-position:-350px 0;}
+.kids_s.type2 a{background-position:-350px -255px;}
+.kids_s.type3 a{background-position:-350px -510px;}
+.kids_s.type4 a{background-position:-350px -765px;}
+.kids_s.type5 a{background-position:-350px -1025px;}
+.kids_s.type6 a{background-position:-580px 0;}
+.kids_s.type7 a{background-position:-580px -255px;}
+.kids_s.type8 a{background-position:-580px -510px;}
+.kids_s.type9 a{background-position:-580px -765px;}
+.kids_s.type10 a{background-position:-580px -1025px;}
+.kids_1601_content .kids_line{clear:both;width:724px;margin:10px 0 40px 0;border-top:1px solid #85bd59;}
+.kids_1601_foot{text-indent:-9999px;}
+
+/* 11400P 이벤트 */
+.e_content .e_view.freeStep{position:relative;width:827px;height:auto;background:none;}
+.freeStep .top{}
+.freeStep .top .inner{width:827px;height:348px;text-indent:-9999px;background:url('http://static.filecast.co.kr/_img/event/bg_freeStep_top.jpg') no-repeat 0 0;}
+.freeStep .top .free_tab{width:827px;height:170px;background:#cefbfd;}
+.freeStep .top .free_tab ul{overflow:hidden;}
+.freeStep .top .free_tab ul li{float:left;height:170px;cursor:pointer;text-indent:-9999px;background:url('http://static.filecast.co.kr/_img/event/freetabmenu.png') no-repeat 0 0;opacity:0.7;}
+.freeStep .top .free_tab ul li:hover, .freeStep .top .free_tab ul li.active, .freeStep .top .free_tab ul li.active:hover{opacity:1;}
+.freeStep .top .free_tab ul li.t1{width:276px;background-position:0 0;}
+.freeStep .top .free_tab ul li.t2{width:276px;background-position:-276px 0;}
+.freeStep .top .free_tab ul li.t3{width:275px;background-position:-552px 0;}
+.s_content.blog{padding-top:52px;background:url('http://static.filecast.co.kr/_img/event/bg_step1.gif') no-repeat 1px 0;}
+.s_content.blog .s_top{width:698px;height:155px;margin:0 auto 33px auto;text-indent:-9999px;background:url('http://static.filecast.co.kr/_img/event/txt_step1.png') no-repeat 0 0;}
+.s_content.sns{background:url('http://static.filecast.co.kr/_img/event/bg_step2.gif') no-repeat 0 0;}
+.s_content.reply{background:url('http://static.filecast.co.kr/_img/event/bg_step3.gif') no-repeat 0 0;}
+.step_area > ol > li{padding:25px 0 25px 50px}
+.step_area h5{margin-bottom:15px;}
+.blog .step_area h5, .blog .step_area p{background:url('http://static.filecast.co.kr/_img/event/txt_step1.png') no-repeat 0 0;text-indent:-9999px;}
+.blog .step_area .s1 h5{width:337px;height:68px;background-position:0 -155px;}
+.blog .step_area .s1 .txt1{width:281px;height:16px;margin-bottom:22px;background-position:0 -234px;}
+.blog .step_area .s1 .txt2{width:519px;height:16px;margin-bottom:10px;background-position:0 -252px;}
+.blog .step_area .s1 .txt3{display:inline-block;width:353px;height:14px;background-position:0 -270px;vertical-align:middle;}
+.blog .step_area .s1 .txt4{display:inline-block;width:676px;height:24px;background-position:0 -576px;vertical-align:middle;}
+.blog .step_area .tit_example{overflow:hidden;width:723px;margin-bottom:20px;border-radius:9px;background:#fff;}
+.tit_example .logo_area{float:left;width:185px;padding:57px 0;border-right:1px solid #f9656f;}
+.tit_example .logo_area span{display:block;margin:0 auto;background:url('http://static.filecast.co.kr/_img/event/txt_step1.png') no-repeat;text-indent:-9999px;}
+.tit_example .logo_area .n_logo{width:94px;height:18px;background-position:-603px -158px;}
+.tit_example .logo_area .d_logo{width:63px;height:26px;margin:34px auto;background-position:-616px -194px;}
+.tit_example .logo_area .na_logo{width:89px;height:22px;background-position:-606px -235px;}
+.tit_example ul{float:left;margin:27px 0 0 52px;}
+.tit_example ul li{padding:0 0 6px 0;letter-spacing:-1px;font-weight:bold;}
+.tit_example ul li span{font-weight:bold;}
+.tit_example .tit_txt{float:left;width:415px;margin:10px 0 0 52px;padding:16px 0 0 0;border-top:1px solid #ddd;}
+.tit_example .tit_txt p{margin-bottom:3px;text-indent:0;background:none;}
+.blog .step_area .s1 .b_style{width:724px;padding:9px 0;margin-bottom:8px;border-top:1px solid #db4958;border-bottom:1px solid #db4958;}
+.btn_downImg{display:inline-block;width:176px;padding:3px 0;border:1px solid #ffbbbf;border-radius:4px;text-align:center;font-size:12px;color:#f0ff00;background:#ea5864;cursor:pointer;}
+.btn_downImg:hover{color:#f0ff00;opacity:0.7;}
+.blog .step_area .s2 h5{width:465px;height:68px;background-position:0 -287px;}
+.blog .step_area .s2 .txt1{width:549px;height:16px;margin-bottom:19px;background-position:0 -364px;}
+.btn_posting{margin-bottom:15px;}
+.btn_posting span{display:inline-block;width:162px;padding:6px 0 5px 0;margin-right:21px;border:1px solid #ffbbbf;border-radius:4px;text-align:center;font-size:12px;background:#ea5864;cursor:pointer;}
+.btn_posting span a{color:#fff;}
+.btn_posting span:hover{background:#ff9096;}
+.btn_posting span:hover a{color:#770004;}
+.post_eArea{width:724px;padding:20px 0 14px 0;margin-bottom:10px;border-radius:9px;text-align:center;background:#fff;}
+.post_eArea .img{display:inline-block;width:685px;height:395px;background:url('http://static.filecast.co.kr/_img/event/blog_ex.jpg') no-repeat 0 0;}
+.post_link{overflow:hidden;width:724px;padding:17px 0 15px 0;border-radius:9px;background:#fff;}
+.post_link span{display:block;float:left;padding-left:34px;margin-top:8px;color:#f9656f;font-weight:bold;}
+.post_link ul{float:left;}
+.post_link ul li{float:left;width:173px;height:38px;border-right:1px solid #fcb2b7;text-align:center;}
+.post_link ul li.nate{border-right:none;}
+.post_link ul li a{display:inline-block;background:url('http://static.filecast.co.kr/_img/event/txt_step1.png') no-repeat;text-indent:-9999px;}
+.post_link ul li.naver a{width:121px;height:23px;margin-top:7px;background-position:-2px -537px;}
+.post_link ul li.daum a{width:94px;height:40px;background-position:-197px -531px;}
+.post_link ul li.nate a{width:115px;height:32px;margin-top:4px;background-position:-355px -535px;}
+.blog .step_area .s3 h5{width:460px;height:68px;background-position:0 -385px;}
+.blog .step_area .s3 .txt1{width:657px;height:16px;margin-bottom:19px;background-position:0 -463px;}
+.url_input{overflow:hidden;position:relative;width:725px;padding:20px 0 10px 35px;border-radius:9px;background:#fff;}
+.url_input span{display:block;margin-bottom:10px;}
+.url_input span label{display:inline-block;width:150px;font-size:14px;color:#f9656f;font-weight:normal;}
+.url_input span input{display:inline-block;height:31px;border:1px solid #f9656f;background:#fff;}
+.url_input span input.style1{width:270px;margin-right:11px;}
+.url_input span input.style2{width:392px;}
+.url_input span select{display:inline-block;width:87px;height:26px;border:1px solid #bfc2c7;color:#757879;font-size:12px;}
+.url_input .btn_register{position:absolute;top:20px;right:30px;display:block;width:100px;height:72px;border:none;border-radius:5px;text-align:center;background:#f9656f;color:#fff;font-weight:bold;}
+.url_input .btn_register:hover{opacity:0.7;}
+.blog .step_area .s4{padding:20px 0 35px 50px}
+.blog .step_area .s4 h5{width:90px;height:40px;background-position:0 -480px;}
+.step_area .s4 ul{color:#fdd1d4;letter-spacing:-1px;}
+.step_area .s4 ul li{margin-bottom:3px;}
+.s_content.sns{padding:52px 0 0 0;}
+.s_content.sns .s_top{width:670px;height:200px;margin:0 auto 33px auto;text-indent:-9999px;background:url('http://static.filecast.co.kr/_img/event/txt_step2.png') no-repeat 0 0;}
+.sns .step_area h5, .sns .step_area p{background:url('http://static.filecast.co.kr/_img/event/txt_step2.png') no-repeat 0 0;text-indent:-9999px;}
+.sns .step_area .s1 h5{width:335px;height:36px;background-position:0 -210px;}
+.sns .step_area .s1 .txt1{width:390px;height:17px;margin-bottom:20px;background-position:0 -258px;}
+.sns .step_area .s1 .sns_img{position:relative;width:724px;height:443px;background:url('http://static.filecast.co.kr/_img/event/sns_ex.png') no-repeat 0 0;}
+.sns .step_area .s1 .sns_img p{position:absolute;left:63px;top:400px;width:290px;height:14px;background-position:0 -278px;}
+.sns .step_area .s1 .btn_sns{display:block;width:510px;height:66px;margin:40px 0 18px 95px;background:url('http://static.filecast.co.kr/_img/event/btn_sns.png') no-repeat 0 0;cursor:pointer;}
+.sns .step_area .s1 .btn_sns:hover{opacity:0.7;}
+.sns .step_area .s2{padding:17px 0 50px 50px}
+.sns .step_area .s2 h5{width:110px;height:40px;background-position:-483px -212px;}
+.sns .step_area .s2 ul{color:#fff;letter-spacing:-1px;}
+.sns .step_area .s2 ul li{margin-bottom:3px;}
+.s_content.reply{clear:both;position:relative;padding:52px 0 0 0;background:url('http://static.filecast.co.kr/_img/event/bg_step3.gif') no-repeat 0 0;}
+.s_content.reply .s_top{width:678px;height:170px;margin-left:65px;background:url('http://static.filecast.co.kr/_img/event/txt_step3.png') no-repeat 0 0;text-indent:-9999px;}
+.my_pList{overflow:hidden;width:726px;padding:16px 0 16px 33px;margin:26px auto 0 auto;border:1px solid #008d00;border-radius:12px;background:#00b053;font-size:15px;letter-spacing:-1px;}
+.my_pList .tit{display:block;float:left;width:112px;color:#c2ff71;vertical-align:middle;line-height:16px;}
+.my_pList ul{float:left;width:560px;text-align:center;line-height:16px;}
+.my_pList ul li{display:inline-block;line-height:16px;}
+.my_pList ul li.bar{padding:0 19px;color:#22b600;vertical-align:middle;}
+.my_pList dl{display:inline-block;}
+.my_pList dt, .my_pList dd{display:inline-block;line-height:16px;}
+.my_pList dt{font-weight:normal;color:#fff;}
+.my_pList dd{color:#fcff00;}
+.my_pList dd span{font-weight:bold;}
+.reply .step_area h5, .reply .step_area p{background:url('http://static.filecast.co.kr/_img/event/txt_step3.png') no-repeat;text-indent:-9999px;}
+.reply .step_area .s1 h5{width:137px;height:66px;background-position:0 -170px;}
+.reply .step_area .s2 h5{width:375px;height:66px;background-position:0 -270px;}
+.reply .step_area .s3 h5{width:434px;height:66px;background-position:0 -370px;}
+.reply .step_area .s4 h5{width:90px;height:37px;background-position:0 -470px;}
+.reply .step_area .s1 p{width:433px;height:18px;margin-bottom:22px;background-position:0 -248px;}
+.reply .step_area .s2 p{width:430px;margin-bottom:20px;background-position:0 -348px;}
+.reply .step_area .s3 p{width:635px;margin-bottom:19px;background-position:0 -447px;}
+.cate_choice{overflow:hidden;width:725px;padding:21px 23px 11px 23px;border-radius:9px;background:#fff;}
+.cate_choice .c_logo{float:left;display:block;width:110px;height:50px;margin:13px 26px 0 0;background:url('http://static.filecast.co.kr/_img/event/txt_step3.png') no-repeat -540px -170px;text-indent:-9999px;}
+.cate_choice .c_btn li{float:left;width:82px;height:31px;padding:7px 0 5px 0;margin:0 6px 10px 0;border-radius:5px;border:1px solid #00b053;font-size:12px;text-align:center;cursor:pointer;}
+.cate_choice .c_btn li a{display:block;color:#22b600;}
+.cate_choice .c_btn li:hover a{color:#fff;}
+.cate_choice .c_btn li:hover{background:#00b053;}
+.reply_ex{width:724px;height:474px;background:url('http://static.filecast.co.kr/_img/event/bg_reply_ex.png') no-repeat 0 0;text-indent:-9999px;}
+.reply .url_input span label{width:160px;margin-right:20px;color:#22b600;}
+.reply .url_input span input{height:31px;border:1px solid #22b600;background:#f8fafb;}
+.reply .url_input span input.style1{width:270px;margin-right:11px;}
+.reply .url_input span input.style2{width:370px;}
+.reply .url_input span select{display:inline-block;width:87px;height:26px;border:1px solid #bfc2c7;color:#757879;font-size:12px;}
+.reply .url_input .btn_register{background:#00b053;}
+.reply .step_area .s4{padding:17px 0 48px 50px;}
+.reply .step_area .s4 li{color:#fff;}
+
+/* 설날 가격할인 */
+.e_content .e_view.newYear02{width:827px;height:3091px;background:url('http://static.filecast.co.kr/_img/event/newyear02.jpg') no-repeat 0 0;}
+.newYear02 .top{height:447px;text-indent:-9999px;}
+.newYear02 .top span{display:block;}
+.newYear02 .btm{display:none;}
+.e_dis_list{padding-left:77px;}
+.e_dis_list ul{overflow:hidden;}
+.e_dis_list ul li{float:left;width:140px;margin:0 36px 47px 0;text-align:center;}
+.e_dis_list ul li span{display:inline-block;}
+.e_dis_list ul li span.d_img{width:138px;height:204px;border:1px solid #c2c7ce;background:url('http://static.filecast.co.kr/_img/event/newyear_img.jpg') no-repeat;}
+.e_dis_list ul li span.d_img.type1{background-position:-43px -27px;}
+.e_dis_list ul li span.d_img.type2{background-position:-224px -27px;}
+.e_dis_list ul li span.d_img.type3{background-position:-400px -27px;}
+.e_dis_list ul li span.d_img.type4{background-position:-574px -27px;}
+.e_dis_list ul li span.d_img.type5{background-position:-43px -250px;}
+.e_dis_list ul li span.d_img.type6{background-position:-224px -250px;}
+.e_dis_list ul li span.d_img.type7{background-position:-400px -250px;}
+.e_dis_list ul li span.d_img.type8{background-position:-574px -250px;}
+.e_dis_list ul li span.d_img.type9{background-position:-43px -471px;}
+.e_dis_list ul li span.d_img.type10{background-position:-220px -471px;}
+.e_dis_list ul li span.d_img.type11{background-position:-400px -471px;}
+.e_dis_list ul li span.d_img.type12{background-position:-574px -471px;}
+.e_dis_list ul li span.d_img.type13{background-position:-43px -701px;}
+.e_dis_list ul li span.d_img.type14{background-position:-220px -701px;}
+.e_dis_list ul li span.d_img.type15{background-position:-400px -701px;}
+.e_dis_list ul li span.d_img.type16{background-position:-574px -702px;}
+.e_dis_list ul li span.d_img.type17{background-position:-43px -928px;}
+.e_dis_list ul li span.d_img.type18{background-position:-223px -930px;}
+.e_dis_list ul li span.d_img.type19{background-position:-400px -928px;}
+.e_dis_list ul li span.d_img.type20{background-position:-574px -928px;}
+.e_dis_list ul li span.d_img.type21{background-position:-43px -1141px;}
+.e_dis_list ul li span.d_img.type22{background-position:-222px -1141px;}
+.e_dis_list ul li span.d_img.type23{background-position:-394px -1140px;}
+.e_dis_list ul li span.d_img.type24{background-position:-574px -1141px;}
+.e_dis_list ul li span.d_img.type25{background-position:-43px -1352px;}
+.e_dis_list ul li span.d_img.type26{background-position:-222px -1352px;}
+.e_dis_list ul li span.d_img.type27{background-position:-394px -1354px;}
+.e_dis_list ul li span.d_sum{color:#757879;}
+.e_dis_list .n_sum{text-decoration:line-through;font-size:12px;}
+.e_dis_list .t_sum{color:#e32173;}
+.e_dis_list .d_tit{margin:10px 0 10px 0;color:#010101;font-weight:bold;}
+.e_dis_list ul li .btn_go_dis{display:block;width:91px;padding:5px 0 4px 0;margin:0 auto;border:1px solid #f98b82;border-radius:4px;letter-spacing:-1px;background:#902025;color:#fff;font-weight:bold;text-align:center;}
+.e_dis_list ul li:hover .d_img, .e_dis_list ul li:hover .btn_go_dis{opacity:0.7;}
+
+/* 설 모바일 쿠폰지급이벤트 팝업 */
+.mobile_coupon1602{position:relative;width:647px;height:485px;}
+.mobile_coupon1602 .btn_n_close{display:block;position:absolute;width:208px;height:17px;right:15px;bottom:5px;}
+.mobile_coupon1602 .btn_close{top:10px;right:10px;width:25px;height:25px;background:none;}
+
+/* 판매자 이벤트 1602 */
+.e_content .e_view.seller.t1601.v2{position:relative;height:870px;padding:0;background:url('http://static.filecast.co.kr/_img/event/bg_seller1602.jpg') no-repeat 0 0;}
+.e_view.seller.t1601.v2 .top, .e_view.seller.t1601.v2 .btm, .e_view.seller.t1601.v2 > p, .e_view.seller.t1601.v2 .btm{display:none;}
+.e_view.seller.t1601.v2 .btn_go_seller{position:absolute;top:615px;left:263px;display:block;width:298px;height:54px;background:url('http://static.filecast.co.kr/_img/event/seller_btn1602.png') no-repeat 0 0;}
+.e_view.seller.t1601.v2 .btn_go_seller:hover{opacity:0.7;}
+
+/* 봄혜택 */
+.spring_gift1604{position:relative;width:647px;height:443px;}
+.spring_gift1604 .btn_n_close{display:block;position:absolute;width:208px;height:17px;right:15px;bottom:5px;}
+.spring_gift1604 .btn_close{top:10px;right:10px;width:25px;height:25px;background:none;}
+.spring_gift1604 .btn_spring{position:absolute;top:340px;left:165px;width:317px;height:52px;background:url('http://static.filecast.co.kr/_img/event/btn_spring.png') no-repeat 0 0;}
+.spring_gift1604 .btn_spring:hover{opacity:0.7;}
+
+/* 판매자 1604 */
+.e_content .e_view.seller.t1604{position:relative;height:1175px;padding:0;background:url('http://static.filecast.co.kr/_img/event/bg_seller1604.jpg') no-repeat 0 0;}
+.e_view.seller.t1604 .top, .e_view.seller.t1601 .btm, .e_view.seller.t1604 > p, .e_view.seller.t1604 .btm{display:none;}
+.e_view.seller.t1604 .btn_go_seller{position:absolute;top:950px;left:252px;display:block;width:324px;height:60px;background:url('http://static.filecast.co.kr/_img/event/seller_btn1604.png') no-repeat 0 0;}
+.e_view.seller.t1604 .btn_go_seller:hover{opacity:0.7;}
+
+/* 제휴 이벤트 시즌2 */
+.freeStep.v1604 .top .inner{background:url('http://static.filecast.co.kr/_img/event/bg_freeStep_top02.jpg') no-repeat 0 0;}
+.freeStep.v1604 .top .free_tab{height:169px;padding-top:15px;background:#fbfae8;}
+.freeStep.v1604 .top .free_tab ul li{float:left;height:154px;background-image:url('http://static.filecast.co.kr/_img/event/freetabmenu1604.png');}
+.freeStep.v1604 .top .free_tab ul li.t1{width:413px;background-position:0 0;}
+.freeStep.v1604 .top .free_tab ul li.t2{width:414px;background-position:-414px 0;}
+.v1604 .s_content.blog{height:2125px;background:url('http://static.filecast.co.kr/_img/event/bg_step1_v2.gif') no-repeat 1px 0;}
+.blog .step_area .s3 .txt2{width:162px;background-position:0 -610px;background-color:#f9333c;} 
+.blog .step_area .s3 .txt3{width:698px;height:36px;margin:10px 0 20px 0;background-position:0 -630px;}
+.v1604 .s_content.reply{height:1862px;background:url('http://static.filecast.co.kr/_img/event/bg_step2_v2.gif') no-repeat 1px 0;}
+.v1604 .s_content.reply .s_top{width:678px;height:202px;margin-left:65px;background:url('http://static.filecast.co.kr/_img/event/txt_step2_v2.png') no-repeat 0 0;text-indent:-9999px;}
+.v1604 .my_pList{margin-bottom:40px;border-color:#003969;background:#004f82;}
+.v1604 .my_pList .tit{color:#65c3f9;}
+.v1604 .my_pList dd{color:#fcff00;}
+.v1604 .reply .step_area h5, .v1604 .reply .step_area p{background:url('http://static.filecast.co.kr/_img/event/txt_step2_v2.png') no-repeat;text-indent:-9999px;}
+.v1604 .reply .step_area .s1 h5{width:137px;height:66px;background-position:0 -210px;}
+.v1604 .reply .step_area .s2 h5{width:375px;height:66px;background-position:-150px -210px;}
+.v1604 .reply .step_area .s3 h5{width:434px;height:66px;background-position:0 -290px;}
+.v1604 .reply .step_area .s4 h5{width:90px;height:37px;background-position:-460px -290px;}
+.v1604 .reply .step_area .s1 p{width:433px;height:15px;margin-bottom:22px;background-position:0 -360px;}
+.v1604 .reply .step_area .s2 p{width:430px;height:16px;margin-bottom:20px;background-position:0 -380px;}
+.v1604 .reply .step_area .s3 p{width:635px;height:15px;margin-bottom:19px;background-position:0 -400px;}
+.v1604 .reply_ex{background-image:url('http://static.filecast.co.kr/_img/event/bg_reply_ex1604.png');}
+.v1604 .url_input span label{color:#004f82;}
+.v1604 .url_input span input{border-color:#65c3f9;}
+.v1604 .url_input .btn_register{background:#339bd0;color:#fff;}
+.v1604 .cate_choice{overflow:hidden;width:725px;padding:29px 0 0 0;margin-bottom:15px;border-radius:9px;background:#fff;}
+.v1604 .cate_choice .cc_logo{display:block;float:left;width:153px;text-align:center;background:none;}
+.v1604 .cate_choice .cc_logo span{display:inline-block;background:url('http://static.filecast.co.kr/_img/event/txt_step2_v2.png') no-repeat;text-indent:-9999px;}
+.v1604 .cate_choice .cc_logo .naver{width:115px;height:21px;margin:0 0 10px 0;background-position:0 -440px;}
+.v1604 .cate_choice .cc_logo .daum{width:76px;height:31px;background-position:-150px -440px;}
+.cate_choice .check_area{float:left;width:545px;padding:0 0 0 14px;}
+.cate_choice .check_area li{float:left;width:128px;margin-bottom:25px;line-height:14px;}
+.cate_choice .check_area input[type="checkbox"]{display:none;}
+.cate_choice .check_area input[type="checkbox"] + span{position:relative;top:1px;display:inline-block;width:12px;height:12px;background:url('http://static.filecast.co.kr/_img/event/txt_step2_v2.png') no-repeat 0 -420px;}
+.cate_choice .check_area input[type="checkbox"]:checked + span{background-position:-20px -420px;}
+.cate_choice .check_area input[type="checkbox"]:checked + span  + label{text-decoration:underline;}
+.cate_choice .check_area label{color:#339bd0;font-size:14px;font-weight:normal;}
+.v1604 .btn_area{overflow:hidden;width:725px;}
+.v1604 .btn_area a{display:inline-block;width:355px;border:1px solid #339bd0;border-radius:4px;font-size:14px;text-align:center;background:#1c8ec2;color:#fff;}
+.v1604 .btn_area a:hover{opacity:0.7;}
+.v1604 .btn_area a.btn_naver{float:left;padding:9px 0;}
+.v1604 .btn_area a.btn_daum{float:right;padding:9px 0 8px 0;}
+.v1604 .btn_area a span{display:inline-block;margin-right:7px;background:url('http://static.filecast.co.kr/_img/event/txt_step2_v2.png') no-repeat;vertical-align:top;}
+.v1604 .btn_area a.btn_naver span{width:90px;height:16px;background-position:-240px -440px;}
+.v1604 .btn_area a.btn_daum span{width:52px;height:21px;background-position:-340px -440px;}
+.v1604.blog .url_input span label{color:#f9656f;}
+.v1604.blog .url_input span input{border-color:#f9656f;}
+.v1604.blog .url_input .btn_register{background:#ea5864;color:#fff;}
+
+/* 자녀안심서비스 */ 
+.pop_layer.v1604 .layer_top{height:203px;padding-top:25px;}
+.pop_layer.v1604 .layer_top.type2{height:153px;}
+.pop_layer.v1604 .layer_top input{display:inline-block;}
+.pop_layer.v1604 .layer_top input[type="password"].style1{width:500px;padding:10px 0 7px 30px;margin:0 10px 10px 60px;}
+.pop_layer.v1604 .layer_top input[type="password"].style2{width:500px;margin:0 10px 0 60px;background:#fff;}
+.pop_layer.v1604 .layer_top input[type="button"]{left:235px;top:133px;width:153px;border:1px solid #00a7d6;padding:8px 0 7px 0;border-radius:5px;color:#fff;background:#24b6e5;font-weight:bold;}
+.pop_layer.v1604 .layer_top.type2 input[type="button"]{top:83px;}
+.pop_layer.v1604 .child_txt{padding:8px 0 32px 30px;border-radius:0 0 8px 8px;background:#fff;letter-spacing:-1px;}
+.pop_layer.v1604 .child_txt h2{padding-top:22px;margin-bottom:15px;font-weight:bold;color:#444748;font-size:14px;}
+.pop_layer.v1604 .layer_top input::-webkit-input-placeholder {color:#24b6e5;}
+.pop_layer.v1604 .layer_top input::-moz-placeholder{color:#24b6e5;}
+.pop_layer.v1604 .layer_top input:-ms-input-placeholder {color:#24b6e5;}
+
+/* 교육동영상 무료 1604*/ 
+.e_view.education{height:1223px;background-image:url('http://static.filecast.co.kr/_img/event/education1604.png');}
+.e_view.education .top{height:454px;text-indent:-9999px;}
+.education_item{padding-left:40px;}
+.education_item li{float:left;margin:0 48px 40px 0;}
+.education_item li a{display:block;width:214px;height:185px;text-indent:-9999px;background:url('http://static.filecast.co.kr/_img/event/education1604_item.png') no-repeat;}
+.education_item li a:hover{opacity:0.7;}
+.education_item li.type1 a{background-position:0 0;}
+.education_item li.type2 a{background-position:-250px 0;}
+.education_item li.type3 a{background-position:-500px 0;}
+.education_item li.type4 a{background-position:0 -200px;}
+.education_item li.type5 a{background-position:-250px -200px;}
+.education_item li.type6 a{background-position:-500px -200px;}
+.education_item li.type7 a{background-position:0 -400px;}
+.education_item li.type8 a{background-position:-250px -400px;}
+.education_item li.type9 a{background-position:-500px -400px;}
+
+/* 카카오톡 이벤트 페이지 */
+.e_view.kakao{position:relative;height:1503px;background-image:url('http://static.filecast.co.kr/_img/event/bg_kakao.jpg');}
+.e_view.kakao p, .e_view.kakao .top{display:none;}
+.e_view.kakao .btn_kakao{position:absolute;top:1278px;left:220px;display:block;width:393px;height:50px;text-indent:-9999px;background:url('http://static.filecast.co.kr/_img/event/btn_kakao.png') no-repeat 0 0;}
+.e_view.kakao .btn_kakao:hover{opacity:0.7;}
+
+/* 1605충전 팝업 */
+.charge1605_popup{position:relative;width:647px;height:416px;}
+.charge1605_popup .btn_n_close{display:block;position:absolute;width:208px;height:17px;right:15px;bottom:5px;}
+.charge1605_popup .btn_close{top:10px;right:10px;width:25px;height:25px;background:none;}
+.charge1605_popup .btn_charge_1605{position:absolute;top:313px;left:150px;width:346px;height:52px;background:url('http://static.filecast.co.kr/_img/event/btn_charge_1605.png') no-repeat 0 0;}
+.charge1605_popup .btn_charge_1605:hover{opacity:0.7;}
+
+/* mbc 300원이벤트 */
+.e_view.mbc1605{position:relative;height:auto;background:#fff;}
+.e_view.mbc1605 .top{height:533px;text-indent:-9999px;background:url('http://static.filecast.co.kr/_img/event/event_mbc1605_top.jpg') no-repeat 0 0;}
+.e_view.mbc1605 > div{padding:30px 0 15px 40px;}
+.e_view.mbc1605 > div h4{float:left;height:30px;margin-bottom:25px;text-indent:-9999px;background:url('http://static.filecast.co.kr/_img/event/mbc_txt.png') no-repeat;}
+.e_view.mbc1605 > .mbc_show h4{width:310px;}
+.e_view.mbc1605 > .mbc_best h4{width:280px;background-position:0 -34px;}
+.e_view.mbc1605 > .mbc_end h4{width:200px;background-position:0 -68px;}
+.e_view.mbc1605 .mbc_show{background:#fff5e9;}
+.e_view.mbc1605 .mbc_best{border-top:1px solid #ff97a8;border-bottom:1px solid #ff97a8;background:url('http://static.filecast.co.kr/_img/event/bg_bestdrama.png') no-repeat 0 0;}
+.e_view.mbc1605 .list_wrap{clear:both;overflow:hidden;width:725px;}
+.e_view.mbc1605 .list_wrap ul{float:left;width:750px;}
+.e_view.mbc1605 .list_wrap ul li{float:left;width:106px;margin:0 17px 25px 0;}
+.e_view.mbc1605 .list_wrap ul li a{display:block;}
+.e_view.mbc1605 .list_wrap ul li a:hover{opacity:0.7;}
+.e_view.mbc1605 .list_wrap ul li span{display:block;}
+.e_view.mbc1605 .list_wrap ul li span.img{width:107px;height:154px;margin-bottom:8px;border:1px solid #666;}
+.e_view.mbc1605 .list_wrap ul li span.img img{display:block;width:105px;height:152px;}
+.e_view.mbc1605 .list_wrap ul li span.txt{overflow:hidden;width:107px;text-align:center;color:#ff4463;font-size:12px;text-overflow:ellipsis;white-space:nowrap;}
+.e_view.mbc1605 .btm{height:160px;text-indent:-9999px;background:url('http://static.filecast.co.kr/_img/event/mbc_btm.png') no-repeat 0 0;}
+.e_view.mbc1605 .list_align{float:right;width:162px;padding:6px 0 5px 18px;border:2px solid #ff748b;border-radius:14px;margin-right:50px;font-size:12px;background:#ffe8ec;}
+.e_view.mbc1605 .list_align .bar{display:inline-block;margin:0 5px;color:#ffa1a9;}
+.e_view.mbc1605 .list_align a{color:#ffa1a9;letter-spacing:-1px;}
+.e_view.mbc1605 .list_align a.active{color:#ff4463;text-decoration:underline;}
+
+/* 키즈관 1605 */
+.e_content .e_view.kids_1605{position:relative;width:827px;height:2909px;background:url('http://static.filecast.co.kr/_img/event/bg_kids1605.jpg') no-repeat 0 0;}
+.kids_1605_top{width:827px;height:730px;text-indent:-9999px;}
+.kids_1605_content{overflow:hidden;padding:0 0 0 50px;}
+.kids_1605_content .kids_b a{float:left;display:block;width:338px;height:249px;margin:0 47px 40px 0;}
+.kids_1605_content .kids_s a{float:left;display:block;width:218px;height:198px;margin:0 35px 30px 0; }
+.kids_1605_content .kids_b a, .kids_1605_content .kids_s a{text-indent:-9999px;cursor:pointer;background:url('http://static.filecast.co.kr/_img/event/kids_conImg1605.png') no-repeat;}
+.kids_1605_content .kids_b:hover, .kids_1605_content .kids_s:hover{opacity:0.8;}
+.kids_1605_content .kids_b.type1 a{background-position:0 0;}
+.kids_1605_content .kids_b.type2 a{background-position:0 -255px;}
+.kids_1605_content .kids_b.type3 a{background-position:0 -510px;}
+.kids_1605_content .kids_b.type4 a{background-position:0 -765px;}
+.kids_1605_content .kids_b.type5 a{background-position:-350px 0;}
+.kids_1605_content .kids_b.type6 a{background-position:-350px -255px;}
+.kids_1605_content .kids_s.type1 a{background-position:-700px 0;}
+.kids_1605_content .kids_s.type2 a{background-position:-950px 0;}
+.kids_1605_content .kids_s.type3 a{background-position:-1200px 0;}
+.kids_1605_content .kids_s.type4 a{background-position:-700px -210px;}
+.kids_1605_content .kids_s.type5 a{background-position:-950px -210px;}
+.kids_1605_content .kids_s.type6 a{background-position:-1200px -210px;}
+.kids_1605_content .kids_s.type7 a{background-position:-700px -420px;}
+.kids_1605_content .kids_s.type8 a{background-position:-950px -420px;}
+.kids_1605_content .kids_s.type9 a{background-position:-1200px -420px;}
+.kids_1605_content .kids_s.type10 a{background-position:-700px -630px;}
+.kids_1605_content .kids_s.type11 a{width:219px;background-position:-950px -630px;}
+.kids_1605_content .kids_s.type12 a{background-position:-1200px -630px;}
+.kids_1605_content .kids_s.type13 a{background-position:-700px -840px;}
+.kids_1605_content .kids_s.type14 a{background-position:-950px -840px;}
+.kids_1605_content .kids_s.type15 a{background-position:-1200px -840px;}
+.kids_1605_content .kids_line{clear:both;width:724px;margin:10px 0 40px 0;border-top:1px solid #85bd59;}
+.kids_1605_foot{text-indent:-9999px;}
+
+/* 최신업데이트 영화 */
+.new_total{float:right;padding-top:8px;font-size:14px;color:#444748;}
+.new_total span{font-weight:bold;}
+.new_upload{width:827px;padding:15px 0 60px 0;border-radius:0 0 9px 9px;background:#fff;}
+.u_list ul{overflow:hidden;margin:0 0 0 23px;}
+.u_list ul li{float:left;width:132px;margin:35px 0 0 20px;text-align:center;}
+.u_list ul li a{display:block;}
+.u_list ul li a:hover{opacity:0.7;}
+.u_list ul li a > span{display:block;}
+.u_list ul li .m_img{position:relative;width:128px;height:186px;margin:0 auto 10px auto;border:1px solid #c2c7ce;}
+.u_list ul li .m_img .ico_new, .u_list ul li .m_img .ico_hot{display:inline-block;position:absolute;top:5px;left:0;width:45px;height:22px;background:url('http://static.filecast.co.kr/_img/sub/ico.png') no-repeat;}
+.u_list ul li .m_img .ico_new{background-position:0 0;}
+.u_list ul li .m_img .ico_hot{background-position:0 -25px;}
+.u_list ul li .m_img img{display:inline-block;width:128px;height:184px;}
+.u_list ul li p{overflow:hidden;margin-bottom:8px;text-overflow:ellipsis;white-space:nowrap;font-weight:bold;color:#444748;letter-spacing:-1px;}
+.u_list ul li p .ico{position:relative;top:3px;display:inline-block;width:13px;height:13px;margin-right:3px;background:url('http://static.filecast.co.kr/_img/sub/ico_adult.png') no-repeat 0 0;vertical-align:top;}
+.u_list ul li .category, .u_list ul li .date{margin-bottom:5px;font-size:12px;color:#b6b9ba;}
+
+/* vr기기 qna 팝업레이어 */
+.pop_layer.vr_qna{border:2px solid #252627;border-radius:10px;background:#fff;}
+.vr_qna_content div{overflow:hidden;padding:20px 30px 16px 30px;}
+.vr_qna_content div.bg{background:#f3f5f6;}
+.vr_qna_content div p{color:#757879;font-size:11px;}
+.vr_qna_content div p span{display:block;float:left;line-height:20px;}
+.vr_qna_content div p .tit{position:relative;top:-1px;clear:both;width:28px;font-size:14px;font-weight:bold;color:#4fc3f7;vertical-align:top;}
+.vr_qna_content div p .tit.type1{text-indent:2px;}
+.vr_qna_content div p .txt{width:516px;letter-spacing:-0.5px;}
+.vr_qna_content .btn_ok{display:block;width:72px;margin:9px auto 30px auto;padding:5px 0 4px 0;border-radius:4px;border:1px solid #b6b9ba;color:#fff;font-weight:bold;text-align:center;background:#c4c7c8;cursor:pointer;}
+.vr_qna_content .btn_ok:hover{opacity:0.7;}
+
+/* vr기기 메인 팝업 */
+.charge1606_popup{position:relative;width:647px;height:527px;}
+.charge1606_popup .btn_n_close{display:block;position:absolute;width:208px;height:17px;right:15px;bottom:5px;}
+.charge1606_popup .btn_close{top:10px;right:10px;width:25px;height:25px;background:none;}
+.charge1606_popup .btn_vrget{position:absolute;top:428px;left:181px;width:287px;height:52px;background:url('http://static.filecast.co.kr/_img/charge/btn_vrget.png') no-repeat 0 0;}
+.charge1606_popup .btn_vrget:hover{opacity:0.7;}
+
+/* mbc예능 1606 */
+.e_view.mbc1605.v1606 .top{height:455px;text-indent:-9999px;background:url('http://static.filecast.co.kr/_img/event/event_mbc1606_top.jpg') no-repeat 0 0;}
+.e_view.mbc1605.v1606 > div h4{height:26px;background-image:url('http://static.filecast.co.kr/_img/event/mbc_txt1606.png');}
+.e_view.mbc1605.v1606 > .mbc_show h4{width:310px;}
+.e_view.mbc1605.v1606 > .mbc_best h4{width:280px;background-position:0 -30px;}
+.e_view.mbc1605.v1606 > .mbc_end h4{width:200px;background-position:0 -60px;}
+.e_view.mbc1605.v1606 .mbc_show{background:url('http://static.filecast.co.kr/_img/event/bg_mbc1606.jpg') repeat 0 0;}
+.e_view.mbc1605.v1606 .mbc_best{border:none;background:#fff1cc;}
+.e_view.mbc1605.v1606 .list_wrap ul li span.txt{color:#757879;}
+.e_view.mbc1605.v1606 .btm{height:173px;text-indent:-9999px;background:url('http://static.filecast.co.kr/_img/event/mbc_btm1606.png') no-repeat 0 0;}
+.e_view.mbc1605 .list_align{border-color:#ff7f38;background:#fff;}
+.e_view.mbc1605 .list_align .bar{color:#ffad7f;}
+.e_view.mbc1605 .list_align a{color:#ffad7f;}
+.e_view.mbc1605 .list_align a.active{color:#ff5b00;}
+
+/* 일본드라마/예능 1606 */
+.e_view.japan1606{height:1332px;background:url('http://static.filecast.co.kr/_img/event/japan1606.jpg') no-repeat 0 0;}
+.japan1606 .top{height:450px;text-indent:-9999px;}
+.japan1606 div{overflow:hidden;padding:50px 0 0 83px;}
+.japan1606 div.japan_drama{margin-bottom:45px;}
+.japan1606 .program{display:block;float:left;width:200px;height:153px;margin:0 30px 32px 0;text-indent:-9999px;background:url('http://static.filecast.co.kr/_img/event/japan1606_content.png') no-repeat;cursor:pointer;}
+.japan1606 .program.type1{background-position:0 0;}
+.japan1606 .program.type2{background-position:-220px 0;}
+.japan1606 .program.type3{background-position:-440px 0;}
+.japan1606 .program.type4{background-position:0 -165px;}
+.japan1606 .program.type5{background-position:-220px -165px;}
+.japan1606 .program.type6{background-position:-440px -165px;}
+.japan1606 .program.type7{background-position:0 -330px;}
+.japan1606 .program.type8{background-position:-220px -330px;}
+.japan1606 .program.type9{background-position:-440px -330px;}
+.japan1606 .program:hover{opacity:0.8;}
+
+/* 7월 충전 팝업 */
+.charge1607_popup{position:relative;width:647px;height:488px;}
+.charge1607_popup .charge_pop_body{width: 647px;height: 488px;background:url('http://static.filecast.co.kr/_img/charge/popup1607.png');}
+.charge1607_popup .btn_n_close{display:block;position:absolute;width:208px;height:17px;right:15px;bottom:5px;cursor:pointer;}
+.charge1607_popup .btn_close{top:10px;right:10px;width:25px;height:25px;background:none;}
+.charge1607_popup .btn_go{position:absolute;top:379px;left:151px;width:346px;height:52px;background:url('http://static.filecast.co.kr/_img/charge/btn_charge1607.png') no-repeat 0 0;}
+.charge1607_popup .btn_go:hover{opacity:0.7;}
+
+/* 7월 일본콘텐츠 할인 */
+.e_view.japan1607{height:1569px;background:url('http://static.filecast.co.kr/_img/event/bg_japan1607_3.jpg') no-repeat 0 0;}
+.japan1607 .top{height:400px;text-indent:-9999px;}
+.japan1607 .japan_list{margin:60px 0 0 75px;}
+.japan1607 .japan_list span{display:block;float:left;width:120px;height:205px;margin:0 65px 40px 0;text-indent:-9999px;background:url('http://static.filecast.co.kr/_img/event/japan1607_content.png') no-repeat;cursor:pointer;}
+.japan1607 .japan_list span:hover{opacity:0.8;}
+.japan1607 .japan_list .item0{background-position:-30px 0;}
+.japan1607 .japan_list .item1{background-position:-215px 0;}
+.japan1607 .japan_list .item2{background-position:-400px 0;}
+.japan1607 .japan_list .item3{width:124px;background-position:-584px 0;}
+.japan1607 .japan_list .item4{background-position:-30px -244px;}
+.japan1607 .japan_list .item5{background-position:-215px -244px;}
+.japan1607 .japan_list .item6{margin-right:38px;background-position:-400px -244px;}
+.japan1607 .japan_list .item7{width:177px;margin-right:0;background-position:-559px -244px;}
+.japan1607 .japan_list .item8{background-position:-30px -487px;}
+.japan1607 .japan_list .item9{background-position:-215px -487px;}
+.japan1607 .japan_list .item10{background-position:-400px -487px;}
+.japan1607 .japan_list .item11{background-position:-586px -487px;}
+.japan1607 .japan_list .item12{background-position:-30px -730px;}
+.japan1607 .japan_list .item13{margin-right:47px;background-position:-215px -730px;}
+.japan1607 .japan_list .item14{width:156px;margin-right:24px;background-position:-382px -730px;}
+.japan1607 .japan_list .item15{width:170px;margin-right:0;background-position:-562px -730px;}
+
+/* 7월 해외콘텐츠 할인 */
+.e_view.kth1607{height:1531px;background:url('http://static.filecast.co.kr/_img/event/bg_kth1607.jpg') no-repeat 0 0;}
+.kth1607 .top{height:380px;text-indent:-9999px;}
+.kth1607 .kth_list{float:left;margin:0 0 0 50px;}
+.kth1607 .kth_list span{display:block;float:left;width:202px;height:155px;margin:0 60px 40px 0;text-indent:-9999px;background:url('http://static.filecast.co.kr/_img/event/kth1607_content.png') no-repeat;cursor:pointer;}
+.kth1607 .kth_list span:hover{opacity:0.8;}
+.kth1607 .kth_list span.type1{width:350px;height:255px;margin:0 20px 40px 0;}
+.kth1607 .kth_list .item0{background-position:0 0;}
+.kth1607 .kth_list .item1{background-position:-372px 0;}
+.kth1607 .kth_list .item2.type1{margin-bottom:80px;background-position:0 -269px;}
+.kth1607 .kth_list .item3.type1{margin-bottom:80px;background-position:-372px -269px;}
+.kth1607 .kth_list .item4{background-position:0 -539px;}
+.kth1607 .kth_list .item5{background-position:-260px -539px;}
+.kth1607 .kth_list .item6{margin-right:0;background-position:-520px -539px;}
+.kth1607 .kth_list .item7{background-position:0 -732px;}
+.kth1607 .kth_list .item8{background-position:-260px -732px;}
+.kth1607 .kth_list .item9{margin-right:0;background-position:-520px -732px;}
+
+/* imbc 영화 할인 7월 */
+.e_view.imbc{height:auto;background:#fbfaf8;}
+.e_view.imbc .top{height:502px;text-indent:-9999px;background:url('http://static.filecast.co.kr/_img/event/imbc1607_top.jpg') no-repeat 0 0;}
+.e_view.imbc .btm{height:120px;text-indent:-9999px;background:url('http://static.filecast.co.kr/_img/event/imbc1607_btm.png') no-repeat 0 0;}
+.imbc .imbc_list{overflow:hidden;margin:35px 0 25px 35px;}
+.imbc .imbc_list li{float:left;width:151px;height:232px;text-align:center;cursor:pointer;}
+.imbc .imbc_list li:hover{opacity:0.7;}
+.imbc .imbc_list li span{display:inline-block;text-align:center;}
+.imbc .imbc_list li .img{border:1px solid #474747;}
+.imbc .imbc_list li .img img{display:block;width:118px;height:169px;}
+.imbc .imbc_list li .tit{overflow:hidden;display:inline-block;width:130px;height:2.6em;margin:5px auto 0 auto;font-size:14px;color:#1b3d5e;letter-spacing:-1px;line-height:1.3em; text-overflow:ellipsis;/* display:-webkit-box; */-webkit-line-clamp:2;word-wrap:break-word;word-break:break-all;}
+
+/* 1608 공포/액션 영화 할인 */
+.e_view.cool{position:relative;height:2960px;background:url('http://static.filecast.co.kr/_img/event/bg_cool1608.jpg') repeat 0 0;}
+.e_view.cool .top{height:1455px;text-indent:-9999px;background:url('http://static.filecast.co.kr/_img/event/cool1608_wrap.jpg') no-repeat 0 0;}
+.e_view.cool .btm{position:absolute;bottom:0;left:0;width:827px;height:120px;text-indent:-9999px;background:url('http://static.filecast.co.kr/_img/event/cool1608_btm.jpg') no-repeat 0 0;}
+.cool .cool_list{position:absolute;top:465px;overflow:hidden;padding:35px 0 25px 35px;}
+.cool .cool_list li{float:left;width:151px;height:232px;text-align:center;cursor:pointer;}
+.cool .cool_list li:hover{opacity:0.7;}
+.cool .cool_list li span{display:inline-block;text-align:center;}
+.cool .cool_list li .img{border:1px solid #000;}
+.cool .cool_list li .img img{display:block;width:118px;height:169px;}
+.cool .cool_list li .tit{overflow:hidden;display:inline-block;width:130px;height:2.6em;margin:5px auto 0 auto;font-size:14px;color:#ff3333;letter-spacing:-1px;line-height:1.3em; text-overflow:ellipsis;/* display:-webkit-box; */-webkit-line-clamp:2;word-wrap:break-word;word-break:break-all;}
+
+/* 1608 충전팝업 */
+.charge1608_popup{overflow:hidden;position:relative;width:647px;height:488px;}
+.charge1608_popup .charge_pop_body{width:647px;height:488px;}
+.charge1608_popup .btn_n_close{display:block;position:absolute;width:208px;height:17px;right:15px;bottom:5px;cursor:pointer;}
+.charge1608_popup .btn_close{top:10px;right:10px;width:25px;height:25px;background:none;}
+.charge1608_popup .btn_go{position:absolute;top:379px;left:151px;width:346px;height:52px;background:url('http://static.filecast.co.kr/_img/charge/btn_charge1608.png') no-repeat 0 0;}
+.charge1608_popup .btn_go:hover{opacity:0.7;}
+
+/* imbc 영화 할인 7월 */
+.e_view.imbc{height:auto;background:#fbfaf8;}
+.e_view.imbc .top{height:502px;text-indent:-9999px;background:url('http://static.filecast.co.kr/_img/event/imbc1607_top.jpg') no-repeat 0 0;}
+.e_view.imbc .btm{height:120px;text-indent:-9999px;background:url('http://static.filecast.co.kr/_img/event/imbc1607_btm.png') no-repeat 0 0;}
+.imbc .imbc_list{overflow:hidden;margin:35px 0 25px 35px;}
+.imbc .imbc_list li{float:left;width:151px;height:232px;text-align:center;cursor:pointer;}
+.imbc .imbc_list li:hover{opacity:0.7;}
+.imbc .imbc_list li span{display:inline-block;text-align:center;}
+.imbc .imbc_list li .img{border:1px solid #474747;}
+.imbc .imbc_list li .img img{display:block;width:118px;height:169px;}
+.imbc .imbc_list li .tit{overflow:hidden;display:inline-block;width:130px;height:2.6em;margin:5px auto 0 auto;font-size:14px;color:#1b3d5e;letter-spacing:-1px;line-height:1.3em; text-overflow:ellipsis;/* display:-webkit-box; */-webkit-line-clamp:2;word-wrap:break-word;word-break:break-all;}
+
+/* 1608 공포/액션 영화 할인 */
+.e_view.cool{position:relative;height:2960px;background:url('http://static.filecast.co.kr/_img/event/bg_cool1608.jpg') repeat 0 0;}
+.e_view.cool .top{height:1455px;text-indent:-9999px;background:url('http://static.filecast.co.kr/_img/event/cool1608_wrap.jpg') no-repeat 0 0;}
+.e_view.cool .btm{position:absolute;bottom:0;left:0;width:827px;height:120px;text-indent:-9999px;background:url('http://static.filecast.co.kr/_img/event/cool1608_btm.jpg') no-repeat 0 0;}
+.cool .cool_list{position:absolute;top:465px;overflow:hidden;padding:35px 0 25px 35px;}
+.cool .cool_list li{float:left;width:151px;height:232px;text-align:center;cursor:pointer;}
+.cool .cool_list li:hover{opacity:0.7;}
+.cool .cool_list li span{display:inline-block;text-align:center;}
+.cool .cool_list li .img{border:1px solid #000;}
+.cool .cool_list li .img img{display:block;width:118px;height:169px;}
+.cool .cool_list li .tit{overflow:hidden;display:inline-block;width:130px;height:2.6em;margin:5px auto 0 auto;font-size:14px;color:#ff3333;letter-spacing:-1px;line-height:1.3em; text-overflow:ellipsis;/* display:-webkit-box; */-webkit-line-clamp:2;word-wrap:break-word;word-break:break-all;}
+
+/* 카카오톡 친구추가 이벤트 */
+.e_view.kakao_friends{position:relative;height:1439px;background:url('http://static.filecast.co.kr/_img/event/bg_kakao_friends1608.jpg') no-repeat 0 0;}
+.kakao_friends .top, .join_bonus{height:0;text-indent:-9999px;}
+.misson_bonus{position:absolute;left:515px;top:350px;width:285px;height:275px;padding:0 0 0 22px;}
+.misson_bonus h4{height:53px;text-indent:-9999px;}
+.misson_bonus .add_num{position:relative;width:240px;height:50px;text-indent:-9999px;}
+.misson_bonus .add_num .ms_clear{position:absolute;top:6px;left:1px;display:block;width:239px;height:38px;text-indent:-9999px;background:url('http://static.filecast.co.kr/_img/event/kakao_images.png') no-repeat -78px -70px;opacity:0.9;display:none;}
+.misson_bonus .add_num.active .ms_clear{display:block;}
+.now_friend_num{position:relative;width:776px;height:167px;margin:910px auto 0 auto;border-radius:20px;background:url('http://static.filecast.co.kr/_img/event/bg_kakaograph.png') no-repeat 0 0;}
+.now_friend_num .tit{z-index:9;position:absolute;left:154px;top:-39px;width:473px;height:63px;background:url('http://static.filecast.co.kr/_img/event/kakao_images.png') no-repeat 0 0;text-indent:-9999px;}
+.now_friend_num .tit .n_txt{position:absolute;right:135px;top:8px;display:block;font-size:28px;font-weight:bold;color:#fffc00;text-indent:0;font-family:'NanumGothic', 나눔고딕, sans-serif;}
+.now_friend_num .friend_graph_wrap{z-index:7;position:absolute;top:0;left:0;width:776px;height:167px;background:url('http://static.filecast.co.kr/_img/event/kakao_grapharea.png') no-repeat 0 0;}
+.now_friend_num .graph_area{z-index:6;position:absolute;top:86px;left:49px;display:block;width:677px;height:19px;}
+.now_friend_num .graph_bar{z-index:5;position:absolute;top:0;display:block;width:677px;height:19px;/* border:1px solid red; */}
+.now_friend_num .graph_bar .bar_area{z-index:6;position:absolute;top:0;left:0;display:block;height:19px;border-right:3px solid #000;}
+.now_friend_num .graph_bar.person5{z-index:4;left:0;width:57px;} 
+.now_friend_num .graph_bar.person15{z-index:3;left:57px;width:128px;} 
+.now_friend_num .graph_bar.person30{z-index:2;left:185px;width:186px;} 
+.now_friend_num .graph_bar.person70{z-index:1;left:371px;width:305px;}
+.now_friend_num .graph_bar.person5 .bar_area{background:#afeb13;} 
+.now_friend_num .graph_bar.person15 .bar_area{background:#009bec;} 
+.now_friend_num .graph_bar.person30 .bar_area{background:#ae67eb;} 
+.now_friend_num .graph_bar.person70 .bar_area{background:#f52d75;} 
+.now_friend_num .circle{z-index:10;position:absolute;right:-8px;top:80px;display:block;width:30px;height:30px;background:url('http://static.filecast.co.kr/_img/event/kakao_images.png') no-repeat 0 -70px;}
+.now_friend_num .circle.active{background-position:-32px -70px;}
+.now_friend_num .circle.person5{left:90px;}
+.now_friend_num .circle.person15{left:219px;}
+.now_friend_num .circle.person30{left:405px;}
+.now_friend_num .circle.person70{left:700px;}
+.now_friend_num .now_num{z-index:15;position:absolute;top:34px;left:13px;display:block;width:74px;height:60px;background:url('http://static.filecast.co.kr/_img/event/kakao_images.png') no-repeat 0 -110px;}
+.now_friend_num .now_num .n_txt{position:absolute;top:11px;right:36px;display:block;text-align:center;font-size:22px;line-height:22px;font-weight:bold;color:#000;letter-spacing:-1px;font-family:'NanumGothic', 나눔고딕, sans-serif;}
+.kakao_friends .btn_kakao_friends{display:block;width:439px;height:92px;margin:40px auto;text-indent:-9999px;background:url('http://static.filecast.co.kr/_img/event/btn_kakaofriends.png') no-repeat 0 0;cursor:pointer;}
+.kakao_friends .btn_kakao_friends:hover{opacity:0.8;}
+
+/* 성인패러디 이벤트 1608 */
+.e_view.adult_parody{position:relative;height:2316px;background:url('http://static.filecast.co.kr/_img/event/bg_adultparody1608.jpg') no-repeat 0 0;}
+.adult_parody .top{height:486px;text-indent:-9999px;}
+.parody_list{padding:50px 0 0 50px;}
+.parody_list.broadcast{padding-top:130px;}
+.parody_list ul{overflow:hidden;}
+.parody_list ul li{float:left;margin:0 20px 40px 0;cursor:pointer;}
+.parody_list ul li:hover{opacity:0.7;}
+.parody_list ul li span{display:block;}
+.parody_list ul li .img{width:166px;height:236px;margin-bottom:8px;background:url('http://static.filecast.co.kr/_img/event/adult_content1608.png') no-repeat;}
+.parody_list ul li.list1 .img{background-position:0 0;}
+.parody_list ul li.list2 .img{background-position:-200px 0;}
+.parody_list ul li.list3 .img{background-position:-400px 0;}
+.parody_list ul li.list4 .img{background-position:-600px 0;}
+.parody_list ul li.list5 .img{background-position:0 -250px;}
+.parody_list ul li.list6 .img{background-position:-200px -250px;}
+.parody_list ul li.list7 .img{background-position:-400px -250px;}
+.parody_list ul li.list8 .img{background-position:-600px -250px;}
+.parody_list ul li.list9 .img{background-position:0 -500px;}
+.parody_list ul li.list10 .img{background-position:-200px -500px;}
+.parody_list ul li.list11 .img{background-position:-400px -500px;}
+.parody_list ul li.list12 .img{background-position:-600px -500px;}
+.parody_list ul li.list13 .img{background-position:0 -750px;}
+.parody_list ul li.list14 .img{background-position:-200px -750px;}
+.parody_list ul li.list15 .img{background-position:-400px -750px;}
+.parody_list ul li.list16 .img{background-position:-600px -750px;}
+.parody_list ul li.list17 .img{background-position:-800px -750px;}
+.parody_list ul li.list18 .img{background-position:-1000px -750px;}
+.parody_list ul li .tit{color:#fff;text-align:center;}
+
+/* 무한상사 1608 */
+.e_view.mudo{position:relative;height:2116px;background:url('http://static.filecast.co.kr/_img/event/bg_mudo1608.jpg') no-repeat 0 0;}
+.e_view.mudo .top{height:415px;text-indent:-9999px;}
+.mudo_list{overflow:hidden;padding:48px 0 0 50px;}
+.mudo_list ul li{float:left;width:347px;margin:0 30px 40px 0;cursor:pointer;}
+.mudo_list ul li:hover{opacity:0.7;}
+.mudo_list ul li .imgarea{position:relative;width:345px;height:199px;margin-bottom:9px;border:2px solid #000;}
+.mudo_list ul li .imgarea span{display:block;}
+.mudo_list ul li .imgarea .sum{position:absolute;top:8px;right:8px;width:56px;height:57px;background:url('http://static.filecast.co.kr/_img/event/mudo_sum.png') no-repeat 0 0;text-indent:-9999px;}
+.mudo_list ul li .imgarea .screen_img{width:341px;height:195px;background:url('http://static.filecast.co.kr/_img/event/mudo_content _1.jpg') no-repeat}
+.mudo_list ul li.num1 .imgarea .screen_img{background-position:0 0;}
+.mudo_list ul li.num2 .imgarea .screen_img{background-position:-350px 0;}
+.mudo_list ul li.num3 .imgarea .screen_img{background-position:0 -200px;}
+.mudo_list ul li.num4 .imgarea .screen_img{background-position:-350px -200px;}
+.mudo_list ul li.num5 .imgarea .screen_img{background-position:0 -400px;}
+.mudo_list ul li.num6 .imgarea .screen_img{background-position:-350px -400px;}
+.mudo_list ul li.num7 .imgarea .screen_img{background-position:0 -600px;}
+.mudo_list ul li.num8 .imgarea .screen_img{background-position:-350px -600px;}
+.mudo_list ul li.num9 .imgarea .screen_img{background-position:0 -800px;}
+.mudo_list ul li.num10 .imgarea .screen_img{background-position:-350px -800px;}
+.mudo_list ul li .info{width:260px;height:52px;padding:8px;margin:0 auto;background:#000;text-align:center;}
+.mudo_list ul li .info .txt{font-size:12px;color:#949494;}
+.mudo_list ul li .info .txt .num{color:#ffbc00;}
+.mudo_list ul li .info .txt .date{color:#fff;}
+.mudo_list ul li .info .tit{font-size:14px;font-weight:bold;color:#ffae00;}
+
+/* 애니 할인 이벤트 1608 */
+.e_view.ani_discount{height:1718px;background:url('http://static.filecast.co.kr/_img/event/bg_ani1608.jpg') no-repeat 0 0;}
+.e_view.ani_discount .top{height:370px;text-indent:-9999px;}
+.ani_discount .ani_list{padding:85px 0 0 107px;}
+.ani_discount .ani_list ul{overflow:hidden;}
+.ani_discount .ani_list ul li{float:left;width:264px;height:189px;margin:0 80px 30px 0;background:url('http://static.filecast.co.kr/_img/event/ani1608_content.png') no-repeat;cursor:pointer;text-indent:-9999px;}
+.ani_discount .ani_list ul li:hover{opacity:0.7;}
+.ani_discount .ani_list ul li.type1{background-position:0 0;}
+.ani_discount .ani_list ul li.type2{background-position:0 -200px;}
+.ani_discount .ani_list ul li.type3{background-position:0 -400px;}
+.ani_discount .ani_list ul li.type4{height:220px;background-position:0 -600px;}
+.ani_discount .ani_list ul li a{display:block;width:264px;height:189px;}
+
+/* 1609 추석 가격 할인 */
+.e_content .e_view.thanks1609{width:827px;height:3706px;background:url('http://static.filecast.co.kr/_img/event/bg_thanks1609.jpg') no-repeat 0 0;}
+.thanks1609 .top{height:407px;text-indent:-9999px;}
+.thanks1609 .top span{display:block;}
+.thanks1609 .btm{display:none;}
+.thanks1609 .e_dis_list{padding-left:77px;}
+.thanks1609 .e_dis_list ul{overflow:hidden;}
+.thanks1609 .e_dis_list ul li{float:left;width:140px;margin:0 36px 47px 0;text-align:center;}
+.thanks1609 .e_dis_list ul li span{display:inline-block;}
+.thanks1609 .e_dis_list ul li span.d_img{width:138px;height:204px;border:1px solid #6c3506;background:url('http://static.filecast.co.kr/_img/event/thanks1609_img.jpg') no-repeat;}
+.thanks1609 .e_dis_list ul li span.d_img.type1{background-position:-1px -2px;}
+.thanks1609 .e_dis_list ul li span.d_img.type2{background-position:-178px -2px;}
+.thanks1609 .e_dis_list ul li span.d_img.type3{background-position:-358px -2px;}
+.thanks1609 .e_dis_list ul li span.d_img.type4{background-position:-532px -2px;}
+.thanks1609 .e_dis_list ul li span.d_img.type5{background-position:-532px -431px;}
+.thanks1609 .e_dis_list ul li span.d_img.type6{background-position:-1px -216px;}
+.thanks1609 .e_dis_list ul li span.d_img.type7{background-position:-178px -216px;}
+.thanks1609 .e_dis_list ul li span.d_img.type8{background-position:-358px -216px;}
+.thanks1609 .e_dis_list ul li span.d_img.type9{background-position:-532px -216px;}
+.thanks1609 .e_dis_list ul li span.d_img.type10{background-position:-1px -431px;}
+.thanks1609 .e_dis_list ul li span.d_img.type11{background-position:-178px -431px;}
+.thanks1609 .e_dis_list ul li span.d_img.type12{background-position:-358px -431px;}
+.thanks1609 .e_dis_list ul li span.d_img.type13{background-position:-532px -646px;}
+.thanks1609 .e_dis_list ul li span.d_img.type14{background-position:-1px -646px;}
+.thanks1609 .e_dis_list ul li span.d_img.type15{background-position:-178px -646px;}
+.thanks1609 .e_dis_list ul li span.d_img.type16{background-position:-358px -646px;}
+.thanks1609 .e_dis_list ul li span.d_img.type17{background-position:-1px -861px;}
+.thanks1609 .e_dis_list ul li span.d_img.type18{background-position:-1px -1720px;}
+.thanks1609 .e_dis_list ul li span.d_img.type19{background-position:-178px -861px;}
+.thanks1609 .e_dis_list ul li span.d_img.type20{background-position:-358px -861px;}
+.thanks1609 .e_dis_list ul li span.d_img.type21{background-position:-532px -861px;}
+.thanks1609 .e_dis_list ul li span.d_img.type22{background-position:-1px -1076px;}
+.thanks1609 .e_dis_list ul li span.d_img.type23{background-position:-178px -1076px;}
+.thanks1609 .e_dis_list ul li span.d_img.type24{background-position:-358px -1076px;}
+.thanks1609 .e_dis_list ul li span.d_img.type25{background-position:-532px -1076px;}
+.thanks1609 .e_dis_list ul li span.d_img.type26{background-position:-1px -1290px;}
+.thanks1609 .e_dis_list ul li span.d_img.type27{background-position:-178px -1290px;}
+.thanks1609 .e_dis_list ul li span.d_img.type28{background-position:-358px -1290px;}
+.thanks1609 .e_dis_list ul li span.d_img.type29{background-position:-532px -1290px;}
+.thanks1609 .e_dis_list ul li span.d_img.type30{background-position:-1px -1505px;}
+.thanks1609 .e_dis_list ul li span.d_img.type31{background-position:-178px -1505px;}
+.thanks1609 .e_dis_list ul li span.d_img.type32{background-position:-358px -1505px;}
+.thanks1609 .e_dis_list ul li span.d_img.type33{background-position:-532px -1505px;}
+.thanks1609 .e_dis_list ul li span.d_sum{color:#757879;}
+.thanks1609 .e_dis_list .n_sum{text-decoration:line-through;font-size:12px;}
+.thanks1609 .e_dis_list .t_sum{color:#e32173;}
+.thanks1609 .e_dis_list .d_tit{display:block;margin:10px 0 10px 0;color:#010101;font-weight:bold;vertical-align:middle;}
+.thanks1609 .e_dis_list ul li .btn_go_dis{display:block;width:91px;padding:5px 0 4px 0;margin:0 auto;border:1px solid #f98b82;border-radius:4px;letter-spacing:-1px;background:#902025;color:#fff;font-weight:bold;text-align:center;}
+.thanks1609 .e_dis_list ul li:hover .d_img, .e_dis_list ul li:hover .btn_go_dis{opacity:0.7;}
+
+/* 한국영화할인 1611 */
+.e_content .e_view.movieDiscount1611{height:auto;background:#fff;}
+.e_content .e_view.movieDiscount1611 .top{height:477px;text-indent:-9999px;background:url('http://static.filecast.co.kr/_img/event/movie_discount1611_top.jpg') no-repeat 0 0;}
+.movieDiscount1611 .top4_movie{width:827px;height:375px;padding:40px 0 40px 50px;background:url('http://static.filecast.co.kr/_img/event/bg_movie_discount1611.jpg') no-repeat 0 0;}
+.movieDiscount1611 .top4_movie ul li{float:left;cursor:pointer;margin-right:30px;}
+.movieDiscount1611 .top4_movie ul li:hover{opacity:0.7;}
+.movieDiscount1611 .top4_movie ul li span{display:block;text-align:center;}
+.movieDiscount1611 .top4_movie ul li .img{width:157px;height:227px;border:1px solid #000;background:url('http://static.filecast.co.kr/_img/event/movie_discount1611_comtent.png') no-repeat;}
+.movieDiscount1611 .top4_movie ul li .img.type1{background-position:0 0;}
+.movieDiscount1611 .top4_movie ul li .img.type2{background-position:-180px 0;}
+.movieDiscount1611 .top4_movie ul li .img.type3{background-position:-360px 0;}
+.movieDiscount1611 .top4_movie ul li .img.type4{background-position:-540px 0;}
+.top4_movie ul li .tit{font-weight:bold;color:#fff;margin:10px 0 6px 0;}
+.top4_movie ul li .cate, .top4_movie ul li .date{font-size:12px;color:#6e767b;}
+.movieDiscount1611 .movie_list{width:827px;padding:50px 0 50px 50px;}
+.movieDiscount1611 .movie_list ul{overflow:hidden;width:736px;padding-bottom:20px;margin-bottom:20px;border-bottom:1px solid #f1f2f3;}
+.movieDiscount1611 .movie_list ul:last-child{border:none;padding-bottom:0;margin-bottom:0;}
+.movieDiscount1611 .movie_list ul li{float:left;width:138px;margin-left:10px;cursor:pointer;}
+.movieDiscount1611 .movie_list ul li:first-child{margin-left:0;}
+.movieDiscount1611 .movie_list ul li:hover{opacity:0.7;}
+.movieDiscount1611 .movie_list ul li span{display:block;text-align:center;}
+.movieDiscount1611 .movie_list ul li .img_area{position:relative;margin:0 auto 8px auto;}
+.movieDiscount1611 .movie_list ul li .poster{width:130px;height:186px;margin:0 auto;border:1px solid #c2c7ce;}
+.movieDiscount1611 .movie_list ul li .poster img{display:block;width:128px;height:184px;}
+.movieDiscount1611 .movie_list ul li .img_area .ico{position:absolute;top:5px;left:1px;width:45px;height:22px;background:url("http://static.filecast.co.kr/_img/sub/ico.png") no-repeat;}
+.movieDiscount1611 .movie_list ul li .img_area .ico.new{background-position:0 0;}
+.movieDiscount1611 .movie_list ul li .img_area .ico.hot{background-position:0 -25px;}
+.movieDiscount1611 .movie_list ul li .tit{overflow:hidden;width:138px;padding-right:2px;margin-bottom:6px;font-weight:bold;letter-spacing:-1px;text-overflow:ellipsis;white-space:nowrap;}
+.movieDiscount1611 .movie_list ul li span.tit .ico{position:relative;top:3px;display:inline-block;vertical-align:top;}
+.movieDiscount1611 .movie_list  ul li .cate, .movieDiscount1611 .movie_list ul li .date{font-size:13px;color:#b6b9ba;letter-spacing:-1px;}
+.e_content .e_view.movieDiscount1611 .btm{height:119px;background:url('http://static.filecast.co.kr/_img/event/movie_discount1611_btm.jpg') no-repeat 0 0;}
+
+/* 판매자 1612 */
+.e_content .e_view.seller1612{height:auto;background:url('http://static.filecast.co.kr/_img/event/bg_seller1612_content.png') repeat-y 0 0;}
+.seller1612 > .top{height:816px;text-indent:-9999px;background:url('http://static.filecast.co.kr/_img/event/bg_seller1612_1.jpg') no-repeat 0 0;}
+.seller1612 .point_grade{width:740px;height:400px;padding-top:32px;margin:0 auto;text-indent:-9999px;background:url('http://static.filecast.co.kr/_img/event/seller1611_content_2.png') no-repeat 0 0;}
+.category_rank_area{overflow:hidden;width:740px;height:1217px;padding:38px 0 0 48px;margin:0 auto;background:url('http://static.filecast.co.kr/_img/event/seller1611_content_2.png') no-repeat -760px 0;}
+.category_rank_area > .top{overflow:hidden;height:64px;padding-top:15px;margin-bottom:15px;}
+.category_rank_area  h3{float:left;width:258px;height:30px;margin:0 32px 0 82px;text-indent:-9999px;background:url('http://static.filecast.co.kr/_img/event/seller1611_content_2.png') no-repeat -340px -560px;}
+.category_rank_area .time_now{float:left;width:200px;font-size:11px;line-height:18px;text-align:right;}
+.category_rank_area .time_now span{display:inline-block;}
+.category_rank_area .time_now .time{color:#f5cd74;font-size:12px;}
+.category_rank_area .time_now .txt{color:#9c99ff;}
+.cate_rank{position:relative;float:left;width:316px;height:336px;margin:0 20px 20px 0;}
+.cate_rank h4{height:40px;}
+.cate_rank .cate_name{display:block;height:40px;background:url('http://static.filecast.co.kr/_img/event/seller1611_content_2.png') no-repeat;text-indent:-9999px;}
+.cate_rank .cate_name.type1{width:145px;background-position:0 -670px;}
+.cate_rank .cate_name.type2{width:247px;background-position:0 -720px;}
+.cate_rank .cate_name.type3{width:145px;background-position:0 -770px;}
+.cate_rank .cate_name.type4{width:196px;background-position:0 -820px;} 
+.cate_rank .cate_name.type5{width:183px;background-position:0 -870px;}
+.cate_rank .cate_name.type6{width:247px;background-position:0 -920px;}
+.cate_rank .rank_list{width:316px;height:295px;padding:12px 24px 13px 24px;background:url('http://static.filecast.co.kr/_img/event/seller1611_content_2.png') no-repeat -300px -630px;}
+.cate_rank .rank_list ul{overflow:hidden;}
+.cate_rank .rank_list ul li{clear:both;float:left;height:21px;}
+.cate_rank .rank_list ul li div{float:left;font-size:12px;line-height:20px;}
+.cate_rank .rank_list ul li div.style1{width:36px;color:#9a9ab4;}
+.cate_rank .rank_list ul li div.style2{width:96px;text-indent:12px;color:#000;}
+.cate_rank .rank_list ul li div.style2 span{cursor:pointer;}
+.cate_rank .rank_list ul li div.style2 span:hover{opacity:0.7;}
+.cate_rank .rank_list ul li div.style3{width:68px;padding-right:17px;color:#191774;text-align:right;}
+.cate_rank .rank_list ul li div.style4{width:68px;padding-right:7px;color:#191774;text-align:right;}
+.cate_rank .rank_list ul li.tit{height:24px;}
+.cate_rank .rank_list ul li.tit div{color:#b1b1b1;line-height:24px;}
+.cate_rank .rank_list ul li.tit div, .cate_rank .rank_list ul li div.style1, .cate_rank .rank_list ul li.tit div.style4{padding:0;text-align:center;}
+.cate_rank .rank_list ul li.top .style1{color:#000e69;}
+.cate_rank .rank_list ul li.top .style1, .cate_rank .rank_list ul li.top .style2, .cate_rank .rank_list ul li.top .style3{font-weight:bold;}
+.cate_rank .my_score{position:absolute;width:316px;bottom:16px;text-align:center;font-size:12px;}
+.cate_rank .my_score span{display:inline-block;color:#000;font-weight:bold;}
+.cate_rank .my_score .slash{margin:0 5px;color:#ffc21f;}
+.cate_rank .my_score .rank span, .cate_rank .my_score .id{color:#ff4d10;}
+.seller1612 .btn_seller_wrap{position:relative;width:827px;height:72px;}
+.seller1612 .btn_seller_submit{position:absolute;left:243px;top:48px;display:block;width:336px;height:70px;text-indent:-9999px;cursor:pointer;background:url('http://static.filecast.co.kr/_img/event/seller1611_content_2.png') no-repeat -340px -470px;}
+.seller1612 .btn_seller_submit:hover{opacity:0.7;}
+.seller1612 .btn_seller_submit.type1{left:89px;top:48px;}
+.seller1612 .btn_seller_submit:hover, .seller1612 .btn_seller_prev:hover{opacity:0.7;}
+.seller1612 .btn_seller_prev{position:absolute;left:420px;top:48px;display:block;width:314px;height:70px;text-indent:-9999px;cursor:pointer;background:url('http://static.filecast.co.kr/_img/event/seller1611_content_2.png') no-repeat -340px -950px;}
+
+.seller1612 .btm{width:827px;height:418px;padding:135px 40px 0 50px;text-indent:0;font-size:12px;color:#a8a7b3;letter-spacing:-1px;line-height:22px;background:url('http://static.filecast.co.kr/_img/event/bg_seller1612_btm.png') no-repeat 0 0;}
+.seller1612 .btm .wid{display:inline-block;width:6px;}
+
+/* 영화할인 1612 */
+.e_content .e_view.movieDiscount1612{height:auto;background:none;}
+.e_view.movieDiscount1612 > .top{height:340px;text-indent:-9999px;background:url('http://static.filecast.co.kr/_img/event/movieDiscount1612_top.jpg') no-repeat 0 0;}
+.movieDiscount1612 .top_movie{width:827px;height:334px;text-align:center;background:url('http://static.filecast.co.kr/_img/event/bg_movieDiscount1612_top_content.jpg') no-repeat 0 0;}
+.movieDiscount1612 .top_movie .movie{display:inline-block;}
+.movieDiscount1612 .top_movie .movie.type1{margin-right:50px;}
+.movieDiscount1612 .top_movie .movie a{display:block;height:285px;background:url('http://static.filecast.co.kr/_img/event/movie_content_1612.png') no-repeat;text-indent:-9999px;}
+.movieDiscount1612 .top_movie .movie a:hover{opacity:0.7;}
+.movieDiscount1612 .top_movie .movie.type1 a{width:158px;background-position:0 0;}
+.movieDiscount1612 .top_movie .movie.type2 a{width:185px;background-position:-170px 0;}
+.movieDiscount1612 .movie_list{width:827px;padding:50px 0 50px 50px;background:url('http://static.filecast.co.kr/_img/event/bg_movieDiscount1612_content.jpg') no-repeat 0 0;}
+.movieDiscount1612 .movie_list ul{overflow:hidden;width:736px;padding-bottom:20px;margin-bottom:20px;border-bottom:1px solid #f1f2f3;}
+.movieDiscount1612 .movie_list ul:last-child{border:none;padding-bottom:0;margin-bottom:0;}
+.movieDiscount1612 .movie_list ul li{float:left;width:138px;margin-left:10px;cursor:pointer;}
+.movieDiscount1612 .movie_list ul li:first-child{margin-left:0;}
+.movieDiscount1612 .movie_list ul li:hover{opacity:0.7;}
+.movieDiscount1612 .movie_list ul li span{display:block;text-align:center;}
+.movieDiscount1612 .movie_list ul li .img_area{position:relative;margin:0 auto 8px auto;}
+.movieDiscount1612 .movie_list ul li .poster{width:130px;height:186px;margin:0 auto;border:1px solid #c2c7ce;}
+.movieDiscount1612 .movie_list ul li .poster img{display:block;width:128px;height:184px;}
+.movieDiscount1612 .movie_list ul li .img_area .ico{position:absolute;top:5px;left:1px;width:45px;height:22px;background:url("http://static.filecast.co.kr/_img/sub/ico.png") no-repeat;}
+.movieDiscount1612 .movie_list ul li .img_area .ico.new{background-position:0 0;}
+.movieDiscount1612 .movie_list ul li .img_area .ico.hot{background-position:0 -25px;}
+.movieDiscount1612 .movie_list ul li .tit{overflow:hidden;width:138px;padding-right:2px;margin-bottom:6px;font-weight:bold;letter-spacing:-1px;text-overflow:ellipsis;white-space:nowrap;}
+.movieDiscount1612 .movie_list ul li span.tit .ico{position:relative;top:3px;display:inline-block;vertical-align:top;}
+.movieDiscount1612 .movie_list  ul li .cate, .movieDiscount1612 .movie_list ul li .date{font-size:13px;color:#b6b9ba;letter-spacing:-1px;}
+.movieDiscount1612 .btm{width:827px;height:122px;background:url('http://static.filecast.co.kr/_img/event/movieDiscount1612_btm.jpg') no-repeat 0 0;}
+
+/* 일본애니할인 1612 */
+.e_content .e_view.japan_ani1612{height:1170px;background:url('http://static.filecast.co.kr/_img/event/bg_japanani1612.jpg') no-repeat 0 0;}
+.e_view.japan_ani1612 .top{height:480px;text-indent:-9999px;}
+.e_view.japan_ani1612 .ani_list{padding:0 0 0 80px;}
+.e_view.japan_ani1612 .ani_list ul{overflow:hidden;}
+.e_view.japan_ani1612 .ani_list ul li{float:left;margin:0 30px 30px 0;background:url('http://static.filecast.co.kr/_img/event/japanani1612_content_1.png') no-repeat 0 0;}
+.e_view.japan_ani1612 .ani_list ul li:hover{opacity:0.7;}
+.e_view.japan_ani1612 .ani_list ul li a{display:block;width:200px;height:150px;text-indent:-9999px;}
+.e_view.japan_ani1612 .ani_list ul li.type1{background-position:0 0;}
+.e_view.japan_ani1612 .ani_list ul li.type2{background-position:-230px 0;}
+.e_view.japan_ani1612 .ani_list ul li.type3{background-position:-460px 0;}
+.e_view.japan_ani1612 .ani_list ul li.type4{background-position:0 -183px;}
+.e_view.japan_ani1612 .ani_list ul li.type5{background-position:-230px -183px;}
+.e_view.japan_ani1612 .ani_list ul li.type6{background-position:-460px -183px;}
+.e_view.japan_ani1612 .ani_list ul li.type7{margin-left:115px;background-position:-115px -366px;}
+.e_view.japan_ani1612 .ani_list ul li.type8{background-position:-345px -366px;}
+.e_view.japan_ani1612 .btm p{text-indent:-9999px;}
+
+/* 크리스마스 10원할인 이벤트 */
+.e_content .e_view.chistmas_event{height:1013px;background:url('http://static.filecast.co.kr/_img/event/bg_event161225_2.jpg') no-repeat 0 0;}
+.e_view.chistmas_event .top{height:740px;text-indent:-9999px;}
+.chistmas_event .btn_area p{text-indent:-9999px;display:none;}
+.chistmas_event .btn_area .btn_chistmas{display:block;width:438px;height:92px;margin:0 auto;text-indent:-9999px;background:url('http://static.filecast.co.kr/_img/event/btn_161225.png') no-repeat 0 0;cursor:pointer;}
+.chistmas_event .btn_area .btn_chistmas:hover{opacity:0.7;}
+
+/* 1701 설 출석체크 이벤트 */
+.e_attend.lucky1701{position:relative;width:827px;height:1801px;background:url('http://static.filecast.co.kr/_img/event/bg_attend1701_1.jpg') no-repeat 0 0;}
+.lucky1701 .a_head{position:relative;top:0;height:208px;text-indent:-9999px;}
+.lucky1701 .a_head h3, .lucky1701 .a_head p{display:none;}
+.lucky1701 .lucky_point{width:724px;margin:0 auto;}
+.lucky1701 .lucky_point .point_btn_area{overflow:hidden;padding:185px 0 0 45px;}
+.lucky_point .point_btn_area .point{position:relative;display:block;float:left;width:138px;margin-right:27px;text-align:center;}
+.lucky_point .point_btn_area .point .click_area, .lucky_point .point_btn_area .point .view_area{display:block;width:138px;height:138px;cursor:pointer;text-indent:-9999px;background:url('http://static.filecast.co.kr/_img/event/lucky1701_attend_1.png') no-repeat;}
+.lucky_point .point_btn_area .point .click_area:hover{opacity:0.7;}
+.lucky_point .point_btn_area .point.day27 .click_area{background-position:0 0;}
+.lucky_point .point_btn_area .point.day28 .click_area{background-position:-165px 0;}
+.lucky_point .point_btn_area .point.day29 .click_area{background-position:-330px 0;}
+.lucky_point .point_btn_area .point.day30 .click_area{background-position:-495px 0;}
+.lucky_point .point_btn_area .point .view_area{display:none;position:absolute;top:0;left:0;cursor:default;}
+.lucky_point .point_btn_area .point.day27 .view_area{background-position:0 -180px;}
+.lucky_point .point_btn_area .point.day28 .view_area{background-position:-165px -180px;}
+.lucky_point .point_btn_area .point.day29 .view_area{background-position:-330px -180px;}
+.lucky_point .point_btn_area .point.day30 .view_area{background-position:-495px -180px;}
+.lucky_point .point_btn_area .point.active .view_area{display:block;}
+.lucky_point .point_btn_area .point .p_txt{padding-top:8px;color:#a8a9a3;font-weight:bold;letter-spacing:-1.2px;font-size:16px;}
+.lucky_point .point_btn_area .point.active .p_txt{color:#b04c66;}
+.lucky_point .f_txt{margin-top:23px;text-align:center;color:#b3536b;letter-spacing:-1px;}
+.lucky1701 .a_content{top:30px;}
+.lucky1701 .a_content ol{width:643px;height:150px;margin-top:45px;margin-bottom:10px;background:url('http://static.filecast.co.kr/_img/event/lucky1701_attend_1.png') no-repeat 0 -400px;}
+.lucky1701 .a_calendar > p{bottom:6px;color:#dc95a7;}
+.lucky1701 .select_month ul li a, .lucky1701 .a_calendar > p span.total{color:#dc95a7;}
+.lucky1701 div.zabuto_calendar .table tr td div.day.today-div span.attend-check.lucky{display:block;z-index:2;text-indent:-9999px;width:69px;height:68px;top:25px;left:17px;opacity:0.1;background:url('http://static.filecast.co.kr/_img/event/lucky1701_attend_1.png') no-repeat 0 -330px;	}
+.lucky1701 div.zabuto_calendar .table tr td div.day.today-div span.attend-check.lucky:hover, div.zabuto_calendar tr.calendar-dow td.dow-clickable.event div.day .ico_attend.lucky{top:25px;left:17px;background:url('http://static.filecast.co.kr/_img/event/lucky1701_attend_1.png') no-repeat 0 -330px;}
+.lucky1701 div.zabuto_calendar tr.calendar-dow td.dow-clickable.event div.day.today-div .ico_attend.lucky{top:25px;left:17px;background:url('http://static.filecast.co.kr/_img/event/lucky1701_attend_1.png') no-repeat 0 -330px;}
+.e_attend.lucky1701 .btm{text-indent:-9999px;}
+.lucky1701 div.zabuto_calendar .table tr.calendar-dow-header th, .lucky1701 div.zabuto_calendar tr.calendar-dow td{border: 1px solid #882a46; color:#ead5da;font-weight:bold;letter-spacing:-1px;}
+.lucky1701 div.zabuto_calendar .table tr td div.day span{color:#d49cad;}
+.lucky1701 .fc-select-month.m_prev a, .lucky1701 .fc-select-month.m_next a{color:#d49cad;}
+
+/* 2월 영화할인 이벤트 */ 
+.e_content .e_view.movieDiscount1701{height:auto;background:none;}
+.e_view.movieDiscount1701 > .top{height:535px;text-indent:-9999px;background:url('http://static.filecast.co.kr/_img/event/bg_top_movie1701.jpg') no-repeat 0 0;}
+.movieDiscount1701 .movie_list{width:827px;padding:50px 0 50px 50px;background:#fff url('http://static.filecast.co.kr/_img/event/bg_movieDiscount1701_top_content.jpg') no-repeat 0 0;}
+.movieDiscount1701 .movie_list ul{overflow:hidden;width:736px;padding-bottom:20px;margin-bottom:20px;border-bottom:1px solid #f1f2f3;}
+.movieDiscount1701 .movie_list ul:last-child{border:none;padding-bottom:0;margin-bottom:0;}
+.movieDiscount1701 .movie_list ul li{float:left;width:138px;margin-left:10px;cursor:pointer;}
+.movieDiscount1701 .movie_list ul li:first-child{margin-left:0;}
+.movieDiscount1701 .movie_list ul li:hover{opacity:0.7;}
+.movieDiscount1701 .movie_list ul li span{display:block;text-align:center;}
+.movieDiscount1701 .movie_list ul li .img_area{position:relative;margin:0 auto 8px auto;}
+.movieDiscount1701 .movie_list ul li .poster{width:130px;height:186px;margin:0 auto;border:1px solid #c2c7ce;}
+.movieDiscount1701 .movie_list ul li .poster img{display:block;width:128px;height:184px;}
+.movieDiscount1701 .movie_list ul li .img_area .ico{position:absolute;top:5px;left:1px;width:45px;height:22px;background:url("http://static.filecast.co.kr/_img/sub/ico.png") no-repeat;}
+.movieDiscount1701 .movie_list ul li .img_area .ico.new{background-position:0 0;}
+.movieDiscount1701 .movie_list ul li .img_area .ico.hot{background-position:0 -25px;}
+.movieDiscount1701 .movie_list ul li .tit{overflow:hidden;width:138px;padding-right:2px;margin-bottom:6px;font-weight:bold;letter-spacing:-1px;text-overflow:ellipsis;white-space:nowrap;}
+.movieDiscount1701 .movie_list ul li span.tit .ico{position:relative;top:3px;display:inline-block;vertical-align:top;}
+.movieDiscount1701 .movie_list  ul li .cate, .movieDiscount1701 .movie_list ul li .date{font-size:13px;color:#b6b9ba;letter-spacing:-1px;}
+.movieDiscount1701 .btm{width:827px;height:108px;background:url('http://static.filecast.co.kr/_img/event/movie1701_btm.jpg') no-repeat 0 0;}
+
+/* 미씽나인 무료보기 */
+.e_content .e_view.missing9{height:1255px;background:url('http://static.filecast.co.kr/_img/event/bg_missing9.jpg') no-repeat 0 0;}
+.e_view.missing9 > .top{height:626px;text-indent:-9999px;}
+.missing9 .link_9{height:278px;}
+.missing9 .link_9 p{text-indent:-9999px;}
+.missing9 .link_9 .view_free{display:block;width:343px;height:72px;margin:146px auto 0 auto;background:url('http://static.filecast.co.kr/_img/event/missing9_content.png') no-repeat 0 0;text-indent:-9999px;}
+.missing9 .link_9 .view_free:hover{opacity:0.7;}
+.missing9 .missing_num{width:827px;padding:25px 0 0 93px;}
+.missing9 .missing_num ul{overflow:hidden;}
+.missing9 .missing_num ul li{float:left;margin-right:50px;}
+.missing9 .missing_num ul li .num{display:block;width:180px;height:148px;border-radius:4px;cursor:pointer;background:url('http://static.filecast.co.kr/_img/event/missing9_content.png') no-repeat;text-indent:-9999px;}
+.missing9 .missing_num ul li .num.type0{background-position:-458px -90px;}
+.missing9 .missing_num ul li .num.type1{background-position:-229px -90px;}
+.missing9 .missing_num ul li .num.type2{background-position:0 -90px;}
+.missing9 .missing_num ul li .num:hover{opacity:0.7;}
+
+/* 역적 무료보기 */
+.e_content .e_view.hong_free{height:1513px;background:url('http://static.filecast.co.kr/_img/event/bg_hong_2.jpg') no-repeat 0 0;}
+.e_view.hong_free > .top{height:597px;text-indent:-9999px;}
+.hong_free .link_hong{top:0;height:563px;/* border:1px solid red; */}
+.hong_free .link_hong p{text-indent:-9999px;}
+.hong_free .link_hong .view_free{display:block;width:343px;height:72px;margin:405px auto 0 auto;background:url('http://static.filecast.co.kr/_img/event/hong_content.png') no-repeat 0 0;text-indent:-9999px;}
+.hong_free .link_hong .view_free:hover{opacity:0.7;}
+.hong_free .hong_num{width:827px;padding:25px 0 0 93px;}
+.hong_free .hong_num ul{overflow:hidden;}
+.hong_free .hong_num ul li{float:left;margin-right:50px;}
+.hong_free .hong_num ul li .num{display:block;width:180px;height:148px;border-radius:4px;cursor:pointer;background:url('http://static.filecast.co.kr/_img/event/hong_content.png') no-repeat;text-indent:-9999px;}
+.hong_free .hong_num ul li .num.type0{background-position:-458px -90px;}
+.hong_free .hong_num ul li .num.type1{background-position:-230px -90px;}
+.hong_free .hong_num ul li .num.type2{background-position:0 -90px;}
+.hong_free .hong_num ul li .num:hover{opacity:0.7;}
+
+/* 요청자료 이벤트 페이지 */ 
+.e_view.request_x3{height:auto;background:#fff;}
+.request_x3 .top{height:410px;text-indent:-9999px;background:url('http://static.filecast.co.kr/_img/event/request1702_top.jpg') no-repeat 0 0;}
+.request_event{position:relative;height:543px;padding:44px 0 83px 0;background:#f5efcb;}
+.request_event .t_big{position:absolute;left:185px;top:-25px;width:456px;height:48px;text-indent:-9999px;background:url('http://static.filecast.co.kr/_img/event/request1702_content.png') no-repeat 0 0;}
+.request_event div{float:left;position:relative;width:373px;height:420px;background:url('http://static.filecast.co.kr/_img/event/request1702_content.png') no-repeat;}
+.request_event .point_x3 .btn_r_upload, .request_event .item_seller .btn_seller{position:absolute;bottom:23px;display:block;height:50px;background:url('http://static.filecast.co.kr/_img/event/request1702_content.png') no-repeat;text-indent:-9999px;}
+.request_event div a:hover{opacity:0.7;}
+.request_event div p, .request_event div span{display:none;}
+.request_event .point_x3{margin:0 22px 0 28px;background-position:0 -116px;}
+.request_event .point_x3 .btn_r_upload{display:block;left:46px;width:273px;background-position:-475px 0;}
+.request_event .item_seller{background-position:-390px -120px;}
+.request_event .item_seller .btn_seller{left:67px;width:235px;background-position:-475px -60px;cursor:pointer;}
+.request_x3 .upload_step{position:relative;padding:57px 0 63px 0;}
+.request_x3 .upload_step .t_big{position:absolute;left:185px;top:-25px;width:456px;height:48px;text-indent:-9999px;background:url('http://static.filecast.co.kr/_img/event/request1702_content.png') no-repeat 0 -60px;}
+.request_x3 .upload_step ol{overflow:hidden;padding-left:28px;}
+.request_x3 .upload_step ol li{float:left;width:165px;height:240px;margin-right:30px;background:url('http://static.filecast.co.kr/_img/event/request1702_content.png') no-repeat;}
+.request_x3 .upload_step ol li span, .request_x3 .upload_step ol li p{text-indent:-9999px;}
+.request_x3 .upload_step .step.type1{width:173px;background-position:0 -545px;}
+.request_x3 .upload_step .step.type2{background-position:-200px -545px;}
+.request_x3 .upload_step .step.type3{background-position:-400px -545px;}
+.request_x3 .upload_step .step.type4{margin-right:0;background-position:-600px -545px;}
+.request_x3 .btm{height:195px;background:url('http://static.filecast.co.kr/_img/event/request1702_btm.png') no-repeat 0 0;}
+
+/* 사용자 이벤트 페이지 */
+.e_view.user1702{height:auto;background:#fff;}
+.user1702 .top{height:412px;text-indent:-9999px;background:url('http://static.filecast.co.kr/_img/event/user1702_top.jpg') no-repeat 0 0;}
+.pc_data_use, .mobile_data_use{position:relative;padding:60px 0 70px 28px;}
+.pc_data_use{position:relative;background:#f5efcb;}
+.mobile_data_use{position:relative;padding-bottom:40px;}
+.user1702 .t_big{position:absolute;top:-24px;left:227px;width:378px;height:48px;background:url('http://static.filecast.co.kr/_img/event/user1702_content.png') no-repeat;text-indent:-9999px;}
+.pc_data_use .t_big{background-position:0 0;}
+.mobile_data_use .t_big{background-position:0 -310px;}
+.user1702 ol{overflow:hidden;}
+.user1702 ol li{float:left;width:164px;height:243px;text-indent:-9999px;background:url('http://static.filecast.co.kr/_img/event/user1702_content.png') no-repeat;}
+.pc_data_use .step.type1{margin-right:38px;background-position:0 -55px;}
+.pc_data_use .step.type2{margin-right:37px;background-position:-180px -55px;}
+.pc_data_use .step.type3{margin-right:34px;background-position:-360px -55px;}
+.pc_data_use .step.type4{width:168px;background-position:-540px -55px;}
+.mobile_data_use .step.type1{margin-right:38px;background-position:0 -370px;}
+.mobile_data_use .step.type2{margin-right:37px;background-position:-180px -370px;}
+.mobile_data_use .step.type3{margin-right:34px;background-position:-360px -370px;}
+.mobile_data_use .step.type4{width:168px;background-position:-540px -370px;}
+.user1702 .btm{height:130px;text-indent:-9999px;background:url('http://static.filecast.co.kr/_img/event/user1702_btm.png') no-repeat 0 0;}
+
+/* cj 콘텐츠 리워드 이벤트 3월 */
+.e_view.reward.v_1703{height:2385px;background:url('http://static.filecast.co.kr/_img/event/bg_reward1703_1.jpg') no-repeat 0 0;}
+.reward.v_1703 .top{height:753px;text-indent:-9999px;}
+.broadcast_list{float:left;width:356px;padding:90px 0 0 0;margin:0 20px 0 47px;}
+.broadcast_list p.title, .movie_list p.title{display:none;}
+.broadcast_list ul, .movie_list ul{overflow:hidden;}
+.broadcast_list ul li, .movie_list ul li{float:left;width:178px;margin:0 0 24px 0;text-align:center;cursor:pointer;}
+.broadcast_list ul li:hover, .movie_list ul li:hover{opacity:0.7;}
+.broadcast_list ul li .c_img, .movie_list ul li .c_img{display:block;width:130px;height:186px;margin:0 auto;border:1px solid #c2c7ce;}
+.broadcast_list ul li .tit, .movie_list ul li .tit{display:block;margin:8px 0 5px 0;color:#757879;font-weight:bold;}
+.broadcast_list ul li .num, .movie_list ul li .num{font-size:12px;color:#757879;}
+.broadcast_list ul li .num .r_sum, .movie_list ul li .num .r_sum{color:#d465ff;}
+.e_view.reward .movie_list{float:left;width:356px;padding:90px 0 0 0;}
+
+/* VIP 혜택관 */
+.e_view.vip1703{height:1361px;background:url('http://static.filecast.co.kr/_img/event/bg_vip.jpg') no-repeat 0 0;}
+.e_view.vip1703 .top{height:505px;text-indent:-9999px;}
+.vip1703 .my_grade{width:827px;height:93px;padding:20px 0;margin-bottom:60px;text-align:center;background:rgba(8,4,8,0.5);}
+.vip1703 .my_grade .line{display:block;width:392px;height:1px;margin:0 auto;line-height:1px;border-top:1px solid #e4c58f;}
+.vip1703 .my_grade p{height:49px;line-height:49px;color:#fff;}
+.vip1703 .my_grade p .t_yellow{color:#e4c58f;}
+.vip1703 .vip_benefit{position:relative;width:724px;height:325px;padding:40px 0 0 0;margin:0 auto 60px auto;background:rgba(255,255,255,0.2);}
+.vip1703 .vip_benefit h4{position:absolute;left:245px;top:-21px;width:241px;height:42px;text-indent:-9999px;background:url('http://static.filecast.co.kr/_img/event/vip_content_5.png') no-repeat 0 0;}
+.vip1703 .vip_benefit .txt{width:349px;height:22px;margin:0 auto;text-indent:-9999px;background:url('http://static.filecast.co.kr/_img/event/vip_content_5.png') no-repeat 0 -50px;}
+.vip1703 .vip_benefit ul{overflow:hidden;padding:20px 0 0 0;}
+.vip1703 .vip_benefit ul li{position:relative;float:left;width:241px;text-align:center;}
+.vip1703 .vip_benefit ul li .img{display:inline-block;background:url('http://static.filecast.co.kr/_img/event/vip_content_5.png') no-repeat;}
+.vip1703 .vip_benefit ul li p{text-indent:-9999px;}
+.vip1703 .vip_benefit ul li .r_line{display:block;position:absolute;right:0;top:10px;width:1px;height:183px;border-right:1px solid #76717a;}
+.vip1703 .vip_benefit ul .b1 .img{width:195px;height:185px;background-position:0 -80px;}
+.vip1703 .vip_benefit ul .b2 .img{width:180px;height:155px;background-position:-220px -80px;}
+.vip1703 .vip_benefit ul .b3 .img{width:214px;height:185px;background-position:-420px -80px;}
+.vip1703 .grade_explain{}
+.vip1703 .grade_explain .name{width:231px;height:42px;margin:0 auto;background:url('http://static.filecast.co.kr/_img/event/vip_content_5.png') no-repeat 0 -280px;text-indent:-9999px;}
+.vip1703 .grade_explain .txt{width:640px;height:44px;margin:15px auto 65px auto;background:url('http://static.filecast.co.kr/_img/event/vip_content_5.png') no-repeat 0 -330px;text-indent:-9999px;}
+.vip1703 .btn_vip{display:block;width:360px;height:73px;margin:0 auto;background:url('http://static.filecast.co.kr/_img/event/vip_content_5.png') no-repeat;text-indent:-9999px;cursor:pointer;}
+.vip1703 .btn_vip:hover{opacity:0.7;}
+.vip1703 .btn_vip.use_go{background-position: 0 -390px;}
+.vip1703 .btn_vip.coupon_get{background-position: 0 -470px;}
+
+
+/* 성인영화할인 1703 */
+.e_view.pink_movie1703{height:auto;background:none;}
+.pink_movie1703 .top{height:580px;text-indent:-9999px;background:url('http://static.filecast.co.kr/_img/event/pink1703_top.jpg') no-repeat 0 0;}
+.pink_movie1703 .pink_list{overflow:hidden;padding:25px 0;}
+.pink_movie1703 .pink_list ul{overflow:hidden;width:738px;margin:0 auto;padding:40px 0 20px 0;border-bottom:1px solid #f1f2f3;}
+.pink_movie1703 .pink_list ul:last-child{border:none;}
+.pink_movie1703 .pink_list li{float:left;width:132px;height:222px;margin-left:18px;text-align:center;cursor:pointer;}
+.pink_movie1703 .pink_list li:hover{opacity:0.7;}
+.pink_movie1703 .pink_list li:first-child{margin:0;}
+.pink_movie1703 .pink_list li span{display:inline-block;text-align:center;}
+.pink_movie1703 .pink_list li .img{border:1px solid #000;}
+.pink_movie1703 .pink_list li .img img{display:block;width:118px;height:169px;}
+.pink_movie1703 .pink_list li .tit{overflow:hidden;display:inline-block;width:130px;height:2.6em;margin:5px auto 0 auto;font-size:14px;font-weight:bold;color:#444748;letter-spacing:-1px;line-height:1.3em; text-overflow:ellipsis;/* display:-webkit-box; */-webkit-line-clamp:2;word-wrap:break-word;word-break:break-all;}
+.pink_movie1703 .pink_list li .ico_adult{position:relative;top:-2px;display:inline-block;width:13px;height:13px;margin-right:3px;text-indent:-9999px;background:url('http://static.filecast.co.kr/_img/common/common_170302.png') no-repeat -45px -331px;vertical-align:middle;}
+.pink_movie1703 .btm{height:110px;background:url('http://static.filecast.co.kr/_img/event/pink1703_btm.jpg') no-repeat 0 0;}
+
+/* cj 콘텐츠 리워드 이벤트 4월 */
+.e_view.reward.v_1704{height:2385px;background:url('http://static.filecast.co.kr/_img/event/bg_reward1704.jpg') no-repeat 0 0;}
+.reward.v_1704 .top{height:753px;text-indent:-9999px;}
+
+/* 4월 영화할인 이벤트 */ 
+.e_content .e_view.tohan1704{height:auto;background:#fafff8 url('http://static.filecast.co.kr/_img/event/bg_tohan1704.jpg') no-repeat 0 0;}
+.e_view.tohan1704 > .top{height:675px;text-indent:-9999px;}
+.tohan1704 .movie_list ul{overflow:hidden;width:736px;margin:0 auto;margin-bottom:20px;border-bottom:1px solid #f1f2f3;}
+.tohan1704 .movie_list ul:last-child{border:none;padding-bottom:0;margin-bottom:0;}
+.tohan1704 .movie_list ul li{float:left;width:138px;margin-left:10px;cursor:pointer;}
+.tohan1704 .movie_list ul li:first-child{margin-left:0;}
+.tohan1704 .movie_list ul li:hover{opacity:0.7;}
+.tohan1704 .movie_list ul li span{display:block;text-align:center;}
+.tohan1704 .movie_list ul li .img_area{position:relative;margin:0 auto 8px auto;}
+.tohan1704 .movie_list ul li .poster{width:130px;height:186px;margin:0 auto;border:1px solid #c2c7ce;}
+.tohan1704 .movie_list ul li .poster img{display:block;width:128px;height:184px;}
+.tohan1704 .movie_list ul li .img_area .ico{position:absolute;top:5px;left:1px;width:45px;height:22px;background:url("http://static.filecast.co.kr/_img/sub/ico.png") no-repeat;}
+.tohan1704 .movie_list ul li .img_area .ico.new{background-position:0 0;}
+.tohan1704 .movie_list ul li .img_area .ico.hot{background-position:0 -25px;}
+.tohan1704 .movie_list ul li .tit{overflow:hidden;width:138px;padding-right:2px;margin-bottom:6px;font-weight:bold;letter-spacing:-1px;text-overflow:ellipsis;white-space:nowrap;}
+.tohan1704 .movie_list ul li span.tit .ico{position:relative;top:3px;display:inline-block;vertical-align:top;}
+.tohan1704 .movie_list ul li .cate, .tohan1704 .movie_list ul li .date{font-size:13px;color:#b6b9ba;letter-spacing:-1px;}
+.tohan1704 .btm{width:827px;height:111px;background:url('http://static.filecast.co.kr/_img/event/tohan1704_btm.jpg') no-repeat 0 0;}
+
+/* 4월 6~9시 콘텐츠 무료이벤트 */
+.e_content .e_view.morningSale1704{font-family:'Noto Sans Korean Demlight', sans-serif;height:auto;background:url('http://static.filecast.co.kr/_img/event/bg_morning_sale.jpg') no-repeat 0 0;}
+.morningSale1704 .text{height:960px;text-indent:-9999px;}
+.morningSale1704 .btm{height:82px;padding-top:6px;background:#161616;text-align:center;color:#555;text-indent:0;font-size:13px;letter-spacing:-1px;line-height:22px;}
+
+/* 5월 가정의달이벤트 */
+.e_content .e_view.family1705{height:auto;background:#fff url('http://static.filecast.co.kr/_img/event/bg_family1705.jpg') no-repeat 0 0;}
+.e_view.family1705 > .top{height:536px;text-indent:-9999px;}
+.family_tab{padding-bottom:50px;text-align:center;}
+.family_tab .tab{display:inline-block;width:263px;height:52px;background:url('http://static.filecast.co.kr/_img/event/family1705_tab.png') no-repeat 0 0;cursor:pointer;text-indent:-9999px;}
+.family_tab .tab.kids{margin-right:45px;background-position:0 0;}
+.family_tab .tab.ani{background-position:0 -120px;}
+.family_tab .tab.kids:hover, .family_tab .tab.kids.active{background-position:0 -60px;}
+.family_tab .tab.ani:hover, .family_tab .tab.ani.active{background-position:0 -180px;}
+.family1705 .content_list{display:none;overflow:hidden;padding:0 0 50px 46px;}
+.family1705 .content_list.active{display:block;}
+.family1705 .content_list > a{display:block;float:left;width:220px;height:200px;margin:0 35px 28px 0;text-indent:-9999px;cursor:pointer;}
+.family1705 .content_list > a:hover{opacity:0.7;}
+.family1705 .content_list.kids > a{background:url('http://static.filecast.co.kr/_img/event/family1705_content_kids.png') no-repeat;}
+.family1705 .content_list.ani > a{background:url('http://static.filecast.co.kr/_img/event/family1705_content_ani.png') no-repeat;}
+.family1705 .content_list.kids .item0{background-position:-10px 0;}
+.family1705 .content_list.kids .item1{background-position:-265px 0;}
+.family1705 .content_list.kids .item2{background-position:-517px 0;}
+.family1705 .content_list.kids .item3{background-position:-10px -229px;}
+.family1705 .content_list.kids .item4{background-position:-265px -229px;}
+.family1705 .content_list.kids .item5{background-position:-517px -229px;}
+.family1705 .content_list.kids .item6{background-position:-10px -456px;}
+.family1705 .content_list.kids .item7{background-position:-265px -456px;}
+.family1705 .content_list.kids .item8{background-position:-517px -456px;}
+.family1705 .content_list.kids .item9{margin-right:32px;background-position:-10px -683px;}
+.family1705 .content_list.kids .item10{width:224px;margin-right:24px;background-position:-262px -683px;}
+.family1705 .content_list.kids .item11{width:239px;margin-right:37px;background-position:-507px -683px;}
+.family1705 .content_list.kids .item12{width:216px;margin-right:37px;background-position:-8px -910px;}
+.family1705 .content_list.kids .item13{width:217px;margin-right:38px;background-position:-261px -910px;}
+.family1705 .content_list.kids .item14{background-position:-513px -910px;}
+.family1705 .content_list.kids .item15{background-position:-10px -1137px;}
+.family1705 .content_list.kids .item16{background-position:-263px -1137px;}
+.family1705 .content_list.kids .item17{background-position:-515px -1137px;}
+.family1705 .content_list.kids .item18{background-position:-10px -1364px;}
+.family1705 .content_list.kids .item19{background-position:-263px -1364px;}
+.family1705 .content_list.kids .item20{background-position:-515px -1364px;}
+.family1705 .content_list.kids .item21{background-position:-10px -1591px;}
+.family1705 .content_list.kids .item22{background-position:-263px -1591px;}
+.family1705 .content_list.kids .item23{background-position:-515px -1591px;}
+.family1705 .content_list.kids .item24{background-position:-10px -1818px;}
+.family1705 .content_list.kids .item25{background-position:-263px -1818px;}
+.family1705 .content_list.kids .item26{background-position:-515px -1818px;}
+.family1705 .content_list.kids .item27{background-position:-6px -2045px;}
+.family1705 .content_list.kids .item28{background-position:-259px -2045px;}
+.family1705 .content_list.kids .item29{background-position:-511px -2045px;}
+.family1705 .content_list.ani .item0{margin-right:27px;background-position:-10px 0;}
+.family1705 .content_list.ani .item1{width:240px;margin-right:22px;background-position:-254px 0;}
+.family1705 .content_list.ani .item2{background-position:-517px 0;}
+.family1705 .content_list.ani .item3{background-position:-10px -229px;}
+.family1705 .content_list.ani .item4{background-position:-265px -229px;}
+.family1705 .content_list.ani .item5{background-position:-517px -229px;}
+.family1705 .content_list.ani .item6{background-position:-10px -456px;}
+.family1705 .content_list.ani .item7{background-position:-265px -456px;}
+.family1705 .content_list.ani .item8{background-position:-517px -456px;}
+.family1705 .content_list.ani .item9{background-position:-10px -683px;}
+.family1705 .content_list.ani .item10{background-position:-265px -683px;}
+.family1705 .content_list.ani .item11{background-position:-517px -683px;}
+.family1705 .content_list.ani .item12{position:relative;left:-4px;width:230px;margin-right:25px;background-position:-2px -910px;}
+.family1705 .content_list.ani .item13{width:221px;background-position:-260px -910px;}
+.family1705 .content_list.ani .item14{background-position:-513px -910px;}
+.family1705 .content_list.ani .item15{background-position:-10px -1137px;}
+.family1705 .content_list.ani .item16{background-position:-263px -1137px;}
+.family1705 .content_list.ani .item17{background-position:-515px -1137px;}
+.family1705 .content_list.ani .item18{margin-right:20px;background-position:-10px -1364px;}
+.family1705 .content_list.ani .item19{width:243px;margin-right:26px;background-position:-250px -1364px;}
+.family1705 .content_list.ani .item20{background-position:-515px -1364px;}
+.family1705 .content_list.ani .item21{background-position:-10px -1591px;}
+.family1705 .content_list.ani .item22{background-position:-263px -1591px;}
+.family1705 .content_list.ani .item23{background-position:-515px -1591px;}
+.family1705 .content_list.ani .item24{background-position:-10px -1818px;}
+.family1705 .content_list.ani .item25{margin-right:33px;background-position:-263px -1818px;}
+.family1705 .content_list.ani .item26{width:224px;background-position:-513px -1818px;}
+.family1705 .content_list.ani .item27{background-position:-6px -2045px;}
+.family1705 .content_list.ani .item28{background-position:-259px -2045px;}
+.family1705 .content_list.ani .item29{background-position:-511px -2045px;}
+.family1705 .content_list.ani .item30{background-position:-6px -2272px;}
+.family1705 .content_list.ani .item31{background-position:-259px -2272px;}
+.family1705 .content_list.ani .item32{background-position:-511px -2272px;}
+.family1705 .content_list.ani .item33{background-position:-6px -2498px;}
+.family1705 .content_list.ani .item34{background-position:-259px -2498px;}
+.family1705 .btm{width:827px;height:120px;background:url('http://static.filecast.co.kr/_img/event/family1705_btm.jpg') no-repeat 0 0;}
+
+/*5월 영화할인 이벤트*/
+.e_content .e_view.imbc1705{height:auto;background:#fff;}
+.e_view.imbc1705 > .top{height:490px;background:url('http://static.filecast.co.kr/_img/event/imbc1705_top.jpg') no-repeat 0 0;text-indent:-9999px;}
+.imbc1705 .movie_list{padding:20px 0;}
+.imbc1705 .movie_list ul{overflow:hidden;width:736px;margin:0 auto;margin-bottom:20px;border-bottom:1px solid #f1f2f3;}
+.imbc1705 .movie_list ul:last-child{border:none;padding-bottom:0;margin-bottom:0;}
+.imbc1705 .movie_list ul li{float:left;width:138px;margin-left:10px;cursor:pointer;}
+.imbc1705 .movie_list ul li:first-child{margin-left:0;}
+.imbc1705 .movie_list ul li:hover{opacity:0.7;}
+.imbc1705 .movie_list ul li span{display:block;text-align:center;}
+.imbc1705 .movie_list ul li .img_area{position:relative;margin:0 auto 8px auto;}
+.imbc1705 .movie_list ul li .poster{width:130px;height:186px;margin:0 auto;border:1px solid #c2c7ce;}
+.imbc1705 .movie_list ul li .poster img{display:block;width:128px;height:184px;}
+.imbc1705 .movie_list ul li .tit{overflow:hidden;width:138px;padding-right:2px;margin-bottom:6px;font-weight:bold;letter-spacing:-1px;text-overflow:ellipsis;white-space:nowrap;}
+.imbc1705 .movie_list ul li span.tit .ico{position:relative;top:3px;display:inline-block;vertical-align:top;}
+.imbc1705 .movie_list ul li .sum{font-size:13px;color:#b6b9ba;}
+.imbc1705 .movie_list ul li .d_sum{display:inline-block;color:#fd6c5a;}
+.imbc1705 .movie_list ul li .d_sum span{display:inline-block;letter-spacing:-1px;}
+.imbc1705 .btm{width:827px;height:111px;background:url('http://static.filecast.co.kr/_img/event/imbc1705_btm.jpg') no-repeat 0 0;}
+
+/* kbs 콘텐츠 할인 1705 */
+.e_content .e_view.kbs1705{height:auto;background:#fff;}
+.kbs1705 .kbs_content{position:relative;width:827px;}
+.kbs1705 .kbs_content .top{position:absolute;top:217px;left:175px;width:425px;height:365px;border-radius:50px 200px 80px 140px;background:url('http://static.filecast.co.kr/_img/event/kbs1705_top.png') no-repeat 0 0;text-indent:-9999px;}
+.kbs1705 .click_area{overflow:hidden;}
+.kbs1705 .click_area ul li{float:left;width:409px;height:390px;}
+.kbs1705 .click_area ul li.content1{margin:0 4px 4px 0;}
+.kbs1705 .click_area ul li.content1 a{background-position:0 0;}
+.kbs1705 .click_area ul li.content2{margin:0 0 4px 0;}
+.kbs1705 .click_area ul li.content2 a{width:414px;background-position:-414px 0;}
+.kbs1705 .click_area ul li.content3{margin:0 4px 0 0;}
+.kbs1705 .click_area ul li.content3 a{background-position:0 -394px;}
+.kbs1705 .click_area ul li.content4 a{width:414px;background-position:-414px -394px;}
+.kbs1705 .click_area ul li a{display:block;width:100%;height:100%;text-indent:-9999px;background:url('http://static.filecast.co.kr/_img/event/kbs1705_content.jpg') no-repeat;}
+.kbs1705 .click_area ul li.content1 a:hover{background-position:-850px 0;}
+.kbs1705 .click_area ul li.content2 a:hover{background-position:-1264px 0;}
+.kbs1705 .click_area ul li.content3 a:hover{background-position:-850px -394px;}
+.kbs1705 .click_area ul li.content4 a:hover{background-position:-1264px -394px;}
+.kbs1705 .btm{height:110px;background:url('http://static.filecast.co.kr/_img/event/kbs1705_btm.png') no-repeat 0 0;}
+

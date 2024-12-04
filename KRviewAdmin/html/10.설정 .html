@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KRview ADMIN</title>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/bootstrap-4.3.1.min.css">
+    <link rel="stylesheet" href="../css/custom-icon.css">
+    <link rel="stylesheet" href="../css/krview_admin_style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Gothic+A1:wght@200;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+<!-- wrap -->
+<div class="wrap">
+    <!-- header -->
+    <div class="header">
+        <h1 class="a_logo"><img src="../images/a_logo.png" alt="kRview"><span class="l_txt">관리자 페이지</span></h1>
+        <div class="top_menu_area">
+            <div class="user_name">
+                <p class="txt">반갑습니다, <span class="user_name">관리자님</span>!</p>
+                <span class="img_icon"><img src="../images/profile-img.png" alt="profile-img"></span>
+            </div>
+            <div class="menu_list">
+                <span class="arrow"></span>
+                <ul class="menu">
+                    <li><span class="cursor">로그아웃</span><span class="l_bar"></span></li>
+                    <li><span class="cursor">회원 정보</span><span class="l_bar"></span></li>
+                    <li><span class="cursor">비밀번호 변경</span><span class="l_bar"></span></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- //header -->
+    <!-- container -->
+    <div class="container">
+        <!-- lnb -->
+        <div class="lnb">
+            <ul>
+                <li>
+                    <span class="bg_circle">
+                        <i class="icon-lnb-account"></i>
+                        <span class="n_name">계정 관리</span>
+                    </span>
+                </li>
+                <li class="company">
+                    <span class="bg_circle">
+                        <i class="icon-lnb-company"></i>
+                        <span class="n_name">서비스 사업자 관리</span>
+                    </span>
+                </li>
+                <li class="active">
+                    <span class="bg_circle">
+                        <i class="icon-lnb-device"></i>
+                        <span class="n_name">설정</span>
+                    </span>
+                </li>
+            </ul>
+        </div>
+        <!-- //lnb -->
+        <!-- content -->
+        <div class="content">
+            <div class="c_top">
+                <h2 class="sub_tit">설정</h2>
+                <div class="btn_area">
+                    <span class="t_btn save">
+                        <span class="txt">복원</span>
+                    </span>
+                    <span class="t_btn save">
+                        <span class="txt">저장</span>
+                    </span>
+                </div>
+            </div>
+            <div class="c_inner row">
+                <div class="col-4 pl-0 pr-0">
+                    <div class="section set_style mr-0">
+                        <span class="t_bar"></span>
+                        <h3 class="m_tit">정보 새로고침 주기</h3>
+                        <form action="#" class="add_form">
+                            <fieldset>
+                                <div class="line">
+                                    <div class="label_area">
+                                        <label for="">새로고침 주기</label>
+                                    </div>
+                                    <div class="input_area">
+                                        <input type="text" class="a_input_style" placeholder="" value="5"> 초
+                                    </div>
+                                </div>
+                            </fieldset>
+                        </form>
+                    </div>
+                    <div class="section set_style mr-0">
+                        <span class="t_bar"></span>
+                        <h3 class="m_tit">로그 업로드 서버 정보</h3>
+                        <form action="#" class="add_form">
+                            <fieldset>
+                                <div class="line">
+                                    <div class="label_area">
+                                        <label for="">업로드 서버 URL</label>
+                                    </div>
+                                    <div class="input_area">
+                                        <input type="text" class="a_input_style" placeholder="" value="www.aaaaaaaaaaaaaa.com/aaa">
+                                    </div>
+                                </div>
+                            </fieldset>
+                        </form>
+                    </div>
+                    <div class="section set_style mr-0">
+                        <span class="t_bar"></span>
+                        <h3 class="m_tit">로그파일 저장 기간</h3>
+                        <form action="#" class="add_form">
+                            <fieldset>
+                                <div class="line">
+                                    <div class="label_area">
+                                        <label for="">최대 저장 기간</label>
+                                    </div>
+                                    <div class="input_area">
+                                        <input type="text" class="a_input_style" placeholder="" value="30"> 일
+                                    </div>
+                                </div>
+                            </fieldset>
+                        </form>
+                    </div>
+                    <div class="section set_style mr-0">
+                        <span class="t_bar"></span>
+                        <h3 class="m_tit">로그 캡쳐 시간</h3>
+                        <form action="#" class="add_form">
+                            <fieldset>
+                                <div class="line">
+                                    <div class="label_area">
+                                        <label for="">로그 캡쳐 시간</label>
+                                    </div>
+                                    <div class="input_area">
+                                        <input type="text" class="a_input_style" placeholder="" value="3"> 분
+                                    </div>
+                                </div>
+                            </fieldset>
+                        </form>
+                    </div>
+                    <div class="section set_style mr-0">
+                        <span class="t_bar"></span>
+                        <h3 class="m_tit">동영상 녹화 시간</h3>
+                        <form action="#" class="add_form">
+                            <fieldset>
+                                <div class="line">
+                                    <div class="label_area">
+                                        <label for="">최대 녹화 시간</label>
+                                    </div>
+                                    <div class="input_area">
+                                        <input type="text" class="a_input_style" placeholder="" value="10"> 분
+                                    </div>
+                                </div>
+                            </fieldset>
+                        </form>
+                    </div>
+                    <div class="section set_style mr-0">
+                        <span class="t_bar"></span>
+                        <h3 class="m_tit">세션 유지 시간</h3>
+                        <form action="#" class="add_form">
+                            <fieldset>
+                                <div class="line">
+                                    <div class="label_area">
+                                        <label for="">최대 유지 시간</label>
+                                    </div>
+                                    <div class="input_area">
+                                        <input type="text" class="a_input_style" placeholder="" value="30"> 분
+                                    </div>
+                                </div>
+                            </fieldset>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-4 pr-0 ">
+                    
+                </div>
+                
+            </div>
+        </div>
+        <!-- //content -->
+    </div>
+    <!-- //container -->
+</div>
+<!-- //wrap -->
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.0.min.js"></script>
+
+</body>
+</html>

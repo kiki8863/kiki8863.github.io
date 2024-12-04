@@ -1,0 +1,492 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="Generator" content="EditPlus®">
+<meta name="Author" content="">
+<meta name="Keywords" content="">
+<meta name="Description" content="">
+<meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width" /> 
+<title> FileCast</title>
+<link rel="stylesheet" href="../_lib/bootstrap/dist/css/bootstrap.css" />
+<link rel="stylesheet" href="../_mobile/_css/filecast.reset.css" />
+<link rel="stylesheet" href="../_mobile/_css/filecast.mobile.style.css" />
+<!-- <link rel="stylesheet" href="http://192.168.10.14/static/_mobile/_css/filecast.mobile.style.css" /> -->
+</head>
+<body>
+<div id="wrap">
+	<!-- 레이어 -->
+	<span class="sideMenu_bg"></span>
+	<div class="sideMenu" style="display:block;">
+		
+		<div class="top">
+			<div class="my_name">
+				<span><b>오즈의토끼</b></span>
+			</div>
+			<ul class="my_video">
+				<li><span><span class="ico"></span><span class="txt">내가 본 영상</span></span></li>
+				<li><span><span class="ico"></span><span class="txt">찜한 영상</span></span></li>
+			</ul>
+			<div class="my_info">
+				<ul>
+					<li>
+						<div class="my_id">
+							<span class="info_tit">아이디</span>
+							<span class="info_con"><span class="vip_ico"></span><span class="txt_white">oz-rabiit@hanmail.net</span></span>
+						</div>
+						
+					</li>
+					<li>
+						<div>
+							<span class="info_tit">회원등급</span>
+							<span class="info_con"><span class="txt_white">일반회원</span></span>
+						</div>
+						<div>
+							<span class="info_tit">포인트</span>
+							<span class="info_con"><span class="txt_blue">999,999</span> P</span>
+						</div>
+						<div>
+							<span class="info_tit">보너스포인트</span>
+							<span class="info_con"><span class="txt_white type1">870</span> B</span>
+						</div>
+					</li>
+					<li>
+						<div>
+							<span class="info_tit">쿠폰</span>
+							<span class="info_con"><span class="txt_white type1">0</span> 장</span>
+						</div>
+						<div>
+							<span class="info_tit">마일리지</span>
+							<span class="info_con"><span class="txt_white type1">0</span> M</span>
+						</div>
+						<div>
+							<span class="info_tit">정액제</span>
+							<span class="info_con"><span class="txt_orange">0</span> 일</span>
+						</div>
+					</li>
+				</ul>
+				<!-- 원페이 영역추가 -->
+				<div class="my_onepay">
+					<div class="top">
+						<p class="tit">캐스트 원페이</p>
+						<span class="btn_change">변경하기</span>
+					</div>
+					<div class="onepay_info">
+						<ul>
+							<li>
+								<div>
+									<span class="info_tit">상태</span>
+									<span class="info_con">자동(날짜)</span>
+								</div>
+								<div>
+									<span class="info_tit">지정일</span>
+									<span class="info_con">12일</span>
+								</div>
+								<div>
+									<span class="info_tit">충전 포인트</span>
+									<span class="info_con">40,000P</span>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<!-- //원페이 영역추가 -->
+				<div class="not_login" style="display: none;">
+					<p>로그인 후 회원님의 <br />간편정보확인이 가능합니다.</p>
+					<div class="btn_goLogin">
+						<span class="login">로그인 하러 가기</span>
+						<span class="join">회원가입 하러 가기</span>
+					</div>
+				</div>
+			</div>
+			<div class="my_child">
+				<span class="txt">자녀 안심 보호 서비스</span><span class="btn_child"> on,off 설정</span>
+			</div>
+			<div class="btn_wrap">
+				<span class="btn_point">포인트 충전하기</span>
+				<span class="btn_edit">회원정보 수정</span>
+			</div>
+		</div>
+		<div class="btm">
+			<p>파일캐스트 서비스</p>
+			<ul>
+				<li ><span>다운로드 리스트</span><span class="down_ico type1"></span></li>
+				<li class="b_blue"><span>다운로드 보관함</span><span class="down_ico type2"></span><span class="b_border"></span></li>
+				<li><span>출석체크</span></li>
+				<li><span>충전 및 적립내역</span></li>
+				<li><span>포인트 사용내역</span></li>
+				<li><span>파일캐스트 무료 포인트 받기</span></li>
+				<li><span>무료 충전소</span><span class="ico_new"></span></li>
+				<li><span>쿠폰 등록</span><span class="b_border type1"></span></li>
+				<li><span>이벤트</span></li>
+				<li><span>무료관</span></li>
+				<li><span>자주하는 질문</span></li>
+				<li><span>1:1 문의하기</span></li>
+				<li><span>자료요청</span></li>
+				<li><span>쪽지</span><span class="memo_ico">999</span></li>
+				<li><span>친구 관리</span><span class="b_border type1"></span></li>
+				<li><span>공지사항</span></li>
+				<li><span>파일캐스트 앱 설치</span></li>
+			</ul>
+		</div>
+	</div>
+	<!-- //레이어 -->
+	<!-- header -->
+	<div class="header">
+		<span class="band btn_side">사이트메뉴보이기버튼</span>
+		<h1 class="logo"><img src="/static/_mobile/_img/common/logo.png" alt="FILECAST" width="145px"/></h1>
+		<div class="btn_login"><span class="txt">로그인</span></div>
+		<div class="searchAll col-xs-12">
+			<form action="#" method="post">
+				<fieldset>
+					<input type="text" />
+					<input type="button" class="btn_search" />
+				</fieldset>
+			</form>
+		</div>
+	</div>
+	<!-- //header -->
+	<!-- wrap_inner -->
+	<div class="wrap_inner">
+		<ul>
+			<li>
+				<!-- gnb -->
+				<div class="gnb">
+					<span class="menu col-xs-3 no-padding">충전하기<span class="bg"></span></span>
+					<span class="menu col-xs-3 no-padding">이벤트<span class="bg"></span></span>
+					<span class="menu col-xs-3 no-padding">쿠폰등록<span class="bg"></span></span>
+					<span class="menu col-xs-3 no-padding">테마관<span class="bg"></span></span>
+				</div>
+				<!-- //gnb -->
+			</li>		
+			<li>	
+				<!-- container -->
+				<div id="container" class="container no-padding">
+					<!-- top_content -->
+					<div class="top_content">
+						<!-- top_menu  -->
+						<div class="top_menu col-xs-12">
+							<!-- 검색결과일때 클래스 search 추가-->
+							<ul class="depth1">
+							<li class=""><span class="hand col-xs-3 l_none"><span class="m1"></span>인기</span></li>
+							<li><span class="hand col-xs-3"><span class="m2"></span>영화</span></li>
+							<li><span class="hand col-xs-3"><span class="m3"></span>방송</span></li>
+							<li><span class="hand col-xs-3 r_none"><span class="m4"></span>애니</span></li>
+							<li><span class="hand col-xs-3 b_none l_none"><span class="m9"></span>교육</span></li>
+							<li><span class="hand col-xs-3 b_none"><span class="m6"></span>유아</span></li>
+							<li><span class="hand col-xs-3 b_none"><span class="m7"></span>e-book</span></li>
+							<li><span class="hand col-xs-3 b_none r_none"><span class="m8"></span>성인</span></li>
+						</ul>
+						<ul class="depth2">
+							<li><span class="hand col-xs-3 l_none t_none">액션</span></li>
+							<li><span class="hand col-xs-3 t_none">코미디</span></li>
+							<li><span class="hand col-xs-3 t_none">드라마</span></li>
+							<li><span class="hand col-xs-3 r_none t_none">멜로</span></li>
+							<li><span class="hand col-xs-3 b_none l_none">공포/스릴러</span></li>
+							<li><span class="hand col-xs-3 b_none">SF/판타지</span></li>
+							<li><span class="hand col-xs-3 b_none">교육</span></li>
+							<li><span class="hand col-xs-3 b_none r_none">한국영화</span></li>
+						</ul>
+						<ul class="depth2">
+							<li><span class="hand col-xs-3 l_none t_none">전체<span class="num">(9,999)</span></span></li>
+							<li><span class="hand col-xs-3 t_none">동영상<span class="num">(875)</span></span></li>
+							<li><span class="hand col-xs-3 t_none">휴대기기<span class="num">(9,999)</span></span></li>
+							<li><span class="hand col-xs-3 r_none t_none">영화<span class="num">(1,523)</span></span></li>
+							<li><span class="hand col-xs-3 b_none l_none">드라마<span class="num">(35)</span></span></li>
+							<li><span class="hand col-xs-3 b_none">애니<span class="num">(325)</span></span></li>
+							<li><span class="hand col-xs-3 b_none">성인<span class="num">(1)</span></span></li>
+							<li><span class="hand col-xs-3 b_none r_none">교육<span class="num">(89)</span></span></li>
+						</ul>
+							<ul class="depth3 col-xs-12">
+								<li class="new"><span class="hand">최신</span><span class="bg">bg</span></li>
+								<li class="dot">·</li>
+								<li class="overlap"><span class="hand">중복제외</span><span class="bg">bg</span></li>
+								<li class="dot">·</li>
+								<li class="mydata active"><span class="hand">내가본자료제외</span><span class="bg">bg</span></li>
+								<li class="dot">·</li>
+								<li class="alliance"><span class="hand">제휴제외</span><span class="bg">bg</span></li>
+								<li class="dot">·</li>
+								<li class="adult"><span class="hand">성인제외</span><span class="bg">bg</span></li>
+							</ul>
+						</div>
+						<!-- main_banner -->
+						<div class="main_banner">
+							<div class="bannerArea">
+								<ul>
+									<!-- <li><span class="hand"><img src="/static/_mobile/_img/banner/banner01.png" alt="" width="384px" height="118px" /></span></li>
+									<li><span class="hand"><img src="/static/_mobile/_img/banner/banner01.png" alt="" width="384px" height="118px" /></span></li>
+									<li><span class="hand"><img src="/static/_mobile/_img/banner/banner01.png" alt="" width="384px" height="118px" /></span></li> -->
+								</ul>
+							</div>
+							<ul class="b_btnarea">
+								<li class="active"><span class="hand">배너버튼1</span></li>
+								<li><span class="hand">배너버튼2</span></li>
+								<li><span class="hand">배너버튼3</span></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</li>	
+			<li>	
+				<div id="container" class="container no-padding">
+					<!-- content -->
+					<div class="content">
+						<p class="now_txt">현재 <span>영화 &gt; SF/판타지</span> 분류의 자료를 <span>최신</span> 정렬로 보고 계십니다.</p>
+						<!-- content_list -->
+						<div class="content_list col-xs-12 no-padding">
+							<ul>
+								<li>
+									<span class="hand">
+										<div class="top">
+											<div class="r_imgArea">
+												<img src="/static/_mobile/_img/temp/img1.png" alt="컨텐츠 이미지" width="127px" height="80px"/>
+												<span class="btn_play">재생</span>
+											</div>
+											<p class="con_tit c_list"><span class="ico adult"></span>[틴토브라스감독] KICK THE COCK BY TINTO BASS 무삭제</p>
+											<div class="file_info">
+												<span class="time"><span></span>1시간 42분 12초</span>
+												<span class="point">2,500P</span>
+											</div>
+										</div>
+										<div class="btm">
+											<span class="like"><span></span>612</span>
+											<span class="replay"><span></span>13</span>
+											<span class="category">영화 <span>&gt;</span> SF/판타지</span>
+										</div>
+									</span>
+								</li>
+								<li class="active">
+									<div class="bg"></div>
+									<span class="hand">
+										<div class="top">
+											<div class="r_imgArea">
+												<img src="/static/_mobile/_img/temp/img1.png" alt="컨텐츠 이미지" width="127px" height="80px"/>
+												<span class="btn_play">재생</span>
+											</div>
+											<p class="con_tit">[대박] 초특 엄청난 전쟁 초능력자들의 활약 액쓰맨을 능가하는...</p>
+											<div class="file_info">
+												<span class="time"><span></span>1시간 57분 53초</span>
+												<span class="point">1,000P</span>
+											</div>
+										</div>
+										<div class="btm">
+											<span class="like"><span></span>612</span>
+											<span class="replay"><span></span>13</span>
+											<span class="category">영화 <span>&gt;</span> SF/판타지</span>
+										</div>
+									</span>
+									<div class="content_view">
+										<span class="bg"><span></span></span>
+										<div class="content_v_top">
+											<p class="s_title"><span>[대박] 초특 엄청난 전쟁 초능력자들의 활약 액쓰맨을 능가하는...</span></p>
+											<img src="/static/_mobile/_img/temp/temp_view_depth1.png" alt="" />
+											<span class="btn_down">앱으로 다운받기</span>
+											<span class="btn_hd">HD 감상하기</span>
+										</div>
+										<span class="btn_more">더 자세히 보기</span>
+										<div class="content_v_btm">
+											<div class="content_detail">
+												<img src="/static/_mobile/_img/temp/content_temp01.png" alt="" />
+												<img src="/static/_mobile/_img/temp/content_temp02.png" alt="" />
+												<p class="txt_type">마침내 거대한 여정이 끝난다! <br />누군가는 죽고 누군가는 승리한다!</p>
+												<p>빌보 배긴스, 참나무 방패 소린, 난쟁이 족이 떠난 거대한 여정 끝, 난쟁이 족은 원래 자신들의 터전이던 에레보르에 있는 엄청난 보물을 되찾지만 이는 무시무시한 용 스마우그가 호수마을의 무기력한 주민들을 공격하게 되는 결과를 낳는다.</p>
+												<p>산 아래의 왕 참나무 방패 소린은 탐욕에 서서히 눈이 멀어 우정과 명예를 저버린 채 왕의 보물 아르켄스톤을 찾는다. 소린이 이성을 되찾도록 설득하는데 실패한 빌보는 훨씬 험난한 일이 펼쳐질 줄 모른 채 절박하고 위험한 결정을 내린다. 오래된 적이 중간계로 돌아온 것. 암흑의 군주 사우론은 오크 군대를 보내 외로운 산에 기습 공격을 감행한다.</p>
+												<p>고조된 긴장감 속에 어둠이 ...인간은 단합할 것인지 말살될 것인지 택해야 한다. 마침내 다섯 군대의 전투가 시작되고 빌보는 본인과 친구들의 목숨을</p>
+											</div>
+											<div class="comment_wrap">
+												<h2>댓글 쓰기 <span class="c_num">[2,987]</span></h2>
+												<form action="" method="post">
+													<fieldset>
+														<div class="reply_input">
+															<textarea name="">톡톡 튀는 댓글평을 남겨주시면
+				판매자가 무료다운로드 쿠폰을 선물로 드립니다.
+				최대 500자까지 작성 가능하며,
+				주제와 무관한 댓글 악플은 삭제될 수 있습니다.</textarea>
+														</div>
+														<input type="button" value="취소" class="btn_cancle" />
+														<input type="submit" value="등록" class="btn_submit" />
+													</fieldset>
+												</form>
+												<div class="comment best">
+													<p class="c_writer"><span class="best"></span>소문난업로더</p>
+													<ul class="comment_list">
+														<li><span class="identify"></span><span class="num">9,999</span><span class="bar"> | </span></li>
+														<li><span>답글</span><span class="bar"> | </span></li>
+														<li><span>신고</span></li>
+													</ul>
+													<p class="c_content">정말 잼나게 잘 봤어요! 좋은자료 감사감사</p>
+												</div>
+												<div class="comment best">
+													<p class="c_writer"><span class="best"></span>nowcontents</p>
+													<ul class="comment_list">
+														<li><span class="identify"></span><span class="num">9,999</span><span class="bar"> | </span></li>
+														<li><span>답글</span><span class="bar"> | </span></li>
+														<li><span>신고</span></li>
+													</ul>
+													<p class="c_content">2시간 중 스샷에 나오는 초능력씬은 5분도 안됩니다...</p>
+												</div>
+												<div class="comment best">
+													<p class="c_writer"><span class="best"></span>뿌뿌리나</p>
+													<ul class="comment_list">
+														<li><span class="identify"></span><span class="num">9,999</span><span class="bar"> | </span></li>
+														<li><span>답글</span><span class="bar"> | </span></li>
+														<li><span>신고</span></li>
+													</ul>
+													<p class="c_content">적당한 포인트, 신선한 자료. 일단 받고 본다!</p>
+												</div>
+												<div class="comment">
+													<p class="c_writer">소문난업로더</p>
+													<ul class="comment_list">
+														<li><span class="identify"></span><span class="num">9,999</span><span class="bar"> | </span></li>
+														<li><span>답글</span><span class="bar"> | </span></li>
+														<li><span>신고</span></li>
+													</ul>
+													<p class="c_content">정말 잼나게 잘 봤어요! 좋은자료 감사감사</p>
+												</div>
+												<div class="comment">
+													<p class="c_writer">nowcontents</p>
+													<ul class="comment_list">
+														<li><span class="identify"></span><span class="num">9,999</span><span class="bar"> | </span></li>
+														<li><span>답글</span><span class="bar"> | </span></li>
+														<li><span>신고</span></li>
+													</ul>
+													<p class="c_content">2시간 중 스샷에 나오는 초능력씬은 5분도 안됩니다...</p>
+												</div>
+												<div class="comment">
+													<p class="c_writer">뿌뿌리나</p>
+													<ul class="comment_list">
+														<li><span class="identify"></span><span class="num">9,999</span><span class="bar"> | </span></li>
+														<li><span>답글</span><span class="bar"> | </span></li>
+														<li><span>신고</span></li>
+													</ul>
+													<p class="c_content">적당한 포인트, 신선한 자료. 일단 받고 본다!</p>
+												</div>
+												<div class="comment">
+													<p class="c_writer">소문난업로더</p>
+													<ul class="comment_list">
+														<li><span class="identify"></span><span class="num">9,999</span><span class="bar"> | </span></li>
+														<li><span>답글</span><span class="bar"> | </span></li>
+														<li><span>신고</span></li>
+													</ul>
+													<p class="c_content">정말 잼나게 잘 봤어요! 좋은자료 감사감사</p>
+													<div class="replyArea">
+														<div class="bg"></div>
+														<div class="reply">
+															<textarea name=""></textarea>
+															<span class="btn_reply">등록</span>
+														</div>
+													</div>
+												</div>
+												<div class="comment last">
+													<p class="c_writer"><span class="best"></span>nowcontents</p>
+													<ul class="comment_list">
+														<li><span class="identify"></span><span class="num">9,999</span><span class="bar"> | </span></li>
+														<li><span>답글</span><span class="bar"> | </span></li>
+														<li><span>신고</span></li>
+													</ul>
+													<p class="c_content">2시간 중 스샷에 나오는 초능력씬은 5분도 안됩니다...</p>
+												</div>
+												<span class="btn_r_more">댓글 <span class="r_num">9,999</span>개 더 보기</span>
+											</div>
+											<!-- //comment_wrap -->
+										</div>
+										<span class="btn_vClose">접기</span>
+									</div>
+								</li>
+								<li>
+									<div class="bg"></div>
+									<span class="hand">
+										<div class="top">
+											<div class="r_imgArea">
+												<img src="/static/_mobile/_img/temp/img1.png" alt="컨텐츠 이미지" width="127px" height="80px"/>
+												<span class="btn_play">재생</span>
+											</div>
+											<p class="con_tit c_list"><span class="ico adult"></span>[틴토브라스감독] KICK THE COCK BY TINTO BASS 무삭제</p>
+											<div class="file_info">
+												<span class="time"><span></span>1시간 42분 12초</span>
+												<span class="point"><span></span>2,500P</span>
+											</div>
+										</div>
+										<div class="btm">
+											<span class="like"><span></span>612</span>
+											<span class="replay"><span></span>13</span>
+											<span class="category">영화 <span>&gt;</span> SF/판타지</span>
+										</div>
+									</span>
+								</li>
+								<li>
+									<div class="bg"></div>
+									<span class="hand">
+										<div class="top">
+											<div class="r_imgArea">
+												<img src="/static/_mobile/_img/temp/img1.png" alt="컨텐츠 이미지" width="127px" height="80px"/>
+												<span class="btn_play">재생</span>
+											</div>
+											<p class="con_tit c_list"><span class="ico adult"></span>[틴토브라스감독] KICK THE COCK BY TINTO BASS 무삭제</p>
+											<div class="file_info">
+												<span class="time"><span></span>1시간 42분 12초</span>
+												<span class="point"><span></span>2,500P</span>
+											</div>
+										</div>
+										<div class="btm">
+											<span class="like"><span></span>612</span>
+											<span class="replay"><span></span>13</span>
+											<span class="category">영화 <span>&gt;</span> SF/판타지</span>
+										</div>
+									</span>
+								</li>
+								<li>
+									<div class="bg"></div>
+									<span class="hand">
+										<div class="top">
+											<div class="r_imgArea">
+												<img src="/static/_mobile/_img/temp/img1.png" alt="컨텐츠 이미지" width="127px" height="80px"/>
+												<span class="btn_play">재생</span>
+											</div>
+											<p class="con_tit c_list"><span class="ico adult"></span>[틴토브라스감독] KICK THE COCK BY TINTO BASS 무삭제</p>
+											<div class="file_info">
+												<span class="time"><span></span>1시간 42분 12초</span>
+												<span class="point">2,500P</span>
+											</div>
+										</div>
+										<div class="btm">
+											<span class="like"><span></span>612</span>
+											<span class="replay"><span></span>13</span>
+											<span class="category">영화 <span>&gt;</span> SF/판타지</span>
+										</div>
+									</span>
+								</li>
+								<li>
+									<div class="bg"></div>
+									<span class="hand">
+										<div class="top">
+											<div class="r_imgArea">
+												<img src="/static/_mobile/_img/temp/img1.png" alt="컨텐츠 이미지" width="127px" height="80px"/>
+												<span class="btn_play">재생</span>
+											</div>
+											<p class="con_tit c_list"><span class="ico adult"></span>[틴토브라스감독] KICK THE COCK BY TINTO BASS 무삭제</p>
+											<div class="file_info">
+												<span class="time"><span></span>1시간 42분 12초</span>
+												<span class="point">2,500P</span>
+											</div>
+										</div>
+										<div class="btm">
+											<span class="like"><span></span>612</span>
+											<span class="replay"><span></span>13</span>
+											<span class="category">영화 <span>&gt;</span> SF/판타지</span>
+										</div>
+									</span>
+								</li>
+							</ul>
+						</div>
+						<!-- //content_list -->
+					</div>
+					<!-- //content -->
+				</div>
+			</li>
+		</ul>		
+	</div>
+	<!-- //wrap_inner -->
+</div>
+</body>
+</html>

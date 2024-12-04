@@ -1,0 +1,1028 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="Generator" content="EditPlus®">
+<meta name="Author" content="">
+<meta name="Keywords" content="">
+<meta name="Description" content="">
+<title>On Play</title>
+<link rel="stylesheet" href="../_static/web/css/onplay.reset.css">
+<link rel="stylesheet" href="../_static/web/css/onplay.style.css">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+<div class="wrap">
+	<!-- header -->
+	<header class="header">
+		<div class="h_inner">
+			<div class="h_top">
+				<span class="p_child_btn active">
+					자녀 안심<span class="ico"></span>
+				</span>
+				<!-- 181214 상단 메뉴 추가 -->
+				<div class="top_menu">
+					<span class="link">포인트충전</span>
+					<span class="link" style="color:red;"><a href="event_list.html">이벤트</a></span>
+					<div class="top_s_box">
+						<span class="link b_style">ON 채널 <span class="ico"></span></span>
+						<div class="s_list size1">
+							<ul>
+								<li><span>영화</span></li>
+								<li><span>방송</span></li>
+								<li><span>애니</span></li>
+							</ul>
+						</div>
+					</div>
+					<!-- <div class="top_s_box">
+						<span class="link b_style">마이페이지 <span class="ico"></span></span>
+						<div class="s_list">
+							<ul>
+								<li><span>구매 목록</span></li>
+								<li><span>찜한 파일</span></li>
+								<li><span>나의 요청</span></li>
+							</ul>
+						</div>
+					</div> -->
+					<span class="link">판매자 채널관리</span>
+					<span class="link">고객센터</span>
+					<span class="user_name">홍길동님</span>
+					<div class="top_s_box">
+						<span class="link b_style name"><span class="t_ico type1"></span><span class="point">1,100,010</span><span class="ico"></span></span>
+						<!--200410 포인트 노출영역 스타일 수정 -->
+						<div class="s_list size2">
+							<span class="info_num"><span class="t_ico type2"></span>100,000</span> + <span class="info_num"><span class="t_ico type3"></span>1,000,000</span> + <span class="info_num"><span class="t_ico type5"></span>10</span>
+						</div>
+					</div>
+					<span class="link">로그아웃</span>
+				</div>
+			</div>
+			<div class="h_btm">
+				<h1 class="logo"><a href="#">OnPlay</a></h1>
+				<div class="search_wrap">
+					<input type="text" class="search_input" value="슈">
+					<button type="submit" class="search_btn"><span class="ico"></span></button>
+					<!-- 200324 검색어 레이어 추가 -->
+					<div class="s_recommend_layer" style="display: none;">
+						<div class="word_list">
+							<ul>
+								<li><span class="w_word"><strong>슈</strong>퍼맨이 돌아왔다</span></li>
+								<li><span class="w_word"><strong>슈</strong>가맨</span><span class="w_delete"></span></li>
+								<li><span class="w_word">너의 결혼식</span></li>
+								<li><span class="w_word">이태원 쓸라쓰</span></li>
+								<li><span class="w_word">킹덤</span></li>
+							</ul>
+						</div>
+						<div class="btm">
+							<span class="s_btn delete">기록삭제</span>
+							<!-- 로그인 안됐을 경우 자동완성 끄기 -->
+							<span class="s_btn save">검색어저장 끄기</span>
+						</div>
+					</div>
+				</div>
+				<div class="login_box">
+					<div class="out_box" style="display:none;">
+						<span class="btn login">로그인</span>
+						<span class="btn join">간편가입</span>
+						<p class="txt">10초 가입으로 온플레이만의 혜택을 누려보세요!</p>
+					</div>
+					<div class="on_box active ver2" style="display:block;">
+						<!-- <p class="txt">
+							<span class="ico"></span><span class="name">가나다라마바사아</span> 님 환영합니다.
+						</p>
+						<div class="alim_area" >
+							<div class="alim">
+								<span class="ico"></span>
+								<span class="num"></span>
+							</div>
+							<div class="memo active">
+								<span class="ico"></span>
+								<span class="num"></span>
+							</div>
+							
+							<div class="news_popup" style="display:block;">
+								<span class="bg_arrow"></span>
+								<div class="top">
+									<p class="tit">새소식</p>
+									<span class="close"></span>
+								</div>
+								<div class="news_list_wrap">
+									<div class="n_section">
+										<p class="n_content">가나다라마바님의 채널에 새로운 콘텐츠가 업로드..</p>
+										<span class="time">2시간전</span>
+									</div>
+									<div class="n_section">
+										<p class="n_content">1:1 문의에 새로운 답변이 작성되었습니다. 확인해보세요</p>
+										<span class="time">2시간전</span>
+									</div>
+									<div class="n_section">
+										<p class="n_content">JTBC 무조건 300원! 주말엔 드라마, 예능 정주행!t</p>
+										<span class="time">2시간전</span>
+									</div>
+									<div class="n_section">
+										<p class="n_content">JTBC 무조건 300원! 주말엔 드라마, 예능 정주행!t</p>
+										<span class="time">2시간전</span>
+									</div>
+									<div class="n_section">
+										<p class="n_content">JTBC 무조건 300원! 주말엔 드라마, 예능 정주행!t</p>
+										<span class="time">2시간전</span>
+									</div>
+								</div>
+								<div class="btm">
+									<span class="btn_all">전체보기<span class="arrow"></span></span>
+								</div>
+							</div>
+							
+						</div> -->
+						
+						<!-- <div class="point_info_area">
+							<dl class="s1">
+								<dt>포인트</dt>
+								<dd><span class="num">10,000</span>P</dd>
+							</dl>
+							<span class="bar"></span>
+							<dl class="s2">
+								<dt>보너스</dt>
+								<dd><span class="num">9,999,000</span>B</dd>
+							</dl>
+							<span class="bar"></span>
+							<dl class="s3">
+								<dt>정액제</dt>
+								<dd><span class="num">9</span>일</dd>
+							</dl>
+							<span class="bar"></span>
+							<dl class="s4">
+								<dt>쿠폰</dt>
+								<dd><span class="num">789</span>장</dd>
+							</dl>
+						</div> -->
+						<!-- 200327 포인트 영역 디자인 변경 -->
+						<!--<div class="point_info_wrap">
+								<div class="info_area">
+									<div class="type flat">
+										<dl class="t_info">
+											<dt>정액제</dt>
+											<dd><span class="num">1157</span>일</dd>
+										</dl>
+									</div>
+									<div class="type point">
+										<dl class="t_info">
+											<dt>총 포인트</dt>
+											<dd><span class="num">16,990,450</span>P</dd>
+										</dl>
+										<span class="arrow"></span>
+										<div class="more_info_area">
+											<ul class="m_info_list">
+												<li>
+													<dl class="m_info">
+														<dt>포인트</dt>
+														<dd><span class="num">970,450</span>P</dd>
+													</dl>
+												</li>
+												<li>
+													<dl class="m_info">
+														<dt>보너스 포인트</dt>
+														<dd><span class="num">16,020,000</span>B</dd>
+													</dl>
+												</li>
+												<li>
+													<dl class="m_info">
+														<dt>마일리지</dt>
+														<dd><span class="num">120,000</span>M</dd>
+													</dl>
+												</li>
+												<li>
+													<dl class="m_info">
+														<dt>쿠폰</dt>
+														<dd><span class="num">50</span>장</dd>
+													</dl>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+						-->
+						<!-- 200409 디자인 ver3 -->
+						<div class="user_top_area">
+							<ul>
+								<li class="my">
+									<a href="mypage_index.html">
+										<span class="m_ico"></span>
+										<span class="name" style="color:red;">마이페이지</span>
+									</a>
+									<div class="user_more_v_area">
+										<span class="arrow"></span>
+										<div class="v_list">
+											<ul>
+												<li><span>구매 목록</span></li>
+												<li><span>찜목록</span></li>
+												<li><span>구독 채널</span></li>
+												<li><span>나의 콘텐츠 업로드 요청</span></li>
+												<li><span>나의 문의 내역</span></li>
+											</ul>
+										</div>
+										<div class="btm">
+											<div class="link_area">
+												<span class="link">로그아웃</span>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li class="point">
+									<span class="m_ico"></span>
+									<span class="name">포인트</span>
+									<div class="user_more_v_area">
+										<span class="arrow"></span>
+										<div class="v_list">
+											<ul>
+												<li>
+													<span class="type">정액제</span>
+													<span class="info"><span class="b_area">D -<span class="num">45</span></span></span>
+												</li>
+												<li>
+													<span class="type">포인트</span>
+													<span class="info"><span class="num">970,450</span>P</span>
+												</li>
+												<li>
+													<span class="type">보너스 포인트</span>
+													<span class="info"><span class="num">16,020,000</span>B</span>
+												</li>
+												<li>
+													<span class="type">웹툰 포인트</span>
+													<span class="info"><span class="num">0</span>P</span>
+												</li>
+												<li>
+													<span class="type">마일리지</span>
+													<span class="info"><span class="num">120,000</span>M</span>
+												</li>
+											</ul>
+										</div>
+										<div class="btm">
+											<div class="link_area">
+												<span class="link">포인트 충전하러 가기</span>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li class="for">
+									<span class="m_ico"></span>
+									<span class="name">For You</span>
+								</li>
+								<li class="notice">
+									<span class="m_ico"><span class="on_ico"></span></span>
+									<span class="name">알림</span>
+									<div class="user_more_v_area">
+										<span class="arrow"></span>
+										<div class="top">
+											<p class="tit">알림</p>
+										</div>
+										<div class="v_list">
+											<ul>
+												<li class="n_alim">
+													<span class="i_ico"></span>
+													<div class="txt_area">
+														<p class="a_txt">무한도전을 다시 방송한다고 합니다.</p>
+														<span class="date">2020-04-03</span>
+													</div>
+												</li>
+												<li class="n_alim">
+													<span class="i_ico"></span>
+													<div class="txt_area">
+														<p class="a_txt">무한도전을 다시 방송한다고 합니다.</p>
+														<span class="date">2020-04-03</span>
+													</div>
+												</li>
+												<li class="memo">
+													<span class="i_ico"></span>
+													<div class="txt_area">
+														<p class="a_txt">율리시스님이 보낸 쪽지가 있습니다.</p>
+														<span class="date">2020-04-03</span>
+													</div>
+												</li>
+												<li class="n_alim">
+													<span class="i_ico"></span>
+													<div class="txt_area">
+														<p class="a_txt">무한도전을 다시 방송한다고 합니다.</p>
+														<span class="date">2020-04-03</span>
+													</div>
+												</li>
+												<li class="n_alim">
+													<span class="i_ico"></span>
+													<div class="txt_area">
+														<p class="a_txt">무한도전을 다시 방송한다고 합니다.</p>
+														<span class="date">2020-04-03</span>
+													</div>
+												</li>
+											</ul>
+										</div>
+										<div class="btm">
+											<div class="link_area">
+												<span class="link">새소식</span>
+												<span class="bar"></span>
+												<span class="link">쪽지함</span>
+											</div>
+										</div>
+									</div>
+								</li>
+							</ul>
+						</div>
+						<!-- //200409 디자인 ver3 -->
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+	<!-- //header -->
+	<!-- container -->
+	<div class="container">
+		<div class="bg_white"></div>
+		<div class="bg_gray"></div>
+		<div class="c_inner">
+			<div class="left_wrap">
+				<div class="box_effect">
+					<div class="cate">
+						<ul>
+							<li class="t_blue"><a href="sub_best.html"  style="color:red;">인기</a></li>
+							<!-- 201217 top 아이콘 추가 -->
+							<!-- <li><a href="#"><span class="ico_star"></span>TOP</a></li> -->
+							<!-- 201217 top 아이콘 추가 -->
+							<li><a href="sub_movie.html"  style="color:red;">영화</a></li>
+							<li><a href="#">방송</a></li>
+							<li><a href="#">애니</a></li>
+							<li><a href="#">도서</a></li>
+							<li><a href="#">게임</a></li>
+							<li><a href="#">유틸</a></li>
+							<li><a href="#">음악</a></li>
+							<li><a href="#">교육</a></li>
+							<li><a href="#">이미지</a></li>
+							<li class="t_red"><a href="#">성인<span class="ico_19"></span></a></li>
+							<li><a href="#">무료</a></li>
+							<li><a href="#">요청</a></li>
+						</ul>
+					</div>
+					<!-- 181214 온픽 추가 -->
+					<div class="on_pick_wrap">
+						<div class="inner">
+							<p class="tit" style="border: 1px solid red;"><a href="onpick_index_ver2.html">온채널</a></p>
+							
+							<span class="link"><span class="dot"></span>영화채널</span>
+							<span class="link"><span class="dot"></span>방송채널</span>
+							<span class="link"><span class="dot"></span>애니채널</span>
+						</div>
+					</div>
+					<div class="my_list">
+						<ul>
+							<li><a href="#">받은 콘텐츠</a></li>
+							<li><a href="#">구독 콘텐츠</a></li>
+							<li><a href="#">찜한 콘텐츠</a></li>
+							<li><a href="#">자료요청</a></li>
+						</ul>
+					</div>
+					<div class="my_channel">
+						<ul>
+							<li><a href="#">판매채널관리</a></li>
+						</ul>
+					</div>
+					<!-- 181214 다운로드버튼 추가 -->
+					<div class="d_btn_wrap">
+						<span class="d_btn">다운로드 센터</span>
+					</div>
+					<div class="l_campaign">
+						<a href="#" class="link"><span class="ico"></span><span class="txt">디지털 성범죄 <br /> 근절 캠페인</span></a>
+					</div>
+					<div class="l_campaign p_p">
+						<a href="#" class="link"><span class="ico"></span><span class="txt">개인권리침해 <br /> 보호 캠페인</span></a>
+					</div>
+				</div>
+			</div>
+			<div class="content">
+				<span class="bg_squre"></span>
+				<div class="l_content_wrap">
+					<div class="on_pick_wrap">
+						<div class="on_pick movie">
+							<h2 class="tit">On Pick! Movies</h2>
+							<div class="on_tab">
+								<ul>
+									<li class="on_tab_action movie"><span class="txt_name">최신</span><span class="line"></span></li>
+									<li class="on_tab_action movie active"><span class="txt_name">명작·인기</span><span class="line"></span></li>
+									<li class="on_tab_action movie"><span class="txt_name">주간인기순위</span><span class="line"></span></li>
+								</ul>
+							</div>
+							<div class="on_content" style="display:block;">
+								<span class="b_img"><a href="onpick_content_detail_movie.html" style="display:block;border: 2px solid red;"><img src="../_static/web/images/temp/poster_1.jpg" alt=""></a></span>
+								<div class="s_img_wrap">
+									<span class="s_img m_right"><img src="../_static/web/images/temp/poster_2.jpg" alt=""></span>
+									<span class="s_img"><img src="../_static/web/images/temp/poster_3.jpg" alt=""></span>
+									<span class="s_img m_right"><img src="../_static/web/images/temp/poster_4.jpg" alt=""></span>
+									<span class="s_img"><img src="../_static/web/images/temp/poster_5.jpg" alt=""></span>
+								</div>
+							</div>
+						</div>
+						<div class="on_pick tv">
+							<h2 class="tit">On Pick! TV</h2>
+							<div class="on_tab">
+								<ul>
+									<li class="on_tab_action broadcast active"><span class="txt_name">최신</span><span class="line"></span></li>
+									<li class="on_tab_action broadcast"><span class="txt_name">오늘의 방송</span><span class="line"></span></li>
+									<li class="on_tab_action broadcast"><span class="txt_name">무료·할인</span><span class="line"></span></li>
+								</ul>
+							</div>
+							<div class="on_content" style="display:block;">
+								<span class="b_img"><img src="../_static/web/images/temp/poster_6.jpg" alt=""></span>
+								<div class="s_img_wrap">
+									<span class="s_img m_right"><img src="../_static/web/images/temp/poster_7.jpg" alt=""></span>
+									<span class="s_img"><img src="../_static/web/images/temp/poster_8.jpg" alt=""></span>
+									<span class="s_img m_right"><img src="../_static/web/images/temp/poster_9.jpg" alt=""></span>
+									<span class="s_img"><img src="../_static/web/images/temp/poster_10.jpg" alt=""></span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="top_100">
+						<h2 class="t_tit"><span>인기</span> TOP 100</h2>
+						<div class="top_tab">
+							<ul>
+								<li class="active"><a href="#">전체</a><span class="line"></span></li>
+								<li><a href="#">영화</a><span class="line"></span></li>
+								<li><a href="#">드라마</a><span class="line"></span></li>
+								<li><a href="#">애니</a><span class="line"></span></li>
+								<li><a href="#">게임</a><span class="line"></span></li>
+							</ul>
+						</div>
+						<div class="top_list" style="display:block;">
+							<ol>
+								<li>
+									<span class="rank top">1</span>
+									<span class="ico fhd">FHD</span>
+									<a href="view.html" class="tit" style="color:red;">2018 프랑스 박스오피스 2주연속 1위 - 뤽베송의 택시 5</a>
+									<span class="r_num">(52)</span>
+								</li>
+								<li class="bg">
+									<span class="rank top">2</span>
+									<span class="ico">일반</span>
+									<a href="#" class="tit">[작전명 덩케르크] 알고리즘을 지켜내라</a>
+									<span class="r_num"></span>
+								</li>
+								<li>
+									<span class="rank top">3</span>
+									<span class="ico fhd">FHD</span>
+									<a href="#" class="tit">[메가 헤드 샤크] 아바타 2 제작진의 여름을 날려버릴 시원한 액션</a>
+									<span class="r_num"></span>
+								</li>
+								<li class="bg">
+									<span class="rank">4</span>
+									<span class="ico hd">HD</span>
+									<a href="#" class="tit">※떠따!※ 2018 코믹판타지 - [마귀월드] - 기괴한 사건 실사화 - 초고화질 완벽 번역</a>
+									<span class="r_num">(52)</span>
+								</li>
+								<li>
+									<span class="rank">5</span>
+									<span class="ico hd">HD</span>
+									<a href="#" class="tit">[레전드 인 더 스카이] 복엽기 공중전 실화</a>
+									<span class="r_num"></span>
+								</li>
+								<li class="bg">
+									<span class="rank">6</span>
+									<span class="ico fhd">FHD</span>
+									<a href="#" class="tit">[2018] 8명이면 충분하다 - 화끈한 언니들 [초고화질 별도번역기자막]</a>
+									<span class="r_num"></span>
+								</li>
+								<li>
+									<span class="rank">7</span>
+									<span class="ico hd">HD</span>
+									<a href="#" class="tit">브이 포 벤데타</a>
+									<span class="r_num"></span>
+								</li>
+								<li class="bg">
+									<span class="rank">8</span>
+									<span class="ico fhd">FHD</span>
+									<a href="#" class="tit">[더 크리미널 마인드 공공의 적] 정의의 탈을 쓴 사건 살인범을 숭배하는 대중들 </a>
+									<span class="r_num"></span>
+								</li>
+								<li>
+									<span class="rank">9</span>
+									<span class="ico hd">HD</span>
+									<a href="#" class="tit">2018 업그레이드 변종 좀비 [초고화질]</a>
+									<span class="r_num">(52)</span>
+								</li>
+								<li class="bg">
+									<span class="rank">10</span>
+									<span class="ico hd">HD</span>
+									<a href="#" class="tit">[루나] 말하지 못한 이야기</a>
+									<span class="r_num"></span>
+								</li>
+							</ol>
+						</div>
+					</div>
+					<div class="channel_event">
+						<h2 class="tit">제휴사 채널</h2>
+						<span class="btn_more">더보기 &gt;</span>
+						<div class="channel_event_list">
+							<ul>
+								<li class="c1">
+									<span class="logo"><span class="img"></span></span>
+									<dl>
+										<dd>최신 인기영화 가득한</dd>
+										<dt>MBC 영화</dt>
+									</dl>
+								</li>
+								<li class="c2">
+									<span class="logo"><span class="img"></span></span>
+									<dl>
+										<dd>다채로운 콘텐츠 집합!<dd>
+										<dt>JTBC 방송</dt>
+									</dl>
+								</li>
+								<li class="c3">
+									<span class="logo"><span class="img"></span></span>
+									<dl>
+										<dd>교양까지 재미있는</dd>
+										<dt>MBN 방송</dt>
+									</dl>
+								</li>
+								<li class="c4">
+									<span class="logo"><span class="img"></span></span>
+									<dl>
+										<dd>트롯열풍의 선두주자</dd>
+										<dt>TV조선 방송</dt>
+									</dl>
+								</li>
+								<li class="c5">
+									<span class="logo"><span class="img"></span></span>
+									<dl>
+										<dd>즐거움엔 끝이 없다!</dd>
+										<dt>CJ E&amp;M 방송</dt>
+									</dl>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<!-- 201221 이 콘텐츠는 어때요 -->
+					<div class="how_about_cnt">
+						<div class="tit"><span class="t_blue">이 콘텐츠</span>는 어때요?</div>
+						<span class="m_btn left"><span class="arrow"></span></span>
+						<span class="m_btn right"><span class="arrow"></span></span>
+						<div class="cnt_list_wrap">
+							<div class="cnt_inner">
+								<div class="cnt_area">
+									<div class="cnt_img">
+										<img src="../_static/web/images/temp/cnt_1221_1.jpg" alt="">
+									</div>
+									<div class="cnt_btm">
+										<p class="cnt_name">신서유기 시즌 8</p>
+										<p class="cnt_txt">서기 이천이십년 가을, 신묘한 빛을 따라 영험한..</p>
+									</div>
+								</div>
+								<div class="cnt_area">
+									<div class="cnt_img">
+										<img src="../_static/web/images/temp/cnt_1221_2.jpg" alt="">
+									</div>
+									<div class="cnt_btm">
+										<p class="cnt_name">펜트하우스</p>
+										<p class="cnt_txt">100층 펜트하우스의 범접불가 '퀸' VS 모든 것..</p>
+									</div>
+								</div>
+								<div class="cnt_area">
+									<div class="cnt_img">
+										<img src="../_static/web/images/temp/cnt_1221_3.jpg" alt="">
+									</div>
+									<div class="cnt_btm">
+										<p class="cnt_name">싱어게인</p>
+										<p class="cnt_txt">세상이 미처 알아보지 못한 재야의 실력자, 한땐 잘 나갔지만 지금은 잊힌 비운의 </p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- //201221 이 콘텐츠는 어때요 -->
+					<div class="main_banner">
+						<ul>
+							<li>
+								<a href="#"><img src="../_static/web/images/temp/banner_img_1.jpg" alt=""></a>
+							</li>
+							<li>
+								<a href="#"><img src="../_static/web/images/temp/banner_img_2.jpg" alt=""></a>
+							</li>
+							<li>
+								<a href="#"><img src="../_static/web/images/temp/banner_img_3.jpg" alt=""></a>
+							</li>
+							<li>
+								<a href="#"><img src="../_static/web/images/temp/banner_img_4.jpg" alt=""></a>
+							</li>
+							<li>
+								<a href="#"><img src="../_static/web/images/temp/banner_img_5.jpg" alt=""></a>
+							</li>
+						</ul>
+					</div>
+					<!-- <div class="s_channel_wrap">
+						<h2 class="s_tit"><span>구독 채널</span> 새로운 파일</h2>
+						<div class="channel_list">
+							<div class="top">
+								<span class="l_ico"></span>
+								<span class="name">가나다라마바사아</span>
+								<span class="btn_close">구독해지</span>
+								<span class="btn_all">전체보기 <span>&gt;</span></span>
+							</div>
+							<div class="list_wrap">
+								<ul>
+									<li>
+										<a href="#">
+											<span class="img"><img src="../_static/web/images/temp/list_img.jpg" alt=""></span>
+											<span class="tit">2018 현재 상영중 아트센터에</span>
+											<span class="info">
+												<span>3.56G</span>·<span>1080P</span>
+											</span>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<span class="img"><img src="../_static/web/images/temp/list_img.jpg" alt=""></span>
+											<span class="tit">2018 현재 상영중 아트센터에</span>
+											<span class="info">
+												<span>3.56G</span>·<span>1080P</span>
+											</span>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<span class="img"><img src="../_static/web/images/temp/list_img.jpg" alt=""></span>
+											<span class="tit">2018 현재 상영중 아트센터에</span>
+											<span class="info">
+												<span>3.56G</span>·<span>1080P</span>
+											</span>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<span class="img"><img src="../_static/web/images/temp/list_img.jpg" alt=""></span>
+											<span class="tit">2018 현재 상영중 아트센터에</span>
+											<span class="info">
+												<span>3.56G</span>·<span>1080P</span>
+											</span>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<span class="img"><img src="../_static/web/images/temp/list_img.jpg" alt=""></span>
+											<span class="tit">2018 현재 상영중 아트센터에</span>
+											<span class="info">
+												<span>3.56G</span>·<span>1080P</span>
+											</span>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<span class="img"><img src="../_static/web/images/temp/list_img.jpg" alt=""></span>
+											<span class="tit">2018 현재 상영중 아트센터에</span>
+											<span class="info">
+												<span>3.56G</span>·<span>1080P</span>
+											</span>
+										</a>
+									</li>
+								</ul>
+							</div>
+							<span class="btn prev"></span>
+							<span class="btn next"></span>
+						</div>
+						<div class="channel_list b_btm">
+							<div class="top">
+								<span class="l_ico"></span>
+								<span class="name">가나다라마바사아</span>
+								<span class="btn_close">구독해지</span>
+								<span class="btn_all">전체보기 &gt;</span>
+							</div>
+							<div class="list_wrap">
+								<ul>
+									<li>
+										<a href="#">
+											<span class="img"><img src="../_static/web/images/temp/list_img.jpg" alt=""></span>
+											<span class="tit">2018 현재 상영중 아트센터에</span>
+											<span class="info">
+												<span>3.56G</span> · <span>1080P</span>
+											</span>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<span class="img"><img src="../_static/web/images/temp/list_img.jpg" alt=""></span>
+											<span class="tit">2018 현재 상영중 아트센터에</span>
+											<span class="info">
+												<span>3.56G</span> · <span>1080P</span>
+											</span>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<span class="img"><img src="../_static/web/images/temp/list_img.jpg" alt=""></span>
+											<span class="tit">2018 현재 상영중 아트센터에</span>
+											<span class="info">
+												<span>3.56G</span> · <span>1080P</span>
+											</span>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<span class="img"><img src="../_static/web/images/temp/list_img.jpg" alt=""></span>
+											<span class="tit">2018 현재 상영중 아트센터에</span>
+											<span class="info">
+												<span>3.56G</span> · <span>1080P</span>
+											</span>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<span class="img"><img src="../_static/web/images/temp/list_img.jpg" alt=""></span>
+											<span class="tit">2018 현재 상영중 아트센터에</span>
+											<span class="info">
+												<span>3.56G</span> · <span>1080P</span>
+											</span>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<span class="img"><img src="../_static/web/images/temp/list_img.jpg" alt=""></span>
+											<span class="tit">2018 현재 상영중 아트센터에</span>
+											<span class="info">
+												<span>3.56G</span> · <span>1080P</span>
+											</span>
+										</a>
+									</li>
+								</ul>
+							</div>
+							<span class="btn prev"></span>
+							<span class="btn next"></span>
+						</div>
+						<span class="btn_more">더보기</span>
+					</div>
+					<div class="content_up_alim">
+						<h2 class="s_tit"><span>사전 예약</span> 콘텐츠 업데이트 알림</h2>
+						<div class="list_style">
+							<ul>
+								<li class="top">
+									<div class="l1">제목</div>
+									<div class="l2">용량</div>
+									<div class="l3">포인트</div>
+									<div class="l4">바로보기</div>
+								</li>
+								<li>
+									<div class="l1"><a href="#" class="tit">재밌는 영화.E11.000000.1080P-NEXT</a></div>
+									<div class="l2"><span>00.00G</span></div>
+									<div class="l3"><span>000,000P</span></div>
+									<div class="l4"><a href="#" class="d_link">다운로드</a></div>
+								</li>
+								<li class="bg">
+									<div class="l1"><a href="#" class="tit">이번년도 빅히트 재밌는 영화.E12.000000.1080P-NEXT 재밌는 영화.E11.000000.1080P-NEXT.</a></div>
+									<div class="l2"><span>00.00G</span></div>
+									<div class="l3"><span>000,000P</span></div>
+									<div class="l4"><a href="#" class="d_link">다운로드</a></div>
+								</li>
+								<li>
+									<div class="l1"><a href="#" class="tit">재밌는 영화.E13.000000.1080P-NEXT 재밌는 영화.E11.000000.1080P-NEXT</a></div>
+									<div class="l2"><span>00.00G</span></div>
+									<div class="l3"><span>000,000P</span></div>
+									<div class="l4"><a href="#" class="d_link">다운로드</a></div>
+								</li>
+								<li class="bg">
+									<div class="l1"><a href="#" class="tit">재밌는 영화.E14.000000.1080P-NEXT </a></div>
+									<div class="l2"><span>00.00G</span></div>
+									<div class="l3"><span>000,000P</span></div>
+									<div class="l4"><a href="#" class="d_link">다운로드</a></div>
+								</li>
+								<li>
+									<div class="l1"><a href="#" class="tit">재밌는 영화.E15.000000.1080P-NEXT 재밌는 영화보러 오세요 풀HD</a></div>
+									<div class="l2"><span>00.00G</span></div>
+									<div class="l3"><span>000,000P</span></div>
+									<div class="l4"><a href="#" class="d_link">다운로드</a></div>
+								</li>
+							</ul>
+						</div>
+					</div> -->
+					<div class="main_btm_area">
+						<div class="notice_wrap l_wrap">
+							<a href="/cs_notice"><h2 class="s_tit">공지사항</h2></a>
+							<!--<span class="btn_more s_more">전체보기</span> -->
+							<ul class="notice_list">
+								<li><a href="#">[이벤트] 2019년 발렌타인 사행시 이벤트 당첨자 발표</a></li>
+								<li><a href="#">[이벤트] 2019년 발렌타인 사행시 이벤트 당첨자 발표</a></li>
+								<li><a href="#">[이벤트] 2019년 발렌타인 사행시 이벤트 당첨자 발표</a></li>
+							</ul>
+						</div>
+						<div class="notice_wrap r_wrap">
+							<h2 class="s_tit hand" data-url="/copyright" onclick="WEB_COMMON_GO.openCopyrightCenter(this);">저작권<br> 보호센터</h2>
+							<!--<span class="btn_more s_more">전체보기</span> -->
+							<ul class="notice_list">
+								<li class="hand" >테스트타이틀</li>
+								<li class="hand">보루토 시즌2_12화</li>
+								<li class="hand">게게게의 키타로_14회</li>
+							</ul>
+						</div>
+						<div class="c_center">
+							<h2 class="s_tit"><a href="/cs" title="고객센터">고객센터</a></h2>
+							<div class="center_info">
+								<p class="p_number">1600-4912</p>
+								<p>업무시간 : 오전 10시 ~ 오후 7시 (점심 1시~2시)</p>
+								<p>토요일, 일요일, 공휴일 휴무</p>
+							</div>
+							<div class="c_btn_wrap">
+								<a href="#"><span class="btn">1:1 문의</span></a>
+								<span class="btn">원격 지원 신청</span>
+								<span class="btn kakao">카카오톡 상담</span>
+							</div>
+						</div>	
+					</div>
+				</div>
+				<div class="r_content">
+					<!-- 200410 화살표 버튼 / 닫기버튼 추가 -->
+					<div class="now_rank_wrap active">
+						<h2 class="s_tit">인기 검색</h2>
+						<ul class="rank_list">
+							<li>
+								<span class="rank">2</span>
+								<span class="s_name">루나 소녀의 복수</span>
+							</li>
+						</ul>
+						<div class="rank_v_area" style="display:none;">
+							<h2 class="tit">콘텐츠 인기 검색 순위</h2>
+							<ol class="word_rank">
+								<li><span class="num top">1</span><span class="word">뷰티인사이드</span></li>
+								<li><span class="num top">2</span><span class="word">아기거북이</span></li>
+								<li><span class="num top">3</span><span class="word">가나다롸?</span></li>
+								<li><span class="num">4</span><span class="word">해리포터</span></li>
+								<li><span class="num">5</span><span class="word">말포이</span></li>
+								<li><span class="num">6</span><span class="word">소년탐정 김전일</span></li>
+								<li><span class="num">7</span><span class="word">코난</span></li>
+								<li><span class="num">8</span><span class="word">원피스 루피</span></li>
+								<li><span class="num">9</span><span class="word">미피는 토끼야</span></li>
+								<li><span class="num">10</span><span class="word">제일 긴영화를 찾으면 몇줄이 될런지</span></li>
+							</ol>
+							<p class="time">2018-11-26 15:00 기준</p>
+						</div>
+						<span class="btn_toggle"><span class="ico"></span></span>
+					</div>
+					<!--// 200410 화살표 버튼 / 닫기버튼 추가 -->
+					<div class="download_center">
+						<!-- <span class="ico"></span>
+						<p class="txt"><span class="s_txt">Active X 없이 모든 브라우저 지원</span> 전용 프로그램 다운로드</p> -->
+					</div>
+					<div class="coupon_wrap">
+						<h2 class="s_tit"><span class="bar"></span><span class="t_blue">무료 다운로드</span> 쿠폰 등록</h2>
+						<div class="coupon_btm">
+							<div class="coupon_input">
+								<input type="text" class="input" placeholder="쿠폰 등록하고 무료료 즐겨보세요!"><span class="btn">쿠폰 등록</span>
+							</div>
+						</div>
+					</div>
+					<div class="keyword_r_wrap">
+						<h2 class="s_tit"><span class="ico"></span><span>키워드</span> 추천 콘텐츠</h2>
+						<div class="keyword_link_area">
+							<div class="key_inner">
+								<!-- 201123 키워드 추천 CSS 스타일 추가 -->
+								<div class="key_item">
+									<a href="#" class="click_area">
+										<div class="tag_area">
+											<span class="tag">#돌아온짝</span><span class="tag">#리얼데이트</span>
+										</div>
+										<span class="k_img"><img src="../_static/web/images/banner/main/keyword_2007_v2_1.png" alt=""></span>
+										<span class="txt_area" style="display: none;">
+											<p class="sub_txt">낯선 사람들의<br />낯선 사랑이야기</p>
+											<p class="tit">스트레인저</p>
+										</span>
+										<span class="btn_go"></span>
+									</a>
+								</div>
+								<!-- //201123 키워드 추천 CSS 스타일 추가 -->
+							</div>
+							<div class="k_btn_wrap">
+								<span class="btn active"></span>
+								<span class="btn"></span>
+								<span class="btn"></span>
+								<span class="btn"></span>
+								<span class="btn"></span>
+							</div>
+						</div>
+					</div>
+					<!-- 201113 배너 추가 -->
+					<div class="right_s_banner_wrap">
+						<div class="s_b_wrap">
+							<div class="main_banner_slider">
+								<div id="main_right_banner_slick_non_adult">
+									<div class="main_right_banner_slick_item-a">
+										<span><img src="//i.imgur.com/882mpJi.jpg" alt=""></span>
+										<!-- <span><img src="//i.imgur.com/GzbaiJc.jpg" alt=""></span> -->
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- //201113 배너 추가 -->
+					<div class="right_s_banner_wrap" style="display:none;">
+						<div class="s_b_wrap">
+							<ul>
+								<li><a href="#"><img src="../_static/web/images/temp/side_banner1.jpg" alt=""></a></li>
+								<li><a href="#"><img src="../_static/web/images/temp/side_banner2.jpg" alt=""></a></li>
+								<li><a href="#"><img src="../_static/web/images/temp/side_banner3.jpg" alt=""></a></li>
+								<li><a href="#"><img src="../_static/web/images/temp/side_banner4.jpg" alt=""></a></li>
+								<li><a href="#"><img src="../_static/web/images/temp/side_banner5.jpg" alt=""></a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="right_event_list">
+						<ul>
+							<!-- 201118 매거진 전용관 영역 추가 -->
+							<li class="type16">
+								<div class="ico_wrap">
+									<span class="ico"></span>
+								</div>
+								<p class="txt">
+									<span class="s_txt">다양한 테마의 매거진을 한번에!</span>
+									<span class="tit">매거진 전용관</span>
+								</p>
+							</li>
+							<!-- //201118 매거진 전용관 영역 추가 -->
+							<li class="type1">
+								<div class="ico_wrap">
+									<span class="ico"></span>
+								</div>
+								<p class="txt">
+									<span class="s_txt">안전하게 가족이 이용할 수 있는</span>
+									<span class="tit">자녀 안심보호 서비스</span>
+								</p>
+							</li>
+							<li class="type2">
+								<div class="ico_wrap">
+									<span class="ico"></span>
+								</div>
+								<p class="txt">
+									<span class="s_txt">출석 체크 할떄마다 무료 포인트가!</span>
+									<span class="tit">하루 하루 출석체크</span>
+								</p>
+							</li>
+							<li class="type7">
+								<div class="ico_wrap">
+									<span class="ico"></span>
+								</div>
+								<p class="txt">
+									<span class="s_txt">채널 등록하면 바로 채널등업!</span>
+									<span class="tit">판매자 채널 개설하기</span>
+								</p>
+							</li>
+							<li class="type3">
+								<div class="ico_wrap">
+									<span class="ico"></span>
+								</div>
+								<p class="txt">
+									<span class="s_txt">지금 최고의 인기 채널은?</span>
+									<span class="tit">채널 랭킹</span>
+								</p>
+							</li>
+							<li class="type8">
+								<div class="ico_wrap">
+									<span class="ico"></span>
+								</div>
+								<p class="txt">
+									<span class="s_txt">다운로드 쿠폰 무료로 받자!</span>
+									<span class="tit">플러스 친구 이벤트</span>
+								</p>
+							</li>
+							<li class="type6">
+								<div class="ico_wrap">
+									<span class="ico"></span>
+								</div>
+								<p class="txt">
+									<span class="s_txt">인증만 해도 포인트가 팡팡!</span>
+									<span class="tit">본인인증 이벤트</span>
+								</p>
+							</li>
+						</ul>
+					</div>
+					<div class="child_protect">
+						<p>아동·청소년 이용 음란물을 제작· 배포·소지한 자는 <span class="t_red">아동 청소년의 성보호에 관한 법률 11조</span>에 따라 형사처벌을 받을 수 있습니다. </p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- footer -->
+		<footer class="footer">
+			<div class="f_inner">
+				<div class="bg_area"></div>
+				<div class="f_content">
+					<div class="foot_menu">
+						<a href="#">회사소개</a><span class="bar">|</span><a href="#">1:1 문의</a><span class="bar">|</span><a href="#">저작권 보호목록</a><span class="bar">|</span><a href="#">이용약관</a><span class="bar">|</span><a href="#">개인정보처리방침</a><span class="bar">|</span><a href="#">제휴콘텐츠 목록</a><span class="bar">|</span><a href="#">광고/제휴 문의</a><span class="bar">|</span><a href="#">개인정보 침해신고</a>
+					</div>
+					<address>
+						<span>(주)아크웍스 </span><span class="bar">|</span><span>대표 : 김정열</span><span class="bar">|</span><span>서울특별시 마포구 월드컵북로4길 51(동교동 204-31) CS빌딩 2층</span><span class="bar">|</span><span>사업자등록번호: 000-00-12345</span> <br />
+						<span>고객센터  : 1234-5678</span><span class="bar">|</span><span>팩스 : 02-6442-9881</span><span class="bar">|</span><span>저작권, 청소년, 정보보호책임 : xxx 팀장 (help.onplay@gmail.com)</span> <br />
+						<span>통신판매업신고번호 : 제 2018서울마포1234 호</span><span class="bar">|</span><span>특수한 유형의 부가통신사업자 등록번호 : 제 3-01-00-0000호 </span>
+					</address>
+					<p class="copy">Copyright &copy; 2018 ArkWorks All right reserved</p>
+					<span class="foot_logo">onplay</span>
+				</div>
+			</div>
+		</footer>
+		<!-- //footer -->
+	</div>
+	<!-- //container -->
+</div>
+</body>
+</html>

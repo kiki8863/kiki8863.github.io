@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KRMS LGHV</title>
+        <link href="../assets/css/reset.css" rel="stylesheet">
+        <link href="../assets/css/bootstrap.min.css" rel="stylesheet">
+        <link href="../assets/css/form-validation.css" rel="stylesheet">
+        <link
+            href="https://fonts.googleapis.com/css2?family=Gothic+A1:wght@200;400;500;700&family=Noto+Sans+KR:wght@300;400;500;700&display=swap"
+            rel="stylesheet">
+        <link rel="stylesheet" href="../assets/css/custom-icon.css">
+        <link rel="stylesheet" href="../assets/css/multiselect.css">
+        <link rel="stylesheet" href="../assets/css/krms_style.css">
+</head>
+<body>
+    <!-- wrap -->
+<div class="wrap">
+    <!-- header -->
+    <header class="header">
+        <span class="menu_open_btn s_cursor">
+            <!-- <i class="icon-menu"></i> -->
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </span>
+        <h1 class="logo">
+            <a href="#"><i class="icon-logo"></i></a>
+        </h1>
+        <div class="status_area">
+            <div class="server">
+                <span class="txt">서버</span>
+                <span class="icon_p">
+                    <i class="icon-top-server"></i>
+                    <i class="icon-top-connect"></i>
+                </span>
+            </div>
+            <span class="bar"></span>
+            <div class="network">
+                <span class="txt">네트워크</span>
+                <span class="icon_p">
+                    <i class="icon-top-network"></i>
+                </span>
+            </div>
+        </div>
+        <div class="top_user_area active">
+            <div class="user_name">
+                <span class="name">홍길동</span>
+                <div class="icon s_cursor">
+                    <i class="icon-top-account"></i>
+                </div>
+            </div>
+            <!-- 메뉴 오픈 active 클래스 추가 -->
+<!--            <div class="top_m_wrap " >-->
+<!--                <div class="top_m_area">-->
+<!--                    <div class="user_info">-->
+<!--                        <span class="name">홍길동</span>-->
+<!--                        <p class="role">관리자</p>-->
+<!--                        <p class="user_email">emma.ko@kaonmedia.com</p>-->
+<!--                    </div>-->
+<!--                    <div class="top_menu">-->
+<!--                        <ul>-->
+<!--                            <li>-->
+<!--                                <span class="s_cursor">개인정보 수정</span>-->
+<!--                            </li>-->
+<!--                            <li>-->
+<!--                                <span class="s_cursor" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="비밀번호 변경일이 1개월 3일 남아있습니다.">비밀번호 변경</span>-->
+<!--                            </li>-->
+<!--                            <li class="n_h_style">-->
+<!--                                <form action="">-->
+<!--                                    <fieldset>-->
+<!--                                        <label class="toggle_btn_wrap">-->
+<!--                                            <span class="switch_label">로그인 타임아웃</span>-->
+<!--                                            <input role="switch" type="checkbox" class="toggle_btn"/>-->
+<!--                                        </label>-->
+<!--                                    </fieldset>-->
+<!--                                </form>-->
+<!--                                &lt;!&ndash; <div class="form-check form-switch">-->
+<!--                                    <label class="form-check-label" for="flexSwitchCheckDefault"></label>-->
+<!--                                    <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">-->
+<!--                                </div> &ndash;&gt;-->
+<!--                            </li>-->
+<!--                            <li>-->
+<!--                                <span class="s_cursor">-->
+<!--                                    로그아웃-->
+<!--                                    <i class="icon-top-logout"></i>-->
+<!--                                </span>-->
+<!--                            </li>-->
+<!--                        </ul>-->
+<!--                    </div>-->
+<!--                    <div class="ver_txt">-->
+<!--                        <span>버전. KRMS 1.03.23</span>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--                -->
+<!--            </div>-->
+        </div>    
+    </header>
+    <!-- //header -->
+    <!-- container -->
+    <!-- 
+        lnb 접힐 경우 container 에 클래스 fold 추가
+    -->
+    <div class="container">
+        <!-- lnb -->
+        <nav class="lnb">
+            <ul>
+                <li class="menu">
+                    <div class="inner">
+                        <span class="lnb_icon">
+                            <i class="icon-lnb-dashboard"></i>
+                        </span>
+                        <span class="m_name">대시보드</span>
+                    </div>
+                </li>
+                <li class="menu">
+                    <div class="inner">
+                        <span class="lnb_icon">
+                            <i class="icon-lnb-device"></i>
+                        </span>
+                        <span class="m_name">장치</span>
+                    </div>
+                </li>
+                <li class="menu">
+                    <div class="inner">
+                        <span class="lnb_icon">
+                            <i class="icon-lnb-policy"></i>
+                        </span>
+                        <span class="m_name">정책</span>
+                        <span class="arrow">
+                            <i class="icon-arrow-back"></i>
+                        </span>
+                    </div>
+                    <ul class="depth2">
+                        <li class="i_menu active">
+                            <span class="bar"></span>
+                            <span class=text">프로비저닝</span>
+                        </li>
+                        <li class="i_menu">
+                            <span class="bar"></span>
+                            <span class=text">서브 프로파일</span>
+                        </li>
+                    </ul>
+                </li>
+                <li class="menu">
+                    <div class="inner">
+                        <span class="lnb_icon">
+                            <i class="icon-lnb-chart"></i>
+                        </span>
+                        <span class="m_name">통계</span>
+                    </div>
+                </li>
+                <li class="menu">
+                    <div class="inner">
+                        <span class="lnb_icon">
+                            <i class="icon-lnb-info"></i>
+                        </span>
+                        <span class="m_name">전산 정보</span>
+                    </div>
+                    <ul class="depth2">
+                        <li class="i_menu">
+                            <span class="bar"></span>
+                            <span class=text">SO 정보</span>
+                        </li>
+                        <li class="i_menu">
+                            <span class="bar"></span>
+                            <span class=text">가입자 정보</span>
+                        </li>
+                        <li class="i_menu">
+                            <span class="bar"></span>
+                            <span class=text">망 장애</span>
+                        </li>
+                    </ul>
+                </li>
+                <li class="menu">
+                    <div class="inner">
+                        <span class="lnb_icon">
+                            <i class="icon-lnb-file"></i>
+                        </span>
+                        <span class="m_name">파일 및 로그</span>
+                    </div>
+                    <ul class="depth2">
+                        <li class="i_menu">
+                            <span class="bar"></span>
+                            <span class=text">파일 저장소</span>
+                        </li>
+                        <li class="i_menu">
+                            <span class="bar"></span>
+                            <span class=text">단말 시스템 로그</span>
+                        </li>
+                    </ul>
+                </li>
+                <li class="menu  active open">
+                    <div class="inner">
+                        <span class="lnb_icon">
+                            <i class="icon-lnb-setting"></i>
+                        </span>
+                        <span class="m_name">설정</span>
+                    </div>
+                    <ul class="depth2 ">
+                        <li class="i_menu">
+                            <span class="bar"></span>
+                            <span class=text">계정 및 권한</span>
+                        </li>
+                        <li class="i_menu">
+                            <span class="bar"></span>
+                            <span class=text">기기관리</span>
+                        </li>
+                        <li class="i_menu">
+                            <span class="bar"></span>
+                            <span class=text">코드관리</span>
+                        </li>
+                        <li class="i_menu">
+                            <span class="bar"></span>
+                            <span class=text">로그 파일 기간</span>
+                        </li>
+                        <li class="i_menu  active">
+                            <span class="bar"></span>
+                            <span class=text">서버설정</span>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        <!-- //lnb -->
+        <!-- content -->
+        <div class="content">
+            <h2 class="sub_tit">서버설정</h2>
+            <div class="set_round_wrap w_100">
+                <div class="a_content">
+                    <!-- edit 버튼 클릭시  버튼 추가  -->
+                    <div class="s_top_btn_wrap ">
+                        <span class="edit_btn">
+                            <i class="icon-edit"></i>
+                        </span>
+                        <div class="btn_area">
+                            <button type="button" class="m_a_btn dark ">취소</button>
+                            <button type="button" class="m_a_btn blue">저장</button>
+                        </div>
+                    </div>
+                    <!-- 서버 설정 정보 -->
+                    <div class="a_section">
+                        <h4 class="s_tit">소프트웨어 파일 전송 채널</h4>
+                        <div class="detail_info">
+                            <dl class="item">
+                                <dt>멀티캐스트 IP 주소</dt>
+                                <dd>226.10.40.1</dd>
+                            </dl>
+                            <dl class="item">
+                                <dt>포트</dt>
+                                <dd>500</dd>
+                            </dl>
+                            <dl class="item">
+                                <dt>전송률</dt>
+                                <dd>250 kbps</dd>
+                            </dl>
+                            <dl class="item">
+                                <dt>TTL</dt>
+                                <dd>1</dd>
+                            </dl>
+                        </div>
+                    </div>
+                    <!-- //서버 설정 정보 -->
+                </div>
+            </div>
+            <div class="set_round_wrap w_100">
+                <div class="a_content">
+                    <!-- edit 버튼 클릭시 edit_ing 버튼 추가  -->
+                    <div class="s_top_btn_wrap edit_ing">
+                        <span class="edit_btn">
+                            <i class="icon-edit"></i>
+                        </span>
+                        <div class="btn_area">
+                            <button type="button" class="m_a_btn dark ">취소</button>
+                            <button type="button" class="m_a_btn blue">저장</button>
+                        </div>
+                    </div>
+                    <!-- 서버 설정 정보 -->
+                    <div class="a_section">
+                        <h4 class="s_tit">애츨리케이션 파일 전송 채널</h4>
+                        <div class="detail_info">
+                            <dl class="item">
+                                <dt>멀티캐스트 IP 주소</dt>
+                                <dd>
+                                    <input type="text" class="input_style" value="226.10.40.1  ">
+                                </dd>
+                            </dl>
+                            <dl class="item">
+                                <dt>포트</dt>
+                                <dd>
+                                    <input type="text" class="input_style" value="" placeholder="0 ~ 65535">
+                                </dd>
+                            </dl>
+                            <dl class="item">
+                                <dt>전송률</dt>
+                                <dd> 
+                                    <input type="number" class="input_style" value="250"> kbps
+                                </dd>
+                            </dl>
+                            <dl class="item">
+                                <dt>TTL</dt>
+                                <dd>
+                                    <input type="number" class="input_style" value="1">
+                                </dd>
+                            </dl>
+                        </div>
+                    </div>
+                    <!-- //서버 설정 정보 -->
+                </div>
+            </div>
+        </div>
+        <!-- //content -->
+    </div>
+    
+    <!-- //container -->
+</div>
+<script src="../assets/js/bootstrap.bundle.min.js"></script>
+<script src="../assets/js/form-validation.js"></script>
+<script>
+    const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+    const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+
+</script>
+</body>
+</html>

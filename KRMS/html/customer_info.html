@@ -1,0 +1,1193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KRMS NEXT</title>
+        <link href="../assets/css/reset.css" rel="stylesheet">
+        <link href="../assets/css/bootstrap.min.css" rel="stylesheet">
+        <link href="../assets/css/form-validation.css" rel="stylesheet">
+        <link
+            href="https://fonts.googleapis.com/css2?family=Gothic+A1:wght@200;400;500;700&family=Noto+Sans+KR:wght@300;400;500;700&display=swap"
+            rel="stylesheet">
+        <link rel="stylesheet" href="../assets/css/custom-icon.css">
+        <link rel="stylesheet" href="../assets/css/krms_style.css">
+</head>
+<body>
+    <!-- wrap -->
+<div class="wrap">
+    <!-- header -->
+    <header class="header">
+        <span class="menu_open_btn s_cursor">
+            <!-- <i class="icon-menu"></i> -->
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </span>
+        <h1 class="logo">
+            <a href="#"><i class="icon-logo"></i></a>
+        </h1>
+        <div class="status_area">
+            <div class="server">
+                <span class="txt">서버</span>
+                <span class="icon_p">
+                    <i class="icon-top-server"></i>
+                    <i class="icon-top-connect"></i>
+                </span>
+            </div>
+            <span class="bar"></span>
+            <div class="network">
+                <span class="txt">네트워크</span>
+                <span class="icon_p">
+                    <i class="icon-top-network"></i>
+                </span>
+            </div>
+        </div>
+        <div class="top_user_area" style="display: none;">
+            <div class="user_name">
+                <span class="name">David Kim</span>
+                <div class="icon">
+                    <i class="icon-top-account"></i>
+                </div>
+            </div>
+            <!-- 메뉴 오픈 active 클래스 추가 -->
+            <div class="top_m_wrap" >
+                <div class="top_m_area">
+                    <div class="user_info">
+                        <span class="name">David Kim</span>
+                        <p class="role">Admin</p>
+                        <p class="user_email">emma.ko@kaonmedia.com</p>
+                    </div>
+                    <div class="top_menu">
+                        <ul>
+                            <li>
+                                <span class="s_cursor">Edit Name</span>
+                            </li>
+                            <li>
+                                <span class="s_cursor">Reset Password</span>
+                            </li>
+                            <li class="n_h_style">
+                                <form action="">
+                                    <fieldset>
+                                        <label class="toggle_btn_wrap">
+                                            <span class="switch_label">Login Timeout</span>
+                                            <input role="switch" type="checkbox" class="toggle_btn"/>
+                                        </label>
+                                    </fieldset>
+                                </form>
+                                <!-- <div class="form-check form-switch">
+                                    <label class="form-check-label" for="flexSwitchCheckDefault"></label>
+                                    <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+                                </div> -->
+                            </li>
+                            <li>
+                                <span class="s_cursor">
+                                    Logout
+                                    <i class="icon-top-logout"></i>
+                                </span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="ver_txt">
+                        <span>Ver. KRMS 1.03.23</span>
+                    </div>
+                </div>
+                
+            </div>
+        </div>    
+    </header>
+    <!-- //header -->
+    <!-- container -->
+    <!-- 
+        lnb 접힐 경우 container 에 클래스 fold 추가
+    -->
+    <div class="container">
+        <!-- lnb -->
+        <nav class="lnb">
+            <ul>
+                <li class="menu">
+                    <div class="inner">
+                        <span class="lnb_icon">
+                            <i class="icon-lnb-dashboard"></i>
+                        </span>
+                        <span class="m_name">대시보드</span>
+                    </div>
+                </li>
+                <li class="menu">
+                    <div class="inner">
+                        <span class="lnb_icon">
+                            <i class="icon-lnb-device"></i>
+                        </span>
+                        <span class="m_name">장치</span>
+                    </div>
+                </li>
+                <li class="menu">
+                    <div class="inner">
+                        <span class="lnb_icon">
+                            <i class="icon-lnb-policy"></i>
+                        </span>
+                        <span class="m_name">정책</span>
+                        <span class="arrow">
+                            <i class="icon-arrow-back"></i>
+                        </span>
+                    </div>
+                    <ul class="depth2">
+                        <li class="i_menu">
+                            <span class="bar"></span>
+                            <span class=text">프로비저닝</span>
+                        </li>
+                        <li class="i_menu">
+                            <span class="bar"></span>
+                            <span class=text">서브 프로파일</span>
+                        </li>
+                    </ul>
+                </li>
+                <li class="menu">
+                    <div class="inner">
+                        <span class="lnb_icon">
+                            <i class="icon-lnb-chart"></i>
+                        </span>
+                        <span class="m_name">통계</span>
+                    </div>
+                </li>
+                <li class="menu active open">
+                    <div class="inner">
+                        <span class="lnb_icon">
+                            <i class="icon-lnb-info"></i>
+                        </span>
+                        <span class="m_name">전산 정보</span>
+                        <span class="arrow">
+                            <i class="icon-arrow-back"></i>
+                        </span>
+                    </div>
+                    <ul class="depth2">
+                        <li class="i_menu">
+                            <span class="bar"></span>
+                            <span class=text">SO 정보</span>
+                        </li>
+                        <li class="i_menu active">
+                            <span class="bar"></span>
+                            <span class=text">가입자 정보</span>
+                        </li>
+                        <li class="i_menu">
+                            <span class="bar"></span>
+                            <span class=text">네트워크 장애</span>
+                        </li>
+                    </ul>
+                </li>
+                <li class="menu">
+                    <div class="inner">
+                        <span class="lnb_icon">
+                            <i class="icon-lnb-file"></i>
+                        </span>
+                        <span class="m_name">파일 및 로그</span>
+                        <span class="arrow">
+                            <i class="icon-arrow-back"></i>
+                        </span>
+                    </div>
+                    <ul class="depth2">
+                        <li class="i_menu">
+                            <span class="bar"></span>
+                            <span class=text">파일 저장소</span>
+                        </li>
+                        <li class="i_menu">
+                            <span class="bar"></span>
+                            <span class=text">단말 시스템 로그</span>
+                        </li>
+                    </ul>
+                </li>
+                <li class="menu">
+                    <div class="inner">
+                        <span class="lnb_icon">
+                            <i class="icon-lnb-setting"></i>
+                        </span>
+                        <span class="m_name">관리</span>
+                        <span class="arrow">
+                            <i class="icon-arrow-back"></i>
+                        </span>
+                    </div>
+                    <ul class="depth2">
+                        <li class="i_menu">
+                            <span class="bar"></span>
+                            <span class=text">롤 / 계정</span>
+                        </li>
+                        <li class="i_menu">
+                            <span class="bar"></span>
+                            <span class=text">장치</span>
+                        </li>
+                        <li class="i_menu">
+                            <span class="bar"></span>
+                            <span class=text">코드</span>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        <!-- //lnb -->
+        <!-- content -->
+        <div class="content">
+            <h2 class="sub_tit">가입자 정보</h2>
+            <div class="row">
+                <div class="col pl-0 pr-0">
+                    <div class="table-responsive">
+                        <table class="table tbl_style">
+                            <thead>
+                                <tr>
+                                    <th class="t_title" scope="col">
+                                        <!--   
+                                                * 테이블 검색 스타일 *
+    
+                                                기본 스타일 
+                                                i_value 속성 disabled 추가되어 있어야 함
+    
+                                                수정 버튼 클릭 시
+                                                tbl_in_search ing 클래스 추가
+                                                i_value 속성 disabled 제거
+    
+                                            -->
+                                        <span class="tbl_in_search ing">
+                                            <input type="text" class="i_value" value=""  placeholder="가입자 번호">
+                                            <span class="a_btn">
+                                                <i class="icon-close"></i>
+                                            </span>
+                                            <span class="s_btn">
+                                                <i class="icon-search"></i>
+                                            </span>
+                                        </span>
+                                    </th>
+                                    <th class="t_title" scope="col">
+                                        <span class="tbl_in_search">
+                                            <input type="text" class="i_value" value="" disabled placeholder="계약번호">
+                                            <span class="a_btn">
+                                                <i class="icon-close"></i>
+                                            </span>
+                                            <span class="s_btn">
+                                                <i class="icon-search"></i>
+                                            </span>
+                                        </span>
+                                    </th>
+                                    <th class="t_title" scope="col">
+                                        <span class="tbl_in_search">
+                                            <input type="text" class="i_value" value="" disabled placeholder="SMS Tag">
+                                            <span class="a_btn">
+                                                <i class="icon-close"></i>
+                                            </span>
+                                            <span class="s_btn">
+                                                <i class="icon-search"></i>
+                                            </span>
+                                        </span>
+                                    </th>
+                                    <th class="t_title" scope="col">
+                                        <span class="tbl_in_select">
+                                            <div class="dropdown">
+                                                <button class="d_btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                    개통상태
+                                                </button>
+                                                <ul class="dropdown-menu">
+                                                    <li><a class="dropdown-item" href="#">개통</a></li>
+                                                    <li><a class="dropdown-item" href="#">해지</a></li>
+                                                    <li><a class="dropdown-item" href="#">일시정지</a></li>
+                                                    <li><a class="dropdown-item" href="#">일시정지 해제</a></li>
+                                                </ul>
+                                            </div>
+                                        </span>
+                                    </th>
+                                    <th class="t_title" scope="col">
+                                        <div class="block">
+                                            개통일
+                                        </div>
+                                    </th>
+                                    <th class="t_title" scope="col">
+                                        <div class="block">
+                                            SO Code
+                                        </div>
+                                    </th>
+                                    <th class="t_title" scope="col">
+                                        <div class="block">
+                                            네트워크
+                                        </div>
+                                    </th>
+                                    <th class="t_title" scope="col">
+                                        <div class="block">
+                                            프로파일 ID
+                                        </div>
+                                    </th>'<th class="t_title" scope="col">
+                                        <div class="block">
+                                            동작
+                                        </div>
+                                    </th>'
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <span>*******1235</span>
+                                    </td>
+                                    <td>
+                                        <span>10119292541</span>
+                                    </td>
+                                    <td>
+                                        <span>110019512417</span>
+                                    </td>
+                                    <td>
+                                        <span>개통</span>
+                                    </td>
+                                    <td>
+                                        <span>2023.06.01</span>
+                                    </td>
+                                    <td>
+                                        <span>54</span>
+                                    </td>
+                                    <td>
+                                        <span>자가망</span>
+                                    </td>
+                                    <td>
+                                        <span>서비스 프로파일 ID</span>
+                                    </td>
+                                    <td>
+                                        <span class="a_btn" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="정보 전체 보기">
+                                            <i class="icon-customer"></i>
+                                        </span>
+                                        <span class="a_btn hor" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="">
+                                            <span class="dot"></span>
+                                            <span class="dot"></span>   
+                                            <span class="dot"></span>
+                                        </span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <span>*******1235</span>
+                                    </td>
+                                    <td>
+                                        <span>10119292541</span>
+                                    </td>
+                                    <td>
+                                        <span>110019512417</span>
+                                    </td>
+                                    <td>
+                                        <span>개통</span>
+                                    </td>
+                                    <td>
+                                        <span>2023.06.01</span>
+                                    </td>
+                                    <td>
+                                        <span>54</span>
+                                    </td>
+                                    <td>
+                                        <span>자가망</span>
+                                    </td>
+                                    <td>
+                                        <span>서비스 프로파일 ID</span>
+                                    </td>
+                                    <td>
+                                        <span class="a_btn" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="정보 전체 보기">
+                                            <i class="icon-customer"></i>
+                                        </span>
+                                        <span class="a_btn hor" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="">
+                                            <span class="dot"></span>
+                                            <span class="dot"></span>
+                                            <span class="dot"></span>
+                                        </span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <span>*******1235</span>
+                                    </td>
+                                    <td>
+                                        <span>10119292541</span>
+                                    </td>
+                                    <td>
+                                        <span>110019512417</span>
+                                    </td>
+                                    <td>
+                                        <span>개통</span>
+                                    </td>
+                                    <td>
+                                        <span>2023.06.01</span>
+                                    </td>
+                                    <td>
+                                        <span>54</span>
+                                    </td>
+                                    <td>
+                                        <span>자가망</span>
+                                    </td>
+                                    <td>
+                                        <span>서비스 프로파일 ID</span>
+                                    </td>
+                                    <td>
+                                        <span class="a_btn" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="정보 전체 보기">
+                                            <i class="icon-customer"></i>
+                                        </span>
+                                        <span class="a_btn hor" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="">
+                                            <span class="dot"></span>
+                                            <span class="dot"></span>
+                                            <span class="dot"></span>
+                                        </span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <span>*******1235</span>
+                                    </td>
+                                    <td>
+                                        <span>10119292541</span>
+                                    </td>
+                                    <td>
+                                        <span>110019512417</span>
+                                    </td>
+                                    <td>
+                                        <span>개통</span>
+                                    </td>
+                                    <td>
+                                        <span>2023.06.01</span>
+                                    </td>
+                                    <td>
+                                        <span>54</span>
+                                    </td>
+                                    <td>
+                                        <span>자가망</span>
+                                    </td>
+                                    <td>
+                                        <span>서비스 프로파일 ID</span>
+                                    </td>
+                                    <td>
+                                        <span class="a_btn" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="정보 전체 보기">
+                                            <i class="icon-customer"></i>
+                                        </span>
+                                        <span class="a_btn hor" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="">
+                                            <span class="dot"></span>
+                                            <span class="dot"></span>
+                                            <span class="dot"></span>
+                                        </span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <span>*******1235</span>
+                                    </td>
+                                    <td>
+                                        <span>10119292541</span>
+                                    </td>
+                                    <td>
+                                        <span>110019512417</span>
+                                    </td>
+                                    <td>
+                                        <span>개통</span>
+                                    </td>
+                                    <td>
+                                        <span>2023.06.01</span>
+                                    </td>
+                                    <td>
+                                        <span>54</span>
+                                    </td>
+                                    <td>
+                                        <span>자가망</span>
+                                    </td>
+                                    <td>
+                                        <span>서비스 프로파일 ID</span>
+                                    </td>
+                                    <td>
+                                        <span class="a_btn" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="정보 전체 보기">
+                                            <i class="icon-customer"></i>
+                                        </span>
+                                        <span class="a_btn hor" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="">
+                                            <span class="dot"></span>
+                                            <span class="dot"></span>
+                                            <span class="dot"></span>
+                                        </span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <span>*******1235</span>
+                                    </td>
+                                    <td>
+                                        <span>10119292541</span>
+                                    </td>
+                                    <td>
+                                        <span>110019512417</span>
+                                    </td>
+                                    <td>
+                                        <span>개통</span>
+                                    </td>
+                                    <td>
+                                        <span>2023.06.01</span>
+                                    </td>
+                                    <td>
+                                        <span>54</span>
+                                    </td>
+                                    <td>
+                                        <span>자가망</span>
+                                    </td>
+                                    <td>
+                                        <span>서비스 프로파일 ID</span>
+                                    </td>
+                                    <td>
+                                        <span class="a_btn" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="정보 전체 보기">
+                                            <i class="icon-customer"></i>
+                                        </span>
+                                        <span class="a_btn hor" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="">
+                                            <span class="dot"></span>
+                                            <span class="dot"></span>
+                                            <span class="dot"></span>
+                                        </span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <span>*******1235</span>
+                                    </td>
+                                    <td>
+                                        <span>10119292541</span>
+                                    </td>
+                                    <td>
+                                        <span>110019512417</span>
+                                    </td>
+                                    <td>
+                                        <span>개통</span>
+                                    </td>
+                                    <td>
+                                        <span>2023.06.01</span>
+                                    </td>
+                                    <td>
+                                        <span>54</span>
+                                    </td>
+                                    <td>
+                                        <span>자가망</span>
+                                    </td>
+                                    <td>
+                                        <span>서비스 프로파일 ID</span>
+                                    </td>
+                                    <td>
+                                        <span class="a_btn" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="정보 전체 보기">
+                                            <i class="icon-customer"></i>
+                                        </span>
+                                        <span class="a_btn hor" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="">
+                                            <span class="dot"></span>
+                                            <span class="dot"></span>
+                                            <span class="dot"></span>
+                                        </span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <span>*******1235</span>
+                                    </td>
+                                    <td>
+                                        <span>10119292541</span>
+                                    </td>
+                                    <td>
+                                        <span>110019512417</span>
+                                    </td>
+                                    <td>
+                                        <span>개통</span>
+                                    </td>
+                                    <td>
+                                        <span>2023.06.01</span>
+                                    </td>
+                                    <td>
+                                        <span>54</span>
+                                    </td>
+                                    <td>
+                                        <span>자가망</span>
+                                    </td>
+                                    <td>
+                                        <span>서비스 프로파일 ID</span>
+                                    </td>
+                                    <td>
+                                        <span class="a_btn" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="정보 전체 보기">
+                                            <i class="icon-customer"></i>
+                                        </span>
+                                        <!-- 
+                                            액션 메뉴 실행 시 open 클래스 추가 
+                                            장치 리스트 상단 멀티 셀렉트 액션 메뉴와 동일
+                                        -->
+                                        <div class="action_menu_wrap open">
+                                            <span class="a_btn hor" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="">
+                                                <span class="dot"></span>
+                                                <span class="dot"></span>
+                                                <span class="dot"></span>
+                                            </span>
+                                            <div class="a_menu_list">
+                                                <ul>
+                                                    <li class="s_cursor"><span>개통 상태 변경 이력</span></li>
+                                                    <li class="s_cursor"><span>명의 변경 이력</span></li>
+                                                    <li class="s_cursor"><span>장비 변경 이력</span></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <span>*******1235</span>
+                                    </td>
+                                    <td>
+                                        <span>10119292541</span>
+                                    </td>
+                                    <td>
+                                        <span>110019512417</span>
+                                    </td>
+                                    <td>
+                                        <span>개통</span>
+                                    </td>
+                                    <td>
+                                        <span>2023.06.01</span>
+                                    </td>
+                                    <td>
+                                        <span>54</span>
+                                    </td>
+                                    <td>
+                                        <span>자가망</span>
+                                    </td>
+                                    <td>
+                                        <span>서비스 프로파일 ID</span>
+                                    </td>
+                                    <td>
+                                        <span class="a_btn" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="정보 전체 보기">
+                                            <i class="icon-customer"></i>
+                                        </span>
+                                        <span class="a_btn hor" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="">
+                                            <span class="dot"></span>
+                                            <span class="dot"></span>
+                                            <span class="dot"></span>
+                                        </span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <span>*******1235</span>
+                                    </td>
+                                    <td>
+                                        <span>10119292541</span>
+                                    </td>
+                                    <td>
+                                        <span>110019512417</span>
+                                    </td>
+                                    <td>
+                                        <span>개통</span>
+                                    </td>
+                                    <td>
+                                        <span>2023.06.01</span>
+                                    </td>
+                                    <td>
+                                        <span>54</span>
+                                    </td>
+                                    <td>
+                                        <span>자가망</span>
+                                    </td>
+                                    <td>
+                                        <span>서비스 프로파일 ID</span>
+                                    </td>
+                                    <td>
+                                        <span class="a_btn" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="정보 전체 보기">
+                                            <i class="icon-customer"></i>
+                                        </span>
+                                        <span class="a_btn hor" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="">
+                                            <span class="dot"></span>
+                                            <span class="dot"></span>
+                                            <span class="dot"></span>
+                                        </span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <span>*******1235</span>
+                                    </td>
+                                    <td>
+                                        <span>10119292541</span>
+                                    </td>
+                                    <td>
+                                        <span>110019512417</span>
+                                    </td>
+                                    <td>
+                                        <span>개통</span>
+                                    </td>
+                                    <td>
+                                        <span>2023.06.01</span>
+                                    </td>
+                                    <td>
+                                        <span>54</span>
+                                    </td>
+                                    <td>
+                                        <span>자가망</span>
+                                    </td>
+                                    <td>
+                                        <span>서비스 프로파일 ID</span>
+                                    </td>
+                                    <td>
+                                        <span class="a_btn" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="정보 전체 보기">
+                                            <i class="icon-customer"></i>
+                                        </span>
+                                        <span class="a_btn hor" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="">
+                                            <span class="dot"></span>
+                                            <span class="dot"></span>
+                                            <span class="dot"></span>
+                                        </span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <span>*******1235</span>
+                                    </td>
+                                    <td>
+                                        <span>10119292541</span>
+                                    </td>
+                                    <td>
+                                        <span>110019512417</span>
+                                    </td>
+                                    <td>
+                                        <span>개통</span>
+                                    </td>
+                                    <td>
+                                        <span>2023.06.01</span>
+                                    </td>
+                                    <td>
+                                        <span>54</span>
+                                    </td>
+                                    <td>
+                                        <span>자가망</span>
+                                    </td>
+                                    <td>
+                                        <span>서비스 프로파일 ID</span>
+                                    </td>
+                                    <td>
+                                        <span class="a_btn" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="정보 전체 보기">
+                                            <i class="icon-customer"></i>
+                                        </span>
+                                        <span class="a_btn hor" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="">
+                                            <span class="dot"></span>
+                                            <span class="dot"></span>
+                                            <span class="dot"></span>
+                                        </span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <span>*******1235</span>
+                                    </td>
+                                    <td>
+                                        <span>10119292541</span>
+                                    </td>
+                                    <td>
+                                        <span>110019512417</span>
+                                    </td>
+                                    <td>
+                                        <span>개통</span>
+                                    </td>
+                                    <td>
+                                        <span>2023.06.01</span>
+                                    </td>
+                                    <td>
+                                        <span>54</span>
+                                    </td>
+                                    <td>
+                                        <span>자가망</span>
+                                    </td>
+                                    <td>
+                                        <span>서비스 프로파일 ID</span>
+                                    </td>
+                                    <td>
+                                        <span class="a_btn" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="정보 전체 보기">
+                                            <i class="icon-customer"></i>
+                                        </span>
+                                        <span class="a_btn hor" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="">
+                                            <span class="dot"></span>
+                                            <span class="dot"></span>
+                                            <span class="dot"></span>
+                                        </span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <span>*******1235</span>
+                                    </td>
+                                    <td>
+                                        <span>10119292541</span>
+                                    </td>
+                                    <td>
+                                        <span>110019512417</span>
+                                    </td>
+                                    <td>
+                                        <span>개통</span>
+                                    </td>
+                                    <td>
+                                        <span>2023.06.01</span>
+                                    </td>
+                                    <td>
+                                        <span>54</span>
+                                    </td>
+                                    <td>
+                                        <span>자가망</span>
+                                    </td>
+                                    <td>
+                                        <span>서비스 프로파일 ID</span>
+                                    </td>
+                                    <td>
+                                        <span class="a_btn" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="정보 전체 보기">
+                                            <i class="icon-customer"></i>
+                                        </span>
+                                        <span class="a_btn hor" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="">
+                                            <span class="dot"></span>
+                                            <span class="dot"></span>
+                                            <span class="dot"></span>
+                                        </span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <span>*******1235</span>
+                                    </td>
+                                    <td>
+                                        <span>10119292541</span>
+                                    </td>
+                                    <td>
+                                        <span>110019512417</span>
+                                    </td>
+                                    <td>
+                                        <span>개통</span>
+                                    </td>
+                                    <td>
+                                        <span>2023.06.01</span>
+                                    </td>
+                                    <td>
+                                        <span>54</span>
+                                    </td>
+                                    <td>
+                                        <span>자가망</span>
+                                    </td>
+                                    <td>
+                                        <span>서비스 프로파일 ID</span>
+                                    </td>
+                                    <td>
+                                        <span class="a_btn" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="정보 전체 보기">
+                                            <i class="icon-customer"></i>
+                                        </span>
+                                        <span class="a_btn hor" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="">
+                                            <span class="dot"></span>
+                                            <span class="dot"></span>
+                                            <span class="dot"></span>
+                                        </span>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="pagnation_wrap">
+                        <div class="left_area">
+                            <p>Showing <span class="num">1</span> to <span class="num">15</span> of <span class="num">150</span> Entries</p>
+                        </div>
+                        <div class="right_area">
+                            <span class="p_btn">
+                                <i class="icon-arrow-back"></i>
+                            </span>
+                            <span class="p_input_area">
+                                <input type="text" class="p_input" value="1"> of 10
+                            </span>
+                            <span class="p_btn">
+                                <i class="icon-arrow-next"></i>
+                            </span>
+                            <select name="" id="" class="select_style">
+                                <option value="">15</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- //content -->
+    </div>
+    <!-- //container -->
+    <!-- 가입자 전체 정보 보기 팝업-->
+    <div class="modal w_780" tabindex="-1" style="display:none;">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">전체 정보 보기</h5>
+                </div>
+                <div class="modal-body">
+                    <div class="row ">
+                        <div class="col-4">
+                            <dl class="info_style">
+                                <dt>가입자 번호</dt>
+                                <dd>30103521235</dd> 
+                            </dl>
+                        </div>
+                        <div class="col-4">
+                            <dl class="info_style">
+                                <dt>계약번호</dt>
+                                <dd>10119292541</dd>
+                            </dl>
+                        </div>
+                        <div class="col-4">
+                            <dl class="info_style">
+                                <dt>SMS Tag</dt>
+                                <dd>110019512417</dd>
+                            </dl>
+                        </div>
+                        <div class="col-4">
+                            <dl class="info_style">
+                                <dt>서비스 상태</dt>
+                                <dd>개통</dd>
+                            </dl>
+                        </div>
+                        <div class="col-4">
+                            <dl class="info_style">
+                                <dt>개통일</dt>
+                                <dd>2023.06.01</dd>
+                            </dl>
+                        </div>
+                        <div class="col-4">
+                            <dl class="info_style">
+                                <dt>모델</dt>
+                                <dd>K1200UA</dd>
+                            </dl>
+                        </div>
+                        <div class="col-4">
+                            <dl class="info_style">
+                                <dt>Host ID</dt>
+                                <dd>1AC034E75E</dd>
+                            </dl>
+                        </div>
+                        <div class="col-4">
+                            <dl class="info_style">
+                                <dt>Host MAC 주소</dt>
+                                <dd>54FA3EC43D4B</dd>
+                            </dl>
+                        </div>
+                        <div class="col-4">
+                            <dl class="info_style">
+                                <dt>CAS 가입자 ID</dt>
+                                <dd>0393C100</dd>
+                            </dl>
+                        </div>
+                        <div class="col-4">
+                            <dl class="info_style">
+                                <dt>U+ 가입번호</dt>
+                                <dd>500201834001</dd>
+                            </dl>
+                        </div>
+                        <div class="col-4">
+                            <dl class="info_style">
+                                <dt>회사코드</dt>
+                                <dd>CB0, CB2</dd>
+                            </dl>
+                        </div>
+                        <div class="col-4">
+                            <dl class="info_style">
+                                <dt>SO Code</dt>
+                                <dd>54</dd>
+                            </dl>
+                        </div>
+                        <div class="col-4">
+                            <dl class="info_style">
+                                <dt>우편번호</dt>
+                                <dd>00000001</dd>
+                            </dl>
+                        </div>
+                        <div class="col-4">
+                            <dl class="info_style">
+                                <dt>Group Bit</dt>
+                                <dd>[43, 125]</dd>
+                            </dl>
+                        </div>
+                        <div class="col-4">
+                            <dl class="info_style">
+                                <dt>네트워크</dt>
+                                <dd>IP 자가망</dd>
+                            </dl>
+                        </div>
+                        <div class="col-4">
+                            <dl class="info_style">
+                                <dt>지상파 채널</dt>
+                                <dd>(KBS|소스ID(MBC)</dd>
+                            </dl>
+                        </div>
+                        <div class="col-4">
+                            <dl class="info_style">
+                                <dt>U+ FCC</dt>
+                                <dd>[43, 125]</dd>
+                            </dl>
+                        </div>
+                        <div class="col-4">
+                            <dl class="info_style">
+                                <dt>Wi-Fi</dt>
+                                <dd>활성</dd>
+                            </dl>
+                        </div>
+                        <div class="col-4">
+                            <dl class="info_style">
+                                <dt>프로파일 ID</dt>
+                                <dd>서비스 프로파일 ID</dd>
+                            </dl>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="modal-footer pt-0">
+                    <button type="button" class="m_a_btn dark " data-bs-dismiss="modal">닫기</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- //가입자 전체 정보 보기 팝업 -->
+    <!-- 개통 상태 변경 이력 팝업-->
+    <div class="modal w_670" tabindex="-1" style="display:none;">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">개통 상태 변경 이력</h5>
+                </div>
+                <div class="modal-body">
+                    <div class="horizon">
+                        <dl class="info_style">
+                            <dt>요청 번호</dt>
+                            <dd>CJPVe4480ce90a0a0aab5cee61f21cc8caca</dd>
+                            <dt>요청 일시</dt>
+                            <dd>2023.06.01 00:00:00</dd>
+                            <dt>단말 번호</dt>
+                            <dd>110019512417</dd>
+                            <dt>상태 변경</dt>
+                            <dd>일시정지</dd>
+                        </dl>
+                    </div>
+                </div>
+                <div class="modal-footer pt-0">
+                    <button type="button" class="m_a_btn dark " data-bs-dismiss="modal">닫기</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- //개통 상태 변경 이력 팝업-->
+    <!-- 명의 변경 이력 팝업-->
+    <div class="modal w_670" tabindex="-1" style="display:none;">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">명의 변경 이력</h5>
+                </div>
+                <div class="modal-body">
+                    <div class="horizon">
+                        <dl class="info_style">
+                            <dt>업데이트 일시</dt>
+                            <dd>2023.06.01 00:00:00</dd>
+                        </dl>
+                    </div>
+                    <div class="m_table">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th scope="col"></th>
+                                    <th scope="col">가입자 번호</th>
+                                    <th scope="col">Host ID</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">변경전</th>
+                                    <td>
+                                        <span>KSTB6200</span>
+                                    </td>
+                                    <td>
+                                        <span>1AC034E75E</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">변경후</th>
+                                    <td>
+                                        <span>KSTB6200</span>
+                                    </td>
+                                    <td>
+                                        <span>1AC034E75E</span>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="modal-footer pt-0">
+                    <button type="button" class="m_a_btn dark " data-bs-dismiss="modal">닫기</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- //명의 변경 이력 팝업-->
+    <!-- 장비 변경 이력 팝업-->
+    <div class="modal w_670" tabindex="-1" style="display:none">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">장비 변경 이력</h5>
+                </div>
+                <div class="modal-body">
+                    <div class="horizon">
+                        <dl class="info_style">
+                            <dt>업데이트 일시</dt>
+                            <dd>2023.06.01 00:00:00</dd>
+                            <dt>SMS Tag</dt>
+                            <dd>110019512417</dd>
+                        </dl>
+                    </div>
+                    <div class="m_table">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th scope="col"></th>
+                                    <th scope="col">모델</th>
+                                    <th scope="col">Host ID</th>
+                                    <th scope="col">Host MAC 주소</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">변경전</th>
+                                    <td>
+                                        <span>KSTB6200</span>
+                                    </td>
+                                    <td>
+                                        <span>1AC034E75E</span>
+                                    </td>
+                                    <td>
+                                        <span>54FA3EC43D4B</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">변경후</th>
+                                    <td>
+                                        <span>KSTB6200</span>
+                                    </td>
+                                    <td>
+                                        <span>1AC034E75E</span>
+                                    </td>
+                                    <td>
+                                        <span>54FA3EC43D4B</span>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="modal-footer pt-0">
+                    <button type="button" class="m_a_btn dark " data-bs-dismiss="modal">닫기</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- //장비 변경 이력 팝업-->
+</div>
+<!-- <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script> -->
+<script src="../assets/js/bootstrap.bundle.min.js"></script>
+<script src="../assets/js/form-validation.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+    const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+    const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+
+</script>
+</body>
+</html>

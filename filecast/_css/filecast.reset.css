@@ -1,0 +1,24 @@
+@charset "utf-8";
+
+html,body,div,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,abbr,address,cite,code,
+del,dfn,em,img,ins,kbd,q,samp,strong,sub,sup,var,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,
+table,caption,tbody,thead,tfoot,rt,th,td,summary,
+small,b,i,article,aside,canvas,details,figcaption,figure,footer,header,hgroup,menu,nav,section,
+time,mark,audio,video{margin:0;padding:0;}
+
+article,aside,details,figcaption,figure,footer,header,menu,nav,section{display:block;}
+table{border-collapse:collapse;border-spacing:0;}
+fieldset,img{border:0;}
+address,caption,cite,code,em,strong,th{font-style:normal;font-weight:normal;}
+ol,ul,li{list-style:none;}
+caption,th{text-align:left;}
+h1,h2,h3,h4,h5,h6{font-weight:normal;font-size:100%;}
+q:after,q:before{content:"";}
+input{vertical-align:middle;}
+abbr,acronym{border:none;}
+hr{display:none;}
+#skipNavi,.blind, hr{position:absolute;left:0;top:0;width:0;height:0;font-size:0;line-height:0;text-indent:-9999px;overflow:hidden;visibility:hidden;}
+
+li img, dd img{vertical-align:top;}
+img{max-width:100%;}
+

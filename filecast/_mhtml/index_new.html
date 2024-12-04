@@ -1,0 +1,377 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="Generator" content="EditPlus®">
+<meta name="Author" content="">
+<meta name="Keywords" content="">
+<meta name="Description" content="">
+<meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width" /> 
+<title> FileCast</title>
+<link rel="stylesheet" href="../_lib/bootstrap/dist/css/bootstrap.css" />
+<link rel="stylesheet" href="../_mobile/_css/filecast.reset.css" />
+<link rel="stylesheet" href="../_mobile/_css/filecast.mobile.style.css" /> 
+<!-- <link rel="stylesheet" href="http://192.168.10.14/static/_mobile/_css/filecast.mobile.style.css" /> -->
+</head>
+<body>
+<div id="wrap">
+	<ul>
+		<li>
+			<!-- header -->
+			<div class="header logochange">
+				<span class="band btn_side">사이트메뉴보이기버튼</span>
+				<h1 class="logo"><a href="#"></a></h1>
+				<div class="btn_login show"><span class="txt">로그인</span></div>
+				<div class="h_mid">
+					<div class="child_protect">
+						<span class="on">자녀안심보호</span>
+					</div>
+					<div class="searchAll col-xs-12">
+						<form action="#" method="post">
+							<fieldset>
+								<input type="text" />
+								<input type="button" class="btn_search"  />
+							</fieldset>
+						</form>
+						<span class="search_close"></span>
+					</div>
+				</div>
+			</div>
+			<!-- //header -->
+			<div class="gnb">
+				<span class="menu">충전하기<span class="bg"></span></span>
+				<span class="menu">이벤트<span class="bg"></span></span>
+				<span class="menu ">추천영화신작<span class="bg"></span></span>
+				<span class="menu">웹툰<span class="bg"></span></span>
+			</div>
+		</li>		
+		<li>	
+			<!-- container -->
+			<div id="container" class="container no-padding">
+				<!-- top_content -->
+				<div class="top_content">
+					<!-- top_menu  -->
+					<div class="top_menu col-xs-12">
+						<!-- 검색결과일때 클래스 search 추가-->
+						<ul class="depth1">
+							<li class=""><span class="hand col-xs-3 l_none"><span class="m1"></span>인기</span></li>
+							<li><span class="hand col-xs-3"><span class="m3"></span>영화</span></li>
+							<li><span class="hand col-xs-3"><span class="m4"></span>방송</span></li>
+							<li><span class="hand col-xs-3 r_none"><span class="m5"></span>애니</span></li>
+							<li><span class="hand col-xs-3 b_none l_none"><span class="m9"></span>교육</span></li>
+							<li><span class="hand col-xs-3 b_none"><span class="m6"></span>유아</span></li>
+							<li><span class="hand col-xs-3 b_none"><span class="m7"></span>e-book</span></li>
+							<li><span class="hand col-xs-3 b_none r_none"><span class="m8"></span>성인</span></li>
+						</ul>
+						<ul class="depth2">
+							<li><span class="hand col-xs-3 l_none t_none">액션</span></li>
+							<li><span class="hand col-xs-3 t_none">코미디</span></li>
+							<li><span class="hand col-xs-3 t_none">드라마</span></li>
+							<li><span class="hand col-xs-3 r_none t_none">멜로</span></li>
+							<li><span class="hand col-xs-3 b_none l_none">공포/스릴러</span></li>
+							<li><span class="hand col-xs-3 b_none">SF/판타지</span></li>
+							<li><span class="hand col-xs-3 b_none">교육</span></li>
+							<li><span class="hand col-xs-3 b_none r_none">한국영화</span></li>
+						</ul>
+						<ul class="depth2">
+							<li><span class="hand col-xs-3 l_none t_none">전체<span class="num">(9,999)</span></span></li>
+							<li><span class="hand col-xs-3 t_none">동영상<span class="num">(875)</span></span></li>
+							<li><span class="hand col-xs-3 t_none">휴대기기<span class="num">(9,999)</span></span></li>
+							<li><span class="hand col-xs-3 r_none t_none">영화<span class="num">(1,523)</span></span></li>
+							<li><span class="hand col-xs-3 b_none l_none">드라마<span class="num">(35)</span></span></li>
+							<li><span class="hand col-xs-3 b_none">애니<span class="num">(325)</span></span></li>
+							<li><span class="hand col-xs-3 b_none">성인<span class="num">(1)</span></span></li>
+							<li><span class="hand col-xs-3 b_none r_none">교육<span class="num">(89)</span></span></li>
+						</ul>
+						<ul class="depth3 col-xs-12">
+							<li class="new"><span class="hand">최신</span><span class="bg">bg</span></li>
+							<li class="dot">·</li>
+							<li class="overlap"><span class="hand">중복제외</span><span class="bg">bg</span></li>
+							<li class="dot">·</li>
+							<li class="mydata active"><span class="hand">내가본자료제외</span><span class="bg">bg</span></li>
+							<li class="dot">·</li>
+							<li class="alliance"><span class="hand">제휴제외</span><span class="bg">bg</span></li>
+							<li class="dot">·</li>
+							<li class="adult"><span class="hand">성인제외</span><span class="bg">bg</span></li>
+						</ul>
+					</div>
+					<!-- main_banner -->
+					<div class="main_banner">
+						<div class="bannerArea">
+							<ul>
+								<li><span class="hand"><img src="../_mobile/_img/banner/m1_n.jpg" alt=""></span></li>
+								<li><span class="hand"><img src="../_mobile/_img/banner/m2_n.jpg" alt=""></span></li>
+								<li><span class="hand"><img src="../_mobile/_img/banner/m3_n.jpg" alt=""></span></li>
+							</ul>
+						</div>
+						<ul class="b_btnarea">
+							<li class="active"><span class="hand">배너버튼1</span></li>
+							<li><span class="hand">배너버튼2</span></li>
+							<li><span class="hand">배너버튼3</span></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</li>	
+		<li>	
+			<div id="container" class="container no-padding">
+				<!-- content -->
+				<div class="content">
+					<p class="now_txt">현재 <span>영화 &gt; SF/판타지</span> 분류의 자료를 <span>최신</span> 정렬로 보고 계십니다.</p>
+					<!-- content_list -->
+					<div class="content_list col-xs-12 no-padding">
+						 <ul>
+							<li class="mobile-contents-list-li">
+								<div class="hand">
+									<div class="top">
+										<div class="r_imgArea">
+											<img src="../_mobile/_img/temp/sumImg2.jpg"/>
+											<span></span>
+										</div>
+										<div class="l_conArea">
+											<p class="con_tit">본 얼티메이터 시리즈</p>
+											<span class="category">유아 &gt; 초/중/고학습</span>
+											<div class="file_info">
+												<span class="alliance"></span>
+												<span class="time"><span></span>00:35:12</span>
+												<span class="point"><span></span>50</span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li class="mobile-contents-list-li">
+								<div class="hand">
+									<div class="top">
+										<div class="r_imgArea">
+											<img src="http://pic.filecast.co.kr/c3/04/c304dc8f16bb25ce4bb5fa16d002633f.jpg"/>
+											<span></span>
+										</div>
+										<div class="l_conArea">
+											<p class="con_tit c_list">[일영] 마에스트로(2015) 마트자카 토리, 미와, 니시다 토시유키 - 자막있음</p>
+											<span class="category">영화 &gt; SF/판타지</span>
+											<div class="down_info">
+												<span>PC/다운로드 전용</span>
+											</div>
+										</div>								
+									</div>								
+									<div class="content_view">
+										<div class="content_v_top">
+											<p class="s_title"><span>[대박] 초특 엄청난 전쟁 초능력자들의 활약 액쓰맨을 능가하는...</span></p>
+											<div class="preview-img-inner-div">
+												<img src="http://filecast.co.kr/static/_mobile/_img/temp/temp_view_depth1.png" alt="" />
+											</div>
+											<div class="p_area">
+												<span class="btn_p_view"><span class="txt">바로보기</span></span>								
+												<span class="btn_c_view"><span class="txt">바로보기</span></span>											
+											</div>
+											<div class="btn_full col-xs-12">
+												<span class="txt">전체화면 보기</span><span class="ico"></span>
+											</div>
+										</div>
+										<div class="file_List">
+											<ul>
+												<li>
+													<div class="left">
+														<p>The.Worlds.Fastest.Indian.DVDRip.XviD.AC3.5.1CH-JUPi....</p>
+														<div>
+															<span class="time"><span></span>3시간 15분 33초</span><span class="size">650M</span>
+														</div>
+													</div>
+													<span class="btn_n_view">바로보기 ▶ </span>
+												</li>
+												<li>
+													<div class="left">
+														<p>The.Worlds.Fastest.Indian.DVDRip.XviD.AC3.5.1CH-JUPi....</p>
+														<div>
+															<span class="time"><span></span>3시간 15분 33초</span><span class="size">650M</span>
+														</div>
+													</div>
+													<span class="btn_n_view">바로보기 ▶ </span>
+												</li>
+												<li>
+													<div class="left">
+														<p>The.Worlds.Fastest.Indian.DVDRip.XviD.AC3.5.1CH-JUPi....</p>
+														<div>
+															<span class="time"><span></span>3시간 15분 33초</span><span class="size">650M</span>
+														</div>
+													</div>
+													<span class="btn_n_view">바로보기 ▶</span>
+												</li>
+											</ul>
+											<div class="m-home-filelist-more-btn">
+												파일 리스트 더 보기<span></span>
+											</div>
+										</div>
+										<div class="btn_view col-xs-12 no-padding">
+											<span class="btn_more col-xs-9"><b>더 자세히 보기</b> &gt;</span>
+											<span class="b_close col-xs-3"><span>닫기</span><span class="img"></span></span>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li class="mobile-contents-list-li">
+								<div class="hand">
+									<div class="top">
+										<div class="r_imgArea">
+											<img src="http://pic.filecast.co.kr/6a/f7/6af706f00d60b9ea9d33890042a32488.jpg"/>
+											<span></span>
+										</div>
+										<div class="l_conArea">
+											<p class="con_tit c_list">호빗:스마우그의 폐허, 1080P 고화질, 직스샷, 자막완벽!</p>
+											<span class="category">영화 &gt; SF/판타지</span>
+											<div class="down_info">
+												<span>PC/다운로드 전용</span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li class="mobile-contents-list-li">
+								<div class="hand">
+									<div class="top">
+										<div class="r_imgArea">
+											<img src="http://pic.filecast.co.kr/e3/c6/e3c6a0a2437b2c33e2bd68472e4c0bc5.jpg"/>
+											<span></span>
+										</div>
+										<div class="l_conArea">
+											<p class="con_tit c_list">[일영] 마에스트로(2015) 마트자카 토리, 미와, 니시다 토시유키 - 자막있음</p>
+											<span class="category">영화 &gt; SF/판타지</span>
+											<div class="file_info">
+												<span class="time"><span></span>00:35:12</span>
+												<span class="point"><span></span>50</span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li class="mobile-contents-list-li">
+								<div class="hand">
+									<div class="top">
+										<div class="r_imgArea">
+											<img src="../_mobile/_img/temp/96.jpg"/>
+											<span></span>
+										</div>
+										<div class="l_conArea">
+											<p class="con_tit c_list">[일영] 마에스트로(2015) 마트자카 토리, 미와, 니시다 토시유키 - 자막있음</p>
+											<span class="category">영화 &gt; SF/판타지</span>
+											<div class="file_info">
+												<span class="time"><span></span>00:35:12</span>
+												<span class="point"><span></span>50</span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li class="mobile-contents-list-li">
+								<div class="hand">
+									<div class="top">
+										<div class="r_imgArea">
+											<img src="../_mobile/_img/temp/128_t.jpg"/>
+											<span></span>
+										</div>
+										<div class="l_conArea">
+											<p class="con_tit c_list">[일영] 마에스트로(2015) 마트자카 토리, 미와, 니시다 토시유키 - 자막있음</p>
+											<span class="category">영화 &gt; SF/판타지</span>
+											<div class="file_info">
+												<span class="time"><span></span>00:35:12</span>
+												<span class="point"><span></span>50</span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li class="mobile-contents-list-li">
+								<div class="hand">
+									<div class="top">
+										<div class="r_imgArea">
+											<img src="http://pic.filecast.co.kr/84/e9/84e9fd11c97b41edb7fd3380738965cb.jpg"/>
+											<span></span>
+										</div>
+										<div class="l_conArea">
+											<p class="con_tit c_list">[대박] 초특 엄청난전쟁 초능력자들의 활약 액쓰맨을 능가하는 놀라운 감동의 도...</p>
+											<span class="category">영화 &gt; SF/판타지</span>
+											<div class="down_info">
+												<span>PC/다운로드 전용</span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li class="mobile-contents-list-li">
+								<div class="hand">
+									<div class="top">
+										<div class="r_imgArea">
+											<img src="http://pic.filecast.co.kr/6e/69/6e6943a0fe64ebe794a1564a0b45f4bf.jpg"/>
+											<span></span>
+										</div>
+										<div class="l_conArea">
+											<p class="con_tit c_list">어벤져스 컨피덴셜 - 블랙 위도우</p>
+											<span class="category">영화 &gt; SF/판타지</span>
+											<div class="file_info">
+												<span class="time"><span></span>00:35:12</span>
+												<span class="point"><span></span>50</span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li class="mobile-contents-list-li">
+								<div class="hand">
+									<div class="top">
+										<div class="r_imgArea">
+											<img src="../_mobile/_img/temp/96I.jpg"/>
+											<span></span>
+										</div>
+										<div class="l_conArea">
+											<p class="con_tit c_list">어벤져스 컨피덴셜 - 블랙 위도우</p>
+											<span class="category">영화 &gt; SF/판타지</span>
+											<div class="file_info">
+												<span class="time"><span></span>00:35:12</span>
+												<span class="point"><span></span>50</span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</li>
+						 </ul>
+					</div>
+					<!-- //content_list -->
+				</div>
+				<!-- //content -->
+			</div>
+		</li>
+			<div id="footer" class="footer">
+				<address>
+				 <span>(주)타이디웹</span> / <span>사업자 144-81-12649</span> / <span>통신판매 제2013-경기성남-0604호</span> <br />
+				 <span>특수유형부가통신사업자 제3-01-15-0006호</span> / <span><span class="ico"></span>1600-0335</span>
+				</address>
+			</div>
+	</ul>
+	<div class="btm_fix_m col-xs-12" id="fc-bottom-main-menu-ctr-div" style="display:none;">
+		<ul>
+			<li class="menu" onclick="GO_MENU('home');">
+				<span class="a_b">액티브보더</span>
+				<span class="txt"><span class="style1"></span>홈</span>
+			</li>
+			<li class="menu" onclick="GO_MENU('category')">
+				<span class="a_b">액티브보더</span>
+				<span class="txt"><span class="style2"></span>카테고리</span>
+			</li>
+			<li class="menu" onclick="FC_APP_FUN.goSearchForm();">
+				<span class="a_b">액티브보더</span>
+				<span class="txt"><span class="style3"></span>검색</span>
+			</li>
+			<li class="menu" onclick="FC_APP_FUN.onClickSideMenu();">
+				<span class="a_b">액티브보더</span>
+				<span class="txt"><span class="style4"></span>마이페이지</span>
+			</li>
+			<li class="menu" onclick="FC_APP_FUN.goTop();">
+				<span class="ico"></span>
+			</li>
+		</ul>
+	</div>
+</div> 
+</body>
+</html>
+<span></span>

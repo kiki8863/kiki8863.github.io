@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KRView</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/bootstrap-4.3.1.min.css">
+    <link rel="stylesheet" href="css/krview_v2.css">
+    <link href="https://fonts.googleapis.com/css2?family=Gothic+A1:wght@200;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="wrap" style="padding:20px;">
+        <div class="remote_area type_4252" >
+            <img src="RCU-KSTB4252.png" alt="4252 리모컨 이미지">
+            <span class="r_btn type1">전원</span>
+            <span class="r_btn type2">input</span>
+            <span class="r_btn type3">음량 +</span>
+            <span class="r_btn type4">음량 -</span>
+            <span class="r_btn type5">guide</span>
+            <span class="r_btn type6">채널 △</span>
+            <span class="r_btn type7">채널 ▽</span>
+            <span class="r_btn type8">캐릭터</span>
+            <span class="r_btn type9">Mute</span>
+            <span class="r_btn type10">i</span>
+            <span class="r_btn type11">방향키 ▲</span>
+            <span class="r_btn type12">방향키 ◀</span>
+            <span class="r_btn type13">OK</span>
+            <span class="r_btn type14">방향키 ▶</span>
+            <span class="r_btn type15">방향키 ▼</span>
+            <span class="r_btn type16">이전</span>
+            <span class="r_btn type17">마이크</span>
+            <span class="r_btn type18">Exit</span>
+            <span class="r_btn type19">VOD</span>
+            <span class="r_btn type20">앱</span>
+            <span class="r_btn type21">NETFLIX</span>
+            <span class="r_btn type22">1</span>
+            <span class="r_btn type23">2</span>
+            <span class="r_btn type24">3</span>
+            <span class="r_btn type25">4</span>
+            <span class="r_btn type26">5</span>
+            <span class="r_btn type27">6</span>
+            <span class="r_btn type28">7</span>
+            <span class="r_btn type29">8</span>
+            <span class="r_btn type30">9</span>
+            <span class="r_btn type31">0</span>
+        </div>
+        <div class="remote_area type_3226" style="display:none;">
+            <img src="RCU-KSTB3226.png" alt="3226 리모컨 이미지">
+            <span class="r_btn type1">전원</span>
+            <span class="r_btn type2">소스</span>
+            <span class="r_btn type3">TV 전원</span>
+            <span class="r_btn type4">방향키 ▲</span>
+            <span class="r_btn type5">방향키 ◀</span>
+            <span class="r_btn type6">OK</span>
+            <span class="r_btn type7">방향키 ▶</span>
+            <span class="r_btn type8">방향키 ▼</span>
+            <span class="r_btn type9">이전</span>
+            <span class="r_btn type10">Assistation</span>
+            <span class="r_btn type11">홈</span>
+            <span class="r_btn type12">음량 +</span>
+            <span class="r_btn type13">음량 -</span>
+            <span class="r_btn type14">볼륨제거</span>
+            <span class="r_btn type15">채널 △</span>
+            <span class="r_btn type16">채널 ▽</span>
+            <span class="r_btn type17">메뉴</span>
+            <span class="r_btn type18">가이드</span>
+            <span class="r_btn type19">F8</span>
+            <span class="r_btn type20">F9</span>
+            <span class="r_btn type21">F10</span>
+            <span class="r_btn type22">F12</span>
+        </div>
+        <div class="remote_area type_6189" style="display:none;">
+            <img src="RCU-KSTB6189.png" alt="6189 리모컨 이미지">
+            <span class="r_btn type1">Izzi TV 전원</span>
+            <span class="r_btn type2">TV 전원</span>
+            <span class="r_btn type3">전체 전원</span>
+            <span class="r_btn type4">LIVE</span>
+            <span class="r_btn type5">INICIO</span>
+            <span class="r_btn type6">INPUT</span>
+            <span class="r_btn type7">AUDIO</span>
+            <span class="r_btn type8">SUBT</span>
+            <span class="r_btn type9">모니터 1</span>
+            <span class="r_btn type10">모니터 2</span>
+            <span class="r_btn type11">되감기</span>
+            <span class="r_btn type12">재생/일시정지</span>
+            <span class="r_btn type13">빨리감기</span>
+            <span class="r_btn type14">정지</span>
+            <span class="r_btn type15">OPC</span>
+            <span class="r_btn type16">눈</span>
+            <span class="r_btn type17">메뉴?</span>
+            <span class="r_btn type18">LAST</span>
+            <span class="r_btn type19">넷플릭스</span>
+            <span class="r_btn type20">OnDownload</span>
+            <span class="r_btn type21">이전</span>
+            <span class="r_btn type22">홈</span>
+            <span class="r_btn type23">방향키 ▲</span>
+            <span class="r_btn type24">방향키 ◀</span>
+            <span class="r_btn type25">OK</span>
+            <span class="r_btn type26">방향키 ▶</span>
+            <span class="r_btn type27">방향키 ◀</span>
+            <span class="r_btn type28">메뉴</span>
+            <span class="r_btn type29">검색</span>
+            <span class="r_btn type30">음량 +</span>
+            <span class="r_btn type31">음량 -</span>
+            <span class="r_btn type32">구글검색</span>
+            <span class="r_btn type33">볼륨제거</span>
+            <span class="r_btn type34">채널 △</span>
+            <span class="r_btn type35">채널 ▽</span>
+            <span class="r_btn type36">1</span>
+            <span class="r_btn type37">2</span>
+            <span class="r_btn type38">3</span>
+            <span class="r_btn type39">4</span>
+            <span class="r_btn type40">5</span>
+            <span class="r_btn type41">6</span>
+            <span class="r_btn type42">7</span>
+            <span class="r_btn type43">8</span>
+            <span class="r_btn type44">9</span>
+            <span class="r_btn type45">I</span>
+            <span class="r_btn type46">0</span>
+            <span class="r_btn type47">설정</span>
+        </div>
+        <div class="remote_area type_6200" style="display:none;">
+            <img src="KSTB6200.png" alt="6200 리모컨 이미지">
+            <span class="r_btn type1">TV 전원</span>
+            <span class="r_btn type2">전원 All</span>
+            <span class="r_btn type3">되감기</span>
+            <span class="r_btn type4">재생</span>
+            <span class="r_btn type5">빨리감기</span>
+            <span class="r_btn type6">가이드</span>
+            <span class="r_btn type7">라이브</span>
+            <span class="r_btn type8">방향키 ▲</span>
+            <span class="r_btn type9">방향키 ◀</span>
+            <span class="r_btn type10">OK</span>
+            <span class="r_btn type11">방향키 ▶</span>
+            <span class="r_btn type12">방향키 ▼</span>
+            <span class="r_btn type13">이전</span>
+            <span class="r_btn type14">홈</span>
+            <span class="r_btn type15">음량 +</span>
+            <span class="r_btn type16">음소거</span>
+            <span class="r_btn type17">음량 -</span>
+            <span class="r_btn type18">구글 검색</span>
+            <span class="r_btn type19">메뉴</span>
+            <span class="r_btn type20">채널 △</span>
+            <span class="r_btn type21">Last</span>
+            <span class="r_btn type22">채널 ▽</span>
+            <span class="r_btn type23">1</span>
+            <span class="r_btn type24">2</span>
+            <span class="r_btn type25">3</span>
+            <span class="r_btn type26">4</span>
+            <span class="r_btn type27">5</span>
+            <span class="r_btn type28">6</span>
+            <span class="r_btn type29">7</span>
+            <span class="r_btn type30">8</span>
+            <span class="r_btn type31">9</span>
+            <span class="r_btn type32">나가기</span>
+            <span class="r_btn type33">0</span>
+            <span class="r_btn type34">Set</span>
+        </div>
+        <div class="remote_area type_ott" style="display:none;">
+            <img src="images/RCU-OTT.png" alt="OTT 리모컨 이미지">
+            <span class="r_btn type1">전원 All</span>
+            <span class="r_btn type2">TV 전원</span>
+            <span class="r_btn type3">셋톱 전원</span>
+            <span class="r_btn type4">홈트 Now</span>
+            <span class="r_btn type5">아이들나라</span>
+            <span class="r_btn type6">한눈에 쇼핑</span>
+            <span class="r_btn type7">디즈니 +</span>
+            <span class="r_btn type8">Youtube</span>
+            <span class="r_btn type9">NETFLIX</span>
+            <span class="r_btn type10">구글 검색</span>
+            <span class="r_btn type11">마이앱</span>
+            <span class="r_btn type12">클로바</span>
+            <span class="r_btn type13">이전</span>
+            <span class="r_btn type14">홈</span>
+            <span class="r_btn type15">나가기</span>
+            <span class="r_btn type16">음량 +</span>
+            <span class="r_btn type17">음량 -</span>
+            <span class="r_btn type18">채널 △</span>
+            <span class="r_btn type19">채널 ▽</span>
+            <span class="r_btn type20">방향키 ▲</span>
+            <span class="r_btn type21">방향키 ◀</span>
+            <span class="r_btn type22">방향키 ▶</span>
+            <span class="r_btn type23">방향키 ▼</span>
+            <span class="r_btn type24">확인</span>
+            <span class="r_btn type25">녹색</span>
+            <span class="r_btn type26">옵션</span>
+            <span class="r_btn type27">편성표</span>
+            <span class="r_btn type28">1</span>
+            <span class="r_btn type29">2</span>
+            <span class="r_btn type30">3</span>
+            <span class="r_btn type31">4</span>
+            <span class="r_btn type32">5</span>
+            <span class="r_btn type33">6</span>
+            <span class="r_btn type34">7</span>
+            <span class="r_btn type35">8</span>
+            <span class="r_btn type36">9</span>
+            <span class="r_btn type37">한영특</span>
+            <span class="r_btn type38 ">0</span>
+            <span class="r_btn type39 ">지우기</span>
+        </div>
+        <div class="remote_area type_disney" style="display:none;">
+            <img src="images/RCU-disney.png" alt="디즈니 리모컨 이미지">
+            <span class="r_btn type1">전원 All</span>
+            <span class="r_btn type2">TV 전원</span>
+            <span class="r_btn type3">셋톱 전원</span>
+            <span class="r_btn type4">디즈니</span>
+            <span class="r_btn type5">아이들나라</span>
+            <span class="r_btn type6">넷플릭스</span>
+            <span class="r_btn type7">클로바 검색</span>
+            <span class="r_btn type8">구글 검색</span>
+            <span class="r_btn type9">녹색</span>
+            <span class="r_btn type10">홈</span>
+            <span class="r_btn type11">옵션</span>
+            <span class="r_btn type12">음량 +</span>
+            <span class="r_btn type13">음량 -</span>
+            <span class="r_btn type14">채널 △</span>
+            <span class="r_btn type15">채널 ▽</span>
+            <span class="r_btn type16">방향키 ▲</span>
+            <span class="r_btn type17">방향키 ◀</span>
+            <span class="r_btn type18">방향키 ▶</span>
+            <span class="r_btn type19">방향키 ▼</span>
+            <span class="r_btn type20">확인</span>
+            <span class="r_btn type21">이전</span>
+            <span class="r_btn type22">한눈에 쇼핑</span>
+            <span class="r_btn type23">종료</span>
+            <span class="r_btn type24">1</span>
+            <span class="r_btn type25">2</span>
+            <span class="r_btn type26">3</span>
+            <span class="r_btn type27">4</span>
+            <span class="r_btn type28">5</span>
+            <span class="r_btn type29">6</span>
+            <span class="r_btn type30">7</span>
+            <span class="r_btn type31">8</span>
+            <span class="r_btn type32">9</span>
+            <span class="r_btn type33">한영특</span>
+            <span class="r_btn type34">0</span>
+            <span class="r_btn type35">지우기</span>
+        </div>
+        <div class="remote_area type_tving" style="display:none;">
+            <img src="images/RCU-tving.png" alt="티빙 리모컨 이미지">
+            <span class="r_btn type1">전원 All</span>
+            <span class="r_btn type2">TV 전원</span>
+            <span class="r_btn type3">셋톱 전원</span>
+            <span class="r_btn type4">티빙</span>
+            <span class="r_btn type5">아이들나라</span>
+            <span class="r_btn type6">넷플릭스</span>
+            <span class="r_btn type7">클로바 검색</span>
+            <span class="r_btn type8">구글 검색</span>
+            <span class="r_btn type9">녹색</span>
+            <span class="r_btn type10">홈</span>
+            <span class="r_btn type11">옵션</span>
+            <span class="r_btn type12">음량 +</span>
+            <span class="r_btn type13">음량 -</span>
+            <span class="r_btn type14">채널 △</span>
+            <span class="r_btn type15">채널 ▽</span>
+            <span class="r_btn type16">방향키 ▲</span>
+            <span class="r_btn type17">방향키 ◀</span>
+            <span class="r_btn type18">방향키 ▶</span>
+            <span class="r_btn type19">방향키 ▼</span>
+            <span class="r_btn type20">확인</span>
+            <span class="r_btn type21">이전</span>
+            <span class="r_btn type22">한눈에 쇼핑</span>
+            <span class="r_btn type23">종료</span>
+            <span class="r_btn type24">1</span>
+            <span class="r_btn type25">2</span>
+            <span class="r_btn type26">3</span>
+            <span class="r_btn type27">4</span>
+            <span class="r_btn type28">5</span>
+            <span class="r_btn type29">6</span>
+            <span class="r_btn type30">7</span>
+            <span class="r_btn type31">8</span>
+            <span class="r_btn type32">9</span>
+            <span class="r_btn type33">한영특</span>
+            <span class="r_btn type34">0</span>
+            <span class="r_btn type35">지우기</span>
+        </div>
+        <div class="remote_area type_b808" style="display:none;">
+            <img src="images/RCU-b808-hw4.png" alt="b808 리모컨 이미지">
+            <span class="r_btn type1">전원 All</span>
+            <span class="r_btn type2">TV 전원</span>
+            <span class="r_btn type3">셋톱 전원</span>
+            <span class="r_btn type4">구글검색</span>
+            <span class="r_btn type5">아이들나라</span>
+            <span class="r_btn type6">클로바 검색</span>
+            <span class="r_btn type7">이전</span>
+            <span class="r_btn type8">메뉴</span>
+            <span class="r_btn type9">종료</span>
+            <span class="r_btn type10">음량 +</span>
+            <span class="r_btn type11">음량 -</span>
+            <span class="r_btn type12">채널 △</span>
+            <span class="r_btn type13">채널 ▽</span>
+            <span class="r_btn type14">방향키 ▲</span>
+            <span class="r_btn type15">방향키 ◀</span>
+            <span class="r_btn type16">방향키 ▶</span>
+            <span class="r_btn type17">방향키 ▼</span>
+            <span class="r_btn type18">확인</span>
+            <span class="r_btn type19">녹색</span>
+            <span class="r_btn type20">넷플릭스</span>
+            <span class="r_btn type21">옵션</span>
+            <span class="r_btn type22">1</span>
+            <span class="r_btn type23">2</span>
+            <span class="r_btn type24">3</span>
+            <span class="r_btn type25">4</span>
+            <span class="r_btn type26">5</span>
+            <span class="r_btn type27">6</span>
+            <span class="r_btn type28">7</span>
+            <span class="r_btn type29">8</span>
+            <span class="r_btn type30">9</span>
+            <span class="r_btn type31">한영특</span>
+            <span class="r_btn type32">0</span>
+            <span class="r_btn type33">지우기</span>
+        </div>
+        <div class="remote_area type_hw0"  style="display:none;">
+            <img src="images/RCU-0.png" alt="0 리모컨 이미지">
+            <span class="r_btn type1">전원 All</span>
+            <span class="r_btn type2">TV 전원</span>
+            <span class="r_btn type3">셋톱 전원</span>
+            <span class="r_btn type4">구글검색</span>
+            <span class="r_btn type5">아이들나라</span>
+            <span class="r_btn type6">이전</span>
+            <span class="r_btn type7">홈</span>
+            <span class="r_btn type8">종료</span>
+            <span class="r_btn type9">음량 +</span>
+            <span class="r_btn type10">음량 -</span>
+            <span class="r_btn type11">채널 △</span>
+            <span class="r_btn type12">채널 ▽</span>
+            <span class="r_btn type13">방향키 ▲</span>
+            <span class="r_btn type14">방향키 ◀</span>
+            <span class="r_btn type15">방향키 ▶</span>
+            <span class="r_btn type16">방향키 ▼</span>
+            <span class="r_btn type17">확인</span>
+            <span class="r_btn type18">녹색</span>
+            <span class="r_btn type19">검색</span>
+            <span class="r_btn type20">옵션</span>
+            <span class="r_btn type21">1</span>
+            <span class="r_btn type22">2</span>
+            <span class="r_btn type23">3</span>
+            <span class="r_btn type24">4</span>
+            <span class="r_btn type25">5</span>
+            <span class="r_btn type26">6</span>
+            <span class="r_btn type27">7</span>
+            <span class="r_btn type28">8</span>
+            <span class="r_btn type29">9</span>
+            <span class="r_btn type30">한영특</span>
+            <span class="r_btn type31">0</span>
+            <span class="r_btn type32">지우기</span>
+        </div>
+    </div>
+</body>
+</html>

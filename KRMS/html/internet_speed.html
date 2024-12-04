@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KRMS NEXT</title>
+        <link href="../assets/css/reset.css" rel="stylesheet">
+        <link href="../assets/css/bootstrap.min.css" rel="stylesheet">
+        <link href="../assets/css/form-validation.css" rel="stylesheet">
+        <link
+            href="https://fonts.googleapis.com/css2?family=Gothic+A1:wght@200;400;500;700&family=Noto+Sans+KR:wght@300;400;500;700&display=swap"
+            rel="stylesheet">
+        <link rel="stylesheet" href="../assets/css/custom-icon.css">
+        <link rel="stylesheet" href="../assets/css/krms_style.css">
+</head>
+<body>
+    <!-- wrap -->
+<div class="wrap">
+    <!-- header -->
+    <header class="header">
+        <span class="menu_open_btn s_cursor">
+            <!-- <i class="icon-menu"></i> -->
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </span>
+        <h1 class="logo">
+            <a href="#"><i class="icon-logo"></i></a>
+        </h1>
+        <div class="status_area">
+            <div class="server">
+                <span class="txt">서버</span>
+                <span class="icon_p">
+                    <i class="icon-top-server"></i>
+                    <i class="icon-top-connect"></i>
+                </span>
+            </div>
+            <span class="bar"></span>
+            <div class="network">
+                <span class="txt">네트워크</span>
+                <span class="icon_p">
+                    <i class="icon-top-network"></i>
+                </span>
+            </div>
+        </div>
+        <div class="top_user_area">
+            <div class="user_name">
+                <span class="name">David Kim</span>
+                <div class="icon">
+                    <i class="icon-top-account"></i>
+                </div>
+            </div>
+            <!-- 메뉴 오픈 active 클래스 추가 -->
+            <div class="top_m_wrap" >
+                <span class="top_m_btn s_cursor">
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                </span>
+                <div class="top_m_area">
+                    <div class="user_info">
+                        <span class="name">David Kim</span>
+                        <p class="role">Admin</p>
+                        <p class="user_email">emma.ko@kaonmedia.com</p>
+                    </div>
+                    <div class="top_menu">
+                        <ul>
+                            <li>
+                                <span class="s_cursor">Edit Name</span>
+                            </li>
+                            <li>
+                                <span class="s_cursor">Reset Password</span>
+                            </li>
+                            <li class="n_h_style">
+                                <form action="">
+                                    <fieldset>
+                                        <label class="toggle_btn_wrap">
+                                            <span class="switch_label">Login Timeout</span>
+                                            <input role="switch" type="checkbox" class="toggle_btn"/>
+                                        </label>
+                                    </fieldset>
+                                </form>
+                                <!-- <div class="form-check form-switch">
+                                    <label class="form-check-label" for="flexSwitchCheckDefault"></label>
+                                    <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+                                </div> -->
+                            </li>
+                            <li>
+                                <span class="s_cursor">
+                                    Logout
+                                    <i class="icon-top-logout"></i>
+                                </span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="ver_txt">
+                        <span>Ver. KRMS 1.03.23</span>
+                    </div>
+                </div>
+                
+            </div>
+        </div>    
+    </header>
+    <!-- //header -->
+    <!-- container -->
+    <!-- 
+        lnb 접힐 경우 container 에 클래스 fold 추가
+    -->
+    <div class="container">
+        <!-- lnb -->
+        <nav class="lnb">
+            <ul>
+                <li class="menu">
+                    <div class="inner">
+                        <span class="lnb_icon">
+                            <i class="icon-lnb-dashboard"></i>
+                        </span>
+                        <span class="m_name">대시보드</span>
+                    </div>
+                </li>
+                <li class="menu">
+                    <div class="inner">
+                        <span class="lnb_icon">
+                            <i class="icon-lnb-device"></i>
+                        </span>
+                        <span class="m_name">장치</span>
+                    </div>
+                </li>
+                <li class="menu">
+                    <div class="inner">
+                        <span class="lnb_icon">
+                            <i class="icon-lnb-policy"></i>
+                        </span>
+                        <span class="m_name">정책</span>
+                        <span class="arrow">
+                            <i class="icon-arrow-back"></i>
+                        </span>
+                    </div>
+                    <ul class="depth2">
+                        <li class="i_menu">
+                            <span class="bar"></span>
+                            <span class=text">프로비저닝</span>
+                        </li>
+                        <li class="i_menu active">
+                            <span class="bar"></span>
+                            <span class=text">서브 프로파일</span>
+                        </li>
+                    </ul>
+                </li>
+                <li class="menu">
+                    <div class="inner">
+                        <span class="lnb_icon">
+                            <i class="icon-lnb-chart"></i>
+                        </span>
+                        <span class="m_name">통계</span>
+                    </div>
+                </li>
+                <li class="menu">
+                    <div class="inner">
+                        <span class="lnb_icon">
+                            <i class="icon-lnb-info"></i>
+                        </span>
+                        <span class="m_name">전산 정보</span>
+                    </div>
+                    <ul class="depth2">
+                        <li class="i_menu">
+                            <span class="bar"></span>
+                            <span class=text">SO 정보</span>
+                        </li>
+                        <li class="i_menu">
+                            <span class="bar"></span>
+                            <span class=text">가입자 정보</span>
+                        </li>
+                        <li class="i_menu">
+                            <span class="bar"></span>
+                            <span class=text">망 장애</span>
+                        </li>
+                    </ul>
+                </li>
+                <li class="menu  active open">
+                    <div class="inner">
+                        <span class="lnb_icon">
+                            <i class="icon-lnb-file"></i>
+                        </span>
+                        <span class="m_name">파일 및 로그</span>
+                        <span class="arrow">
+                            <i class="icon-arrow-back"></i>
+                        </span>
+                    </div>
+                    <ul class="depth2">
+                        <li class="i_menu">
+                            <span class="bar"></span>
+                            <span class=text">파일 저장소</span>
+                        </li>
+                        <li class="i_menu active">
+                            <span class="bar"></span>
+                            <span class=text">로그</span>
+                        </li>
+                    </ul>
+                </li>
+                <li class="menu">
+                    <div class="inner">
+                        <span class="lnb_icon">
+                            <i class="icon-lnb-setting"></i>
+                        </span>
+                        <span class="m_name">관리</span>
+                    </div>
+                    <ul class="depth2">
+                        <li class="i_menu">
+                            <span class="bar"></span>
+                            <span class=text">롤 / 계정</span>
+                        </li>
+                        <li class="i_menu">
+                            <span class="bar"></span>
+                            <span class=text">장치</span>
+                        </li>
+                        <li class="i_menu">
+                            <span class="bar"></span>
+                            <span class=text">코드</span>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        <!-- //lnb -->
+        <!-- content -->
+        <div class="content">
+            <h2 class="sub_tit">로그</h2>
+            <div class="row">
+                <div class="col pt-2">
+                    <div class="tab_section">
+                        <span class="tab_btn">장치 품질 로그</span>
+                        <span class="tab_btn active">인터넷 속도</span>
+                        <span class="tab_btn">장치 시스템 로그</span>
+                        <span class="tab_btn">동작 이력</span>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="i_t_wrap style_f line_select">
+                    <div class="list_page">
+                        <table class="table tbl_style ">
+                            <thead>
+                                <tr>
+                                    <th class="t_title" scope="col">
+                                        <div class="block">
+                                            발생일시
+                                        </div>
+                                    </th>
+                                    <th class="t_title" scope="col">
+                                        <div class="block">
+                                            장치번호
+                                        </div>
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <!--   tr 라인  클릭시  현재 선택된 시간일 경우  active_line 에 클래스 on 추가   -->
+                                <tr>
+                                    <td>
+                                        <div class="">
+                                            <span>2023.02.20 05:16:23</span>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="active_line on">
+                                            <span>9877E7461146</span>
+                                            <span class="a_btn done">
+                                                <i class="icon-done"></i>
+                                            </span>
+                                            <span class="a_btn arrow">
+                                                <i class="icon-arrow-next"></i>
+                                            </span>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="">
+                                            <span>2023.02.20 05:16:23</span>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="active_line">
+                                            <span>9877E7461146</span>
+                                            <span class="a_btn done">
+                                                <i class="icon-done"></i>
+                                            </span>
+                                            <span class="a_btn arrow">
+                                                <i class="icon-arrow-next"></i>
+                                            </span>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="">
+                                            <span>2023.02.20 05:16:23</span>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="active_line">
+                                            <span>9877E7461146</span>
+                                            <span class="a_btn done">
+                                                <i class="icon-done"></i>
+                                            </span>
+                                            <span class="a_btn arrow">
+                                                <i class="icon-arrow-next"></i>
+                                            </span>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="">
+                                            <span>2023.02.20 05:16:23</span>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="active_line">
+                                            <span>9877E7461146</span>
+                                            <span class="a_btn done">
+                                                <i class="icon-done"></i>
+                                            </span>
+                                            <span class="a_btn arrow">
+                                                <i class="icon-arrow-next"></i>
+                                            </span>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="">
+                                            <span>2023.02.20 05:16:23</span>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="active_line">
+                                            <span>9877E7461146</span>
+                                            <span class="a_btn done">
+                                                <i class="icon-done"></i>
+                                            </span>
+                                            <span class="a_btn arrow">
+                                                <i class="icon-arrow-next"></i>
+                                            </span>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="">
+                                            <span>2023.02.20 05:16:23</span>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="active_line">
+                                            <span>9877E7461146</span>
+                                            <span class="a_btn done">
+                                                <i class="icon-done"></i>
+                                            </span>
+                                            <span class="a_btn arrow">
+                                                <i class="icon-arrow-next"></i>
+                                            </span>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="">
+                                            <span>2023.02.20 05:16:23</span>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="active_line">
+                                            <span>9877E7461146</span>
+                                            <span class="a_btn done">
+                                                <i class="icon-done"></i>
+                                            </span>
+                                            <span class="a_btn arrow">
+                                                <i class="icon-arrow-next"></i>
+                                            </span>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="">
+                                            <span>2023.02.20 05:16:23</span>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="active_line">
+                                            <span>9877E7461146</span>
+                                            <span class="a_btn done">
+                                                <i class="icon-done"></i>
+                                            </span>
+                                            <span class="a_btn arrow">
+                                                <i class="icon-arrow-next"></i>
+                                            </span>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="">
+                                            <span>2023.02.20 05:16:23</span>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="active_line">
+                                            <span>9877E7461146</span>
+                                            <span class="a_btn done">
+                                                <i class="icon-done"></i>
+                                            </span>
+                                            <span class="a_btn arrow">
+                                                <i class="icon-arrow-next"></i>
+                                            </span>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="">
+                                            <span>2023.02.20 05:16:23</span>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="active_line">
+                                            <span>9877E7461146</span>
+                                            <span class="a_btn done">
+                                                <i class="icon-done"></i>
+                                            </span>
+                                            <span class="a_btn arrow">
+                                                <i class="icon-arrow-next"></i>
+                                            </span>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="">
+                                            <span>2023.02.20 05:16:23</span>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="active_line">
+                                            <span>9877E7461146</span>
+                                            <span class="a_btn done">
+                                                <i class="icon-done"></i>
+                                            </span>
+                                            <span class="a_btn arrow">
+                                                <i class="icon-arrow-next"></i>
+                                            </span>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="">
+                                            <span>2023.02.20 05:16:23</span>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="active_line">
+                                            <span>9877E7461146</span>
+                                            <span class="a_btn done">
+                                                <i class="icon-done"></i>
+                                            </span>
+                                            <span class="a_btn arrow">
+                                                <i class="icon-arrow-next"></i>
+                                            </span>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="">
+                                            <span>2023.02.20 05:16:23</span>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="active_line">
+                                            <span>9877E7461146</span>
+                                            <span class="a_btn done">
+                                                <i class="icon-done"></i>
+                                            </span>
+                                            <span class="a_btn arrow">
+                                                <i class="icon-arrow-next"></i>
+                                            </span>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="">
+                                            <span>2023.02.20 05:16:23</span>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="active_line">
+                                            <span>9877E7461146</span>
+                                            <span class="a_btn done">
+                                                <i class="icon-done"></i>
+                                            </span>
+                                            <span class="a_btn arrow">
+                                                <i class="icon-arrow-next"></i>
+                                            </span>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="">
+                                            <span>2023.02.20 05:16:23</span>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="active_line">
+                                            <span>9877E7461146</span>
+                                            <span class="a_btn done">
+                                                <i class="icon-done"></i>
+                                            </span>
+                                            <span class="a_btn arrow">
+                                                <i class="icon-arrow-next"></i>
+                                            </span>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <div class="pagnation_wrap">
+                            <div class="left_area">
+                                <p> <span class="num">1</span> - <span class="num">15</span> 항목 / 총<span class="num">150</span> 항목</p>
+                            </div>
+                            <div class="right_area">
+                                <span class="p_btn">
+                                    <i class="icon-arrow-back"></i>
+                                </span>
+                                <span class="p_input_area">
+                                    <input type="text" class="p_input" value="1"> / 10
+                                </span>
+                                <span class="p_btn">
+                                    <i class="icon-arrow-next"></i>
+                                </span>
+                                <select name="" id="" class="select_style">
+                                    <option value="">15</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="i_detail_content">
+                        <div class="detail_info">
+                            <dl class="item">
+                                <dt>다운로드 속드</dt>
+                                <dd>459.12Mbps</dd>
+                            </dl>
+                            <dl class="item">
+                                <dt>패킷 지연 시간</dt>
+                                <dd>0.00ms</dd>
+                            </dl>
+                            <dl class="item">
+                                <dt>패킷 지터</dt>
+                                <dd>-1.00</dd>
+                            </dl>
+                            <dl class="item">
+                                <dt>패킷 손실율</dt>
+                                <dd>0%</dd>
+                            </dl>
+                            <dl class="item">
+                                <dt>패킷 손실율</dt>
+                                <dd>0.0000</dd>
+                            </dl>
+                            <dl class="item">
+                                <dt>손실 패킷 수</dt>
+                                <dd>0</dd>
+                            </dl>
+                            <dl class="item">
+                                <dt>패킷 지터</dt>
+                                <dd>0.00ms</dd>
+                            </dl>
+                            <dl class="item">
+                                <dt>IGMP Delay</dt>
+                                <dd>0.00ms</dd>
+                            </dl>
+                            <dl class="item">
+                                <dt>IGMP 실패 횟수</dt>
+                                <dd>5</dd>
+                            </dl>
+                            <dl class="item">
+                                <dt>TTL</dt>
+                                <dd>0</dd>
+                            </dl>
+                            <dl class="item">
+                                <dt>가동시간</dt>
+                                <dd>3시간 50분 10초</dd>
+                            </dl>
+                            <dl class="item">
+                                <dt>Rx Packets</dt>
+                                <dd>32514</dd>
+                            </dl>
+                            <dl class="item">
+                                <dt>Dropped Rx Packets</dt>
+                                <dd>0</dd>
+                            </dl>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- //content -->
+    </div>
+    <!-- //container -->
+</div>
+<script src="../assets/js/bootstrap.bundle.min.js"></script>
+<script src="../assets/js/form-validation.js"></script>
+</body>
+</html>

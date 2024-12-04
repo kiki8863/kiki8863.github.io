@@ -1,0 +1,27 @@
+@charset "UTF-8";
+
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap');
+@import url('https://cdn.jsdelivr.net/gh/moonspam/NanumSquare@1.0/nanumsquare.css');
+
+@font-face {
+  font-family:"DIN_pro";
+  src: url('//static.onplay.co.kr/_static/font/DINPro-Medium.eot') format('embedded-opentype'),
+       url('//static.onplay.co.kr/_static/font/DINPro-Medium.woff') format('woff'),
+       url('//static.onplay.co.kr/_static/font/DINPro-Medium.ttf') format('truetype'),
+       url('//static.onplay.co.kr/_static/font/DINPro-Medium.svg#NanumGothic') format('svg'),
+       url('//static.onplay.co.kr/_static/font/DINPro-Medium.woff') format('woff');
+  font-style: normal;
+  font-weight: 400;
+}
+
+
+@font-face{
+	font-family:"DIN_pro_Black";
+	src:url('//static.onplay.co.kr/_static/font/DINPro-Black.eot');
+	src:url('//static.onplay.co.kr/_static/font/DINPro-Black.eot?#iefix') format('embedded-opentype'),
+	url('//static.onplay.co.kr/_static/font/DINPro-Black.ttf') format('truetype'),
+	url('//static.onplay.co.kr/_static/font/DINPro-Black.otf') format('opentype'),
+	url('//static.onplay.co.kr/_static/font/DINPro-Black.woff') format('woff');
+	font-style:normal;font-weight:normal;
+}

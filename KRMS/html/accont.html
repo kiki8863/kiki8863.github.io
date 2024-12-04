@@ -1,0 +1,1305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KRMS LGHV</title>
+        <link href="../assets/css/reset.css" rel="stylesheet">
+        <link href="../assets/css/bootstrap.min.css" rel="stylesheet">
+        <link href="../assets/css/form-validation.css" rel="stylesheet">
+        <link
+            href="https://fonts.googleapis.com/css2?family=Gothic+A1:wght@200;400;500;700&family=Noto+Sans+KR:wght@300;400;500;700&display=swap"
+            rel="stylesheet">
+        <link rel="stylesheet" href="../assets/css/custom-icon.css">
+        <link rel="stylesheet" href="../assets/css/multiselect.css">
+        <link rel="stylesheet" href="../assets/css/krms_style.css">
+</head>
+<body>
+    <!-- wrap -->
+<div class="wrap">
+    <!-- header -->
+    <header class="header">
+        <span class="menu_open_btn s_cursor">
+            <!-- <i class="icon-menu"></i> -->
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </span>
+        <h1 class="logo">
+            <a href="#"><i class="icon-logo"></i></a>
+        </h1>
+        <div class="status_area">
+            <div class="server">
+                <span class="txt">서버</span>
+                <span class="icon_p">
+                    <i class="icon-top-server"></i>
+                    <i class="icon-top-connect"></i>
+                </span>
+            </div>
+            <span class="bar"></span>
+            <div class="network">
+                <span class="txt">네트워크</span>
+                <span class="icon_p">
+                    <i class="icon-top-network"></i>
+                </span>
+            </div>
+        </div>
+        <div class="top_user_area active">
+            <div class="user_name">
+                <span class="name">홍길동</span>
+                <div class="icon s_cursor">
+                    <i class="icon-top-account"></i>
+                </div>
+            </div>
+            <!-- 메뉴 오픈 active 클래스 추가 -->
+<!--            <div class="top_m_wrap " >-->
+<!--                <div class="top_m_area">-->
+<!--                    <div class="user_info">-->
+<!--                        <span class="name">홍길동</span>-->
+<!--                        <p class="role">관리자</p>-->
+<!--                        <p class="user_email">emma.ko@kaonmedia.com</p>-->
+<!--                    </div>-->
+<!--                    <div class="top_menu">-->
+<!--                        <ul>-->
+<!--                            <li>-->
+<!--                                <span class="s_cursor">개인정보 수정</span>-->
+<!--                            </li>-->
+<!--                            <li>-->
+<!--                                <span class="s_cursor" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="비밀번호 변경일이 1개월 3일 남아있습니다.">비밀번호 변경</span>-->
+<!--                            </li>-->
+<!--                            <li class="n_h_style">-->
+<!--                                <form action="">-->
+<!--                                    <fieldset>-->
+<!--                                        <label class="toggle_btn_wrap">-->
+<!--                                            <span class="switch_label">로그인 타임아웃</span>-->
+<!--                                            <input role="switch" type="checkbox" class="toggle_btn"/>-->
+<!--                                        </label>-->
+<!--                                    </fieldset>-->
+<!--                                </form>-->
+<!--                                &lt;!&ndash; <div class="form-check form-switch">-->
+<!--                                    <label class="form-check-label" for="flexSwitchCheckDefault"></label>-->
+<!--                                    <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">-->
+<!--                                </div> &ndash;&gt;-->
+<!--                            </li>-->
+<!--                            <li>-->
+<!--                                <span class="s_cursor">-->
+<!--                                    로그아웃-->
+<!--                                    <i class="icon-top-logout"></i>-->
+<!--                                </span>-->
+<!--                            </li>-->
+<!--                        </ul>-->
+<!--                    </div>-->
+<!--                    <div class="ver_txt">-->
+<!--                        <span>버전. KRMS 1.03.23</span>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--                -->
+<!--            </div>-->
+        </div>    
+    </header>
+    <!-- //header -->
+    <!-- container -->
+    <!-- 
+        lnb 접힐 경우 container 에 클래스 fold 추가
+    -->
+    <div class="container">
+        <!-- lnb -->
+        <nav class="lnb">
+            <ul>
+                <li class="menu">
+                    <div class="inner">
+                        <span class="lnb_icon">
+                            <i class="icon-lnb-dashboard"></i>
+                        </span>
+                        <span class="m_name">대시보드</span>
+                    </div>
+                </li>
+                <li class="menu">
+                    <div class="inner">
+                        <span class="lnb_icon">
+                            <i class="icon-lnb-device"></i>
+                        </span>
+                        <span class="m_name">장치</span>
+                    </div>
+                </li>
+                <li class="menu">
+                    <div class="inner">
+                        <span class="lnb_icon">
+                            <i class="icon-lnb-policy"></i>
+                        </span>
+                        <span class="m_name">정책</span>
+                        <span class="arrow">
+                            <i class="icon-arrow-back"></i>
+                        </span>
+                    </div>
+                    <ul class="depth2">
+                        <li class="i_menu active">
+                            <span class="bar"></span>
+                            <span class=text">프로비저닝</span>
+                        </li>
+                        <li class="i_menu">
+                            <span class="bar"></span>
+                            <span class=text">서브 프로파일</span>
+                        </li>
+                    </ul>
+                </li>
+                <li class="menu">
+                    <div class="inner">
+                        <span class="lnb_icon">
+                            <i class="icon-lnb-chart"></i>
+                        </span>
+                        <span class="m_name">통계</span>
+                    </div>
+                </li>
+                <li class="menu">
+                    <div class="inner">
+                        <span class="lnb_icon">
+                            <i class="icon-lnb-info"></i>
+                        </span>
+                        <span class="m_name">전산 정보</span>
+                    </div>
+                    <ul class="depth2">
+                        <li class="i_menu">
+                            <span class="bar"></span>
+                            <span class=text">SO 정보</span>
+                        </li>
+                        <li class="i_menu">
+                            <span class="bar"></span>
+                            <span class=text">가입자 정보</span>
+                        </li>
+                        <li class="i_menu">
+                            <span class="bar"></span>
+                            <span class=text">망 장애</span>
+                        </li>
+                    </ul>
+                </li>
+                <li class="menu">
+                    <div class="inner">
+                        <span class="lnb_icon">
+                            <i class="icon-lnb-file"></i>
+                        </span>
+                        <span class="m_name">파일 및 로그</span>
+                    </div>
+                    <ul class="depth2">
+                        <li class="i_menu">
+                            <span class="bar"></span>
+                            <span class=text">파일 저장소</span>
+                        </li>
+                        <li class="i_menu">
+                            <span class="bar"></span>
+                            <span class=text">단말 시스템 로그</span>
+                        </li>
+                    </ul>
+                </li>
+                <li class="menu  active open">
+                    <div class="inner">
+                        <span class="lnb_icon">
+                            <i class="icon-lnb-setting"></i>
+                        </span>
+                        <span class="m_name">설정</span>
+                    </div>
+                    <ul class="depth2 ">
+                        <li class="i_menu  active">
+                            <span class="bar"></span>
+                            <span class=text">계정 및 권한</span>
+                        </li>
+                        <li class="i_menu">
+                            <span class="bar"></span>
+                            <span class=text">기기관리</span>
+                        </li>
+                        <li class="i_menu">
+                            <span class="bar"></span>
+                            <span class=text">코드관리</span>
+                        </li>
+                        <li class="i_menu">
+                            <span class="bar"></span>
+                            <span class=text">로그파일관리</span>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        <!-- //lnb -->
+        <!-- content -->
+        <div class="content">
+            <h2 class="sub_tit">계정 및 권한</h2>
+            <div class="row">
+                <div class="col pt-2">
+                    <div class="tab_section">
+                        <span class="tab_btn active">계정관리</span>
+                        <span class="tab_btn">권한관리</span>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 pl-0 pr-0 text-right tbl_top_area">
+                    <!-- 검색 & 필터   -->
+                    <div class="search_filter_wrap search_on">
+                        <span class="btn_s_f">
+                            <i class="icon-search"> </i>
+                        </span>
+                        <div class="s_f_area">
+                            <h4 class="s_f_tit">검색 필터</h4>
+                            <span class="btn_list_all" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="리스트 전체보기">
+                                <i class="icon-refresh-all"></i>
+                            </span>
+                            <!-- 
+                                체크박스 선택시 s_type에  check 클래스 추가    
+                            -->
+                            <div class="s_type selec t ">
+                                <input class="form-check-input" type="checkbox" value="" id="">
+                                <label for="" class="label_style">상태</label>
+                                <div class="form_area">
+                                    <div class="dropdown">
+                                        <button class="d_btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                            상태 선택
+                                        </button>
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item" href="#">활성</a></li>
+                                            <li><a class="dropdown-item" href="#">잠금</a></li>
+                                            <li><a class="dropdown-item" href="#">로그인오류</a></li>
+                                            <li><a class="dropdown-item" href="#">휴면</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="s_type input ">
+                                <input class="form-check-input" type="checkbox" value="" id="" checked>
+                                <label for="" class="label_style">이름</label>
+                                <div class="form_area">
+                                    <input type="text" class="input_style" placeholder="이름">
+                                    <span class="btn_clear">
+                                        <i class="icon-close"></i>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="s_type select check">
+                                <input class="form-check-input" type="checkbox" value="" id="" >
+                                <label for=""  class="label_style">역할</label>
+                                <div class="form_area">
+                                    <div class="dropdown">
+                                        <button class="d_btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                            역할 선택
+                                        </button>
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item" href="#">마스터 관리자</a></li>
+                                            <li><a class="dropdown-item" href="#">SO 관리자</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="s_type select check">
+                                <input class="form-check-input" type="checkbox" value="" id="" checked>
+                                <label for="" class="label_style">소속회사</label>
+                                <div class="form_area">
+                                    <div class="dropdown">
+                                        <button class="d_btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                            소속회사 선택
+                                        </button>
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item" href="#">양천방송(C40)</a></li>
+                                            <li><a class="dropdown-item" href="#">(주)동구방송(CG0)</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="btn_area">
+                                <button type="button" class="m_a_btn dark " data-bs-dismiss="modal">취소</button>
+                                <button type="button" class="m_a_btn blue">검색</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- //검색 & 필터   -->
+                    <span class="t_btn" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="계정 생성">
+                        <i class="icon-add"></i>
+                    </span>
+                    <span class="t_btn" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="잠금">
+                        <i class="icon-lock"></i>
+                    </span>
+                    <span class="t_btn" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="활성화">
+                        <i class="icon-unlock"></i>
+                    </span>
+                    <span class="t_btn" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="삭제">
+                        <i class="icon-delete"></i>
+                    </span>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col pl-0 pr-0 text-right">
+                    <div class="table-responsive">
+                        <table class="table tbl_style">
+                            <thead>
+                                <tr>
+                                    <th class="t_title" scope="col">
+                                        <div class="form-check block">
+                                            <input class="form-check-input" type="checkbox" value="" id="">
+                                        </div>
+                                    </th>
+                                    <th class="t_title" scope="col">
+                                        <div class="block">
+                                            아이디
+                                        </div>
+                                    </th>
+                                    <th class="t_title" scope="col">
+                                        <span class="tbl_in_search">
+                                            <input type="text" class="i_value" value="" disabled placeholder="이름" >
+                                            <span class="a_btn">
+                                                <i class="icon-close"></i>
+                                            </span>
+                                            <span class="s_btn">
+                                                <i class="icon-search"></i>
+                                            </span>
+                                        </span>
+                                    </th>
+                                    <th class="t_title" scope="col">
+                                        <div class="block">
+                                            이메일
+                                        </div>
+                                    </th>
+                                    <th class="t_title" scope="col">
+                                        <div class="block">
+                                            소속
+                                        </div>
+                                    </th>
+                                    <th class="t_title" scope="col">
+                                        <div class="block">
+                                            SO
+                                        </div>
+                                    </th>
+                                    <th class="t_title" scope="col">
+                                        <div class="block">
+                                            역할
+                                        </div>
+                                    </th>
+                                    <th class="t_title" scope="col">
+                                        <div class="block">
+                                            생성일시
+                                        </div>
+                                    </th>
+                                    <th class="t_title" scope="col">
+                                        <div class="block">
+                                            마지막 로그인
+                                        </div>
+                                    </th>
+                                    <th class="t_title" scope="col">
+                                        <span class="tbl_in_select">
+                                            <div class="dropdown">
+                                                <button class="d_btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                    상태
+                                                </button>
+                                                <ul class="dropdown-menu">
+                                                    <li><a class="dropdown-item" href="#">활성</a></li>
+                                                    <li><a class="dropdown-item" href="#">잠금</a></li>
+                                                    <li><a class="dropdown-item" href="#">로그인오류</a></li>
+                                                    <li><a class="dropdown-item" href="#">삭제</a></li>
+                                                </ul>
+                                            </div>
+                                        </span>
+                                    </th>
+                                    <th class="t_title" scope="col">
+                                        <div class="block">
+                                            동작
+                                        </div>
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <div class="form-check block">
+                                            <input class="form-check-input" type="checkbox" value="" id="">
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <span>kildong</span>
+                                    </td>
+                                    <td>
+                                        <span>홍*동</span>
+                                    </td>
+                                    <td>
+                                        <span>kil************</span>
+                                    </td>
+                                    <td>
+                                        <span>양천방송</span>
+                                    </td>
+                                    <td>
+                                        <span class=""  data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="푸른방송, 양천방송" > 푸른방송,...</span>
+                                    </td>
+                                    <td>
+                                        <span>관리자</span>
+                                    </td>
+                                    <td>
+                                        <span>2023.06.14 15:30</span>
+                                    </td>
+                                    <td>
+                                        <span>2023.06.14 15:30</span>
+                                        <span class="new_ico">N</span>
+                                    </td>
+                                    <td>
+                                        <!--
+                                            로그인 오류시  form-switch form-check-input 에 클래스 error 추가 checked  속성 제거
+                                        -->
+                                        <div class="form-check form-switch " style="display: none;">
+                                            <input id=""    class="form-switch form-check-input" type="checkbox" value="true" checked>
+                                            <label for=""    class="form-check-label"></label>
+                                        </div>
+                                        <span class="channel_on style_off">OFF <span class="dot"></span></span>
+                                    </td>
+                                    <td>
+                                        <span class="a_btn" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="정보 수정">
+                                            <i class="icon-edit"></i>
+                                        </span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="form-check block">
+                                            <input class="form-check-input" type="checkbox" value="" id="">
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <span>kildong</span>
+                                    </td>
+                                    <td>
+                                        <span>홍*동</span>
+                                    </td>
+                                    <td>
+                                        <span>kil************</span>
+                                    </td>
+                                    <td>
+                                        <span>양천방송</span>
+                                    </td>
+                                    <td>
+                                        <span class="" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="푸른방송, 양천방송"> 푸른방송,...</span>
+                                    </td>
+                                    <td>
+                                        <span>관리자</span>
+                                    </td>
+                                    <td>
+                                        <span>2023.06.14 15:30</span>
+                                    </td>
+                                    <td>
+                                        <span>2023.06.14 15:30</span>
+                                        <span class="new_ico">N</span>
+                                    </td>
+                                    <td>
+                                        <div class="form-check form-switch " data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="푸른방송, 양천방송">
+                                            <input id="" class="form-switch form-check-input" type="checkbox" value="true" checked>
+                                            <label for="" class="form-check-label"></label>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <span class="a_btn" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="정보 수정">
+                                            <i class="icon-edit"></i>
+                                        </span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="form-check block">
+                                            <input class="form-check-input" type="checkbox" value="" id="">
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <span>kildong</span>
+                                    </td>
+                                    <td>
+                                        <span>홍*동</span>
+                                    </td>
+                                    <td>
+                                        <span>kil************</span>
+                                    </td>
+                                    <td>
+                                        <span>양천방송</span>
+                                    </td>
+                                    <td>
+                                        <span class="" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="푸른방송, 양천방송"> 푸른방송,...</span>
+                                    </td>
+                                    <td>
+                                        <span>관리자</span>
+                                    </td>
+                                    <td>
+                                        <span>2023.06.14 15:30</span>
+                                    </td>
+                                    <td>
+                                        <span>2023.06.14 15:30</span>
+                                        <span class="new_ico">N</span>
+                                    </td>
+                                    <td>
+                                        <div class="form-check form-switch ">
+                                            <input id="" class="form-switch form-check-input" type="checkbox" value="true" checked>
+                                            <label for="" class="form-check-label"></label>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <span class="a_btn" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="정보 수정">
+                                            <i class="icon-edit"></i>
+                                        </span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="form-check block">
+                                            <input class="form-check-input" type="checkbox" value="" id="">
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <span>kildong</span>
+                                    </td>
+                                    <td>
+                                        <span>홍*동</span>
+                                    </td>
+                                    <td>
+                                        <span>kil************</span>
+                                    </td>
+                                    <td>
+                                        <span>양천방송</span>
+                                    </td>
+                                    <td>
+                                        <span class="" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="푸른방송, 양천방송"> 푸른방송,...</span>
+                                    </td>
+                                    <td>
+                                        <span>관리자</span>
+                                    </td>
+                                    <td>
+                                        <span>2023.06.14 15:30</span>
+                                    </td>
+                                    <td>
+                                        <span>2023.06.14 15:30</span>
+                                        <span class="new_ico">N</span>
+                                    </td>
+                                    <td>
+                                        <div class="form-check form-switch ">
+                                            <input id="" class="form-switch form-check-input" type="checkbox" value="true" checked>
+                                            <label for="" class="form-check-label"></label>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <span class="a_btn" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="정보 수정">
+                                            <i class="icon-edit"></i>
+                                        </span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="form-check block">
+                                            <input class="form-check-input" type="checkbox" value="" id="">
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <span>kildong</span>
+                                    </td>
+                                    <td>
+                                        <span>홍*동</span>
+                                    </td>
+                                    <td>
+                                        <span>kil************</span>
+                                    </td>
+                                    <td>
+                                        <span>양천방송</span>
+                                    </td>
+                                    <td>
+                                        <span class="" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="푸른방송, 양천방송"> 푸른방송,...</span>
+                                    </td>
+                                    <td>
+                                        <span>관리자</span>
+                                    </td>
+                                    <td>
+                                        <span>2023.06.14 15:30</span>
+                                    </td>
+                                    <td>
+                                        <span>2023.06.14 15:30</span>
+                                    </td>
+                                    <td>
+                                        <div class="form-check form-switch ">
+                                            <input id="" class="form-switch form-check-input" type="checkbox" value="true">
+                                            <label for="" class="form-check-label"></label>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <span class="a_btn" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="정보 수정">
+                                            <i class="icon-edit"></i>
+                                        </span>
+                                        <span class="a_btn" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="계정 삭제">
+                                            <i class="icon-delete"></i>
+                                        </span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="form-check block">
+                                            <input class="form-check-input" type="checkbox" value="" id="">
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <span>kildong</span>
+                                    </td>
+                                    <td>
+                                        <span>홍*동</span>
+                                    </td>
+                                    <td>
+                                        <span>kil************</span>
+                                    </td>
+                                    <td>
+                                        <span>양천방송</span>
+                                    </td>
+                                    <td>
+                                        <span class="" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="푸른방송, 양천방송"> 푸른방송,...</span>
+                                    </td>
+                                    <td>
+                                        <span>관리자</span>
+                                    </td>
+                                    <td>
+                                        <span>2023.06.14 15:30</span>
+                                    </td>
+                                    <td>
+                                        <span>2023.06.14 15:30</span>
+                                    </td>
+                                    <td>
+                                        <div class="form-check form-switch ">
+                                            <input id="" class="form-switch form-check-input" type="checkbox" value="true">
+                                            <label for="" class="form-check-label"></label>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <span class="a_btn" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="정보 수정">
+                                            <i class="icon-edit"></i>
+                                        </span>
+                                        <span class="a_btn" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="계정 삭제">
+                                            <i class="icon-delete"></i>
+                                        </span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="form-check block">
+                                            <input class="form-check-input" type="checkbox" value="" id="">
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <span>kildong</span>
+                                    </td>
+                                    <td>
+                                        <span>홍*동</span>
+                                    </td>
+                                    <td>
+                                        <span>kil************</span>
+                                    </td>
+                                    <td>
+                                        <span>양천방송</span>
+                                    </td>
+                                    <td>
+                                        <span class="" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="푸른방송, 양천방송"> 푸른방송,...</span>
+                                    </td>
+                                    <td>
+                                        <span>관리자</span>
+                                    </td>
+                                    <td>
+                                        <span>2023.06.14 15:30</span>
+                                    </td>
+                                    <td>
+                                        <span>2023.06.14 15:30</span>
+                                    </td>
+                                    <td>
+                                        <div class="form-check form-switch " data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="로그인 오류">
+                                            <input id="" class="form-switch error form-check-input" type="checkbox" value="true">
+                                            <label for="" class="form-check-label"></label>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <span class="a_btn" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="정보 수정">
+                                            <i class="icon-edit"></i>
+                                        </span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="form-check block">
+                                            <input class="form-check-input" type="checkbox" value="" id="">
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <span>kildong</span>
+                                    </td>
+                                    <td>
+                                        <span>홍*동</span>
+                                    </td>
+                                    <td>
+                                        <span>kil************</span>
+                                    </td>
+                                    <td>
+                                        <span>양천방송</span>
+                                    </td>
+                                    <td>
+                                        <span class="" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="푸른방송, 양천방송"> 푸른방송,...</span>
+                                    </td>
+                                    <td>
+                                        <span>관리자</span>
+                                    </td>
+                                    <td>
+                                        <span>2023.06.14 15:30</span>
+                                    </td>
+                                    <td>
+                                        <span>2023.06.14 15:30</span>
+                                    </td>
+                                    <td>
+                                        <div class="form-check form-switch ">
+                                            <input id="" class="form-switch form-check-input" type="checkbox" value="true">
+                                            <label for="" class="form-check-label"></label>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <span class="a_btn" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="정보 수정">
+                                            <i class="icon-edit"></i>
+                                        </span>
+                                        <span class="a_btn" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="계정 삭제">
+                                            <i class="icon-delete"></i>
+                                        </span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="form-check block">
+                                            <input class="form-check-input" type="checkbox" value="" id="">
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <span>kildong</span>
+                                    </td>
+                                    <td>
+                                        <span>홍*동</span>
+                                    </td>
+                                    <td>
+                                        <span>kil************</span>
+                                    </td>
+                                    <td>
+                                        <span>양천방송</span>
+                                    </td>
+                                    <td>
+                                        <span class="" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="푸른방송, 양천방송"> 푸른방송,...</span>
+                                    </td>
+                                    <td>
+                                        <span>관리자</span>
+                                    </td>
+                                    <td>
+                                        <span>2023.06.14 15:30</span>
+                                    </td>
+                                    <td>
+                                        <span>2023.06.14 15:30</span>
+                                    </td>
+                                    <td>
+                                        <div class="form-check form-switch ">
+                                            <input id="" class="form-switch form-check-input" type="checkbox" value="true">
+                                            <label for="" class="form-check-label"></label>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <span class="a_btn" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="정보 수정">
+                                            <i class="icon-edit"></i>
+                                        </span>
+                                        <span class="a_btn" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="계정 삭제">
+                                            <i class="icon-delete"></i>
+                                        </span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="form-check block">
+                                            <input class="form-check-input" type="checkbox" value="" id="">
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <span>kildong</span>
+                                    </td>
+                                    <td>
+                                        <span>홍*동</span>
+                                    </td>
+                                    <td>
+                                        <span>kil************</span>
+                                    </td>
+                                    <td>
+                                        <span>양천방송</span>
+                                    </td>
+                                    <td>
+                                        <span class="" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="푸른방송, 양천방송"> 푸른방송,...</span>
+                                    </td>
+                                    <td>
+                                        <span>관리자</span>
+                                    </td>
+                                    <td>
+                                        <span>2023.06.14 15:30</span>
+                                    </td>
+                                    <td>
+                                        <span>2023.06.14 15:30</span>
+                                    </td>
+                                    <td>
+                                        <div class="form-check form-switch ">
+                                            <input id="" class="form-switch form-check-input" type="checkbox" value="true">
+                                            <label for="" class="form-check-label"></label>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <span class="a_btn" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="정보 수정">
+                                            <i class="icon-edit"></i>
+                                        </span>
+                                        <span class="a_btn" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="계정 삭제">
+                                            <i class="icon-delete"></i>
+                                        </span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="form-check block">
+                                            <input class="form-check-input" type="checkbox" value="" id="">
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <span>kildong</span>
+                                    </td>
+                                    <td>
+                                        <span>홍*동</span>
+                                    </td>
+                                    <td>
+                                        <span>kil************</span>
+                                    </td>
+                                    <td>
+                                        <span>양천방송</span>
+                                    </td>
+                                    <td>
+                                        <span class="" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="푸른방송, 양천방송"> 푸른방송,...</span>
+                                    </td>
+                                    <td>
+                                        <span>관리자</span>
+                                    </td>
+                                    <td>
+                                        <span>2023.06.14 15:30</span>
+                                    </td>
+                                    <td>
+                                        <span>2023.06.14 15:30</span>
+                                    </td>
+                                    <td>
+                                        <div class="form-check form-switch ">
+                                            <input id="" class="form-switch form-check-input" type="checkbox" value="true">
+                                            <label for="" class="form-check-label"></label>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <span class="a_btn" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="정보 수정">
+                                            <i class="icon-edit"></i>
+                                        </span>
+                                        <span class="a_btn" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="계정 삭제">
+                                            <i class="icon-delete"></i>
+                                        </span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="form-check block">
+                                            <input class="form-check-input" type="checkbox" value="" id="">
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <span>kildong</span>
+                                    </td>
+                                    <td>
+                                        <span>홍*동</span>
+                                    </td>
+                                    <td>
+                                        <span>kil************</span>
+                                    </td>
+                                    <td>
+                                        <span>양천방송</span>
+                                    </td>
+                                    <td>
+                                        <span class="" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="푸른방송, 양천방송"> 푸른방송,...</span>
+                                    </td>
+                                    <td>
+                                        <span>관리자</span>
+                                    </td>
+                                    <td>
+                                        <span>2023.06.14 15:30</span>
+                                    </td>
+                                    <td>
+                                        <span>2023.06.14 15:30</span>
+                                    </td>
+                                    <td>
+                                        <div class="form-check form-switch ">
+                                            <input id="" class="form-switch form-check-input" type="checkbox" value="true">
+                                            <label for="" class="form-check-label"></label>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <span class="a_btn" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="정보 수정">
+                                            <i class="icon-edit"></i>
+                                        </span>
+                                        <span class="a_btn" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="계정 삭제">
+                                            <i class="icon-delete"></i>
+                                        </span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="form-check block">
+                                            <input class="form-check-input" type="checkbox" value="" id="">
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <span>kildong</span>
+                                    </td>
+                                    <td>
+                                        <span>홍*동</span>
+                                    </td>
+                                    <td>
+                                        <span>kil************</span>
+                                    </td>
+                                    <td>
+                                        <span>양천방송</span>
+                                    </td>
+                                    <td>
+                                        <span class="" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="푸른방송, 양천방송"> 푸른방송,...</span>
+                                    </td>
+                                    <td>
+                                        <span>관리자</span>
+                                    </td>
+                                    <td>
+                                        <span>2023.06.14 15:30</span>
+                                    </td>
+                                    <td>
+                                        <span>2023.06.14 15:30</span>
+                                    </td>
+                                    <td>
+                                        <div class="form-check form-switch ">
+                                            <input id="" class="form-switch form-check-input" type="checkbox" value="true">
+                                            <label for="" class="form-check-label"></label>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <span class="a_btn" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="정보 수정">
+                                            <i class="icon-edit"></i>
+                                        </span>
+                                        <span class="a_btn" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="계정 삭제">
+                                            <i class="icon-delete"></i>
+                                        </span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="form-check block">
+                                            <input class="form-check-input" type="checkbox" value="" id="">
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <span>kildong</span>
+                                    </td>
+                                    <td>
+                                        <span>홍*동</span>
+                                    </td>
+                                    <td>
+                                        <span>kil************</span>
+                                    </td>
+                                    <td>
+                                        <span>양천방송</span>
+                                    </td>
+                                    <td>
+                                        <span class="" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="푸른방송, 양천방송"> 푸른방송,...</span>
+                                    </td>
+                                    <td>
+                                        <span>관리자</span>
+                                    </td>
+                                    <td>
+                                        <span>2023.06.14 15:30</span>
+                                    </td>
+                                    <td>
+                                        <span>2023.06.14 15:30</span>
+                                    </td>
+                                    <td>
+                                        <div class="form-check form-switch ">
+                                            <input id="" class="form-switch form-check-input" type="checkbox" value="true">
+                                            <label for="" class="form-check-label"></label>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <span class="a_btn" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="정보 수정">
+                                            <i class="icon-edit"></i>
+                                        </span>
+                                        <span class="a_btn" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="계정 삭제">
+                                            <i class="icon-delete"></i>
+                                        </span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="d_accout">
+                                        <div class="form-check block">
+                                            <input class="form-check-input" type="checkbox" value="" id="">
+                                        </div>
+                                    </td>
+                                    <td class="d_accout">
+                                        <span>kildong</span>
+                                    </td>
+                                    <td class="d_accout">
+                                        <span>홍*동</span>
+                                    </td>
+                                    <td class="d_accout">
+                                        <span>kil************</span>
+                                    </td>
+                                    <td class="d_accout">
+                                        <span>양천방송</span>
+                                    </td>
+                                    <td class="d_accout">
+                                        <span class="" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="푸른방송, 양천방송"> 푸른방송,...</span>
+                                    </td>
+                                    <td class="d_accout">
+                                        <span>관리자</span>
+                                    </td>
+                                    <td class="d_accout">
+                                        <span>2023.06.14 15:30</span>
+                                    </td>
+                                    <td class="d_accout">
+                                        <span>2023.06.14 15:30</span>
+                                    </td>
+                                    <td class="d_accout">
+                                        <div class="form-check form-switch ">
+                                            <input id="" class="form-switch form-check-input" type="checkbox" value="true">
+                                            <label for="" class="form-check-label"></label>
+                                        </div>
+                                    </td>
+                                    <td class="d_accout">
+                                        <span class="a_btn" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="정보 수정">
+                                            <i class="icon-edit"></i>
+                                        </span>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    
+                    <div class="pagnation_wrap">
+                        <div class="left_area">
+                            <p> <span class="num">1</span> - <span class="num">15</span> 항목 / 총<span class="num">150</span> 항목</p>
+                        </div>
+                        <div class="right_area">
+                            <span class="p_btn">
+                                <i class="icon-arrow-back"></i>
+                            </span>
+                            <span class="p_input_area">
+                                <input type="text" class="p_input" value="1"> / 10
+                            </span>
+                            <span class="p_btn">
+                                <i class="icon-arrow-next"></i>
+                            </span>
+                            <select name="" id="" class="select_style">
+                                <option value="">15</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- //content -->
+    </div>
+    <!-- 계정 생성 팝업-->
+    <div class="modal w_670" tabindex="-1" style="display:none;">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">계정 생성</h5>
+                </div>
+                <div class="modal-body">
+                    <div class="row form_line">
+                        <div class="label_style">
+                            <label for="" class="form-label">이름</label>
+                        </div>
+                        <div class="form_style">
+                            <input type="text" class="input_style w_70" id="" placeholder="예 ) 홍길동">
+                        </div>
+                    </div>
+                    <div class="row form_line">
+                        <div class="label_style">
+                            <label for="" class="form-label">아이디</label>
+                        </div>
+                        <div class="form_style">
+                            <input type="text" class="input_style w_70" id="" placeholder="6-16자의 대문자, 소문자, 숫자">
+                            <span class="m_a_btn_s">중복확인</span>
+                        </div>
+                    </div>
+                    <div class="row form_line">
+                        <div class="label_style">
+                            <label for="" class="form-label">이메일</label>
+                        </div>
+                        <div class="form_style">
+                            <input type="text" class="input_style w_70" id="" placeholder="예 ) abcd@gmail.com">
+                        </div>
+                    </div>
+                    <div class="row form_line">
+                        <div class="label_style">
+                            <label for="" class="form-label">휴대폰번호</label>
+                        </div>
+                        <div class="form_style">
+                            <input type="text" class="input_style w_70" id="" placeholder="예 ) 01012345678">
+                        </div>
+                    </div>
+                    <div class="row form_line">
+                        <div class="label_style">
+                            <label for="" class="form-label">회사</label>
+                        </div>
+                        <div class="form_style">
+                            <div class="dropdown w_70">
+                                <button class="d_btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    회사 선택
+                                </button>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">(주)양천방송</a></li>
+                                    <li><a class="dropdown-item" href="#">북인천방송(주)</a></li>
+                                    <li><a class="dropdown-item" href="#">해운대기장방송(주)</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row form_line">
+                        <div class="label_style">
+                            <label for="" class="form-label">역할</label>
+                        </div>
+                        <div class="form_style">
+                            <div class="dropdown w_70">
+                                <button class="d_btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    역할 선택
+                                </button>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">관리자</a></li>
+                                    <li><a class="dropdown-item" href="#">상담원</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row form_line">
+                        <div class="label_style">
+                            <label for="" class="form-label">앱 프로파일</label>
+                        </div>
+                        <div class="form_style">
+                            <div class="dropdown w_70">
+                                <button class="d_btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    앱 프로파일 선택
+                                </button>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">선택안함</a></li>
+                                    <li><a class="dropdown-item" href="#">앱 프로파일 1</a></li>
+                                    <li><a class="dropdown-item" href="#">앱 프로파일 2</a></li>
+                                    <li><a class="dropdown-item" href="#">앱 프로파일 3</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="m_a_btn dark " data-bs-dismiss="modal">취소</button>
+                    <button type="button" class="m_a_btn blue">생성</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- //계정 생성 팝업 -->
+    <!-- 계정 정보 수정 팝업-->
+    <div class="modal w_670" tabindex="-1" style="display:none;">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">계정 정보 수정</h5>
+                </div>
+                <div class="modal-body">
+                    <div class="row form_line">
+                        <div class="label_style">
+                            <label for="" class="form-label">이름</label>
+                        </div>
+                        <div class="form_style">
+                            <input type="text" class="input_style w_70" id="" value="홍길동" disabled>
+                        </div>
+                    </div>
+                    <div class="row form_line">
+                        <div class="label_style">
+                            <label for="" class="form-label">아이디</label>
+                        </div>
+                        <div class="form_style">
+                            <input type="text" class="input_style w_70" id="" value="kildong" disabled>
+                        </div>
+                    </div>
+                    <div class="row form_line">
+                        <div class="label_style">
+                            <label for="" class="form-label">이메일</label>
+                        </div>
+                        <div class="form_style">
+                            <input type="text" class="input_style w_70" id="" value="abcd@gmail.com" disabled>
+                        </div>
+                    </div>
+                    <div class="row form_line">
+                        <div class="label_style">
+                            <label for="" class="form-label">휴대폰번호</label>
+                        </div>
+                        <div class="form_style">
+                            <input type="text" class="input_style w_70" id="" value="01012345678"disabled>
+                        </div>
+                    </div>
+                    <div class="row form_line">
+                        <div class="label_style">
+                            <label for="" class="form-label">회사</label>
+                        </div>
+                        <div class="form_style">
+                            <div class="dropdown w_70">
+                                <button class="d_btn dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    회사 선택
+                                </button>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">(주)양천방송</a></li>
+                                    <li><a class="dropdown-item" href="#">북인천방송(주)</a></li>
+                                    <li><a class="dropdown-item" href="#">해운대기장방송(주)</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row form_line">
+                        <div class="label_style">
+                            <label for="" class="form-label">역할</label>
+                        </div>
+                        <div class="form_style">
+                            <div class="dropdown w_70">
+                                <button class="d_btn dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    역할 선택
+                                </button>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">관리자</a></li>
+                                    <li><a class="dropdown-item" href="#">상담원</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row form_line  mb-0">
+                        <div class="label_style">
+                            <label for="" class="form-label">비밀번호 초기화</label>
+                        </div>
+                        <div class="form_style">
+                            <span class="m_a_btn_s size1">비밀번호 초기화</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="m_a_btn dark " data-bs-dismiss="modal">취소</button>
+                    <button type="button" class="m_a_btn blue">생성</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- // 계정 정보 수정 팝업 -->
+    <!-- //container -->
+</div>
+<script src="../assets/js/bootstrap.bundle.min.js"></script>
+<script src="../assets/js/form-validation.js"></script>
+<script>
+    const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+    const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+
+</script>
+</body>
+</html>

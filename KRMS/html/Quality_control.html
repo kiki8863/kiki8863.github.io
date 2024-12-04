@@ -1,0 +1,1299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KRMS NEXT</title>
+        <link href="../assets/css/reset.css" rel="stylesheet">
+        <link href="../assets/css/bootstrap.min.css" rel="stylesheet">
+        <link href="../assets/css/form-validation.css" rel="stylesheet">
+        <link
+            href="https://fonts.googleapis.com/css2?family=Gothic+A1:wght@200;400;500;700&family=Noto+Sans+KR:wght@300;400;500;700&display=swap"
+            rel="stylesheet">
+        <link rel="stylesheet" href="../assets/css/custom-icon.css">
+        <link rel="stylesheet" href="../assets/css/krms_style.css">
+</head>
+<body>
+    <!-- wrap -->
+<div class="wrap">
+    <!-- header -->
+    <header class="header">
+        <span class="menu_open_btn s_cursor">
+            <!-- <i class="icon-menu"></i> -->
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </span>
+        <h1 class="logo">
+            <a href="#"><i class="icon-logo"></i></a>
+        </h1>
+        <div class="status_area">
+            <div class="server">
+                <span class="txt">서버</span>
+                <span class="icon_p">
+                    <i class="icon-top-server"></i>
+                    <i class="icon-top-connect"></i>
+                </span>
+            </div>
+            <span class="bar"></span>
+            <div class="network">
+                <span class="txt">네트워크</span>
+                <span class="icon_p">
+                    <i class="icon-top-network"></i>
+                </span>
+            </div>
+        </div>
+        <div class="top_user_area">
+            <div class="user_name">
+                <span class="name">David Kim</span>
+                <div class="icon">
+                    <i class="icon-top-account"></i>
+                </div>
+            </div>
+            <!-- 메뉴 오픈 active 클래스 추가 -->
+            <div class="top_m_wrap" >
+                <span class="top_m_btn s_cursor">
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                </span>
+                <div class="top_m_area">
+                    <div class="user_info">
+                        <span class="name">David Kim</span>
+                        <p class="role">Admin</p>
+                        <p class="user_email">emma.ko@kaonmedia.com</p>
+                    </div>
+                    <div class="top_menu">
+                        <ul>
+                            <li>
+                                <span class="s_cursor">Edit Name</span>
+                            </li>
+                            <li>
+                                <span class="s_cursor">Reset Password</span>
+                            </li>
+                            <li class="n_h_style">
+                                <form action="">
+                                    <fieldset>
+                                        <label class="toggle_btn_wrap">
+                                            <span class="switch_label">Login Timeout</span>
+                                            <input role="switch" type="checkbox" class="toggle_btn"/>
+                                        </label>
+                                    </fieldset>
+                                </form>
+                                <!-- <div class="form-check form-switch">
+                                    <label class="form-check-label" for="flexSwitchCheckDefault"></label>
+                                    <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+                                </div> -->
+                            </li>
+                            <li>
+                                <span class="s_cursor">
+                                    Logout
+                                    <i class="icon-top-logout"></i>
+                                </span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="ver_txt">
+                        <span>Ver. KRMS 1.03.23</span>
+                    </div>
+                </div>
+                
+            </div>
+        </div>    
+    </header>
+    <!-- //header -->
+    <!-- container -->
+    <!-- 
+        lnb 접힐 경우 container 에 클래스 fold 추가
+    -->
+    <div class="container">
+        <!-- lnb -->
+        <nav class="lnb">
+            <ul>
+                <li class="menu">
+                    <div class="inner">
+                        <span class="lnb_icon">
+                            <i class="icon-lnb-dashboard"></i>
+                        </span>
+                        <span class="m_name">대시보드</span>
+                    </div>
+                </li>
+                <li class="menu">
+                    <div class="inner">
+                        <span class="lnb_icon">
+                            <i class="icon-lnb-device"></i>
+                        </span>
+                        <span class="m_name">장치</span>
+                    </div>
+                </li>
+                <li class="menu">
+                    <div class="inner">
+                        <span class="lnb_icon">
+                            <i class="icon-lnb-policy"></i>
+                        </span>
+                        <span class="m_name">정책</span>
+                        <span class="arrow">
+                            <i class="icon-arrow-back"></i>
+                        </span>
+                    </div>
+                    <ul class="depth2">
+                        <li class="i_menu">
+                            <span class="bar"></span>
+                            <span class=text">프로비저닝</span>
+                        </li>
+                        <li class="i_menu active">
+                            <span class="bar"></span>
+                            <span class=text">서브 프로파일</span>
+                        </li>
+                    </ul>
+                </li>
+                <li class="menu">
+                    <div class="inner">
+                        <span class="lnb_icon">
+                            <i class="icon-lnb-chart"></i>
+                        </span>
+                        <span class="m_name">통계</span>
+                    </div>
+                </li>
+                <li class="menu">
+                    <div class="inner">
+                        <span class="lnb_icon">
+                            <i class="icon-lnb-info"></i>
+                        </span>
+                        <span class="m_name">전산 정보</span>
+                    </div>
+                    <ul class="depth2">
+                        <li class="i_menu">
+                            <span class="bar"></span>
+                            <span class=text">SO 정보</span>
+                        </li>
+                        <li class="i_menu">
+                            <span class="bar"></span>
+                            <span class=text">가입자 정보</span>
+                        </li>
+                        <li class="i_menu">
+                            <span class="bar"></span>
+                            <span class=text">망 장애</span>
+                        </li>
+                    </ul>
+                </li>
+                <li class="menu  active open">
+                    <div class="inner">
+                        <span class="lnb_icon">
+                            <i class="icon-lnb-file"></i>
+                        </span>
+                        <span class="m_name">파일 및 로그</span>
+                        <span class="arrow">
+                            <i class="icon-arrow-back"></i>
+                        </span>
+                    </div>
+                    <ul class="depth2">
+                        <li class="i_menu">
+                            <span class="bar"></span>
+                            <span class=text">파일 저장소</span>
+                        </li>
+                        <li class="i_menu active">
+                            <span class="bar"></span>
+                            <span class=text">로그</span>
+                        </li>
+                    </ul>
+                </li>
+                <li class="menu">
+                    <div class="inner">
+                        <span class="lnb_icon">
+                            <i class="icon-lnb-setting"></i>
+                        </span>
+                        <span class="m_name">관리</span>
+                    </div>
+                    <ul class="depth2">
+                        <li class="i_menu">
+                            <span class="bar"></span>
+                            <span class=text">롤 / 계정</span>
+                        </li>
+                        <li class="i_menu">
+                            <span class="bar"></span>
+                            <span class=text">장치</span>
+                        </li>
+                        <li class="i_menu">
+                            <span class="bar"></span>
+                            <span class=text">코드</span>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        <!-- //lnb -->
+        <!-- content -->
+        <div class="content">
+            <h2 class="sub_tit">로그</h2>
+            <div class="row">
+                <div class="col pt-2">
+                    <div class="tab_section">
+                        <span class="tab_btn active">장치 품질 로그</span>
+                        <span class="tab_btn">인터넷 속도</span>
+                        <span class="tab_btn">장치 시스템 로그</span>
+                        <span class="tab_btn">동작 이력</span>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 pl-0 pr-0 text-right tbl_top_area">
+                    <!-- 검색 & 필터   -->
+                    <div class="search_filter_wrap ">
+                        <span class="btn_s_f">
+                            <i class="icon-search"> </i>
+                        </span>
+                        <div class="s_f_area">
+                            <h4 class="s_f_tit">검색 필터</h4>
+                            <!-- 
+                                                    체크박스 선택시 s_type에  check 클래스 추가    
+                                                -->
+                            <div class="s_type input check">
+                                <input class="form-check-input" type="checkbox" value="" id="" checked>
+                                <label for="" class="label_style">이름</label>
+                                <div class="form_area">
+                                    <input type="text" class="input_style" placeholder="이름">
+                                    <span class="btn_clear">
+                                        <i class="icon-close"></i>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="btn_area">
+                                <button type="button" class="m_a_btn dark " data-bs-dismiss="modal">취소</button>
+                                <button type="button" class="m_a_btn blue">검색</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- //검색 & 필터   -->
+                </div>
+            </div>
+            <div class="row">
+                <div class="col pl-0 pr-0 text-right">
+                    <div class="table-responsive">
+                        <table class="table tbl_style">
+                            <thead>
+                                <tr>
+                                    <th class="t_title" scope="col">
+                                        <div class="block">
+                                            보고일시
+                                        </div>
+                                    </th>
+                                    <th class="t_title" scope="col">
+                                        <div class="block">
+                                            장치번호
+                                        </div>
+                                    </th>
+                                    <th class="t_title" scope="col">
+                                        <div class="block">
+                                            테스트
+                                        </div>
+                                    </th>
+                                    <th class="t_title" scope="col">
+                                        <div class="block">
+                                            가동시간
+                                        </div>
+                                    </th>
+                                    <th class="t_title" scope="col">
+                                        <div class="block">
+                                            CPU온도
+                                        </div>
+                                    </th>
+                                    <th class="t_title" scope="col">
+                                        <div class="block">
+                                            실행중 프로그램
+                                        </div>
+                                    </th>
+                                    <th class="t_title" scope="col">
+                                        <div class="block">
+                                            가용 메모리
+                                        </div>
+                                    </th>
+                                    <th class="t_title" scope="col">
+                                        <div class="block">
+                                            USB 포트
+                                        </div>
+                                    </th>
+                                    <th class="t_title" scope="col">
+                                        <div class="block">
+                                            블루투스 리모컨
+                                        </div>
+                                    </th>
+                                    <th class="t_title" scope="col">
+                                        <div class="block">
+                                            블루투스 RSSI
+                                        </div>
+                                    </th>
+                                    <th class="t_title" scope="col">
+                                        <div class="block">
+                                            HDMI 연결/해제
+                                        </div>
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <span>2023.02.20 05:16:23</span>
+                                    </td>
+                                    <td>
+                                        <span>9877E7461146</span>
+                                    </td>
+                                    <td class="list_more_position open">
+                                        <span class="a_btn" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="테스트 결과 보기">
+                                            <i class="icon-popup"></i>
+                                        </span>
+                                        <div class="more_popup size3 l_style">
+                                            <span class="btn_close">
+                                                <i class="icon-close"></i>
+                                            </span>
+                                            <dl class="test">
+                                                <dt>PCR Lock</dt>
+                                                <dd>오류없음</dd>
+                                            </dl>
+                                            <dl class="test">
+                                                <dt>디코딩 오류</dt>
+                                                <dd>오류없음</dd>
+                                            </dl>
+                                            <dl class="test">
+                                                <dt>RPT 오류</dt>
+                                                <dd>0, 1, 1, 1, 0, 1, 1, 1, 1, 1</dd>
+                                            </dl>
+                                            <dl class="test">
+                                                <dt>스트림 끊김</dt>
+                                                <dd>오류없음</dd>
+                                            </dl>
+                                            <dl class="test">
+                                                <dt>If config</dt>
+                                                <dd>오류없음</dd>
+                                            </dl>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <span>9:17:12</span>
+                                    </td>
+                                    <td>
+                                        <span>95.2</span>
+                                    </td>
+                                    <td>
+                                        <span>24</span>
+                                    </td>
+                                    <td>
+                                        <span>2,342Mbyte</span>
+                                    </td>
+                                    <td>
+                                        <span>연결</span>
+                                    </td>
+                                    <td>
+                                        <span>연결</span>
+                                    </td>
+                                    <td>
+                                        <span>-32db</span>
+                                    </td>
+                                    <td>
+                                        <span>10회</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <span>2023.02.20 05:16:23</span>
+                                    </td>
+                                    <td>
+                                        <span>9877E7461146</span>
+                                    </td>
+                                    <td class="list_more_position">
+                                        <span class="a_btn" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="테스트 결과 보기">
+                                            <i class="icon-popup"></i>
+                                        </span>
+                                        <div class="more_popup size3 l_style">
+                                            <span class="btn_close">
+                                                <i class="icon-close"></i>
+                                            </span>
+                                            <dl class="test">
+                                                <dt>PCR Lock</dt>
+                                                <dd>오류없음</dd>
+                                            </dl>
+                                            <dl class="test">
+                                                <dt>디코딩 오류</dt>
+                                                <dd>오류없음</dd>
+                                            </dl>
+                                            <dl class="test">
+                                                <dt>RPT 오류</dt>
+                                                <dd>0, 1, 1, 1, 0, 1, 1, 1, 1, 1</dd>
+                                            </dl>
+                                            <dl class="test">
+                                                <dt>스트림 끊김</dt>
+                                                <dd>오류없음</dd>
+                                            </dl>
+                                            <dl class="test">
+                                                <dt>If config</dt>
+                                                <dd>오류없음</dd>
+                                            </dl>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <span>9:17:12</span>
+                                    </td>
+                                    <td>
+                                        <span>95.2</span>
+                                    </td>
+                                    <td>
+                                        <span>24</span>
+                                    </td>
+                                    <td>
+                                        <span>2,342Mbyte</span>
+                                    </td>
+                                    <td>
+                                        <span>연결</span>
+                                    </td>
+                                    <td>
+                                        <span>연결</span>
+                                    </td>
+                                    <td>
+                                        <span>-32db</span>
+                                    </td>
+                                    <td>
+                                        <span>10회</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <span>2023.02.20 05:16:23</span>
+                                    </td>
+                                    <td>
+                                        <span>9877E7461146</span>
+                                    </td>
+                                    <td class="list_more_position">
+                                        <span class="a_btn" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="테스트 결과 보기">
+                                            <i class="icon-popup"></i>
+                                        </span>
+                                        <div class="more_popup size3 l_style">
+                                            <span class="btn_close">
+                                                <i class="icon-close"></i>
+                                            </span>
+                                            <dl class="test">
+                                                <dt>PCR Lock</dt>
+                                                <dd>오류없음</dd>
+                                            </dl>
+                                            <dl class="test">
+                                                <dt>디코딩 오류</dt>
+                                                <dd>오류없음</dd>
+                                            </dl>
+                                            <dl class="test">
+                                                <dt>RPT 오류</dt>
+                                                <dd>0, 1, 1, 1, 0, 1, 1, 1, 1, 1</dd>
+                                            </dl>
+                                            <dl class="test">
+                                                <dt>스트림 끊김</dt>
+                                                <dd>오류없음</dd>
+                                            </dl>
+                                            <dl class="test">
+                                                <dt>If config</dt>
+                                                <dd>오류없음</dd>
+                                            </dl>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <span>9:17:12</span>
+                                    </td>
+                                    <td>
+                                        <span>95.2</span>
+                                    </td>
+                                    <td>
+                                        <span>24</span>
+                                    </td>
+                                    <td>
+                                        <span>2,342Mbyte</span>
+                                    </td>
+                                    <td>
+                                        <span>연결</span>
+                                    </td>
+                                    <td>
+                                        <span>연결</span>
+                                    </td>
+                                    <td>
+                                        <span>-32db</span>
+                                    </td>
+                                    <td>
+                                        <span>10회</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <span>2023.02.20 05:16:23</span>
+                                    </td>
+                                    <td>
+                                        <span>9877E7461146</span>
+                                    </td>
+                                    <td class="list_more_position">
+                                        <span class="a_btn" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="테스트 결과 보기">
+                                            <i class="icon-popup"></i>
+                                        </span>
+                                        <div class="more_popup size3 l_style">
+                                            <span class="btn_close">
+                                                <i class="icon-close"></i>
+                                            </span>
+                                            <dl class="test">
+                                                <dt>PCR Lock</dt>
+                                                <dd>오류없음</dd>
+                                            </dl>
+                                            <dl class="test">
+                                                <dt>디코딩 오류</dt>
+                                                <dd>오류없음</dd>
+                                            </dl>
+                                            <dl class="test">
+                                                <dt>RPT 오류</dt>
+                                                <dd>0, 1, 1, 1, 0, 1, 1, 1, 1, 1</dd>
+                                            </dl>
+                                            <dl class="test">
+                                                <dt>스트림 끊김</dt>
+                                                <dd>오류없음</dd>
+                                            </dl>
+                                            <dl class="test">
+                                                <dt>If config</dt>
+                                                <dd>오류없음</dd>
+                                            </dl>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <span>9:17:12</span>
+                                    </td>
+                                    <td>
+                                        <span>95.2</span>
+                                    </td>
+                                    <td>
+                                        <span>24</span>
+                                    </td>
+                                    <td>
+                                        <span>2,342Mbyte</span>
+                                    </td>
+                                    <td>
+                                        <span>연결</span>
+                                    </td>
+                                    <td>
+                                        <span>연결</span>
+                                    </td>
+                                    <td>
+                                        <span>-32db</span>
+                                    </td>
+                                    <td>
+                                        <span>10회</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <span>2023.02.20 05:16:23</span>
+                                    </td>
+                                    <td>
+                                        <span>9877E7461146</span>
+                                    </td>
+                                    <td class="list_more_position">
+                                        <span class="a_btn" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="테스트 결과 보기">
+                                            <i class="icon-popup"></i>
+                                        </span>
+                                        <div class="more_popup size3 l_style">
+                                            <span class="btn_close">
+                                                <i class="icon-close"></i>
+                                            </span>
+                                            <dl class="test">
+                                                <dt>PCR Lock</dt>
+                                                <dd>오류없음</dd>
+                                            </dl>
+                                            <dl class="test">
+                                                <dt>디코딩 오류</dt>
+                                                <dd>오류없음</dd>
+                                            </dl>
+                                            <dl class="test">
+                                                <dt>RPT 오류</dt>
+                                                <dd>0, 1, 1, 1, 0, 1, 1, 1, 1, 1</dd>
+                                            </dl>
+                                            <dl class="test">
+                                                <dt>스트림 끊김</dt>
+                                                <dd>오류없음</dd>
+                                            </dl>
+                                            <dl class="test">
+                                                <dt>If config</dt>
+                                                <dd>오류없음</dd>
+                                            </dl>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <span>9:17:12</span>
+                                    </td>
+                                    <td>
+                                        <span>95.2</span>
+                                    </td>
+                                    <td>
+                                        <span>24</span>
+                                    </td>
+                                    <td>
+                                        <span>2,342Mbyte</span>
+                                    </td>
+                                    <td>
+                                        <span>연결</span>
+                                    </td>
+                                    <td>
+                                        <span>연결</span>
+                                    </td>
+                                    <td>
+                                        <span>-32db</span>
+                                    </td>
+                                    <td>
+                                        <span>10회</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <span>2023.02.20 05:16:23</span>
+                                    </td>
+                                    <td>
+                                        <span>9877E7461146</span>
+                                    </td>
+                                    <td class="list_more_position">
+                                        <span class="a_btn" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="테스트 결과 보기">
+                                            <i class="icon-popup"></i>
+                                        </span>
+                                        <div class="more_popup size3 l_style">
+                                            <span class="btn_close">
+                                                <i class="icon-close"></i>
+                                            </span>
+                                            <dl class="test">
+                                                <dt>PCR Lock</dt>
+                                                <dd>오류없음</dd>
+                                            </dl>
+                                            <dl class="test">
+                                                <dt>디코딩 오류</dt>
+                                                <dd>오류없음</dd>
+                                            </dl>
+                                            <dl class="test">
+                                                <dt>RPT 오류</dt>
+                                                <dd>0, 1, 1, 1, 0, 1, 1, 1, 1, 1</dd>
+                                            </dl>
+                                            <dl class="test">
+                                                <dt>스트림 끊김</dt>
+                                                <dd>오류없음</dd>
+                                            </dl>
+                                            <dl class="test">
+                                                <dt>If config</dt>
+                                                <dd>오류없음</dd>
+                                            </dl>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <span>9:17:12</span>
+                                    </td>
+                                    <td>
+                                        <span>95.2</span>
+                                    </td>
+                                    <td>
+                                        <span>24</span>
+                                    </td>
+                                    <td>
+                                        <span>2,342Mbyte</span>
+                                    </td>
+                                    <td>
+                                        <span>연결</span>
+                                    </td>
+                                    <td>
+                                        <span>연결</span>
+                                    </td>
+                                    <td>
+                                        <span>-32db</span>
+                                    </td>
+                                    <td>
+                                        <span>10회</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <span>2023.02.20 05:16:23</span>
+                                    </td>
+                                    <td>
+                                        <span>9877E7461146</span>
+                                    </td>
+                                    <td class="list_more_position">
+                                        <span class="a_btn" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="테스트 결과 보기">
+                                            <i class="icon-popup"></i>
+                                        </span>
+                                        <div class="more_popup size3 l_style">
+                                            <span class="btn_close">
+                                                <i class="icon-close"></i>
+                                            </span>
+                                            <dl class="test">
+                                                <dt>PCR Lock</dt>
+                                                <dd>오류없음</dd>
+                                            </dl>
+                                            <dl class="test">
+                                                <dt>디코딩 오류</dt>
+                                                <dd>오류없음</dd>
+                                            </dl>
+                                            <dl class="test">
+                                                <dt>RPT 오류</dt>
+                                                <dd>0, 1, 1, 1, 0, 1, 1, 1, 1, 1</dd>
+                                            </dl>
+                                            <dl class="test">
+                                                <dt>스트림 끊김</dt>
+                                                <dd>오류없음</dd>
+                                            </dl>
+                                            <dl class="test">
+                                                <dt>If config</dt>
+                                                <dd>오류없음</dd>
+                                            </dl>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <span>9:17:12</span>
+                                    </td>
+                                    <td>
+                                        <span>95.2</span>
+                                    </td>
+                                    <td>
+                                        <span>24</span>
+                                    </td>
+                                    <td>
+                                        <span>2,342Mbyte</span>
+                                    </td>
+                                    <td>
+                                        <span>연결</span>
+                                    </td>
+                                    <td>
+                                        <span>연결</span>
+                                    </td>
+                                    <td>
+                                        <span>-32db</span>
+                                    </td>
+                                    <td>
+                                        <span>10회</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <span>2023.02.20 05:16:23</span>
+                                    </td>
+                                    <td>
+                                        <span>9877E7461146</span>
+                                    </td>
+                                    <td class="list_more_position">
+                                        <span class="a_btn" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="테스트 결과 보기">
+                                            <i class="icon-popup"></i>
+                                        </span>
+                                        <div class="more_popup size3 l_style">
+                                            <span class="btn_close">
+                                                <i class="icon-close"></i>
+                                            </span>
+                                            <dl class="test">
+                                                <dt>PCR Lock</dt>
+                                                <dd>오류없음</dd>
+                                            </dl>
+                                            <dl class="test">
+                                                <dt>디코딩 오류</dt>
+                                                <dd>오류없음</dd>
+                                            </dl>
+                                            <dl class="test">
+                                                <dt>RPT 오류</dt>
+                                                <dd>0, 1, 1, 1, 0, 1, 1, 1, 1, 1</dd>
+                                            </dl>
+                                            <dl class="test">
+                                                <dt>스트림 끊김</dt>
+                                                <dd>오류없음</dd>
+                                            </dl>
+                                            <dl class="test">
+                                                <dt>If config</dt>
+                                                <dd>오류없음</dd>
+                                            </dl>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <span>9:17:12</span>
+                                    </td>
+                                    <td>
+                                        <span>95.2</span>
+                                    </td>
+                                    <td>
+                                        <span>24</span>
+                                    </td>
+                                    <td>
+                                        <span>2,342Mbyte</span>
+                                    </td>
+                                    <td>
+                                        <span>연결</span>
+                                    </td>
+                                    <td>
+                                        <span>연결</span>
+                                    </td>
+                                    <td>
+                                        <span>-32db</span>
+                                    </td>
+                                    <td>
+                                        <span>10회</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <span>2023.02.20 05:16:23</span>
+                                    </td>
+                                    <td>
+                                        <span>9877E7461146</span>
+                                    </td>
+                                    <td class="list_more_position">
+                                        <span class="a_btn" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="테스트 결과 보기">
+                                            <i class="icon-popup"></i>
+                                        </span>
+                                        <div class="more_popup size3 l_style">
+                                            <span class="btn_close">
+                                                <i class="icon-close"></i>
+                                            </span>
+                                            <dl class="test">
+                                                <dt>PCR Lock</dt>
+                                                <dd>오류없음</dd>
+                                            </dl>
+                                            <dl class="test">
+                                                <dt>디코딩 오류</dt>
+                                                <dd>오류없음</dd>
+                                            </dl>
+                                            <dl class="test">
+                                                <dt>RPT 오류</dt>
+                                                <dd>0, 1, 1, 1, 0, 1, 1, 1, 1, 1</dd>
+                                            </dl>
+                                            <dl class="test">
+                                                <dt>스트림 끊김</dt>
+                                                <dd>오류없음</dd>
+                                            </dl>
+                                            <dl class="test">
+                                                <dt>If config</dt>
+                                                <dd>오류없음</dd>
+                                            </dl>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <span>9:17:12</span>
+                                    </td>
+                                    <td>
+                                        <span>95.2</span>
+                                    </td>
+                                    <td>
+                                        <span>24</span>
+                                    </td>
+                                    <td>
+                                        <span>2,342Mbyte</span>
+                                    </td>
+                                    <td>
+                                        <span>연결</span>
+                                    </td>
+                                    <td>
+                                        <span>연결</span>
+                                    </td>
+                                    <td>
+                                        <span>-32db</span>
+                                    </td>
+                                    <td>
+                                        <span>10회</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <span>2023.02.20 05:16:23</span>
+                                    </td>
+                                    <td>
+                                        <span>9877E7461146</span>
+                                    </td>
+                                    <td class="list_more_position">
+                                        <span class="a_btn" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="테스트 결과 보기">
+                                            <i class="icon-popup"></i>
+                                        </span>
+                                        <div class="more_popup size3 l_style">
+                                            <span class="btn_close">
+                                                <i class="icon-close"></i>
+                                            </span>
+                                            <dl class="test">
+                                                <dt>PCR Lock</dt>
+                                                <dd>오류없음</dd>
+                                            </dl>
+                                            <dl class="test">
+                                                <dt>디코딩 오류</dt>
+                                                <dd>오류없음</dd>
+                                            </dl>
+                                            <dl class="test">
+                                                <dt>RPT 오류</dt>
+                                                <dd>0, 1, 1, 1, 0, 1, 1, 1, 1, 1</dd>
+                                            </dl>
+                                            <dl class="test">
+                                                <dt>스트림 끊김</dt>
+                                                <dd>오류없음</dd>
+                                            </dl>
+                                            <dl class="test">
+                                                <dt>If config</dt>
+                                                <dd>오류없음</dd>
+                                            </dl>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <span>9:17:12</span>
+                                    </td>
+                                    <td>
+                                        <span>95.2</span>
+                                    </td>
+                                    <td>
+                                        <span>24</span>
+                                    </td>
+                                    <td>
+                                        <span>2,342Mbyte</span>
+                                    </td>
+                                    <td>
+                                        <span>연결</span>
+                                    </td>
+                                    <td>
+                                        <span>연결</span>
+                                    </td>
+                                    <td>
+                                        <span>-32db</span>
+                                    </td>
+                                    <td>
+                                        <span>10회</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <span>2023.02.20 05:16:23</span>
+                                    </td>
+                                    <td>
+                                        <span>9877E7461146</span>
+                                    </td>
+                                    <td class="list_more_position">
+                                        <span class="a_btn" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="테스트 결과 보기">
+                                            <i class="icon-popup"></i>
+                                        </span>
+                                        <div class="more_popup size3 l_style">
+                                            <span class="btn_close">
+                                                <i class="icon-close"></i>
+                                            </span>
+                                            <dl class="test">
+                                                <dt>PCR Lock</dt>
+                                                <dd>오류없음</dd>
+                                            </dl>
+                                            <dl class="test">
+                                                <dt>디코딩 오류</dt>
+                                                <dd>오류없음</dd>
+                                            </dl>
+                                            <dl class="test">
+                                                <dt>RPT 오류</dt>
+                                                <dd>0, 1, 1, 1, 0, 1, 1, 1, 1, 1</dd>
+                                            </dl>
+                                            <dl class="test">
+                                                <dt>스트림 끊김</dt>
+                                                <dd>오류없음</dd>
+                                            </dl>
+                                            <dl class="test">
+                                                <dt>If config</dt>
+                                                <dd>오류없음</dd>
+                                            </dl>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <span>9:17:12</span>
+                                    </td>
+                                    <td>
+                                        <span>95.2</span>
+                                    </td>
+                                    <td>
+                                        <span>24</span>
+                                    </td>
+                                    <td>
+                                        <span>2,342Mbyte</span>
+                                    </td>
+                                    <td>
+                                        <span>연결</span>
+                                    </td>
+                                    <td>
+                                        <span>연결</span>
+                                    </td>
+                                    <td>
+                                        <span>-32db</span>
+                                    </td>
+                                    <td>
+                                        <span>10회</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <span>2023.02.20 05:16:23</span>
+                                    </td>
+                                    <td>
+                                        <span>9877E7461146</span>
+                                    </td>
+                                    <td class="list_more_position">
+                                        <span class="a_btn" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="테스트 결과 보기">
+                                            <i class="icon-popup"></i>
+                                        </span>
+                                        <div class="more_popup size3 l_style">
+                                            <span class="btn_close">
+                                                <i class="icon-close"></i>
+                                            </span>
+                                            <dl class="test">
+                                                <dt>PCR Lock</dt>
+                                                <dd>오류없음</dd>
+                                            </dl>
+                                            <dl class="test">
+                                                <dt>디코딩 오류</dt>
+                                                <dd>오류없음</dd>
+                                            </dl>
+                                            <dl class="test">
+                                                <dt>RPT 오류</dt>
+                                                <dd>0, 1, 1, 1, 0, 1, 1, 1, 1, 1</dd>
+                                            </dl>
+                                            <dl class="test">
+                                                <dt>스트림 끊김</dt>
+                                                <dd>오류없음</dd>
+                                            </dl>
+                                            <dl class="test">
+                                                <dt>If config</dt>
+                                                <dd>오류없음</dd>
+                                            </dl>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <span>9:17:12</span>
+                                    </td>
+                                    <td>
+                                        <span>95.2</span>
+                                    </td>
+                                    <td>
+                                        <span>24</span>
+                                    </td>
+                                    <td>
+                                        <span>2,342Mbyte</span>
+                                    </td>
+                                    <td>
+                                        <span>연결</span>
+                                    </td>
+                                    <td>
+                                        <span>연결</span>
+                                    </td>
+                                    <td>
+                                        <span>-32db</span>
+                                    </td>
+                                    <td>
+                                        <span>10회</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <span>2023.02.20 05:16:23</span>
+                                    </td>
+                                    <td>
+                                        <span>9877E7461146</span>
+                                    </td>
+                                    <td class="list_more_position">
+                                        <span class="a_btn" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="테스트 결과 보기">
+                                            <i class="icon-popup"></i>
+                                        </span>
+                                        <div class="more_popup size3 l_style">
+                                            <span class="btn_close">
+                                                <i class="icon-close"></i>
+                                            </span>
+                                            <dl class="test">
+                                                <dt>PCR Lock</dt>
+                                                <dd>오류없음</dd>
+                                            </dl>
+                                            <dl class="test">
+                                                <dt>디코딩 오류</dt>
+                                                <dd>오류없음</dd>
+                                            </dl>
+                                            <dl class="test">
+                                                <dt>RPT 오류</dt>
+                                                <dd>0, 1, 1, 1, 0, 1, 1, 1, 1, 1</dd>
+                                            </dl>
+                                            <dl class="test">
+                                                <dt>스트림 끊김</dt>
+                                                <dd>오류없음</dd>
+                                            </dl>
+                                            <dl class="test">
+                                                <dt>If config</dt>
+                                                <dd>오류없음</dd>
+                                            </dl>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <span>9:17:12</span>
+                                    </td>
+                                    <td>
+                                        <span>95.2</span>
+                                    </td>
+                                    <td>
+                                        <span>24</span>
+                                    </td>
+                                    <td>
+                                        <span>2,342Mbyte</span>
+                                    </td>
+                                    <td>
+                                        <span>연결</span>
+                                    </td>
+                                    <td>
+                                        <span>연결</span>
+                                    </td>
+                                    <td>
+                                        <span>-32db</span>
+                                    </td>
+                                    <td>
+                                        <span>10회</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <span>2023.02.20 05:16:23</span>
+                                    </td>
+                                    <td>
+                                        <span>9877E7461146</span>
+                                    </td>
+                                    <td class="list_more_position">
+                                        <span class="a_btn" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="테스트 결과 보기">
+                                            <i class="icon-popup"></i>
+                                        </span>
+                                        <div class="more_popup size3 l_style">
+                                            <span class="btn_close">
+                                                <i class="icon-close"></i>
+                                            </span>
+                                            <dl class="test">
+                                                <dt>PCR Lock</dt>
+                                                <dd>오류없음</dd>
+                                            </dl>
+                                            <dl class="test">
+                                                <dt>디코딩 오류</dt>
+                                                <dd>오류없음</dd>
+                                            </dl>
+                                            <dl class="test">
+                                                <dt>RPT 오류</dt>
+                                                <dd>0, 1, 1, 1, 0, 1, 1, 1, 1, 1</dd>
+                                            </dl>
+                                            <dl class="test">
+                                                <dt>스트림 끊김</dt>
+                                                <dd>오류없음</dd>
+                                            </dl>
+                                            <dl class="test">
+                                                <dt>If config</dt>
+                                                <dd>오류없음</dd>
+                                            </dl>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <span>9:17:12</span>
+                                    </td>
+                                    <td>
+                                        <span>95.2</span>
+                                    </td>
+                                    <td>
+                                        <span>24</span>
+                                    </td>
+                                    <td>
+                                        <span>2,342Mbyte</span>
+                                    </td>
+                                    <td>
+                                        <span>연결</span>
+                                    </td>
+                                    <td>
+                                        <span>연결</span>
+                                    </td>
+                                    <td>
+                                        <span>-32db</span>
+                                    </td>
+                                    <td>
+                                        <span>10회</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <span>2023.02.20 05:16:23</span>
+                                    </td>
+                                    <td>
+                                        <span>9877E7461146</span>
+                                    </td>
+                                    <td class="list_more_position">
+                                        <span class="a_btn" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="테스트 결과 보기">
+                                            <i class="icon-popup"></i>
+                                        </span>
+                                        <div class="more_popup size3 l_style">
+                                            <span class="btn_close">
+                                                <i class="icon-close"></i>
+                                            </span>
+                                            <dl class="test">
+                                                <dt>PCR Lock</dt>
+                                                <dd>오류없음</dd>
+                                            </dl>
+                                            <dl class="test">
+                                                <dt>디코딩 오류</dt>
+                                                <dd>오류없음</dd>
+                                            </dl>
+                                            <dl class="test">
+                                                <dt>RPT 오류</dt>
+                                                <dd>0, 1, 1, 1, 0, 1, 1, 1, 1, 1</dd>
+                                            </dl>
+                                            <dl class="test">
+                                                <dt>스트림 끊김</dt>
+                                                <dd>오류없음</dd>
+                                            </dl>
+                                            <dl class="test">
+                                                <dt>If config</dt>
+                                                <dd>오류없음</dd>
+                                            </dl>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <span>9:17:12</span>
+                                    </td>
+                                    <td>
+                                        <span>95.2</span>
+                                    </td>
+                                    <td>
+                                        <span>24</span>
+                                    </td>
+                                    <td>
+                                        <span>2,342Mbyte</span>
+                                    </td>
+                                    <td>
+                                        <span>연결</span>
+                                    </td>
+                                    <td>
+                                        <span>연결</span>
+                                    </td>
+                                    <td>
+                                        <span>-32db</span>
+                                    </td>
+                                    <td>
+                                        <span>10회</span>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="pagnation_wrap">
+                        <div class="left_area">
+                            <p>Showing <span class="num">1</span> to <span class="num">15</span> of <span class="num">150</span> Entries</p>
+                        </div>
+                        <div class="right_area">
+                            <span class="p_btn">
+                                <i class="icon-arrow-back"></i>
+                            </span>
+                            <span class="p_input_area">
+                                <input type="text" class="p_input" value="1"> of 10
+                            </span>
+                            <span class="p_btn">
+                                <i class="icon-arrow-next"></i>
+                            </span>
+                            <select name="" id="" class="select_style">
+                                <option value="">15</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- //content -->
+    </div>
+    <!-- //container -->
+</div>
+<script src="../assets/js/bootstrap.bundle.min.js"></script>
+<script src="../assets/js/form-validation.js"></script>
+</body>
+</html>

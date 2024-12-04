@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0">
+<title>OnPlay mobile</title>
+<link rel="stylesheet" href="../_static/mobile/css/onplay.reset.css">
+<link rel="stylesheet" href="../_static/mobile/css/onplay.mobile.style.css">
+<link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR:300,400,500,700&display=swap&subset=korean" rel="stylesheet">
+</head>
+<body>
+<!-- 제목영역기본 fix 처리, 동영상 없을경우 no_video 클래스 추가 , 버튼영역 따라다닐경우 btn_fixed 추가-->
+<div class="view_wrap">
+	<span class="p_move_btn next"></span>
+	<div class="v_top">
+		<div class="inner">
+			<h1 class="f_tit">동영상 제목자리입니다 포뇨포뇨~~~~</h1>
+			<span class="btn_back"></span>
+			<span class="btn_menu">
+				<span class="b_dot"></span>
+				<span class="b_dot"></span>
+				<span class="b_dot"></span>
+			</span>
+		</div> 
+	</div>
+	<div class="v_preview_area">
+		<div class="login_check_area" style="display:none;"></div>
+		<div class="preview_inner" style="position:relative;">
+			<span class="ico hd"></span>
+			<!-- 200428 버튼 스타일 추가 -->
+			<!-- now 실시간 바로보기
+				 replay 다시보기
+				 preview 미리보기
+
+				active 추가시 노출
+			-->
+			<span class="btn play now">
+				<span class="p_ico"></span>
+			</span>
+			<span class="btn play replay active"">
+				<span class="p_ico"></span>
+			</span>
+			<span class="btn play preview">
+				<span class="p_ico"></span>
+			</span>
+			<!-- //200428 버튼 스타일 추가 -->
+			<div class="play"><img src="../_static/mobile/images/temp/view_sample.jpg" alt="" class="img"></div>
+		</div>
+		<!-- 200827 바로보기 영역 스타일  -->
+		<!-- <style>
+		.mobile-view-video-player{position:relative;width:100%;}
+		.mobile-view-video-player .thumb_img{z-index:1;position:relative;display:block;width:100%;}
+		.mobile-view-video-player .mobile_preview_player{position:absolute;top:0;left:0;width:100%;}
+		</style>
+		<div class="mobile-view-video-player mobile-contents-view-top-player-area" id="mobile-view-video-js-preview-contents-<?=$bbs_contents->bbs_idx;?>">
+			<form name="mobile-preview-video-form" >
+				<img src="<?= $bbs_contents->preview_img;?>" alt="">
+				<input type="hidden" name="video_prev_src_input" value="<?= $bbs_contents->preview_url;?>"/>
+				<input type="hidden" name="video_bbs_idx" value="<?= $bbs_contents->bbs_idx;?>"/>
+				<video class="mobile_preview_player" id="onplay_mobile_preview_player_<?=$bbs_contents->bbs_idx;?>" preload="none"  width="100%" data-poster="<?= $bbs_contents->preview_img;?>">
+					<source type="video/mp4" class="mobileViewVideoPlayerSource" src="<?= $bbs_contents->preview_url;?>"/>
+					
+					지원하지 않는 브라우져입니다.
+				</video>
+			</form>
+		</div>
+		<div class="v_preview_area-guide preview">
+			<div class="player_guide_show prev" style="">1분 미리보기 영상은 샘플영상으로 화질은 실제 원본과 차이가 있을 수 있습니다.</div>
+			<div class="player_guide_show live">모바일 스트리밍은 구매내역에서 정해진 시간내에 언제든지 다시 볼 수 있습니다.</div>
+		</div> -->
+		<!-- //200827 바로보기 영역 스타일  -->
+	</div>
+	<div class="v_content_num">
+		<!-- 200804 찜하기 버튼 active style 추가 --><!-- 201008 찜하기 쿠폰사용 버튼 추가 -->
+		<span class="v_num like active"><span class="ico"></span><span class="num">1234</span></span><span class="bar"></span>
+		<span class="v_num good"><span class="ico"></span><span class="num">1234</span></span><span class="bar"></span>
+		<span class="v_num bad"><span class="ico"></span><span class="num">1234</span></span>
+		<div class="link_area">
+			<span class="btn zzim">찜하기</span></span><span class="bar"></span><span class="btn coupon">쿠폰사용</span>
+		</div>
+	</div>
+	<div class="v_tit_area">
+		<p class="v_tit">일본 스튜디오 지브리 애니메이션 - 벼랑 위의 포뇨</p>
+		<div class="info">
+			<!-- <span class="num">NO.123456</span><span class="bar">|</span><span class="cate">영화&gt;애니</span><span class="bar">|</span><span class="sum"><span class="s_ico"></span> 30,000</span><span class="bar">|</span><span class="ico promotion">제휴</span><span class="ico price">가격지원</span> -->
+			<!-- 200929 10원 이벤트 리스트 스타일 추가 -->
+			<span class="cate">영화&gt;애니</span><span class="bar">|</span><span class="sum event_10"><span class="ico_e_10"></span><span class="d_sum">810P</span><span class="e_arrow"></span><span class="point_ico"></span> 10P</span>
+			<!-- //200929 10원 이벤트 리스트 스타일 추가 -->
+		</div>
+	</div>
+	<!-- 200908 충전 버튼 추가 -->
+	<!-- 다운로드 버튼 스타일 추가
+		v_btn_wrap 에 class d_style 추가시 버튼 사이즈 조절  & 안내문구 확인가능
+	-->
+	<div class="v_btn_wrap d_style">
+		<span class="v_btn view">실시간 바로보기</span>
+		<span class="v_btn down">다운로드</span>
+		<span class="v_btn pay"><span class="p_ico"></span>포인트 충전</span>
+		<p class="txt">※ 일부 콘텐츠의 경우 저작권사의 요청으로 인해 바로보기만 가능합니다.</p>
+	</div>
+	<div class="v_file_list_wrap">
+		<ul class="v_file_list">
+			<li>
+				<!-- 201012 파일 아이콘 스타일 추가
+					mp4, jpg, pdf, mp3, txt, zip, iso, exe, img 
+				-->
+				<span class="f_ico txt"></span>
+				<!-- //201012 파일 아이콘 스타일 추가-->
+				<div class="file_info">
+					<p class="f_name">가나다라마바abcdfghi!@~_0e.mp4</p>
+					<p class="f_info"><span class="time">00:00:00</span><span class="bar">|</span><span class="size">1.5G</span></p>
+				</div>
+				<div class="l_btn_wrap">
+					<span class="l_btn view">바로보기</span>
+					<span class="l_btn down">다운로드</span>
+				</div>
+			</li>
+			<li>
+				<span class="f_ico zip"></span>
+				<div class="file_info">
+					<p class="f_name">가나다라마바abcdfghi!@~_0e.mp4</p>
+					<p class="f_info"><span class="time">00:00:00</span><span class="bar">|</span><span class="size">1.5G</span></p>
+				</div>
+				<div class="l_btn_wrap">
+					<span class="l_btn view">바로보기</span>
+					<span class="l_btn down">다운로드</span>
+				</div>
+			</li>
+		</ul>
+		<div class="btn_more">더보기 <span class="ico_arrow"></span></div>
+		<div class="btn_fold">접기 <span class="ico_arrow"></span></div>
+	</div>
+	<!-- 회차별 보기 -->
+	<div class="content_slide_wrap txt_style">
+		<h2 class="tit">회차별 보기</h2>
+		<span class="c_more">더보기 &gt;</span>
+		<div class="swipe_wrap">
+			<div class="swipe_area">
+				<div class="c_list broad_num">
+					<ul>
+						<li>
+							<div class="c_img">
+								<img src="../_static/mobile/images/temp/m_img_3.jpg" alt="">
+								<span class="ico fhd"></span>
+								<span class="btn_play"></span>
+							</div>
+							<div class="c_txt_area">
+								<div class="num_info">
+									<span class="num">112회</span> - <span class="date">2018.04.21 (토)</span>
+								</div>
+								<p class="c_tit">대한민국 평균 이하임을 자처하는 남자들이 매주 새로운 상황 속에서 펼...</p>
+							</div>
+						</li>
+						<li>
+							<div class="c_img">
+								<img src="../_static/mobile/images/temp/m_img_3.jpg" alt="">
+								<span class="ico hd"></span>
+								<span class="btn_play"></span>
+							</div>
+							<div class="c_txt_area">
+								<div class="num_info">
+									<span class="num">112회</span> - <span class="date">2018.04.21 (토)</span>
+								</div>
+								<p class="c_tit">대한민국 평균 이하임을 자처하는 남자들이 매주 새로운 상황 속에서 펼...</p>
+							</div>
+						</li>
+						<li>
+							<div class="c_img">
+								<img src="../_static/mobile/images/temp/m_img_3.jpg" alt="">
+								<span class="ico hd"></span>
+								<span class="btn_play"></span>
+							</div>
+							<div class="c_txt_area">
+								<div class="num_info">
+									<span class="num">112회</span> - <span class="date">2018.04.21 (토)</span>
+								</div>
+								<p class="c_tit">대한민국 평균 이하임을 자처하는 남자들이 매주 새로운 상황 속에서 펼...</p>
+							</div>
+						</li>
+						<li>
+							<div class="c_img">
+								<img src="../_static/mobile/images/temp/m_img_3.jpg" alt="">
+								<span class="ico hd"></span>
+								<span class="btn_play"></span>
+							</div>
+							<div class="c_txt_area">
+								<div class="num_info">
+									<span class="num">112회</span> - <span class="date">2018.04.21 (토)</span>
+								</div>
+								<p class="c_tit">대한민국 평균 이하임을 자처하는 남자들이 매주 새로운 상황 속에서 펼...</p>
+							</div>
+						</li>
+					</ul>
+				</div>
+				<div class="c_list broad_num" style="display:none;">
+					<ul>
+						<li>
+							<div class="c_img">
+								<img src="../_static/mobile/images/temp/m_img_3.jpg" alt="">
+								<span class="ico hd"></span>
+								<span class="btn_play"></span>
+							</div>
+							<div class="c_txt_area">
+								<div class="num_info">
+									<span class="num">112회</span> - <span class="date">2018.04.21 (토)</span>
+								</div>
+								<p class="c_tit">대한민국 평균 이하임을 자처하는 남자들이 매주 새로운 상황 속에서 펼...</p>
+							</div>
+						</li>
+						<li>
+							<div class="c_img">
+								<img src="../_static/mobile/images/temp/m_img_3.jpg" alt="">
+								<span class="ico hd"></span>
+								<span class="btn_play"></span>
+							</div>
+							<div class="c_txt_area">
+								<div class="num_info">
+									<span class="num">112회</span> - <span class="date">2018.04.21 (토)</span>
+								</div>
+								<p class="c_tit">대한민국 평균 이하임을 자처하는 남자들이 매주 새로운 상황 속에서 펼...</p>
+							</div>
+						</li>
+						<li>
+							<div class="c_img">
+								<img src="../_static/mobile/images/temp/m_img_3.jpg" alt="">
+								<span class="ico hd"></span>
+								<span class="btn_play"></span>
+							</div>
+							<div class="c_txt_area">
+								<div class="num_info">
+									<span class="num">112회</span> - <span class="date">2018.04.21 (토)</span>
+								</div>
+								<p class="c_tit">대한민국 평균 이하임을 자처하는 남자들이 매주 새로운 상황 속에서 펼...</p>
+							</div>
+						</li>
+					</ul>
+				</div>
+				<div class="c_list broad_num" style="display:none;">
+					<ul>
+						<li>
+							<div class="c_img">
+								<img src="../_static/mobile/images/temp/m_img_3.jpg" alt="">
+								<span class="ico hd"></span>
+								<span class="btn_play"></span>
+							</div>
+							<div class="c_txt_area">
+								<div class="num_info">
+									<span class="num">112회</span> - <span class="date">2018.04.21 (토)</span>
+								</div>
+								<p class="c_tit">대한민국 평균 이하임을 자처하는 남자들이 매주 새로운 상황 속에서 펼...</p>
+							</div>
+						</li>
+						<li>
+							<div class="c_img">
+								<img src="../_static/mobile/images/temp/m_img_3.jpg" alt="">
+								<span class="ico hd"></span>
+								<span class="btn_play"></span>
+							</div>
+							<div class="c_txt_area">
+								<div class="num_info">
+									<span class="num">112회</span> - <span class="date">2018.04.21 (토)</span>
+								</div>
+								<p class="c_tit">대한민국 평균 이하임을 자처하는 남자들이 매주 새로운 상황 속에서 펼...</p>
+							</div>
+						</li>
+						<li>
+							<div class="c_img">
+								<img src="../_static/mobile/images/temp/m_img_3.jpg" alt="">
+								<span class="ico hd"></span>
+								<span class="btn_play"></span>
+							</div>
+							<div class="c_txt_area">
+								<div class="num_info">
+									<span class="num">112회</span> - <span class="date">2018.04.21 (토)</span>
+								</div>
+								<p class="c_tit">대한민국 평균 이하임을 자처하는 남자들이 매주 새로운 상황 속에서 펼...</p>
+							</div>
+						</li>
+					</ul>
+				</div>
+				<div class="c_list broad_num" style="display:none;">
+					<ul>
+						<li>
+							<div class="c_img">
+								<img src="../_static/mobile/images/temp/m_img_3.jpg" alt="">
+								<span class="ico hd"></span>
+								<span class="btn_play"></span>
+							</div>
+							<div class="c_txt_area">
+								<div class="num_info">
+									<span class="num">112회</span> - <span class="date">2018.04.21 (토)</span>
+								</div>
+								<p class="c_tit">대한민국 평균 이하임을 자처하는 남자들이 매주 새로운 상황 속에서 펼...</p>
+							</div>
+						</li>
+						<li>
+							<div class="c_img">
+								<img src="../_static/mobile/images/temp/m_img_3.jpg" alt="">
+								<span class="ico hd"></span>
+								<span class="btn_play"></span>
+							</div>
+							<div class="c_txt_area">
+								<div class="num_info">
+									<span class="num">112회</span> - <span class="date">2018.04.21 (토)</span>
+								</div>
+								<p class="c_tit">대한민국 평균 이하임을 자처하는 남자들이 매주 새로운 상황 속에서 펼...</p>
+							</div>
+						</li>
+						<li>
+							<div class="c_img">
+								<img src="../_static/mobile/images/temp/m_img_3.jpg" alt="">
+								<span class="ico hd"></span>
+								<span class="btn_play"></span>
+							</div>
+							<div class="c_txt_area">
+								<div class="num_info">
+									<span class="num">112회</span> - <span class="date">2018.04.21 (토)</span>
+								</div>
+								<p class="c_tit">대한민국 평균 이하임을 자처하는 남자들이 매주 새로운 상황 속에서 펼...</p>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="tab_btn_wrap">
+				<span class="t_btn active"></span>
+				<span class="t_btn"></span>
+				<span class="t_btn"></span>
+				<span class="t_btn"></span>
+				<span class="t_btn"></span>
+			</div>
+		</div>
+	</div>
+	<div class="content_detail">
+		<div class="seller_name_wrap">
+			<p class="tit">판매자(채널)</p>
+			<p class="name"><span class="ico"></span>율리시스<span class="arrow"></span></p>
+		</div>
+		<div class="d_inner">
+			<p>콘텐츠 설명이 들어갈거같은데 뭐가 들어갈지 모르겟어요오오오오</p>
+			<p>이미지도 들어갈거같은데에에에에에에에</p>
+		</div>
+		<div class="tag_wrap">
+			<span class="tag">#안녕하세요</span>
+			<span class="tag">#포뇨사랑해</span>
+			<span class="tag">#맛있는간식</span>
+			<span class="tag">#특별한간식</span>
+		</div>
+	</div>
+	<div class="kids_protect">
+		<p>아동/청소년 이용음란물을 제작,배포,소지한 자는 <span class="t_red">[아동,청소년의 성보호에 관한 법률]</span> 제 11조에 따라 형사처벌을 받을 수 있습니다.   <span class="btn_center">[ 권리 침해센터 ]</span></p>
+	</div>
+	<div class="content_slide_wrap txt_style sub_list">
+		<h2 class="tit">연관 콘텐츠</h2>
+		<span class="c_more">더보기 &gt;</span>
+		<div class="c_list ">
+			<ul>
+				<!-- 200929 10원 이벤트 리스트 스타일 추가 -->
+				<li>
+					<div class="c_img">
+						<img src="../_static/mobile/images/temp/m_img_3.jpg" alt="">
+						<span class="ico hd"></span>
+						<span class="time">02:50</span>
+					</div>
+					<div class="c_txt_area">
+						<p class="c_tit">고전 재탕하기 - 2005.07.14 마다가스카 완벽 번역 보기</p>
+						<p class="info"><span class="cate">영화</span><span class="bar">|</span><span class="sum"><span class="ico_e_10"></span>10P</span></p>
+					</div>
+					<span class="btn_menu"></span>
+				</li>
+				<!-- //200929 10원 이벤트 리스트 스타일 추가 -->
+				<li>
+					<div class="c_img">
+						<img src="../_static/mobile/images/temp/m_img_1.jpg" alt="">
+						<span class="ico fhd"></span>
+						<span class="time">02:50</span>
+					</div>
+					<div class="c_txt_area">
+						<p class="c_tit">[정식자막] 미드나잇 인 파리~~~ 랍니다 요를레이히유후</p>
+						<p class="info"><span class="cate">영화</span><span class="bar">|</span><span class="sum"><span class="p_ico"></span>1,000</span></p>
+					</div>
+					<span class="btn_menu"></span>
+				</li>
+				<li>
+					<div class="c_img">
+						<img src="../_static/mobile/images/temp/m_img_5.jpg" alt="">
+						<span class="ico"></span>
+						<span class="time">02:50</span>
+					</div>
+					<div class="c_txt_area">
+						<p class="c_tit">고전 재탕하기 - 2005.07.14 마다가스카 완벽 번역 보기</p>
+						<p class="info"><span class="cate">영화</span><span class="bar">|</span><span class="sum"><span class="p_ico"></span>1,000</span></p>
+					</div>
+					<span class="btn_menu"></span>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div class="content_slide_wrap txt_style sub_list">
+		<h2 class="tit">판매자의 다른 콘텐츠</h2>
+		<span class="c_more">더보기 &gt;</span>
+		<div class="c_list ">
+			<ul>
+				<li>
+					<div class="c_img">
+						<img src="../_static/mobile/images/temp/m_img_3.jpg" alt="">
+						<span class="ico hd"></span>
+						<span class="time">02:50</span>
+					</div>
+					<div class="c_txt_area">
+						<p class="c_tit">고전 재탕하기 - 2005.07.14 마다가스카 완벽 번역 보기</p>
+						<p class="info"><span class="cate">영화</span><span class="bar">|</span><span class="sum"><span class="p_ico"></span>1,000</span></p>
+					</div>
+					<span class="btn_menu"></span>
+				</li>
+				<li>
+					<div class="c_img">
+						<img src="../_static/mobile/images/temp/m_img_1.jpg" alt="">
+						<span class="ico fhd"></span>
+						<span class="time">02:50</span>
+					</div>
+					<div class="c_txt_area">
+						<p class="c_tit">[정식자막] 미드나잇 인 파리~~~ 랍니다 요를레이히유후</p>
+						<p class="info"><span class="cate">영화</span><span class="bar">|</span><span class="sum"><span class="p_ico"></span>1,000</span></p>
+					</div>
+					<span class="btn_menu"></span>
+				</li>
+				<li>
+					<div class="c_img">
+						<img src="../_static/mobile/images/temp/m_img_5.jpg" alt="">
+						<span class="ico"></span>
+						<span class="time">02:50</span>
+					</div>
+					<div class="c_txt_area">
+						<p class="c_tit">고전 재탕하기 - 2005.07.14 마다가스카 완벽 번역 보기</p>
+						<p class="info"><span class="cate">영화</span><span class="bar">|</span><span class="sum"><span class="p_ico"></span>1,000</span></p>
+					</div>
+					<span class="btn_menu"></span>
+				</li>
+			</ul>
+		</div>
+		<div class="page_move_btn_wrap">
+			<span class="btn prev"></span>
+			<span class="btn next"></span>
+		</div>
+	</div>
+	<div class="reply_list_wrap">
+		<div class="top">
+			<dl class="r_num">
+				<dt>전체리뷰</dt>
+				<dd>55</dd>
+			</dl>
+			<span class="bar">|</span>
+			<dl class="r_num">
+				<dt>만족</dt>
+				<dd>49</dd>
+			</dl>
+			<span class="bar">|</span>
+			<dl class="r_num">
+				<dt>불만족</dt>
+				<dd>6</dd>
+			</dl>
+		</div>
+		<div class="r_alim_txt">
+			<span class="ico"></span>
+			<div class="txt_area">
+				<p class="b_txt">리뷰를 남겨주세요!</p>
+				<p>리뷰를 남기시면 포인트 보상과 커뮤니티 경험치가 올라갑니다!</p>
+			</div>
+		</div>
+		<div class="reply_input_wrap">
+			<div class="btn_wrap">
+				<span class="r_btn good active"><span class="ico"></span> 만족합니다</span>
+				<span class="r_btn bad"><span class="ico"></span> 불만족합니다</span>
+			</div>
+			<div class="reply_input_area">
+				<textarea name="" id="" placeholder="댓글을 입력해주세요"  class="r_input" ></textarea><span class="btn_submit">등록</span>
+			</div>
+		</div>
+		<div class="reply_list">
+			<div class="no_content">
+				<span class="ico"></span>
+				<p class="txt">등록된 평가가 없습니다.</p>
+			</div>
+			<div class="r_wrap bad">
+				<span class="f_ico"></span>
+				<div class="r_txt_wrap">
+					<div class="name_area">
+						<span class="b_ico">BEST</span>
+						<span class="m_level type6"></span>
+						<span class="id">아름이네채널이다</span>
+						<span class="date">2018-12-14</span>
+					</div>
+					<p class="r_txt">아니 진짜 어이없자나여 아오 씅질나~~~~~ 다신 님꺼 안볼꺼임 ㅡㅡ 앞으로 제눈에 띄지마세요~~~~</p>
+					<div class="info">
+						<span class="r_like active"><span class="ico"></span>123</span2020-11-17>
+						<span class="bar">|</span>
+						<span class="">답글</span>
+						<span class="bar">|</span>
+						<span class="">신고</span>
+						<span class="bar">|</span>
+						<span class="coupon">쿠폰지급</span>
+					</div>
+				</div>
+			</div>
+			<div class="r_wrap bad depth2">
+				<span class="bg_depth"></span>
+				<div class="r_txt_wrap">
+					<div class="name_area">
+						<span class="m_level type8"></span>
+						<span class="id">아름이네채널이다</span>
+						<span class="date">2018-12-14</span>
+					</div>
+					<p class="r_txt">아니 진짜 어이없자나여 아오 씅질나~~~~~ 다신 님꺼 안볼꺼임 ㅡㅡ 앞으로 제눈에 띄지마세요~~~~</p>
+					<div class="info">
+						<span class="">답글</span>
+						<span class="bar">|</span>
+						<span class="">신고</span>
+						
+					</div>
+				</div>
+			</div>
+			<div class="r_wrap good">
+				<span class="f_ico"></span>
+				<div class="r_txt_wrap">
+					<div class="name_area">
+						<span class="b_ico">BEST</span>
+						<span class="m_level"></span>
+						<span class="id">아름이네채널이다</span>
+						<span class="date">2018-12-14</span>
+					</div>
+					<p class="r_txt">아니 진짜 어이없자나여 아오 씅질나~~~~~ 다신 님꺼 안볼꺼임 ㅡㅡ 앞으로 제눈에 띄지마세요~~~~</p>
+					<div class="info">
+						<span class="r_like"><span class="ico"></span>123</span>
+						<span class="bar">|</span>
+						<span class="">답글</span>
+						<span class="bar">|</span>
+						<span class="">신고</span>
+						<span class="bar">|</span>
+						<span class="coupon">쿠폰지급</span>
+					</div>
+				</div>
+			</div>
+			active 추가시
+			<div class="r_input_wrap active">
+				<span class="bg_depth"></span>
+				<div class="reply_input_area depth2">
+					<textarea name="" id="" placeholder="답글을 입력해주세요"  class="r_input" ></textarea><span class="btn_submit">등록</span>
+				</div>
+				<div class="reply_auto_list">
+					<ul>
+						<li><span>답글자동완성 영역입니다.</span></li>
+						<li><span>댓글 이런거 달아보아요</span></li>
+						<li><span>평가 남겨주셔서 감사합니다.</span></li>
+						<li><span>텍스트가 자동으로 보여져요오오</span></li>
+					</ul>
+				</div>
+			</div>
+			<div class="r_wrap bad">
+				<span class="f_ico"></span>
+				<div class="r_txt_wrap">
+					<div class="name_area">
+						<span class="m_level"></span>
+						<span class="id">아름이네채널이다</span>
+						<span class="date">2018-12-14</span>
+					</div>
+					<p class="r_txt">아니 진짜 어이없자나여 아오 씅질나~~~~~ 다신 님꺼 안볼꺼임 ㅡㅡ 앞으로 제눈에 띄지마세요~~~~</p>
+					<div class="info">
+						<span class="r_like"><span class="ico"></span>123</span>
+						<span class="bar">|</span>
+						<span class="">답글</span>
+						<span class="bar">|</span>
+						<span class="">신고</span>
+						<span class="bar">|</span>
+						<span class="coupon">쿠폰지급</span>
+					</div>
+				</div>
+			</div>
+			<div class="r_wrap good">
+				<span class="f_ico"></span>
+				<div class="r_txt_wrap">
+					<div class="name_area">
+						<span class="m_level"></span>
+						<span class="id">아름이네채널이다</span>
+						<span class="date">2018-12-14</span>
+					</div>
+					<p class="r_txt">아니 진짜 어이없자나여 아오 씅질나~~~~~ 다신 님꺼 안볼꺼임 ㅡㅡ 앞으로 제눈에 띄지마세요~~~~</p>
+					<div class="info">
+						<span class="r_like"><span class="ico"></span>123</span>
+						<span class="bar">|</span>
+						<span class="">답글</span>
+						<span class="bar">|</span>
+						<span class="">신고</span>
+						<span class="bar">|</span>
+						<span class="coupon">쿠폰지급</span>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="btn_more">댓글 더보기 <span class="ico_arrow"></span></div>
+	</div>
+	<span class="top_btn"><span class="ico"></span></span>
+	<div class="scroll_menu">
+		<span class="s_btn type1"><span class="ico"></span><span class="name">HOME</span></span>
+		<span class="s_btn type2 active"><span class="ico"></span><span class="name">카테고리</span></span>
+		<span class="s_btn type3"><span class="ico"></span><span class="name">For You</span></span>
+		<span class="s_btn type4"><span class="ico"></span><span class="name">마이페이지</span></span>
+		<span class="s_btn type5"><span class="ico"></span><span class="name">검색</span></span>
+	</div>
+</div>
+</body>
+</html>

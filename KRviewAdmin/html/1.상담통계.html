@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KRview ADMIN</title>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/bootstrap-4.3.1.min.css">
+    <link rel="stylesheet" href="../css/custom-icon.css">
+    <link rel="stylesheet" href="../css/krview_admin_style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Gothic+A1:wght@200;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+<!-- wrap -->
+<div class="wrap">
+    <!-- header -->
+    <div class="header">
+        <h1 class="a_logo"><img src="../images/a_logo.png" alt="kRview"><span class="l_txt">관리자 페이지</span></h1>
+        <div class="top_menu_area">
+            <div class="user_name">
+                <p class="txt">반갑습니다, <span class="user_name">관리자님</span>!</p>
+                <span class="img_icon"><img src="../images/profile-img.png" alt="profile-img"></span>
+            </div>
+            <div class="menu_list">
+                <span class="arrow"></span>
+                <ul class="menu">
+                    <li><span class="cursor">로그아웃</span><span class="l_bar"></span></li>
+                    <li><span class="cursor">회원 정보</span><span class="l_bar"></span></li>
+                    <li><span class="cursor">비밀번호 변경</span><span class="l_bar"></span></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- //header -->
+    <!-- container -->
+    <div class="container">
+        <!-- lnb -->
+        <div class="lnb">
+            <ul>
+                <li class="active">
+                    <a href="1.상담통계.html">
+                    <span class="bg_circle">
+                        <i class="icon-lnb-chart"></i>
+                        <span class="n_name">상담 통계</span>
+                    </span> 
+                    </a>
+                </li>
+                <li class="">
+                    <span class="bg_circle">
+                        <i class="icon-lnb-history"></i>
+                        <span class="n_name">상담 이력</span>
+                    </span>
+                </li>
+                <li>
+                    <span class="bg_circle">
+                        <i class="icon-lnb-account"></i>
+                        <span class="n_name">계정 관리</span>
+                    </span>
+                </li>
+                <li>
+                    <span class="bg_circle">
+                        <i class="icon-lnb-company"></i>
+                        <span class="n_name">제조사 관리</span>
+                    </span>
+                </li>
+                <li>
+                    <span class="bg_circle">
+                        <i class="icon-lnb-device"></i>
+                        <span class="n_name">장치 관리</span>
+                    </span>
+                </li>
+            </ul>
+        </div>
+        <!-- //lnb -->
+        <!-- content -->
+        <!-- 
+
+        -->
+        <div class="content">
+            <div class="c_top">
+                <h2 class="sub_tit">상담 통계 <span class="s_txt">( <span class="b_txt">2023년 1월 17일</span> 통계 )</span></h2>
+                <div class="date_select_wrap">
+                    <div class="date_select_area">
+                        <div class="i_block line_r">
+                            <select name="" id="" class="select_style">
+                                <option value="">날짜</option>
+                                <option value="">주 별</option>
+                                <option value="">월 별</option>
+                            </select>
+                        </div>
+                        <div class="i_block">
+                            <input type="text" value="2023-01-17"  class="i_style">
+                            <span class="btn"><i class="icon-calender"></i></span>
+                        </div>
+                    </div>    
+                    <span class="t_btn search">
+                        <span class="txt">검색</span>
+                    </span>    
+                </div>
+            </div>
+            <div class="c_inner row">
+                <div class="col-7 pl-0 pr-0">
+                    <div class="section">
+                        <div class="box_area style_v">
+                            <div class="box style1">
+                                <dl>
+                                    <dt> 총 세션</dt>
+                                    <dd><span class="num">355</span></dd>
+                                </dl>
+                            </div>
+                            <div class="box style2">
+                                <dl>
+                                    <dt>완료 된 세션</dt>
+                                    <dd><span class="num">323</span></dd>
+                                </dl>
+                            </div>
+                            <div class="box style3 mr-0">
+                                <dl>
+                                    <dt>드롭 세션</dt>
+                                    <dd><span class="num">32</span></dd>
+                                </dl>
+                            </div>
+                        </div>
+                        <div class="box_area f_style size1">
+                            <div class="section bg_gray fix_height">
+                                <h3 class="sub_tit">모델별 상담 건 수</h3>
+                                <div class="chart_area">
+                                    <img src="../images/graph1.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="box_area f_style size2 pl-0 mb-0 style_h">
+                            <div class="section bg_gray">
+                                <h3 class="sub_tit">상담 시간</h3>
+                                <div class="box size1">
+                                    <dl>
+                                        <dt>총 상담 시간</dt>
+                                        <dd>
+                                            <span class="num">323</span>시간 <span class="num">30</span>분 <span class="num">21</span>초
+                                        </dd>
+                                    </dl>
+                                </div>
+                                <div class="box size2">
+                                    <dl>
+                                        <dt>최대</dt>
+                                        <dd>
+                                            <span class="num">24</span>분 <span class="num">30</span>초
+                                        </dd>
+                                    </dl>
+                                </div>
+                                <div class="box size2">
+                                    <dl>
+                                        <dt>평균</dt>
+                                        <dd>
+                                            <span class="num">07</span>분 <span class="num">23</span>초
+                                        </dd>
+                                    </dl>
+                                </div>
+                                <div class="box size2">
+                                    <dl>
+                                        <dt>최소</dt>
+                                        <dd>
+                                            <span class="num">00</span>분 <span class="num">30</span>초
+                                        </dd>
+                                    </dl>
+                                </div>
+                            </div>
+                            <div class="section bg_gray">
+                                <h3 class="sub_tit">로그 추출 건 수 </h3>
+                                <div class="box size1">
+                                    <dl>
+                                        <dt>총 로그 추출 건 수</dt>
+                                        <dd>
+                                            <span class="num">543</span>건
+                                        </dd>
+                                    </dl>
+                                </div>
+                                <div class="box size2">
+                                    <dl>
+                                        <dt>동영상</dt>
+                                        <dd>
+                                            <span class="num">210</span>건
+                                        </dd>
+                                    </dl>
+                                </div>
+                                <div class="box size2">
+                                    <dl>
+                                        <dt>이미지</dt>
+                                        <dd>
+                                            <span class="num">13</span>건
+                                        </dd>
+                                    </dl>
+                                </div>
+                                <div class="box size2">
+                                    <dl>
+                                        <dt>로그</dt>
+                                        <dd>
+                                            <span class="num">320</span>건
+                                        </dd>
+                                    </dl>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="section fix_height2">
+                        <h3 class="sub_tit">시점 별 세션 연결 수</h3>
+                        <div class="chart_area style1">
+                            <img src="../images/graph2.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-5 pl-0 pr-0 h_100 r_style">
+                    <div class="section mr-0">
+                        <div class="top_btn_area">
+                            <span class="t_btn excel">
+                                <span class="txt">엑셀 다운로드</span>
+                            </span>
+                        </div>
+                        <div class="tbl_wrap has_btn_style">
+                            <ul class="tbl_style">
+                                <li class="top">
+                                    <div class="t1">
+                                        <span>MAC 주소</span>
+                                    </div>
+                                    <div class="t2">
+                                        <span>모델명</span>
+                                    </div>
+                                    <div class="t3">
+                                        <span>날짜(시작 시간)</span>
+                                    </div>
+                                    <div class="t4">
+                                        <span>날짜(종료 시간)</span>
+                                    </div>
+                                    <div class="t5 center">
+                                        <span>상담원</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="t1">
+                                        <span>12:34:56:78:9A:B</span>
+                                    </div>
+                                    <div class="t2">
+                                        <span>KSTB6200</span>
+                                    </div>
+                                    <div class="t3">
+                                        <span>23-01-17 09:36:05</span>
+                                    </div>
+                                    <div class="t4">
+                                        <span>23-01-17 09:40:48</span>
+                                    </div>
+                                    <div class="t5 center">
+                                        <span>Jiwon Cho</span>
+                                    </div>
+                                </li>
+                                <li class="">
+                                    <div class="t1">
+                                        <span>12:34:56:78:9A:B</span>
+                                    </div>
+                                    <div class="t2">
+                                        <span>KSTB6200</span>
+                                    </div>
+                                    <div class="t3">
+                                        <span>23-01-17 09:36:05</span>
+                                    </div>
+                                    <div class="t4">
+                                        <span>23-01-17 09:40:48</span>
+                                    </div>
+                                    <div class="t5 center">
+                                        <span>Jiwon Cho</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="t1">
+                                        <span>12:34:56:78:9A:B</span>
+                                    </div>
+                                    <div class="t2">
+                                        <span>KSTB6200</span>
+                                    </div>
+                                    <div class="t3">
+                                        <span>23-01-17 09:36:05</span>
+                                    </div>
+                                    <div class="t4">
+                                        <span>23-01-17 09:40:48</span>
+                                    </div>
+                                    <div class="t5 center">
+                                        <span>Jiwon Cho</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="t1">
+                                        <span>12:34:56:78:9A:B</span>
+                                    </div>
+                                    <div class="t2">
+                                        <span>KSTB6200</span>
+                                    </div>
+                                    <div class="t3">
+                                        <span>23-01-17 09:36:05</span>
+                                    </div>
+                                    <div class="t4">
+                                        <span>23-01-17 09:40:48</span>
+                                    </div>
+                                    <div class="t5 center">
+                                        <span>Jiwon Cho</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="t1">
+                                        <span>12:34:56:78:9A:B</span>
+                                    </div>
+                                    <div class="t2">
+                                        <span>KSTB6200</span>
+                                    </div>
+                                    <div class="t3">
+                                        <span>23-01-17 09:36:05</span>
+                                    </div>
+                                    <div class="t4">
+                                        <span>23-01-17 09:40:48</span>
+                                    </div>
+                                    <div class="t5 center">
+                                        <span>Jiwon Cho</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="t1">
+                                        <span>12:34:56:78:9A:B</span>
+                                    </div>
+                                    <div class="t2">
+                                        <span>KSTB6200</span>
+                                    </div>
+                                    <div class="t3">
+                                        <span>23-01-17 09:36:05</span>
+                                    </div>
+                                    <div class="t4">
+                                        <span>23-01-17 09:40:48</span>
+                                    </div>
+                                    <div class="t5 center">
+                                        <span>Jiwon Cho</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="t1">
+                                        <span>12:34:56:78:9A:B</span>
+                                    </div>
+                                    <div class="t2">
+                                        <span>KSTB6200</span>
+                                    </div>
+                                    <div class="t3">
+                                        <span>23-01-17 09:36:05</span>
+                                    </div>
+                                    <div class="t4">
+                                        <span>23-01-17 09:40:48</span>
+                                    </div>
+                                    <div class="t5 center">
+                                        <span>Jiwon Cho</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="t1">
+                                        <span>12:34:56:78:9A:B</span>
+                                    </div>
+                                    <div class="t2">
+                                        <span>KSTB6200</span>
+                                    </div>
+                                    <div class="t3">
+                                        <span>23-01-17 09:36:05</span>
+                                    </div>
+                                    <div class="t4">
+                                        <span>23-01-17 09:40:48</span>
+                                    </div>
+                                    <div class="t5 center">
+                                        <span>Jiwon Cho</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="t1">
+                                        <span>12:34:56:78:9A:B</span>
+                                    </div>
+                                    <div class="t2">
+                                        <span>KSTB6200</span>
+                                    </div>
+                                    <div class="t3">
+                                        <span>23-01-17 09:36:05</span>
+                                    </div>
+                                    <div class="t4">
+                                        <span>23-01-17 09:40:48</span>
+                                    </div>
+                                    <div class="t5 center">
+                                        <span>Jiwon Cho</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="t1">
+                                        <span>12:34:56:78:9A:B</span>
+                                    </div>
+                                    <div class="t2">
+                                        <span>KSTB6200</span>
+                                    </div>
+                                    <div class="t3">
+                                        <span>23-01-17 09:36:05</span>
+                                    </div>
+                                    <div class="t4">
+                                        <span>23-01-17 09:40:48</span>
+                                    </div>
+                                    <div class="t5 center">
+                                        <span>Jiwon Cho</span>
+                                    </div>
+                                </li>
+                    
+                                <li>
+                                    <div class="t1">
+                                        <span>12:34:56:78:9A:B</span>
+                                    </div>
+                                    <div class="t2">
+                                        <span>KSTB6200</span>
+                                    </div>
+                                    <div class="t3">
+                                        <span>23-01-17 09:36:05</span>
+                                    </div>
+                                    <div class="t4">
+                                        <span>23-01-17 09:40:48</span>
+                                    </div>
+                                    <div class="t5 center">
+                                        <span>Jiwon Cho</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="t1">
+                                        <span>12:34:56:78:9A:B</span>
+                                    </div>
+                                    <div class="t2">
+                                        <span>KSTB6200</span>
+                                    </div>
+                                    <div class="t3">
+                                        <span>23-01-17 09:36:05</span>
+                                    </div>
+                                    <div class="t4">
+                                        <span>23-01-17 09:40:48</span>
+                                    </div>
+                                    <div class="t5 center">
+                                        <span>Jiwon Cho</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="t1">
+                                        <span>12:34:56:78:9A:B</span>
+                                    </div>
+                                    <div class="t2">
+                                        <span>KSTB6200</span>
+                                    </div>
+                                    <div class="t3">
+                                        <span>23-01-17 09:36:05</span>
+                                    </div>
+                                    <div class="t4">
+                                        <span>23-01-17 09:40:48</span>
+                                    </div>
+                                    <div class="t5 center">
+                                        <span>Jiwon Cho</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="t1">
+                                        <span>12:34:56:78:9A:B</span>
+                                    </div>
+                                    <div class="t2">
+                                        <span>KSTB6200</span>
+                                    </div>
+                                    <div class="t3">
+                                        <span>23-01-17 09:36:05</span>
+                                    </div>
+                                    <div class="t4">
+                                        <span>23-01-17 09:40:48</span>
+                                    </div>
+                                    <div class="t5 center">
+                                        <span>Jiwon Cho</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="t1">
+                                        <span>12:34:56:78:9A:B</span>
+                                    </div>
+                                    <div class="t2">
+                                        <span>KSTB6200</span>
+                                    </div>
+                                    <div class="t3">
+                                        <span>23-01-17 09:36:05</span>
+                                    </div>
+                                    <div class="t4">
+                                        <span>23-01-17 09:40:48</span>
+                                    </div>
+                                    <div class="t5 center">
+                                        <span>Jiwon Cho</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="t1">
+                                        <span>12:34:56:78:9A:B</span>
+                                    </div>
+                                    <div class="t2">
+                                        <span>KSTB6200</span>
+                                    </div>
+                                    <div class="t3">
+                                        <span>23-01-17 09:36:05</span>
+                                    </div>
+                                    <div class="t4">
+                                        <span>23-01-17 09:40:48</span>
+                                    </div>
+                                    <div class="t5 center">
+                                        <span>Jiwon Cho</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="t1">
+                                        <span>12:34:56:78:9A:B</span>
+                                    </div>
+                                    <div class="t2">
+                                        <span>KSTB6200</span>
+                                    </div>
+                                    <div class="t3">
+                                        <span>23-01-17 09:36:05</span>
+                                    </div>
+                                    <div class="t4">
+                                        <span>23-01-17 09:40:48</span>
+                                    </div>
+                                    <div class="t5 center">
+                                        <span>Jiwon Cho</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="t1">
+                                        <span>12:34:56:78:9A:B</span>
+                                    </div>
+                                    <div class="t2">
+                                        <span>KSTB6200</span>
+                                    </div>
+                                    <div class="t3">
+                                        <span>23-01-17 09:36:05</span>
+                                    </div>
+                                    <div class="t4">
+                                        <span>23-01-17 09:40:48</span>
+                                    </div>
+                                    <div class="t5 center">
+                                        <span>Jiwon Cho</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="t1">
+                                        <span>12:34:56:78:9A:B</span>
+                                    </div>
+                                    <div class="t2">
+                                        <span>KSTB6200</span>
+                                    </div>
+                                    <div class="t3">
+                                        <span>23-01-17 09:36:05</span>
+                                    </div>
+                                    <div class="t4">
+                                        <span>23-01-17 09:40:48</span>
+                                    </div>
+                                    <div class="t5 center">
+                                        <span>Jiwon Cho</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="t1">
+                                        <span>12:34:56:78:9A:B</span>
+                                    </div>
+                                    <div class="t2">
+                                        <span>KSTB6200</span>
+                                    </div>
+                                    <div class="t3">
+                                        <span>23-01-17 09:36:05</span>
+                                    </div>
+                                    <div class="t4">
+                                        <span>23-01-17 09:40:48</span>
+                                    </div>
+                                    <div class="t5 center">
+                                        <span>Jiwon Cho</span>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                
+            </div>
+        </div>
+        <!-- //content -->
+    </div>
+    <!-- //container -->
+</div>
+<!-- //wrap -->
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.0.min.js"></script>
+
+</body>
+</html>

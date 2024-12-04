@@ -1,0 +1,434 @@
+@font-face {
+  font-family: 'icomoon';
+  src: url('../fonts/custom-icon/icomoon.eot?lfaijn');
+  src: url('../fonts/custom-icon/icomoon.eot?lfaijn#iefix') format('embedded-opentype'),
+    url('../fonts/custom-icon/icomoon.ttf?lfaijn') format('truetype'),
+    url('../fonts/custom-icon/icomoon.woff?lfaijn') format('woff'),
+    url('../fonts/custom-icon/icomoon.svg?lfaijn#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"],
+[class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  /* speak: never; */
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+.icon-logo:before {
+  content: "\e9ec";
+  font-size:10px;
+}
+
+.icon-login-id:before {
+  content: "\e900";
+
+}
+
+.icon-login-pw:before {
+  content: "\e901";
+
+}
+
+.icon-arrow-back:before {
+  content: "\e902";
+
+}
+
+.icon-menu:before {
+  content: "\e903";
+
+}
+
+.icon-top-server:before {
+  content: "\e904";
+  font-size:18px;
+
+}
+
+.icon-top-connect:before {
+  content: "\e905";
+  font-size: 30px;
+  color:#A2F994;
+}
+
+.icon-top-disconnect:before {
+  content: "\e906";
+  font-size: 30px;
+  color: #FF6E6E;
+}
+
+.icon-top-network:before {
+  content: "\e907";
+  font-size: 24px;
+}
+
+.icon-top-account:before {
+  content: "\e908";
+  font-size:45px;
+  color:#fff;
+}
+
+.icon-lnb-dashboard:before {
+  content: "\e909";
+  font-size:20px;
+  color: #8F99A8;
+}
+
+.icon-lnb-device:before {
+  content: "\e90a";
+  font-size: 20px;
+  color: #8F99A8;
+
+}
+
+.icon-top-logout:before {
+  content: "\e90b";
+  font-size:18px;
+}
+
+.icon-add:before {
+  content: "\e90c";
+  font-size: 20px;
+  color:#CED0D3;
+}
+
+.icon-arrow-btm:before {
+  content: "\e90d";
+
+}
+
+.icon-arrow-next:before {
+  content: "\e90e";
+
+}
+
+.icon-arrow-top:before {
+  content: "\e90f";
+
+}
+
+.icon-copy:before {
+  content: "\e910";
+  color: #CED0D3;
+
+}
+
+.icon-download:before {
+  content: "\e911";
+  color: #CED0D3;
+}
+
+.icon-lnb-chart:before {
+  content: "\e912";
+  font-size: 20px;
+
+}
+
+.icon-lnb-file:before {
+  content: "\e913";
+  font-size: 20px;
+
+}
+
+.icon-lnb-info:before {
+  content: "\e914";
+  font-size: 20px;
+
+}
+
+.icon-lnb-policy:before {
+  content: "\e915";
+  font-size: 20px;
+
+}
+
+.icon-lnb-setting:before {
+  content: "\e916";
+font-size: 20px;
+}
+
+.icon-popup:before {
+  content: "\e917";
+  font-size: 20px;
+}
+
+.icon-done:before {
+  content: "\e918";
+  
+}
+
+.icon-close:before {
+  content: "\e919";
+
+}
+
+.icon-csv-down:before {
+  content: "\e91a";
+  font-size: 25px;
+}
+
+.icon-column:before {
+  content: "\e91b";
+  font-size: 25px;
+}
+
+.icon-customer:before {
+  content: "\e91c";
+  font-size: 25px;
+}
+
+.icon-delete:before {
+  position: relative;
+  content: "\e91d";
+  font-size: 24px;
+}
+
+.icon-search:before {
+  content: "\e91e";
+  font-size: 20px;
+}
+
+.icon-lock:before {
+  content: "\e91f";
+  font-size: 25px;
+}
+
+.icon-unlock:before {
+  content: "\e920";
+  font-size: 24px;
+}
+
+.icon-calendar:before {
+  content: "\e921";
+  font-size: 20px;
+}
+
+.icon-edit:before {
+  content: "\e922";
+}
+
+.icon-powersave:before {
+  content: "\e923";
+}
+
+.icon-refresh:before {
+  content: "\e924";
+}
+
+.icon-battery:before {
+  content: "\e925";
+}
+
+.icon-pairing:before {
+  content: "\e926";
+}
+
+.icon-multicast:before {
+  content: "\e927";
+}
+
+.icon-history:before {
+  content: "\e928";
+}
+
+.icon-wifi:before {
+  content: "\e929";
+}
+
+.icon-app:before {
+  content: "\e92a";
+}
+
+.icon-app-play:before {
+  content: "\e92b";
+}
+
+.icon-app-update:before {
+  content: "\e92c";
+}
+
+.icon-clear:before {
+  content: "\e92d";
+  font-size: 22px;
+}
+
+.icon-update:before {
+  content: "\e92e";
+}
+
+.icon-powersave-2:before {
+  content: "\e92f";
+}
+
+.icon-restart:before {
+  content: "\e930";
+}
+
+.icon-power:before {
+  content: "\e931";
+}
+
+.icon-factory-reset:before {
+  content: "\e932";
+}
+
+.icon-pw-reset:before {
+  content: "\e933";
+}
+
+.icon-remote-control:before {
+  content: "\e934";
+}
+
+.icon-message:before {
+  content: "\e935";
+}
+
+.icon-log:before {
+  content: "\e936";
+}
+
+.icon-firmware:before {
+  content: "\e937";
+}
+
+.icon-ping-test:before {
+  content: "\e938";
+}
+
+.icon-speed-test:before {
+  content: "\e939";
+}
+
+.icon-traceroute:before {
+  content: "\e93a";
+}
+
+.icon-refresh-all:before {
+  content: "\e93b";
+}
+
+.icon-resolution:before {
+  content: "\e93c";
+}
+
+.icon-ratio:before {
+  content: "\e93d";
+}
+
+.icon-application:before {
+  content: "\e93e";
+}
+
+.icon-bluetooth-on:before {
+  content: "\e93f";
+  color: #A2F994;
+}
+
+.icon-paring-on:before {
+  content: "\e940";
+}
+
+.icon-unlock-2:before {
+  content: "\e941";
+}
+
+.icon-unknown:before {
+  content: "\e942";
+  font-size: 24px;
+}
+
+.icon-home:before {
+  content: "\e943";
+  font-size: 24px;
+}
+
+.icon-undo:before {
+  content: "\e944";
+  font-size: 24px;
+}
+
+.icon-keyboard:before {
+  content: "\e945";
+  font-size: 18px;
+}
+
+.icon-siren:before {
+  content: "\e946";
+  font-size: 18px;
+}
+
+.icon-pause:before {
+  content: "\e947";
+  font-size: 24px;
+}
+
+.icon-cancel:before {
+  content: "\e948";
+  font-size: 24px;
+}
+
+.icon-replay:before {
+  content: "\e949";
+  position: relative;
+  top: -2px;
+  font-size: 22px;
+}
+
+.icon-server-connect:before {
+  content: "\e94a";
+  position: relative;
+  font-size: 22px;
+}
+
+.icon-link-move:before {
+  content: "\e94b";
+  position: relative;
+  top:2px;
+  left:3px;
+  font-size: 24px;
+}
+
+.icon-ethernet:before {
+  content: "\e94c";
+  position: relative;
+  font-size: 22px;
+}
+
+.icon_network:before {
+  content: "\e94d";
+  position: relative;
+  font-size: 22px;
+}
+
+.icon-stb-active:before {
+  content: "\e94e";
+  position: relative;
+  left: 1px;
+  font-size: 28px;
+}
+
+.icon-standby:before {
+  content: "\e94f";
+  position: relative;
+  left: 1px;
+  font-size: 28px;
+}
+
+.icon-audio:before {
+  content: "\e950";
+  font-size: 26px;
+}

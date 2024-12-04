@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0">
+<title>OnPlay mobile</title>
+<link rel="stylesheet" href="../_static/mobile/css/onplay.reset.css">
+<link rel="stylesheet" href="../_static/mobile/css/onplay.mobile.style.css">
+</head>
+<body>
+<div id="wrap" class="wrap">
+	<!-- header -->
+	<header class="header">
+		<div class="h_top">
+			<h1 class="logo"><img src="../_static/mobile/images/common/logo.png" alt=""></h1>
+			<span class="btn_s_menu"></span>
+			<span class="btn_search"></span>
+		</div>
+		<!-- 버튼 클릭시 전체메뉴 오픈 , menu_open 추가 -->
+		<div class="gnb_wrap menu_open">
+			<nav class="gnb">
+				<ul>
+					<li class="active"><span>인기</span><span class="line"></span></li>
+					<li><span>영화</span><span class="line"></span></li>
+					<li><span>방송</span><span class="line"></span></li>
+					<li><span>애니</span><span class="line"></span></li>
+					<li><span>도서</span><span class="line"></span></li>
+					<li><span>음악</span><span class="line"></span></li>
+					<li><span>성인</span><span class="line"></span></li>
+					<li><span>무료</span><span class="line"></span></li>
+				</ul>
+			</nav>
+			<span class="btn_m_open">
+				<span class="ico_arrow"></span>
+			</span>
+			<!-- 수정 활성화 edit 클래스 추가 ,버튼 스타일 일반, active, disable -->
+			<div class="all_menu_wrap edit" style="display:none;">
+				<div class="menu">
+					<span class="m_btn">인기</span>
+					<span class="m_btn">영화</span>
+					<span class="m_btn active">방송</span>
+					<span class="m_btn">애니</span>
+					<span class="m_btn">도서</span>
+					<span class="m_btn disable">음악</span>
+					<span class="m_btn">성인</span>
+					<span class="m_btn">무료</span>
+				</div>
+				<div class="a_btm">
+					<p class="txt">메뉴를 끌어 순서를 바꾸거나 <br /> 터치해 목록에서 가릴 수 있어요.</p>
+					<span class="btn_m_edit"><span class="ico"></span> 메뉴 순서 편집하기</span>
+					<div class="btn_wrap">
+						<span class="btn cancel">취소</span>
+						<span class="btn submit">적용</span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+	<!-- //header -->
+	<!-- container -->
+	<div class="container">
+		<div class="cate_box" style="display:none;">
+			<div class="now_cate">
+				<span>인기 TOP 100</span><span class="arrow"></span>
+			</div>
+		</div>
+		<!-- 201102 서브 카테고리 메뉴 -->
+		<div class="gnb_depth2">
+			<nav class="depth2">
+				<ul>
+					<li class="active"><span>전체</span></li>
+					<li><span>영화</span></li>
+					<li><span>방송</span></li>
+					<li><span>애니</span></li>
+					<li><span>유아</span></li>
+					<li><span>교육</span></li>
+				</ul>
+			</nav>
+		</div>
+		<!-- //201102 서브 카테고리 메뉴 -->
+		<!-- 콘텐츠 리스트 -->
+		<div class="content_slide_wrap txt_style sub_list">
+			<div class="c_list ">
+				<ul>
+					<li>
+						<div class="c_img">
+							<img src="../_static/mobile/images/temp/m_img_3.jpg" alt="">
+							<span class="ico hd"></span>
+							<span class="time">02:50</span>
+						</div>
+						<div class="c_txt_area">
+							<p class="c_tit">고전 재탕하기 - 2005.07.14 마다가스카 완벽 번역 보기</p>
+							<p class="info"><span class="cate">영화</span><span class="bar">|</span><span class="sum"><span class="p_ico"></span>1,000</span></p>
+							<p class="info"><span class="name">가나다라마바사아</span></p>
+						</div>
+					</li>
+					<li>
+						<div class="c_img">
+							<img src="../_static/mobile/images/temp/m_img_1.jpg" alt="">
+							<span class="ico fhd"></span>
+							<span class="time">02:50</span>
+						</div>
+						<div class="c_txt_area">
+							<p class="c_tit">[정식자막] 미드나잇 인 파리~~~ 랍니다 요를레이히유후</p>
+							<p class="info"><span class="cate">영화</span><span class="bar">|</span><span class="sum"><span class="p_ico"></span>1,000</span></p>
+							<p class="info"><span class="name">가나다라마바사아</span></p>
+						</div>
+					</li>
+					<li>
+						<div class="c_img">
+							<img src="../_static/mobile/images/temp/m_img_5.jpg" alt="">
+							<span class="ico"></span>
+							<span class="time">02:50</span>
+						</div>
+						<div class="c_txt_area">
+							<p class="c_tit">고전 재탕하기 - 2005.07.14 마다가스카 완벽 번역 보기</p>
+							<p class="info"><span class="cate">영화</span><span class="bar">|</span><span class="sum"><span class="p_ico"></span>1,000</span></p>
+							<p class="info"><span class="name">가나다라마바사아</span></p>
+						</div>
+					</li>
+					<li>
+						<div class="c_img">
+							<img src="../_static/mobile/images/temp/m_img_3.jpg" alt="">
+							<span class="ico hd"></span>
+							<span class="time">02:50</span>
+						</div>
+						<div class="c_txt_area">
+							<p class="c_tit">고전 재탕하기 - 2005.07.14 마다가스카 완벽 번역 보기</p>
+							<p class="info"><span class="cate">영화</span><span class="bar">|</span><span class="sum"><span class="p_ico"></span>1,000</span></p>
+							<p class="info"><span class="name">가나다라마바사아</span></p>
+						</div>
+					</li>
+					<li>
+						<div class="c_img">
+							<img src="../_static/mobile/images/temp/m_img_1.jpg" alt="">
+							<span class="ico fhd"></span>
+							<span class="time">02:50</span>
+						</div>
+						<div class="c_txt_area">
+							<p class="c_tit">[정식자막] 미드나잇 인 파리~~~ 랍니다 요를레이히유후</p>
+							<p class="info"><span class="cate">영화</span><span class="bar">|</span><span class="sum"><span class="p_ico"></span>1,000</span></p>
+							<p class="info"><span class="name">가나다라마바사아</span></p>
+						</div>
+					</li>
+					<li>
+						<div class="c_img">
+							<img src="../_static/mobile/images/temp/m_img_5.jpg" alt="">
+							<span class="ico"></span>
+							<span class="time">02:50</span>
+						</div>
+						<div class="c_txt_area">
+							<p class="c_tit">고전 재탕하기 - 2005.07.14 마다가스카 완벽 번역 보기</p>
+							<p class="info"><span class="cate">영화</span><span class="bar">|</span><span class="sum"><span class="p_ico"></span>1,000</span></p>
+							<p class="info"><span class="name">가나다라마바사아</span></p>
+						</div>
+					</li>
+					<li>
+						<div class="c_img">
+							<img src="../_static/mobile/images/temp/m_img_3.jpg" alt="">
+							<span class="ico hd"></span>
+							<span class="time">02:50</span>
+						</div>
+						<div class="c_txt_area">
+							<p class="c_tit">고전 재탕하기 - 2005.07.14 마다가스카 완벽 번역 보기</p>
+							<p class="info"><span class="cate">영화</span><span class="bar">|</span><span class="sum"><span class="p_ico"></span>1,000</span></p>
+							<p class="info"><span class="name">가나다라마바사아</span></p>
+						</div>
+					</li>
+					<li>
+						<div class="c_img">
+							<img src="../_static/mobile/images/temp/m_img_1.jpg" alt="">
+							<span class="ico fhd"></span>
+							<span class="time">02:50</span>
+						</div>
+						<div class="c_txt_area">
+							<p class="c_tit">[정식자막] 미드나잇 인 파리~~~ 랍니다 요를레이히유후</p>
+							<p class="info"><span class="cate">영화</span><span class="bar">|</span><span class="sum"><span class="p_ico"></span>1,000</span></p>
+							<p class="info"><span class="name">가나다라마바사아</span></p>
+						</div>
+					</li>
+					<li>
+						<div class="c_img">
+							<img src="../_static/mobile/images/temp/m_img_5.jpg" alt="">
+							<span class="ico"></span>
+							<span class="time">02:50</span>
+						</div>
+						<div class="c_txt_area">
+							<p class="c_tit">고전 재탕하기 - 2005.07.14 마다가스카 완벽 번역 보기</p>
+							<p class="info"><span class="cate">영화</span><span class="bar">|</span><span class="sum"><span class="p_ico"></span>1,000</span></p>
+							<p class="info"><span class="name">가나다라마바사아</span></p>
+						</div>
+					</li>
+					<li>
+						<div class="c_img">
+							<img src="../_static/mobile/images/temp/m_img_3.jpg" alt="">
+							<span class="ico hd"></span>
+							<span class="time">02:50</span>
+						</div>
+						<div class="c_txt_area">
+							<p class="c_tit">고전 재탕하기 - 2005.07.14 마다가스카 완벽 번역 보기</p>
+							<p class="info"><span class="cate">영화</span><span class="bar">|</span><span class="sum"><span class="p_ico"></span>1,000</span></p>
+							<p class="info"><span class="name">가나다라마바사아</span></p>
+						</div>
+					</li>
+					<li>
+						<div class="c_img">
+							<img src="../_static/mobile/images/temp/m_img_1.jpg" alt="">
+							<span class="ico fhd"></span>
+							<span class="time">02:50</span>
+						</div>
+						<div class="c_txt_area">
+							<p class="c_tit">[정식자막] 미드나잇 인 파리~~~ 랍니다 요를레이히유후</p>
+							<p class="info"><span class="cate">영화</span><span class="bar">|</span><span class="sum"><span class="p_ico"></span>1,000</span></p>
+							<p class="info"><span class="name">가나다라마바사아</span></p>
+						</div>
+					</li>
+					<li>
+						<div class="c_img">
+							<img src="../_static/mobile/images/temp/m_img_5.jpg" alt="">
+							<span class="ico"></span>
+							<span class="time">02:50</span>
+						</div>
+						<div class="c_txt_area">
+							<p class="c_tit">고전 재탕하기 - 2005.07.14 마다가스카 완벽 번역 보기</p>
+							<p class="info"><span class="cate">영화</span><span class="bar">|</span><span class="sum"><span class="p_ico"></span>1,000</span></p>
+							<p class="info"><span class="name">가나다라마바사아</span></p>
+						</div>
+					</li>
+					<li>
+						<div class="c_img">
+							<img src="../_static/mobile/images/temp/m_img_3.jpg" alt="">
+							<span class="ico hd"></span>
+							<span class="time">02:50</span>
+						</div>
+						<div class="c_txt_area">
+							<p class="c_tit">고전 재탕하기 - 2005.07.14 마다가스카 완벽 번역 보기</p>
+							<p class="info"><span class="cate">영화</span><span class="bar">|</span><span class="sum"><span class="p_ico"></span>1,000</span></p>
+							<p class="info"><span class="name">가나다라마바사아</span></p>
+						</div>
+					</li>
+					<li>
+						<div class="c_img">
+							<img src="../_static/mobile/images/temp/m_img_1.jpg" alt="">
+							<span class="ico fhd"></span>
+							<span class="time">02:50</span>
+						</div>
+						<div class="c_txt_area">
+							<p class="c_tit">[정식자막] 미드나잇 인 파리~~~ 랍니다 요를레이히유후</p>
+							<p class="info"><span class="cate">영화</span><span class="bar">|</span><span class="sum"><span class="p_ico"></span>1,000</span></p>
+							<p class="info"><span class="name">가나다라마바사아</span></p>
+						</div>
+					</li>
+					<li>
+						<div class="c_img">
+							<img src="../_static/mobile/images/temp/m_img_5.jpg" alt="">
+							<span class="ico"></span>
+							<span class="time">02:50</span>
+						</div>
+						<div class="c_txt_area">
+							<p class="c_tit">고전 재탕하기 - 2005.07.14 마다가스카 완벽 번역 보기</p>
+							<p class="info"><span class="cate">영화</span><span class="bar">|</span><span class="sum"><span class="p_ico"></span>1,000</span></p>
+							<p class="info"><span class="name">가나다라마바사아</span></p>
+						</div>
+					</li>
+					<li>
+						<div class="c_img">
+							<img src="../_static/mobile/images/temp/m_img_3.jpg" alt="">
+							<span class="ico hd"></span>
+							<span class="time">02:50</span>
+						</div>
+						<div class="c_txt_area">
+							<p class="c_tit">고전 재탕하기 - 2005.07.14 마다가스카 완벽 번역 보기</p>
+							<p class="info"><span class="cate">영화</span><span class="bar">|</span><span class="sum"><span class="p_ico"></span>1,000</span></p>
+							<p class="info"><span class="name">가나다라마바사아</span></p>
+						</div>
+					</li>
+					<li>
+						<div class="c_img">
+							<img src="../_static/mobile/images/temp/m_img_1.jpg" alt="">
+							<span class="ico fhd"></span>
+							<span class="time">02:50</span>
+						</div>
+						<div class="c_txt_area">
+							<p class="c_tit">[정식자막] 미드나잇 인 파리~~~ 랍니다 요를레이히유후</p>
+							<p class="info"><span class="cate">영화</span><span class="bar">|</span><span class="sum"><span class="p_ico"></span>1,000</span></p>
+							<p class="info"><span class="name">가나다라마바사아</span></p>
+						</div>
+					</li>
+					<li>
+						<div class="c_img">
+							<img src="../_static/mobile/images/temp/m_img_5.jpg" alt="">
+							<span class="ico"></span>
+							<span class="time">02:50</span>
+						</div>
+						<div class="c_txt_area">
+							<p class="c_tit">고전 재탕하기 - 2005.07.14 마다가스카 완벽 번역 보기</p>
+							<p class="info"><span class="cate">영화</span><span class="bar">|</span><span class="sum"><span class="p_ico"></span>1,000</span></p>
+							<p class="info"><span class="name">가나다라마바사아</span></p>
+						</div>
+					</li>
+
+				</ul>
+			</div>
+		</div>
+		
+		
+		
+		
+		
+		
+	</div>
+	<!-- //container -->
+	
+	<span class="top_btn"><span class="ico"></span></span>
+	<div class="scroll_menu">
+		<span class="s_btn type1"><span class="ico"></span><span class="name">HOME</span></span>
+		<span class="s_btn type2 active"><span class="ico"></span><span class="name">카테고리</span></span>
+		<span class="s_btn type3"><span class="ico"></span><span class="name">For You</span></span>
+		<span class="s_btn type4"><span class="ico"></span><span class="name">마이페이지</span></span>
+		<span class="s_btn type5"><span class="ico"></span><span class="name">검색</span></span>
+	</div>
+</div>
+</body>
+</html>

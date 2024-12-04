@@ -1,0 +1,1070 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KRMS NEXT</title>
+        <link href="../assets/css/reset.css" rel="stylesheet">
+        <link href="../assets/css/bootstrap.min.css" rel="stylesheet">
+        <link href="../assets/css/form-validation.css" rel="stylesheet">
+        <link
+            href="https://fonts.googleapis.com/css2?family=Gothic+A1:wght@200;400;500;700&family=Noto+Sans+KR:wght@300;400;500;700&display=swap"
+            rel="stylesheet">
+        <link rel="stylesheet" href="../assets/css/custom-icon.css">
+        <link rel="stylesheet" href="../assets/css/krms_style.css">
+</head>
+<body>
+    <!-- wrap -->
+<div class="wrap">
+    <!-- header -->
+    <header class="header">
+        <span class="menu_open_btn s_cursor">
+            <!-- <i class="icon-menu"></i> -->
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </span>
+        <h1 class="logo">
+            <a href="#"><i class="icon-logo"></i></a>
+        </h1>
+        <div class="status_area">
+            <div class="server">
+                <span class="txt">서버</span>
+                <span class="icon_p">
+                    <i class="icon-top-server"></i>
+                    <i class="icon-top-connect"></i>
+                </span>
+            </div>
+            <span class="bar"></span>
+            <div class="network">
+                <span class="txt">네트워크</span>
+                <span class="icon_p">
+                    <i class="icon-top-network"></i>
+                </span>
+            </div>
+        </div>
+        <div class="top_user_area">
+            <div class="user_name">
+                <span class="name">David Kim</span>
+                <div class="icon">
+                    <i class="icon-top-account"></i>
+                </div>
+            </div>
+            <!-- 메뉴 오픈 active 클래스 추가 -->
+            <div class="top_m_wrap" >
+                <span class="top_m_btn s_cursor">
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                </span>
+                <div class="top_m_area">
+                    <div class="user_info">
+                        <span class="name">David Kim</span>
+                        <p class="role">Admin</p>
+                        <p class="user_email">emma.ko@kaonmedia.com</p>
+                    </div>
+                    <div class="top_menu">
+                        <ul>
+                            <li>
+                                <span class="s_cursor">Edit Name</span>
+                            </li>
+                            <li>
+                                <span class="s_cursor">Reset Password</span>
+                            </li>
+                            <li class="n_h_style">
+                                <form action="">
+                                    <fieldset>
+                                        <label class="toggle_btn_wrap">
+                                            <span class="switch_label">Login Timeout</span>
+                                            <input role="switch" type="checkbox" class="toggle_btn"/>
+                                        </label>
+                                    </fieldset>
+                                </form>
+                                <!-- <div class="form-check form-switch">
+                                    <label class="form-check-label" for="flexSwitchCheckDefault"></label>
+                                    <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+                                </div> -->
+                            </li>
+                            <li>
+                                <span class="s_cursor">
+                                    Logout
+                                    <i class="icon-top-logout"></i>
+                                </span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="ver_txt">
+                        <span>Ver. KRMS 1.03.23</span>
+                    </div>
+                </div>
+                
+            </div>
+        </div>    
+    </header>
+    <!-- //header -->
+    <!-- container -->
+    <!-- 
+        lnb 접힐 경우 container 에 클래스 fold 추가
+    -->
+    <div class="container">
+        <!-- lnb -->
+        <nav class="lnb">
+            <ul>
+                <li class="menu">
+                    <div class="inner">
+                        <span class="lnb_icon">
+                            <i class="icon-lnb-dashboard"></i>
+                        </span>
+                        <span class="m_name">대시보드</span>
+                    </div>
+                </li>
+                <li class="menu">
+                    <div class="inner">
+                        <span class="lnb_icon">
+                            <i class="icon-lnb-device"></i>
+                        </span>
+                        <span class="m_name">장치</span>
+                    </div>
+                </li>
+                <li class="menu  active open">
+                    <div class="inner">
+                        <span class="lnb_icon">
+                            <i class="icon-lnb-policy"></i>
+                        </span>
+                        <span class="m_name">정책</span>
+                        <span class="arrow">
+                            <i class="icon-arrow-back"></i>
+                        </span>
+                    </div>
+                    <ul class="depth2">
+                        <li class="i_menu">
+                            <span class="bar"></span>
+                            <span class=text">프로비저닝</span>
+                        </li>
+                        <li class="i_menu active open">
+                            <span class="bar"></span>
+                            <span class=text">서브 프로파일</span>
+                        </li>
+                    </ul>
+                </li>
+                <li class="menu">
+                    <div class="inner">
+                        <span class="lnb_icon">
+                            <i class="icon-lnb-chart"></i>
+                        </span>
+                        <span class="m_name">통계</span>
+                    </div>
+                </li>
+                <li class="menu">
+                    <div class="inner">
+                        <span class="lnb_icon">
+                            <i class="icon-lnb-info"></i>
+                        </span>
+                        <span class="m_name">전산 정보</span>
+                    </div>
+                    <ul class="depth2">
+                        <li class="i_menu">
+                            <span class="bar"></span>
+                            <span class=text">SO 정보</span>
+                        </li>
+                        <li class="i_menu">
+                            <span class="bar"></span>
+                            <span class=text">가입자 정보</span>
+                        </li>
+                        <li class="i_menu">
+                            <span class="bar"></span>
+                            <span class=text">망 장애</span>
+                        </li>
+                    </ul>
+                </li>
+                <li class="menu">
+                    <div class="inner">
+                        <span class="lnb_icon">
+                            <i class="icon-lnb-file"></i>
+                        </span>
+                        <span class="m_name">파일 및 로그</span>
+                    </div>
+                    <ul class="depth2">
+                        <li class="i_menu">
+                            <span class="bar"></span>
+                            <span class=text">파일 저장소</span>
+                        </li>
+                        <li class="i_menu">
+                            <span class="bar"></span>
+                            <span class=text">단말 시스템 로그</span>
+                        </li>
+                    </ul>
+                </li>
+                <li class="menu">
+                    <div class="inner">
+                        <span class="lnb_icon">
+                            <i class="icon-lnb-setting"></i>
+                        </span>
+                        <span class="m_name">관리</span>
+                    </div>
+                    <ul class="depth2">
+                        <li class="i_menu">
+                            <span class="bar"></span>
+                            <span class=text">롤 / 계정</span>
+                        </li>
+                        <li class="i_menu">
+                            <span class="bar"></span>
+                            <span class=text">장치</span>
+                        </li>
+                        <li class="i_menu">
+                            <span class="bar"></span>
+                            <span class=text">코드</span>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        <!-- //lnb -->
+        <!-- content -->
+        <div class="content">
+            <h2 class="sub_tit">서브 프로파일</h2>
+            <div class="row">
+                <div class="col pt-2">
+                    <div class="tab_section">
+                        <span class="tab_btn">서비스 프로파일</span>
+                        <span class="tab_btn">펌웨어 프로파일</span>
+                        <span class="tab_btn active">애플리케이션 프로파일</span>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 pl-0 pr-0 text-right tbl_top_area">
+                    <span class="t_btn">
+                        <i class="icon-add"></i>
+                    </span>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col pl-0 pr-0 text-right">
+                    <div class="table-responsive">
+                        <table class="table tbl_style">
+                            <thead>
+                                <tr>
+                                    <th class="t_title" scope="col">
+                                        <div class="block">
+                                            프로파일 ID
+                                        </div>
+                                    </th>
+                                    <th class="t_title" scope="col">
+                                        <div class="block">
+                                            프로파일 명
+                                        </div>
+                                    </th>
+                                    <th class="t_title" scope="col">
+                                        <div class="block">
+                                            전송 방식
+                                        </div>
+                                    </th>
+                                    <th class="t_title" scope="col">
+                                        <div class="block">
+                                            실행 모드
+                                        </div>
+                                    </th>
+                                    <th class="t_title m_size_t_1" scope="col" class="">
+                                        <div class="block">
+                                            앱 이름
+                                        </div>
+                                    </th>
+                                    <th class="t_title m_size_t_2" scope="col">
+                                        <div class="block">
+                                            패키지 명
+                                        </div>
+                                    </th>
+                                    <th class="t_title m_size_t_3" scope="col">
+                                        <div class="block">
+                                            앱 버전
+                                        </div>
+                                    </th>
+                                    <th class="t_title" scope="col">
+                                        <div class="block">
+                                            생성자
+                                        </div>
+                                    </th>
+                                    <th class="t_title" scope="col">
+                                        <div class="block">
+                                            등록일시
+                                        </div>
+                                    </th>
+                                    <th class="t_title" scope="col">
+                                        <div class="block">
+                                            복사
+                                        </div>
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <span>1234</span>
+                                    </td>
+                                    <td>
+                                        <span>commit-template.txt</span>
+                                    </td>
+                                    <td>
+                                        <span>Unicast</span>
+                                    </td>
+                                    <td>
+                                        <span>Deferred</span>
+                                    </td>
+                                    <td>
+                                        <span>Youtube</span>
+                                    </td>
+                                    <td>
+                                        <span>com.krms.firmwareupdater</span>
+                                    </td>
+                                    <td>
+                                        <span>1.3.4</span>
+                                    </td>
+                                    <td>
+                                        <span>홍길동</span>
+                                    </td>
+                                    <td>
+                                        <span>2023.06.14 15:30</span>
+                                    </td>
+                                    <td>
+                                        <span class="a_btn">
+                                            <i class="icon-copy"></i>
+                                        </span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <span>1234</span>
+                                    </td>
+                                    <td>
+                                        <span>commit-template.txt</span>
+                                    </td>
+                                    <td>
+                                        <span>Unicast</span>
+                                    </td>
+                                    <td>
+                                        <span>Deferred</span>
+                                    </td>
+                                    <td>
+                                        <span>Youtube</span>
+                                    </td>
+                                    <td>
+                                        <span>com.krms.firmwareupdater</span>
+                                    </td>
+                                    <td>
+                                        <span>1.3.4</span>
+                                    </td>
+                                    <td>
+                                        <span>홍길동</span>
+                                    </td>
+                                    <td>
+                                        <span>2023.06.14 15:30</span>
+                                    </td>
+                                    <td>
+                                        <span class="a_btn">
+                                            <i class="icon-copy"></i>
+                                        </span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <span>1234</span>
+                                    </td>
+                                    <td>
+                                        <span>commit-template.txt</span>
+                                    </td>
+                                    <td>
+                                        <span>Unicast</span>
+                                    </td>
+                                    <td>
+                                        <span>Deferred</span>
+                                    </td>
+                                    <td>
+                                        <span>Youtube</span>
+                                    </td>
+                                    <td>
+                                        <span>com.krms.firmwareupdater</span>
+                                    </td>
+                                    <td>
+                                        <span>1.3.4</span>
+                                    </td>
+                                    <td>
+                                        <span>홍길동</span>
+                                    </td>
+                                    <td>
+                                        <span>2023.06.14 15:30</span>
+                                    </td>
+                                    <td>
+                                        <span class="a_btn">
+                                            <i class="icon-copy"></i>
+                                        </span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <span>1234</span>
+                                    </td>
+                                    <td>
+                                        <span>commit-template.txt</span>
+                                    </td>
+                                    <td>
+                                        <span>Unicast</span>
+                                    </td>
+                                    <td>
+                                        <span>Deferred</span>
+                                    </td>
+                                    <td>
+                                        <span>Youtube</span>
+                                    </td>
+                                    <td>
+                                        <span>com.krms.firmwareupdater</span>
+                                    </td>
+                                    <td class="list_more_position open">
+                                        <span>1.3.4</span>
+                                        <span class="a_btn" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="앱 리스트 더보기">
+                                            <i class="icon-popup"></i>
+                                        </span>
+                                        <div class="more_popup size2">
+                                            <table class="table i_table ">
+                                                <tbody>
+                                                    <tr>
+                                                        <td class="m_size_t_1">
+                                                            <span>Youtube</span>
+                                                        </td>
+                                                        <td class="m_size_t_2">
+                                                            <span>com.krms.firmwareupdater</span>
+                                                        </td>
+                                                        <td class="m_size_t_3">
+                                                            <span>1.3.4</span>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="m_size_t_1">
+                                                            <span>Youtube</span>
+                                                        </td>
+                                                        <td class="m_size_t_2">
+                                                            <span>com.krms.firmwareupdater</span>
+                                                        </td>
+                                                        <td class="m_size_t_3">
+                                                            <span>1.3.4</span>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="m_size_t_1">
+                                                            <span>Youtube</span>
+                                                        </td>
+                                                        <td class="m_size_t_2">
+                                                            <span>com.krms.firmwareupdater</span>
+                                                        </td>
+                                                        <td class="m_size_t_3">
+                                                            <span>1.3.4</span>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="m_size_t_1">
+                                                            <span>Youtube</span>
+                                                        </td>
+                                                        <td class="m_size_t_2">
+                                                            <span>com.krms.firmwareupdater</span>
+                                                        </td>
+                                                        <td class="m_size_t_3">
+                                                            <span>1.3.4</span>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="m_size_t_1">
+                                                            <span>Youtube</span>
+                                                        </td>
+                                                        <td class="m_size_t_2">
+                                                            <span>com.krms.firmwareupdater</span>
+                                                        </td>
+                                                        <td class="m_size_t_3">
+                                                            <span>1.3.4</span>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="m_size_t_1">
+                                                            <span>Youtube</span>
+                                                        </td>
+                                                        <td class="m_size_t_2">
+                                                            <span>com.krms.firmwareupdater</span>
+                                                        </td>
+                                                        <td class="m_size_t_3">
+                                                            <span>1.3.4</span>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="m_size_t_1">
+                                                            <span>Youtube</span>
+                                                        </td>
+                                                        <td class="m_size_t_2">
+                                                            <span>com.krms.firmwareupdater</span>
+                                                        </td>
+                                                        <td class="m_size_t_3">
+                                                            <span>1.3.4</span>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <span>홍길동</span>
+                                    </td>
+                                    <td>
+                                        <span>2023.06.14 15:30</span>
+                                    </td>
+                                    <td>
+                                        <span class="a_btn">
+                                            <i class="icon-copy"></i>
+                                        </span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <span>1234</span>
+                                    </td>
+                                    <td>
+                                        <span>commit-template.txt</span>
+                                    </td>
+                                    <td>
+                                        <span>Unicast</span>
+                                    </td>
+                                    <td>
+                                        <span>Deferred</span>
+                                    </td>
+                                    <td>
+                                        <span>Youtube</span>
+                                    </td>
+                                    <td>
+                                        <span>com.krms.firmwareupdater</span>
+                                    </td>
+                                    <td>
+                                        <span>1.3.4</span>
+                                    </td>
+                                    <td>
+                                        <span>홍길동</span>
+                                    </td>
+                                    <td>
+                                        <span>2023.06.14 15:30</span>
+                                    </td>
+                                    <td>
+                                        <span class="a_btn">
+                                            <i class="icon-copy"></i>
+                                        </span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <span>1234</span>
+                                    </td>
+                                    <td>
+                                        <span>commit-template.txt</span>
+                                    </td>
+                                    <td>
+                                        <span>Unicast</span>
+                                    </td>
+                                    <td>
+                                        <span>Deferred</span>
+                                    </td>
+                                    <td>
+                                        <span>Youtube</span>
+                                    </td>
+                                    <td>
+                                        <span>com.krms.firmwareupdater</span>
+                                    </td>
+                                    <td>
+                                        <span>1.3.4</span>
+                                    </td>
+                                    <td>
+                                        <span>홍길동</span>
+                                    </td>
+                                    <td>
+                                        <span>2023.06.14 15:30</span>
+                                    </td>
+                                    <td>
+                                        <span class="a_btn">
+                                            <i class="icon-copy"></i>
+                                        </span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <span>1234</span>
+                                    </td>
+                                    <td>
+                                        <span>commit-template.txt</span>
+                                    </td>
+                                    <td>
+                                        <span>Unicast</span>
+                                    </td>
+                                    <td>
+                                        <span>Deferred</span>
+                                    </td>
+                                    <td>
+                                        <span>Youtube</span>
+                                    </td>
+                                    <td>
+                                        <span>com.krms.firmwareupdater</span>
+                                    </td>
+                                    <td>
+                                        <span>1.3.4</span>
+                                    </td>
+                                    <td>
+                                        <span>홍길동</span>
+                                    </td>
+                                    <td>
+                                        <span>2023.06.14 15:30</span>
+                                    </td>
+                                    <td>
+                                        <span class="a_btn">
+                                            <i class="icon-copy"></i>
+                                        </span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <span>1234</span>
+                                    </td>
+                                    <td>
+                                        <span>commit-template.txt</span>
+                                    </td>
+                                    <td>
+                                        <span>Unicast</span>
+                                    </td>
+                                    <td>
+                                        <span>Deferred</span>
+                                    </td>
+                                    <td>
+                                        <span>Youtube</span>
+                                    </td>
+                                    <td>
+                                        <span>com.krms.firmwareupdater</span>
+                                    </td>
+                                    <td>
+                                        <span>1.3.4</span>
+                                    </td>
+                                    <td>
+                                        <span>홍길동</span>
+                                    </td>
+                                    <td>
+                                        <span>2023.06.14 15:30</span>
+                                    </td>
+                                    <td>
+                                        <span class="a_btn">
+                                            <i class="icon-copy"></i>
+                                        </span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <span>1234</span>
+                                    </td>
+                                    <td>
+                                        <span>commit-template.txt</span>
+                                    </td>
+                                    <td>
+                                        <span>Unicast</span>
+                                    </td>
+                                    <td>
+                                        <span>Deferred</span>
+                                    </td>
+                                    <td>
+                                        <span>Youtube</span>
+                                    </td>
+                                    <td>
+                                        <span>com.krms.firmwareupdater</span>
+                                    </td>
+                                    <td>
+                                        <span>1.3.4</span>
+                                    </td>
+                                    <td>
+                                        <span>홍길동</span>
+                                    </td>
+                                    <td>
+                                        <span>2023.06.14 15:30</span>
+                                    </td>
+                                    <td>
+                                        <span class="a_btn">
+                                            <i class="icon-copy"></i>
+                                        </span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <span>1234</span>
+                                    </td>
+                                    <td>
+                                        <span>commit-template.txt</span>
+                                    </td>
+                                    <td>
+                                        <span>Unicast</span>
+                                    </td>
+                                    <td>
+                                        <span>Deferred</span>
+                                    </td>
+                                    <td>
+                                        <span>Youtube</span>
+                                    </td>
+                                    <td>
+                                        <span>com.krms.firmwareupdater</span>
+                                    </td>
+                                    <td>
+                                        <span>1.3.4</span>
+                                    </td>
+                                    <td>
+                                        <span>홍길동</span>
+                                    </td>
+                                    <td>
+                                        <span>2023.06.14 15:30</span>
+                                    </td>
+                                    <td>
+                                        <span class="a_btn">
+                                            <i class="icon-copy"></i>
+                                        </span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <span>1234</span>
+                                    </td>
+                                    <td>
+                                        <span>commit-template.txt</span>
+                                    </td>
+                                    <td>
+                                        <span>Unicast</span>
+                                    </td>
+                                    <td>
+                                        <span>Deferred</span>
+                                    </td>
+                                    <td>
+                                        <span>Youtube</span>
+                                    </td>
+                                    <td>
+                                        <span>com.krms.firmwareupdater</span>
+                                    </td>
+                                    <td>
+                                        <span>1.3.4</span>
+                                    </td>
+                                    <td>
+                                        <span>홍길동</span>
+                                    </td>
+                                    <td>
+                                        <span>2023.06.14 15:30</span>
+                                    </td>
+                                    <td>
+                                        <span class="a_btn">
+                                            <i class="icon-copy"></i>
+                                        </span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <span>1234</span>
+                                    </td>
+                                    <td>
+                                        <span>commit-template.txt</span>
+                                    </td>
+                                    <td>
+                                        <span>Unicast</span>
+                                    </td>
+                                    <td>
+                                        <span>Deferred</span>
+                                    </td>
+                                    <td>
+                                        <span>Youtube</span>
+                                    </td>
+                                    <td>
+                                        <span>com.krms.firmwareupdater</span>
+                                    </td>
+                                    <td>
+                                        <span>1.3.4</span>
+                                    </td>
+                                    <td>
+                                        <span>홍길동</span>
+                                    </td>
+                                    <td>
+                                        <span>2023.06.14 15:30</span>
+                                    </td>
+                                    <td>
+                                        <span class="a_btn">
+                                            <i class="icon-copy"></i>
+                                        </span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <span>1234</span>
+                                    </td>
+                                    <td>
+                                        <span>commit-template.txt</span>
+                                    </td>
+                                    <td>
+                                        <span>Unicast</span>
+                                    </td>
+                                    <td>
+                                        <span>Deferred</span>
+                                    </td>
+                                    <td>
+                                        <span>Youtube</span>
+                                    </td>
+                                    <td>
+                                        <span>com.krms.firmwareupdater</span>
+                                    </td>
+                                    <td>
+                                        <span>1.3.4</span>
+                                    </td>
+                                    <td>
+                                        <span>홍길동</span>
+                                    </td>
+                                    <td>
+                                        <span>2023.06.14 15:30</span>
+                                    </td>
+                                    <td>
+                                        <span class="a_btn">
+                                            <i class="icon-copy"></i>
+                                        </span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <span>1234</span>
+                                    </td>
+                                    <td>
+                                        <span>commit-template.txt</span>
+                                    </td>
+                                    <td>
+                                        <span>Unicast</span>
+                                    </td>
+                                    <td>
+                                        <span>Deferred</span>
+                                    </td>
+                                    <td>
+                                        <span>Youtube</span>
+                                    </td>
+                                    <td>
+                                        <span>com.krms.firmwareupdater</span>
+                                    </td>
+                                    <td>
+                                        <span>1.3.4</span>
+                                    </td>
+                                    <td>
+                                        <span>홍길동</span>
+                                    </td>
+                                    <td>
+                                        <span>2023.06.14 15:30</span>
+                                    </td>
+                                    <td>
+                                        <span class="a_btn">
+                                            <i class="icon-copy"></i>
+                                        </span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <span>1234</span>
+                                    </td>
+                                    <td>
+                                        <span>commit-template.txt</span>
+                                    </td>
+                                    <td>
+                                        <span>Unicast</span>
+                                    </td>
+                                    <td>
+                                        <span>Deferred</span>
+                                    </td>
+                                    <td>
+                                        <span>Youtube</span>
+                                    </td>
+                                    <td>
+                                        <span>com.krms.firmwareupdater</span>
+                                    </td>
+                                    <td>
+                                        <span>1.3.4</span>
+                                    </td>
+                                    <td>
+                                        <span>홍길동</span>
+                                    </td>
+                                    <td>
+                                        <span>2023.06.14 15:30</span>
+                                    </td>
+                                    <td>
+                                        <span class="a_btn">
+                                            <i class="icon-copy"></i>
+                                        </span>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="pagnation_wrap">
+                        <div class="left_area">
+                            <p>Showing <span class="num">1</span> to <span class="num">15</span> of <span class="num">150</span> Entries</p>
+                        </div>
+                        <div class="right_area">
+                            <span class="p_btn">
+                                <i class="icon-arrow-back"></i>
+                            </span>
+                            <span class="p_input_area">
+                                <input type="text" class="p_input" value="1"> of 10
+                            </span>
+                            <span class="p_btn">
+                                <i class="icon-arrow-next"></i>
+                            </span>
+                            <select name="" id="" class="select_style">
+                                <option value="">15</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- //content -->
+    </div>
+    <!-- //container -->
+    <!-- 앱 프로파일 생성 팝업-->
+<!--    <div class="modal w_780" tabindex="-1" style="display:block;">-->
+<!--        <div class="modal-dialog">-->
+<!--            <div class="modal-content">-->
+<!--                <div class="modal-header">-->
+<!--                    <h5 class="modal-title">앱 프로파일 생성</h5>-->
+<!--                </div>-->
+<!--                <div class="modal-body">-->
+<!--                    <div class="row form_line">-->
+<!--                        <div class="label_style">-->
+<!--                            <label for="" class="form-label">프로파일 명</label>-->
+<!--                        </div>-->
+<!--                        <div class="form_style">-->
+<!--                            <input type="text" class="input_style w_60" id="">-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                    <div class="row form_line">-->
+<!--                        <div class="label_style">-->
+<!--                            <label for="" class="form-label">전송방식</label>-->
+<!--                        </div>-->
+<!--                        <div class="form_style">-->
+<!--                            <div class="dropdown w_60">-->
+<!--                                <button class="d_btn dropdown-toggle" type="button" data-bs-toggle="dropdown"-->
+<!--                                    aria-expanded="false" disabled>-->
+<!--                                    Unicast-->
+<!--                                </button>-->
+<!--                                <ul class="dropdown-menu">-->
+<!--                                    <li><a class="dropdown-item" href="#">Unicast</a></li>-->
+<!--                                    <li><a class="dropdown-item" href="#">Multucast</a></li>-->
+<!--                                </ul>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                    <div class="row form_line">-->
+<!--                        <div class="label_style">-->
+<!--                            <label for="" class="form-label">타겟 모델</label>-->
+<!--                        </div>-->
+<!--                        <div class="form_style">-->
+<!--                            <div class="dropdown w_60">-->
+<!--                                <button class="d_btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">-->
+<!--                                    타겟 모델 선택-->
+<!--                                </button>-->
+<!--                                <ul class="dropdown-menu">-->
+<!--                                    <li><a class="dropdown-item" href="#">타겟 모델 1</a></li>-->
+<!--                                    <li><a class="dropdown-item" href="#">타겟 모델 2</a></li>-->
+<!--                                    <li><a class="dropdown-item" href="#">타겟 모델 3</a></li>-->
+<!--                                </ul>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                    <div class="row form_line">-->
+<!--                        <div class="label_style">-->
+<!--                            <label for="" class="form-label">실행 모드</label>-->
+<!--                        </div>-->
+<!--                        <div class="form_style">-->
+<!--                            <div class="dropdown w_60">-->
+<!--                                <button class="d_btn dropdown-toggle" type="button" data-bs-toggle="dropdown"-->
+<!--                                    aria-expanded="false">-->
+<!--                                    실행모드 선택-->
+<!--                                </button>-->
+<!--                                <ul class="dropdown-menu">-->
+<!--                                    <li><a class="dropdown-item" href="#">Now</a></li>-->
+<!--                                    <li><a class="dropdown-item" href="#">Deferred</a></li>-->
+<!--                                    <li><a class="dropdown-item" href="#">No Exception</a></li>-->
+<!--                                </ul>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                    <div class="row form_line h_style">-->
+<!--                        <div class="label_style">-->
+<!--                            <label for="" class="form-label">앱</label>-->
+<!--                        </div>-->
+<!--                        <div class="form_style">-->
+<!--                            <div class="app_list">-->
+<!--                                <ol>-->
+<!--                                    <li>-->
+<!--                                        <span class="app">1. Netflix / com.krms.firmwareupdater / 1.4.23</span>-->
+<!--                                        <span class="delete_btn">-->
+<!--                                            <i class="icon-close"></i>-->
+<!--                                        </span>-->
+<!--                                    </li>-->
+<!--                                    <li>-->
+<!--                                        <span class="app">1. Netflix / com.krms.firmwareupdater / 1.4.23</span>-->
+<!--                                        <span class="delete_btn">-->
+<!--                                            <i class="icon-close"></i>-->
+<!--                                        </span>-->
+<!--                                    </li>-->
+<!--                                    <li>-->
+<!--                                        <span class="app">1. Netflix / com.krms.firmwareupdater / 1.4.23</span>-->
+<!--                                        <span class="delete_btn">-->
+<!--                                            <i class="icon-close"></i>-->
+<!--                                        </span>-->
+<!--                                    </li>-->
+<!--                                    <li>-->
+<!--                                        <span class="app">1. Netflix / com.krms.firmwareupdater / 1.4.23</span>-->
+<!--                                        <span class="delete_btn">-->
+<!--                                            <i class="icon-close"></i>-->
+<!--                                        </span>-->
+<!--                                    </li>-->
+<!--                                </ol>-->
+<!--                            </div>-->
+<!--                            <div class="dropdown w_30 inline_style">-->
+<!--                                <button class="d_btn dropdown-toggle" type="button" data-bs-toggle="dropdown"-->
+<!--                                    aria-expanded="false">-->
+<!--                                    앱 이름 선택-->
+<!--                                </button>-->
+<!--                                <ul class="dropdown-menu">-->
+<!--                                    <li><a class="dropdown-item" href="#">앱 이름 1</a></li>-->
+<!--                                    <li><a class="dropdown-item" href="#">앱 이름 2</a></li>-->
+<!--                                    <li><a class="dropdown-item" href="#">앱 이름 3</a></li>-->
+<!--                                </ul>-->
+<!--                            </div>-->
+<!--                            <div class="dropdown w_30 inline_style">-->
+<!--                                <button class="d_btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">-->
+<!--                                    앱 버전 선택-->
+<!--                                </button>-->
+<!--                                <ul class="dropdown-menu">-->
+<!--                                    <li><a class="dropdown-item" href="#">앱 버전 1</a></li>-->
+<!--                                    <li><a class="dropdown-item" href="#">앱 버전 2</a></li>-->
+<!--                                    <li><a class="dropdown-item" href="#">앱 버전 3</a></li>-->
+<!--                                </ul>-->
+<!--                            </div>-->
+<!--                            <button type="button" class="m_a_btn_s">추가</button>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--                <div class="modal-footer">-->
+<!--                    <button type="button" class="m_a_btn dark " data-bs-dismiss="modal">취소</button>-->
+<!--                    <button type="button" class="m_a_btn blue">생성</button>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
+    <!-- //앱 프로파일 생성 팝업 -->
+</div>
+<script src="../assets/js/bootstrap.bundle.min.js"></script>
+<script src="../assets/js/form-validation.js"></script>
+<script>
+    const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+    const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+</script>
+</body>
+</html>

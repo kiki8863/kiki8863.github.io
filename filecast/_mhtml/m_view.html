@@ -1,0 +1,643 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="Generator" content="EditPlus®">
+<meta name="Author" content="">
+<meta name="Keywords" content="">
+<meta name="Description" content="">
+<meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width" /> 
+<title> FileCast</title>
+<link rel="stylesheet" href="../_lib/bootstrap/dist/css/bootstrap.css" />
+<link rel="stylesheet" href="../_mobile/_css/filecast.reset.css" />
+<link rel="stylesheet" href="../_mobile/_css/filecast.mobile.style.css" />
+<!-- <link rel="stylesheet" href="http://192.168.10.14/static/_mobile/_css/filecast.mobile.style.css" /> -->
+<style type="text/css">
+/* view sns */
+.sns_area{overflow:hidden;clear:both;width:100%;padding:10px 0;margin-top:2px;border-top:1px solid #2aa100;border-bottom:1px solid #2aa100;background:#fff;}
+.sns_area .txt1{width:232px;height:21px;text-indent:-9999px;background:url('../_mobile/_img/common/e_tit.gif') no-repeat 0 0;background-size:232px 21px;}
+.sns_area .txt2{padding:8px 0 10px 8px;font-size:13px;letter-spacing:-1px;color:#212121;}
+.sns_area .txt2 span{color:#2aa100;}
+.btn_sns div.col-xs-4{padding:0 1%;text-align:center;cursor:pointer;}
+.btn_sns div span{display:block;}
+.btn_sns div.twitter, .btn_sns div.facebook{border-right:1px solid #dadada;}
+.btn_sns div .img{width:35%;margin:0 auto 10px auto;}
+.btn_sns div .txt{font-size:12px;color:#616161;}
+
+.twitter_area{position:relative;padding:18px 0 0 0;border-top:1px solid #b1d9ff;border-bottom:1px solid #2aa100;background:#63b2ff;display: none;}
+.twitter_area .line{display:block;width:100%;padding-bottom:20px;border-bottom:1px solid #054197;}
+.twitter_area .bg{display:block;background:url('../_mobile/_img/common/common_1711.png') no-repeat;}
+.twitter_area .bg.type1{position:absolute;top:-1px;left:15%;width:18px;height:9px;background-position:-250px 0;background-size:320px 416px;}
+.twitter_area .bg.type2{display:inline-block;width:28px;height:25px;background-position:-105px -342px;background-size:320px 416px;}
+.twitter_area .bg_wrap{float:left;padding:6px 0 0 0;margin-left:15px;width:40px;}
+.twitter_area p{margin:0 0 8px 15px;color:#212121;font-size:13px;}
+.twitter_area p .t_white{color:#fff;}
+.twitter_area div{overflow:hidden;float:left;width:88%;border:1px solid #054197;border-radius:5px;}
+.twitter_area div input{display:inline-block;height:33px;border:none;border-radius:0;font-size:12px;}
+.twitter_area div input[type="text"]{width:80%;padding:0 0 0 12px;}
+.twitter_area div input[type="submit"]{width:20%;background:#0479cd;color:#fff;}
+
+.google_area{position:relative;padding:18px 0 0 0;border-top:1px solid #efa8a2;border-bottom:1px solid #2aa100;background:#de5145;display: none;}
+.google_area .line{display:block;width:100%;padding-bottom:20px;border-bottom:1px solid #054197;}
+.google_area .bg{display:block;background:url('../_mobile/_img/common/common_1711.png') no-repeat;}
+.google_area .bg.type1{position:absolute;top:-1px;left:82%;width:18px;height:9px;background-position:-250px 0;background-size:320px 416px;}
+.google_area .bg.type2{display:inline-block;width:28px;height:25px;background-position:-140px -342px;background-size:320px 416px;}
+.google_area .bg_wrap{float:left;padding:6px 0 0 0;margin-left:15px;width:40px;}
+.google_area p{margin:0 0 8px 15px;color:#212121;font-size:13px;}
+.google_area p .t_white{color:#fff;}
+.google_area div{overflow:hidden;float:left;width:88%;border:1px solid #8c0607;border-radius:5px;}
+.google_area div input{display:inline-block;height:33px;border:none;border-radius:0;font-size:12px;}
+.google_area div input[type="text"]{width:80%;padding:0 0 0 12px;}
+.google_area div input[type="submit"]{width:20%;background:#a1131a;color:#fff;}
+
+</style>
+
+</head>
+<body>
+<div id="wrap">
+	<div class="m_view col-xs-12 no-padding">
+		<div class="move_viewpage">
+			<span class="prev m_btn">이전</span>
+			<span class="next m_btn">다음</span>
+		</div>
+		<div class="v_top">
+			<div class="top">					
+				<div class="r_imgArea">										
+					<span></span>										
+					<img src="http://pic.filecast.co.kr/88/82/888272fc894be265e577600367940d03.jpg" style="height: 100%; display: block;">	
+				</div>									
+				<div class="l_conArea">										
+					<p class="con_tit c_list adult"><span class="ico adult"></span><span class=""></span>로스트룸 (lostroom)</p>				
+					<!-- <span class="category">영화&gt;액션</span> -->
+					<span class="u_name"><span></span>안녕하신가영</span>
+					<div class="file_info">											
+						<span class="time"><span></span>13:04:30</span>											
+						<span class="point down"><span class="ico"></span><span class="t_line">2,000</span><span class="ico_free"></span></span>
+						<!-- <span class="reward"><span class="ico"></span> <span class="r_num">1,000P</span></span> -->
+						<!-- <span class="vip_50"><span class="ico"></span> <span class="r_num">1,000P</span></span> -->
+						<!-- <span class="point"><span class="ico"></span><span class="price">1200</span><span class="free">→ 600원</span><span class="dis_num">(600원 할인)</span></span> -->				
+					</div>
+					<!-- <div class="seller_datalist">
+						<span class="text"><span class="s_id">vhdlsxm12345</span>님의 판매자료실 가기</span><span class="bg"></span>
+					</div> -->
+				</div>
+			</div>
+			<div class="reward_txt">
+				<div class="left_txt">
+					<p class="t_white"><span class="ico"></span>[리워드]란?</p>
+					<p>구매시 사용한 포인트 중 일부를 되돌려 받는 방식입니다.</p>
+				</div>
+				<span class="go_event">이벤트 상세보기 &gt;</span>
+			</div>
+			<div class="user_help_wrap">
+				<span class="go_memo">쪽지 보내기 &gt;</span><span class="go_datalist">판매지 자료실 가기 &gt;</span>
+			</div>
+			<div class="content_v_top mobile-prev-area">									
+				<p class="s_title"><span class="bbs-title">로스트룸 (lostroom)</span></p>									
+				<div class="preview-img-inner-div" style="min-height:200px;">
+					<img class="preview_img" src="http://pic.filecast.co.kr/b9/8c/b98c4fec0b67395ded4ef85671f4678b.jpg" alt="">
+					<div class="p_area">
+						<!-- <span class="btn_p_view contents10"><span class="t_red">단돈 10원</span> <span class="txt">바로보기</span></span> -->
+						<span class="btn_c_view contents10"><span class="t_red">단돈 10원</span> <span class="txt">바로보기</span></span>
+					</div>		
+				</div>								
+			</div>
+			<div class="pc_down">
+				<span class="ico"></span><span class="txt">PC/다운로드 전용</span>
+			</div>
+			<div class="btn_view col-xs-12 no-padding type1">
+				<span class="col-xs-5 b_down" style="display:none;">실시간 감상하기 <span></span></span>
+				<span class="col-xs-5 b_a_down">다운로드 받기 <span></span></span>
+				<span class="col-xs-3 b_coupon">쿠폰사용</span>
+				<span class="col-xs-2 b_zzim">찜하기</span>
+				<span class="col-xs-2 b_singo">신고</span>
+			</div>
+			<div class="btn_view col-xs-12 no-padding type1">
+				<span class="col-xs-8 b_down" style="display:none;">실시간 감상하기 <span></span></span>
+				<span class="col-xs-8 b_a_down">다운로드 받기 <span></span></span>
+				<span class="col-xs-2 b_zzim">찜하기</span>
+				<span class="col-xs-2 b_singo">신고</span>
+			</div>
+			<!-- sns공유 -->
+			<div class="sns_area">
+				<p class="txt1">구매하신 자료를 SNS에 공유하세요!</p>
+				<p class="txt2">공유할 때 마다 <span>제휴콘텐츠도 이용이 가능한 300P</span> 즉시 지급!</p>
+				<div class="btn_sns">
+					<div class="twitter col-xs-4">
+						<span class="img"><img src="../_mobile/_img/common/twit.jpg" alt="" /></span>
+						<span class="txt">트위터 공유하기</span>
+					</div>
+					<div class="facebook col-xs-4">
+						<span class="img"><img src="../_mobile/_img/common/facebook.jpg" alt="" /></span>
+						<span class="txt">페이스북 공유하기</span>
+					</div>
+					<div class="google col-xs-4">
+						<span class="img"><img src="../_mobile/_img/common/google.jpg" alt="" /></span>
+						<span class="txt">구글+ 공유하기</span>
+					</div>
+				</div>
+			</div>
+			<div class="twitter_area">
+				<span class="bg type1"></span>
+				<p>공유한 <span class="t_white">트윗 주소를 저장하여 확인</span> 받으세요!</p>
+				<span class="bg_wrap"><span class="bg type2"></span></span>
+				<form action="#"method="post">
+					<fieldset>
+						<div>
+							<input type="text" placeholder="공유한 트위터 URL을 등록해주세요."/><input type="submit" class="btn_twit" value="등록"/>
+						</div>
+					</fieldset>
+				</form>
+				<span class="line"></span>
+			</div>
+			<div class="google_area">
+				<span class="bg type1"></span>
+				<p>공유한 <span class="t_white">구글+ 주소를 저장하여 확인</span> 받으세요!</p>
+				<span class="bg_wrap"><span class="bg type2"></span></span>
+				<form action="#"method="post">
+					<fieldset>
+						<div>
+							<input type="text" placeholder="공유한 구글+ URL을 등록해주세요."/><input type="submit" class="btn_twit" value="등록"/>
+						</div>
+					</fieldset>
+				</form>
+				<span class="line"></span>
+			</div>
+			<div class="v_u_info">
+				<p><b>오홀롤로랄라</b>님의 정보</p>
+				<div>
+					<span class="point">포인트 <span>999,999</span>P</span> / <span class="bonus">보너스포인트 <span>999,999</span>B</span> / <span class="cp">쿠폰 <span>999</span>장</span> / <span class="fix_c">정액제 <span>999</span>일</span>
+				</div>
+			</div>
+			<div class="file_List">									
+				<ul>		
+					<li class="">
+						<span class="left_line"></span>
+						<div class="left">				
+							<p>이북이미지</p>				
+							<div>					
+								<span class="e_book"><span class="e_area"><span class="percent"></span></span><span class="c_page">2,501</span> / <span class="t_page">9,999</span> PAGE</span>			
+							</div>			
+						</div>
+						<div class="btn_right">
+							<span class="btn_n_view">바로보기</span>
+							<span class="btn_n_down">다운로드</span>		
+						</div>
+					</li>		
+					<li class="">
+						<span class="left_line"></span>
+						<div class="left">				
+							<p>Lost Room2.avi</p>				
+							<div>					
+								<span class="time"><span></span>01:27:01</span>				
+							</div>			
+						</div>			
+						<div class="btn_right">		
+							<span class="btn_n_view">바로보기</span>
+						</div>
+					</li>		
+					<li class="active">
+						<span class="left_line"></span>
+						<div class="left">				
+							<p>Lost Room3.avi</p>				
+							<div>					
+								<span class="time"><span></span>01:28:04</span>				
+							</div>			
+						</div>			
+						<div class="btn_right">
+							<span class="btn_n_down">다운로드</span>		
+						</div>	
+					</li>
+				</ul>
+				<div class="m-home-filelist-more-btn" style="display:block;">파일 리스트 더보기<span></span></div>
+			</div>		
+			<div class="num_list">
+				<p>'<span class="c_tit">호빗:스마우그의 폐허</span>'다른 회차도 함께 보실 수 있습니다. <span class="mbc_event">EVENT</span></p>
+				<div class="list_wrap" style="height:142px;">
+					<ul style="width:1000px;">
+						<li class="active">
+							<div class="num_img">
+								<img src="../_mobile/_img/temp/num_list.jpg" alt="" />
+								<span class="time">02:35:24</span>
+								<span class="btn_play"></span>
+								<span class="sun_300">300원</span>
+							</div>
+							<p><span class="num">302회</span> <span class="date">(15.09.24)</span></p>
+							<p class="n_txt">하시마섬에 찾아가 먹먹한 가슴을 부여잡....</p>
+						</li>
+						<li>
+							<div class="num_img">
+								<img src="../_mobile/_img/temp/num_list.jpg" alt="" />
+								<span class="time">02:35:24</span>
+								<span class="btn_play"></span>
+							</div>
+							<p><span class="num">301회</span> (<span class="date">15.09.24</span>)</p>
+							<p class="n_txt">하시마섬에 찾아가 먹먹한 가슴을 부여잡....</p>
+						</li>
+						<li>
+							<div class="num_img">
+								<img src="../_mobile/_img/temp/num_list.jpg" alt="" />
+								<span class="time">02:35:24</span>
+								<span class="btn_play"></span>
+							</div>
+							<p><span class="num">300회</span> (<span class="date">15.09.24</span>)</p>
+							<p class="n_txt">하시마섬에 찾아가 먹먹한 가슴을 부여잡....</p>
+						</li>
+						<li>
+							<div class="num_img">
+								<img src="../_mobile/_img/temp/num_list.jpg" alt="" />
+								<span class="time">02:35:24</span>
+								<span class="btn_play"></span>
+							</div>
+							<p><span class="num">299회</span> (<span class="date">15.09.24</span>)</p>
+							<p class="n_txt">하시마섬에 찾아가 먹먹한 가슴을 부여잡....</p>
+						</li>
+						<li>
+							<div class="num_img">
+								<img src="../_mobile/_img/temp/num_list.jpg" alt="" />
+								<span class="time">02:35:24</span>
+								<span class="btn_play"></span>
+							</div>
+							<p><span class="num">298회</span> (<span class="date">15.09.24</span>)</p>
+							<p class="n_txt">하시마섬에 찾아가 먹먹한 가슴을 부여잡....</p>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<!-- 도넛 차트 -->
+			<div class="view_donut">
+				<h2>이 콘텐츠를 구매한 파일캐스트 회원은?</h2>
+				<div class="donut_area">
+					<div class="donut_l">
+						<div class="grade">
+							<p class="men most"><span class="ico"><img src="../_mobile/_img/common/ico_human2.png" alt="" /></span><span class="num">남성</span></p>
+							<p class="woman"><span class="ico"><img src="../_mobile/_img/common/ico_human1.png" alt="" /></span><span class="num">여성</span></p>
+						</div>
+						<div class="chart_area">
+							<span>성별</span>
+							<canvas id="myCanvas">
+								Your browser does not support the HTML5 canvas tag.
+							</canvas>
+						</div>
+					</div>
+					<div class="donut_r">
+						<div class="grade">
+							<p class="age t30 most"><span class="color_area"></span><span class="txt">30대</span></p>
+							<p class="age t20"><span class="color_area"></span><span class="txt">20대</span></p>
+							<p class="age t10"><span class="color_area"></span><span class="txt">10대</span></p>
+							<p class="age t40"><span class="color_area"></span><span class="txt">40대~</span></p>
+						</div>
+						<div class="chart_area">
+							<span>연령별</span>
+							<canvas id="myCanvas2">
+								Your browser does not support the HTML5 canvas tag.
+							</canvas>
+						</div>
+					</div>
+				</div>
+				<p class="d_txt">이 <span>영화</span>는 <span class="t_red">30대 여성</span>에게 가장 인기많은 콘텐츠입니다.</p>
+			</div>
+		</div>
+		<div class="v_btm">
+			<div class="content_detail  col-xs-12">
+				<img src="../_mobile/_img/temp/content_temp01.png" alt="" />
+				<img src="../_mobile/_img/temp/content_temp02.png" alt="" />
+				<p class="txt_type">마침내 거대한 여정이 끝난다! <br />누군가는 죽고 누군가는 승리한다!</p>
+				<p>빌보 배긴스, 참나무 방패 소린, 난쟁이 족이 떠난 거대한 여정 끝, 난쟁이 족은 원래 자신들의 터전이던 에레보르에 있는 엄청난 보물을 되찾지만 이는 무시무시한 용 스마우그가 호수마을의 무기력한 주민들을 공격하게 되는 결과를 낳는다.</p>
+				<p>산 아래의 왕 참나무 방패 소린은 탐욕에 서서히 눈이 멀어 우정과 명예를 저버린 채 왕의 보물 아르켄스톤을 찾는다. 소린이 이성을 되찾도록 설득하는데 실패한 빌보는 훨씬 험난한 일이 펼쳐질 줄 모른 채 절박하고 위험한 결정을 내린다. 오래된 적이 중간계로 돌아온 것. 암흑의 군주 사우론은 오크 군대를 보내 외로운 산에 기습 공격을 감행한다.</p>
+				<p>고조된 긴장감 속에 어둠이 ...인간은 단합할 것인지 말살될 것인지 택해야 한다. 마침내 다섯 군대의 전투가 시작되고 빌보는 본인과 친구들의 목숨을</p>
+			</div>
+			<div class="adult_explain">
+				<img src="../_mobile/_img/etc/adult_txt1605_1.gif" alt="" />
+			</div>
+			<div class="adult_explain type1">
+				<img src="../_mobile/_img/etc/down_text.jpg" alt="구매 콘텐츠가 허위 및 불량일 경우 구매일로부터 30일 이내 취소가 가능합니다." />
+			</div>
+			<div class="comment_wrap">
+				<h2>댓글 쓰기 <span class="c_num">[2,987]</span></h2>
+				<form action="" method="post">
+					<fieldset>
+						<div class="reply_input">
+							<textarea name="" placeholder="톡톡 튀는 댓글평을 남겨주시면
+								판매자가 무료다운로드 쿠폰을 선물로 드립니다.
+								최대 500자까지 작성 가능하며,
+								주제와 무관한 댓글 악플은 삭제될 수 있습니다.">
+							</textarea>
+							<input type="submit" value="등록" class="btn_submit" />
+						</div>
+					</fieldset>
+				</form>
+				<div class="comment best">
+					<p class="c_writer"><span class="best"></span>소문난업로더</p>
+					<ul class="comment_list">
+						<li><span class="delete">삭제</span><span class="bar"> | </span></li>
+						<li><span>신고</span><span class="bar"> | </span></li>
+						<li><span class="identify"></span><span class="num">9,999</span><span class="bar"> | </span></li>
+						<li><span>답글</span></li>
+					</ul>
+					<p class="c_content">정말 잼나게 잘 봤어요! 좋은자료 감사감사</p>
+				</div>
+				<div class="comment best">
+					<p class="c_writer"><span class="best"></span>nowcontents</p>
+					<ul class="comment_list">
+						<li><span class="delete">삭제</span><span class="bar"> | </span></li>
+						<li><span>신고</span><span class="bar"> | </span></li>
+						<li><span class="identify"></span><span class="num">9,999</span><span class="bar"> | </span></li>
+						<li><span>답글</span></li>
+					</ul>
+					<p class="c_content">2시간 중 스샷에 나오는 초능력씬은 5분도 안됩니다...</p>
+				</div>
+				<div class="comment best">
+					<p class="c_writer"><span class="best"></span>뿌뿌리나</p>
+					<ul class="comment_list">
+						<li><span class="delete">삭제</span><span class="bar"> | </span></li>
+						<li><span>신고</span><span class="bar"> | </span></li>
+						<li><span class="identify"></span><span class="num">9,999</span><span class="bar"> | </span></li>
+						<li><span>답글</span></li>
+					</ul>
+					<p class="c_content">적당한 포인트, 신선한 자료. 일단 받고 본다!</p>
+				</div>
+				<div class="comment">
+					<p class="c_writer">소문난업로더</p>
+					<ul class="comment_list">
+						<li><span class="delete">삭제</span><span class="bar"> | </span></li>
+						<li><span>신고</span><span class="bar"> | </span></li>
+						<li><span class="identify"></span><span class="num">9,999</span><span class="bar"> | </span></li>
+						<li><span>답글</span></li>
+					</ul>
+					<p class="c_content">정말 잼나게 잘 봤어요! 좋은자료 감사감사</p>
+				</div>
+				<div class="comment">
+					<p class="c_writer">nowcontents</p>
+					<ul class="comment_list">
+						<li><span class="delete">삭제</span><span class="bar"> | </span></li>
+						<li><span>신고</span><span class="bar"> | </span></li>
+						<li><span class="identify"></span><span class="num">9,999</span><span class="bar"> | </span></li>
+						<li><span>답글</span></li>
+					</ul>
+					<p class="c_content">2시간 중 스샷에 나오는 초능력씬은 5분도 안됩니다...</p>
+				</div>
+				<div class="comment">
+					<p class="c_writer"><span class="ico_filecast"></span><span class="txt_filecast">파일캐스트</span></p>
+					<ul class="comment_list">
+						<li><span class="delete">삭제</span><span class="bar"> | </span></li>
+						<li><span>신고</span><span class="bar"> | </span></li>
+						<li><span class="identify"></span><span class="num">9,999</span><span class="bar"> | </span></li>
+						<li><span>답글</span></li>
+					</ul>
+					<p class="c_content">축하합니다. 베스트 댓글이 되셨으니 100만원 충전 ㄱㄱ ㅋㅋㅋ</p>
+				</div>
+				<!-- 대댓글영역 171107추가-->
+				<div class="replay_wrap">
+					<span class="bg"></span>
+					<div class="comment reply">
+						<div class="inner">
+							<p class="c_writer"><span class="ico_seller"></span>소문난 업로더</p>
+							<ul class="comment_list">
+								<li><span class="delete">삭제</span><span class="bar"> | </span></li>
+								<li><span>신고</span><span class="bar"> | </span></li>
+								<li><span class="identify"></span><span class="num">9,999</span><span class="bar"> | </span></li>
+								<li><span>답글</span></li>
+							</ul>
+							<p class="c_content">2시간 중 스샷에 나오는 초능력씬은 5분도 안됩니다...</p>
+							<div class="bg"></div>
+						</div>
+					</div>
+					<div class="comment reply">
+						<div class="inner">
+							<p class="c_writer">nowcontents</p>
+							<ul class="comment_list">
+								<li><span class="delete">삭제</span><span class="bar"> | </span></li>
+								<li><span>신고</span><span class="bar"> | </span></li>
+								<li><span class="identify"></span><span class="num">9,999</span><span class="bar"> | </span></li>
+								<li><span>답글</span></li>
+							</ul>
+							<p class="c_content">2시간 중 스샷에 나오는 초능력씬은 5분도 안됩니다...</p>
+							<div class="bg"></div>
+						</div>
+						<div class="replyArea">
+							<div class="bg"></div>
+							<div class="reply">
+								<textarea name=""></textarea>
+								<span class="btn_reply">등록</span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="comment last">
+					<p class="c_writer"><span class="best"></span>nowcontents</p>
+					<ul class="comment_list">
+						<li><span class="delete">삭제</span><span class="bar"> | </span></li>
+						<li><span>신고</span><span class="bar"> | </span></li>
+						<li><span class="identify"></span><span class="num">9,999</span><span class="bar"> | </span></li>
+						<li><span>답글</span></li>
+					</ul>
+					<p class="c_content">2시간 중 스샷에 나오는 초능력씬은 5분도 안됩니다...</p>
+				</div>
+				<span class="btn_r_more">댓글 <span class="r_num">9,999</span>개 더 보기<span class="bg1"></span></span>
+			</div>
+		</div>					
+	</div>
+	<!-- //판매자 다른 자료 -->
+	<div class="v_btm_seller">
+		<div class="seller_another">
+			<h2>판매자 다른 자료 보기</h2><span class="btn_seller_room">판매자 자료실 가기</span>
+			<div class="content_list  col-xs-12 no-padding">
+				<ul>
+					<li class="mobile-contents-list-li active">
+						<span class="left_line"></span>
+						<div class="hand">
+							<div class="top">
+								<div class="r_imgArea">
+									<img src="http://pic.filecast.co.kr/f1/5e/f15e8b4940a1fc70c873b67fa5cad260.jpg" width="56" height="56"/>
+									<span></span>
+								</div>
+								<div class="l_conArea">
+									<p class="con_tit">본 얼티메이터 시리즈</p>
+									<span class="category">유아 &gt; 초/중/고학습</span>
+									<div class="file_info">
+										<span class="alliance"></span>
+										<span class="time"><span></span>00:35:12</span>
+										<span class="point"><span class="ico"></span>50</span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li class="mobile-contents-list-li">
+						<div class="hand">
+							<div class="top">
+								<div class="r_imgArea">
+									<img src="http://pic.filecast.co.kr/4e/c4/4ec440776c6f847b3885a6cdc43ffd15.jpg" width="90px" height="57px"/>
+									<span></span>
+								</div>
+								<div class="l_conArea">
+									<p class="con_tit c_list">[일영] 마에스트로(2015) 마트자카 토리, 미와, 니시다 토시유키 - 자막있음</p>
+									<span class="category">영화 &gt; SF/판타지</span>
+									<div class="file_info">
+										<span class="time"><span></span>00:35:12</span>
+										<span class="point"><span class="ico"></span>50</span>
+									</div>
+								</div>								
+							</div>								
+						</div>
+					</li>
+					<li class="mobile-contents-list-li">
+						<div class="hand">
+							<div class="top">
+								<div class="r_imgArea">
+									<img src="../_mobile/_img/common/no_img.png"/>
+									<span></span>
+								</div>
+								<div class="l_conArea">
+									<p class="con_tit c_list">호빗:스마우그의 폐허, 1080P 고화질, 직스샷, 자막완벽!</p>
+									<span class="category">영화 &gt; SF/판타지</span>
+									<div class="file_info">
+										<span class="time"><span></span>00:35:12</span>
+										<span class="point"><span class="ico"></span>50</span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li class="mobile-contents-list-li">
+						<div class="hand">
+							<div class="top">
+								<div class="r_imgArea">
+									<img src="http://pic.filecast.co.kr/05/d4/05d465a91139332b90188b090d91cecd.jpg"/>
+									<span></span>
+								</div>
+								<div class="l_conArea">
+									<p class="con_tit c_list">[일영] 마에스트로(2015) 마트자카 토리, 미와, 니시다 토시유키 - 자막있음</p>
+									<span class="category">영화 &gt; SF/판타지</span>
+									<div class="file_info">
+										<span class="time"><span></span>00:35:12</span>
+										<span class="point"><span class="ico"></span>50</span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li class="mobile-contents-list-li">
+						<div class="hand">
+							<div class="top">
+								<div class="r_imgArea">
+									<img src="../_mobile/_img/common/no_img.png"/>
+									<span></span>
+								</div>
+								<div class="l_conArea">
+									<p class="con_tit c_list">[일영] 마에스트로(2015) 마트자카 토리, 미와, 니시다 토시유키 - 자막있음</p>
+									<span class="category">영화 &gt; SF/판타지</span>
+									<div class="file_info">
+										<span class="time"><span></span>00:35:12</span>
+										<span class="point"><span class="ico"></span>50</span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</li>
+				</ul>
+			</div>
+			<span class="btn_r_more">판매자의 다른 자료 더 보기<span class="bg1"></span></span>
+		</div>
+		<!-- //판매자 다른 자료 -->
+		<!-- //comment_wrap -->
+		<div class="ad_banner">
+			<span><img src="../_mobile/_img/banner/view_charge1703.png" alt="" /></span>
+		</div>
+	</div>
+	<div class="btn_view col-xs-12 no-padding" style="position:fixed;bottom:0;">
+		<span class="b_play col-xs-6"><span>실시간 감상하기</span><span class="img"></span></span>
+		<span class="b_close col-xs-6"><span>닫기</span> <span class="img"></span></span>
+	</div>
+</div>
+<script src="../_lib/jquery/dist/jquery-1.9.0.min.js"></script>
+<script type="text/javascript">
+             
+		var canvasWidth = $('.chart_area').width();
+		var canvasHeight = parseInt(canvasWidth);
+		var X = canvasWidth/2;
+		var Y = canvasHeight/2;
+		var outterRadius = X;
+		var innerRadius = X * 0.55;
+
+		// 1. get a reference to myCanvas element.
+		var c = document.getElementById("myCanvas");
+		var d = document.getElementById("myCanvas2");
+		 
+		// 2. get canvas context
+		var context = c.getContext("2d");
+		var context2 = d.getContext("2d"); 
+		window.addEventListener('resize', resizeCanvas, false);
+
+		function resizeCanvas() {
+            c.width = canvasWidth;
+            c.height = canvasHeight;
+			d.width = canvasWidth;
+            d.height = canvasHeight;
+			/**
+			 * Your drawings need to be inside this function otherwise they will be reset when 
+			 * you resize the browser window and the canvas goes will be cleared.
+			 */
+			drawDonut(); 
+		}
+		resizeCanvas();
+		// 3. draw donut chart
+		 
+		// GREEN
+		setRadialGradient("#50a4de", "#50a4de");
+		drawDonut(Math.PI * 1.0, Math.PI * 1.5);
+		 
+		// BLUE
+		setRadialGradient("#93d354", "#93d354");
+		drawDonut(Math.PI*0.5 , Math.PI* 1.0);
+		 
+		// RED
+		setRadialGradient("#de5050", "#de5050");
+		drawDonut(Math.PI * 1.5, Math.PI*2);
+		 
+		// YELLOW
+		setRadialGradient("#ffae00", "#ffae00");
+		drawDonut(0, Math.PI*0.5);
+		
+		
+		//*******************************************************//\        
+		// drawDonut() function drawes 2 full or partial circles inside each other one clockwise and the other is counter-clockwise
+		function drawDonut(sRadian, eRadian){
+			 
+			context.beginPath();
+				context.arc(X, Y, outterRadius, sRadian, eRadian, false); // Outer: CCW
+				context.arc(X, Y, innerRadius, eRadian, sRadian, true); // Inner: CW
+			context.closePath();
+			
+			context2.beginPath();
+				context2.arc(X, Y, outterRadius, sRadian, eRadian, false); // Outer: CCW
+				context2.arc(X, Y, innerRadius, eRadian, sRadian, true); // Inner: CW
+			context2.closePath();
+			// add shadow
+			//addShadow();
+							 
+			context.fill();
+			context2.fill();
+		}
+		 
+		/*function addShadow(){
+			context.shadowColor = "rgba(0,0,0,0.8)";
+			context.shadowBlur = 3;
+			context.shadowOffsetX = 0;
+			context.shadowOffsetY = 0;
+		}*/
+		 
+		function setRadialGradient(sgc, bgc){
+			var grd = context.createRadialGradient(X, Y, innerRadius + 5, X, Y, outterRadius);
+			var grd2 = context2.createRadialGradient(X, Y, innerRadius + 5, X, Y, outterRadius);
+			grd.addColorStop(0,sgc);
+			grd.addColorStop(1,bgc);
+			grd2.addColorStop(0,sgc);
+			grd2.addColorStop(1,bgc);
+			context.fillStyle = grd;
+			context2.fillStyle = grd2;
+		}
+	</script>
+</body>
+</html>

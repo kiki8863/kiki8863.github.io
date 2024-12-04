@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KRview ADMIN</title>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/bootstrap-4.3.1.min.css">
+    <link rel="stylesheet" href="../css/custom-icon.css">
+    <link rel="stylesheet" href="../css/krview_admin_style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Gothic+A1:wght@200;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+<!-- wrap -->
+<div class="wrap">
+    <!-- header -->
+    <div class="header">
+        <h1 class="a_logo"><img src="../images/a_logo.png" alt="kRview"><span class="l_txt">관리자 페이지</span></h1>
+        <div class="top_menu_area">
+            <div class="user_name">
+                <p class="txt">반갑습니다, <span class="user_name">관리자님</span>!</p>
+                <span class="img_icon"><img src="../images/profile-img.png" alt="profile-img"></span>
+            </div>
+            <div class="menu_list">
+                <span class="arrow"></span>
+                <ul class="menu">
+                    <li><span class="cursor">로그아웃</span><span class="l_bar"></span></li>
+                    <li><span class="cursor">회원 정보</span><span class="l_bar"></span></li>
+                    <li><span class="cursor">비밀번호 변경</span><span class="l_bar"></span></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- //header -->
+    <!-- container -->
+    <div class="container">
+        <!-- lnb -->
+        <div class="lnb">
+            <ul>
+                <li>
+                    <span class="bg_circle">
+                        <i class="icon-lnb-account"></i>
+                        <span class="n_name">계정 관리</span>
+                    </span>
+                </li>
+                <li class="active company">
+                    <span class="bg_circle">
+                        <i class="icon-lnb-company"></i>
+                        <span class="n_name">서비스 사업자 관리</span>
+                    </span>
+                </li>
+                <li>
+                    <span class="bg_circle">
+                        <i class="icon-lnb-device"></i>
+                        <span class="n_name">설정</span>
+                    </span>
+                </li>
+            </ul>
+        </div>
+        <!-- //lnb -->
+        <!-- content -->
+        <div class="content">
+            <div class="c_top">
+                <h2 class="sub_tit">서비스 사업자 관리 </h2>
+                <div class="btn_area">
+                    <span class="t_btn add">
+                        <i class="icon-plus"></i>
+                        <span class="txt">서비스 사업자  등록</span>
+                    </span>
+                    <span class="t_btn search">
+                        <span class="txt">검색</span>
+                    </span>
+                </div>
+                <div class="btn_area float-right save">
+                    <span class="t_btn cancel">
+                        <span class="txt">취소</span>
+                    </span>
+                    <span class="t_btn save">
+                        <span class="txt">저장</span>
+                    </span>
+                </div>
+            </div>
+            <div class="c_inner row">
+                <div class="col-4 pl-0 pr-0">
+                    <div class="h_100">
+                        <div class="section">
+                            <div class="search_form">
+                                <div class="search_section size3">
+                                    <input type="text" value="" class="i_style" placeholder="회사 코드">
+                                </div>
+                                <div class="search_section size4">
+                                    <input type="text" value="" class="i_style" placeholder="회사 명">
+                                </div>
+                                <span class="btn_search">검색</span>
+                            </div>
+                            <div class="tbl_wrap main">
+                                <ul class="tbl_style">
+                                    <li class="top">
+                                        <div class="t1">
+                                            <span>회사 코드</span>
+                                        </div>
+                                        <div class="t2">
+                                            <span>회사명</span>
+                                        </div>
+                                        <div class="t3">
+                                            <span>등록 일시</span>
+                                        </div>
+                                        <div class="t4">
+                                            <span>동작</span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="t1">
+                                            <span>3124</span>
+                                        </div>
+                                        <div class="t2">
+                                            <span>Kaon Media</span>
+                                        </div>
+                                        <div class="t3">
+                                            <span>22-09-15 09:36</span>
+                                        </div>
+                                        <div class="t4">
+                                            <button class="a_btn">
+                                                <i class="icon-edit"></i>
+                                            </button>
+                                            <button class="a_btn">
+                                                <i class="icon-delete"></i>
+                                            </button>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="t1">
+                                            <span>3124</span>
+                                        </div>
+                                        <div class="t2">
+                                            <span>Kaon Media</span>
+                                        </div>
+                                        <div class="t3">
+                                            <span>22-09-15 09:36</span>
+                                        </div>
+                                        <div class="t4">
+                                            <button class="a_btn">
+                                                <i class="icon-edit"></i>
+                                            </button>
+                                            <button class="a_btn">
+                                                <i class="icon-delete"></i>
+                                            </button>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="t1">
+                                            <span>3124</span>
+                                        </div>
+                                        <div class="t2">
+                                            <span>Kaon Media</span>
+                                        </div>
+                                        <div class="t3">
+                                            <span>22-09-15 09:36</span>
+                                        </div>
+                                        <div class="t4">
+                                            <button class="a_btn">
+                                                <i class="icon-edit"></i>
+                                            </button>
+                                            <button class="a_btn">
+                                                <i class="icon-delete"></i>
+                                            </button>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="t1">
+                                            <span>3124</span>
+                                        </div>
+                                        <div class="t2">
+                                            <span>Kaon Media</span>
+                                        </div>
+                                        <div class="t3">
+                                            <span>22-09-15 09:36</span>
+                                        </div>
+                                        <div class="t4">
+                                            <button class="a_btn">
+                                                <i class="icon-edit"></i>
+                                            </button>
+                                            <button class="a_btn">
+                                                <i class="icon-delete"></i>
+                                            </button>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="t1">
+                                            <span>3124</span>
+                                        </div>
+                                        <div class="t2">
+                                            <span>Kaon Media</span>
+                                        </div>
+                                        <div class="t3">
+                                            <span>22-09-15 09:36</span>
+                                        </div>
+                                        <div class="t4">
+                                            <button class="a_btn">
+                                                <i class="icon-edit"></i>
+                                            </button>
+                                            <button class="a_btn">
+                                                <i class="icon-delete"></i>
+                                            </button>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="t1">
+                                            <span>3124</span>
+                                        </div>
+                                        <div class="t2">
+                                            <span>Kaon Media</span>
+                                        </div>
+                                        <div class="t3">
+                                            <span>22-09-15 09:36</span>
+                                        </div>
+                                        <div class="t4">
+                                            <button class="a_btn">
+                                                <i class="icon-edit"></i>
+                                            </button>
+                                            <button class="a_btn">
+                                                <i class="icon-delete"></i>
+                                            </button>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="t1">
+                                            <span>3124</span>
+                                        </div>
+                                        <div class="t2">
+                                            <span>Kaon Media</span>
+                                        </div>
+                                        <div class="t3">
+                                            <span>22-09-15 09:36</span>
+                                        </div>
+                                        <div class="t4">
+                                            <button class="a_btn">
+                                                <i class="icon-edit"></i>
+                                            </button>
+                                            <button class="a_btn">
+                                                <i class="icon-delete"></i>
+                                            </button>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="t1">
+                                            <span>3124</span>
+                                        </div>
+                                        <div class="t2">
+                                            <span>Kaon Media</span>
+                                        </div>
+                                        <div class="t3">
+                                            <span>22-09-15 09:36</span>
+                                        </div>
+                                        <div class="t4">
+                                            <button class="a_btn">
+                                                <i class="icon-edit"></i>
+                                            </button>
+                                            <button class="a_btn">
+                                                <i class="icon-delete"></i>
+                                            </button>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="t1">
+                                            <span>3124</span>
+                                        </div>
+                                        <div class="t2">
+                                            <span>Kaon Media</span>
+                                        </div>
+                                        <div class="t3">
+                                            <span>22-09-15 09:36</span>
+                                        </div>
+                                        <div class="t4">
+                                            <button class="a_btn">
+                                                <i class="icon-edit"></i>
+                                            </button>
+                                            <button class="a_btn">
+                                                <i class="icon-delete"></i>
+                                            </button>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="t1">
+                                            <span>3124</span>
+                                        </div>
+                                        <div class="t2">
+                                            <span>Kaon Media</span>
+                                        </div>
+                                        <div class="t3">
+                                            <span>22-09-15 09:36</span>
+                                        </div>
+                                        <div class="t4">
+                                            <button class="a_btn">
+                                                <i class="icon-edit"></i>
+                                            </button>
+                                            <button class="a_btn">
+                                                <i class="icon-delete"></i>
+                                            </button>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="t1">
+                                            <span>3124</span>
+                                        </div>
+                                        <div class="t2">
+                                            <span>Kaon Media</span>
+                                        </div>
+                                        <div class="t3">
+                                            <span>22-09-15 09:36</span>
+                                        </div>
+                                        <div class="t4">
+                                            <button class="a_btn">
+                                                <i class="icon-edit"></i>
+                                            </button>
+                                            <button class="a_btn">
+                                                <i class="icon-delete"></i>
+                                            </button>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="t1">
+                                            <span>3124</span>
+                                        </div>
+                                        <div class="t2">
+                                            <span>Kaon Media</span>
+                                        </div>
+                                        <div class="t3">
+                                            <span>22-09-15 09:36</span>
+                                        </div>
+                                        <div class="t4">
+                                            <button class="a_btn">
+                                                <i class="icon-edit"></i>
+                                            </button>
+                                            <button class="a_btn">
+                                                <i class="icon-delete"></i>
+                                            </button>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="t1">
+                                            <span>3124</span>
+                                        </div>
+                                        <div class="t2">
+                                            <span>Kaon Media</span>
+                                        </div>
+                                        <div class="t3">
+                                            <span>22-09-15 09:36</span>
+                                        </div>
+                                        <div class="t4">
+                                            <button class="a_btn">
+                                                <i class="icon-edit"></i>
+                                            </button>
+                                            <button class="a_btn">
+                                                <i class="icon-delete"></i>
+                                            </button>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="t1">
+                                            <span>3124</span>
+                                        </div>
+                                        <div class="t2">
+                                            <span>Kaon Media</span>
+                                        </div>
+                                        <div class="t3">
+                                            <span>22-09-15 09:36</span>
+                                        </div>
+                                        <div class="t4">
+                                            <button class="a_btn">
+                                                <i class="icon-edit"></i>
+                                            </button>
+                                            <button class="a_btn">
+                                                <i class="icon-delete"></i>
+                                            </button>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="t1">
+                                            <span>3124</span>
+                                        </div>
+                                        <div class="t2">
+                                            <span>Kaon Media</span>
+                                        </div>
+                                        <div class="t3">
+                                            <span>22-09-15 09:36</span>
+                                        </div>
+                                        <div class="t4">
+                                            <button class="a_btn">
+                                                <i class="icon-edit"></i>
+                                            </button>
+                                            <button class="a_btn">
+                                                <i class="icon-delete"></i>
+                                            </button>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="t1">
+                                            <span>3124</span>
+                                        </div>
+                                        <div class="t2">
+                                            <span>Kaon Media</span>
+                                        </div>
+                                        <div class="t3">
+                                            <span>22-09-15 09:36</span>
+                                        </div>
+                                        <div class="t4">
+                                            <button class="a_btn">
+                                                <i class="icon-edit"></i>
+                                            </button>
+                                            <button class="a_btn">
+                                                <i class="icon-delete"></i>
+                                            </button>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="t1">
+                                            <span>3124</span>
+                                        </div>
+                                        <div class="t2">
+                                            <span>Kaon Media</span>
+                                        </div>
+                                        <div class="t3">
+                                            <span>22-09-15 09:36</span>
+                                        </div>
+                                        <div class="t4">
+                                            <button class="a_btn">
+                                                <i class="icon-edit"></i>
+                                            </button>
+                                            <button class="a_btn">
+                                                <i class="icon-delete"></i>
+                                            </button>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="t1">
+                                            <span>3124</span>
+                                        </div>
+                                        <div class="t2">
+                                            <span>Kaon Media</span>
+                                        </div>
+                                        <div class="t3">
+                                            <span>22-09-15 09:36</span>
+                                        </div>
+                                        <div class="t4">
+                                            <button class="a_btn">
+                                                <i class="icon-edit"></i>
+                                            </button>
+                                            <button class="a_btn">
+                                                <i class="icon-delete"></i>
+                                            </button>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="t1">
+                                            <span>3124</span>
+                                        </div>
+                                        <div class="t2">
+                                            <span>Kaon Media</span>
+                                        </div>
+                                        <div class="t3">
+                                            <span>22-09-15 09:36</span>
+                                        </div>
+                                        <div class="t4">
+                                            <button class="a_btn">
+                                                <i class="icon-edit"></i>
+                                            </button>
+                                            <button class="a_btn">
+                                                <i class="icon-delete"></i>
+                                            </button>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-5 pl-0 pr-0 position-relative">
+                    <div class="section pt-style mb-3">
+                        <h3 class="sub_tit">회사 Master 정보</h3>
+                        <div class="info_list line_style pt-2 pb-2">
+                            <div class="line">
+                                <span class="type">Member ID</span>
+                                <span class="info">jwcho@kaonmeia.com</span>
+                            </div>
+                            <div class="line">
+                                <span class="type">이름</span>
+                                <span class="info">Jiwon Cho</span>
+                            </div>
+                            <div class="line">
+                                <span class="type">번호</span>
+                                <span class="info">010-1234-5678</span>
+                            </div>
+                            <div class="line">
+                                <span class="type">권한</span>
+                                <span class="info"> Master(defalut)</span>
+                            </div>
+                            <div class="line">
+                                <span class="type">최근 로그인 날짜</span>
+                                <span class="info">2022-09-15 09:36</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 서비스 사업자 등록하기 -->
+                    <div class="section add_style h_size1 mr-0">
+                        <span class="t_bar"></span>
+                        <h3 class="m_tit">서비스 사업자 등록하기</h3>
+                        <form action="#" class="add_form">
+                            <fieldset>
+                                <div class="line">
+                                    <div class="label_area">
+                                        <label for="">서비스 사업자 코드<span class="t_red">*</span></label>
+                                    </div>
+                                    <div class="input_area">
+                                        <input type="text" class="a_input_style" placeholder="서비스 사업자 코드 4자를 입력해 주세요" value="">
+                                    </div>
+                                </div>
+                                <div class="line">
+                                    <div class="label_area">
+                                        <label for="">서비스 사업자 명<span class="t_red">*</span></label>
+                                    </div>
+                                    <div class="input_area">
+                                        <input type="text" class="a_input_style" placeholder="서비스 사업자 이름을 32자 이내로 입력해 주세요" value="">
+                                    </div>
+                                </div>
+                                <div class="line">
+                                    <div class="label_area">
+                                        <label for="">UI 타이틀 명</label>
+                                    </div>
+                                    <div class="input_area">
+                                        <input type="text" class="a_input_style" placeholder="회사 명을 입력해 주세요" value="">
+                                    </div>
+                                </div>
+                                <div class="line">
+                                    <div class="label_area">
+                                        <label for="">장치 이미지</label>
+                                    </div>
+                                    <div class="input_area">
+                                        <div class="filebox">
+                                            <input class="upload-name" value="" placeholder="">
+                                            <label for="file">
+                                                <i class="icon-img"></i>
+                                            </label>
+                                            <input type="file" id="file">
+                                        </div>
+                                        <span class="btn_preview">미리보기</span>
+                                    </div>
+                                </div>
+                            </fieldset>
+                        </form>
+                    </div>
+                    <div class="section add_style h_size2 mr-0">
+                        <span class="t_bar"></span>
+                        <h3 class="m_tit">서비스 사업자 Master 계정 등록하기</h3>
+                        <form action="#" class="add_form">
+                            <fieldset>
+                                <div class="line">
+                                    <div class="label_area">
+                                        <label for="">이메일<span class="t_red">*</span></label>
+                                    </div>
+                                    <div class="input_area">
+                                        <input type="text" class="a_input_style" placeholder="이메일 주소를 입력해 주세요" value="">
+                                    </div>
+                                </div>
+                                <div class="line">
+                                    <div class="label_area">
+                                        <label for="">비밀번호<span class="t_red">*</span></label>
+                                    </div>
+                                    <div class="input_area">
+                                        <input type="text" class="a_input_style" placeholder="" value="">
+                                    </div>
+                                </div>
+                                <div class="line">
+                                    <div class="label_area">
+                                        <label for="">이름<span class="t_red">*</span></label>
+                                    </div>
+                                    <div class="input_area">
+                                        <input type="text" class="a_input_style" placeholder="" value="Jiwon Cho">
+                                    </div>
+                                </div>
+                                <div class="line">
+                                    <div class="label_area">
+                                        <label for="">전화번호</label>
+                                    </div>
+                                    <div class="input_area">
+                                        <input type="text" class="a_input_style" placeholder="01012345678" value="">
+                                    </div>
+                                </div>
+                                <div class="line">
+                                    <div class="label_area">
+                                        <label for="">계정 유형<span class="t_red">*</span></label>
+                                    </div>
+                                    <div class="input_area">
+                                        <select name="" id="" placeholder="" class="a_select_style" disabled>
+                                            <option value="">Admin</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </fieldset>
+                        </form>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        <!-- //content -->
+    </div>
+    <!-- //container -->
+</div>
+<!-- //wrap -->
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.0.min.js"></script>
+<script type="text/javascript" src="script.js"></script>
+</body>
+</html>

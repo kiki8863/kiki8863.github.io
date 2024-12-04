@@ -1,0 +1,141 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('../fonts/icomoon.eot?lfaijn');
+  src:  url('../fonts/icomoon.eot?lfaijn#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?lfaijn') format('truetype'),
+    url('../fonts/icomoon.woff?lfaijn') format('woff'),
+    url('../fonts/icomoon.svg?lfaijn#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  /* speak: never; */
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-lnb-chart:before {
+    font-size:30px;
+    content: "\e900";
+    color: rgb(14, 122, 230);
+}
+
+.icon-lnb-history:before {
+    font-size: 30px;
+    content: "\e901";
+    color: rgb(14, 122, 230);
+}
+
+.icon-lnb-account:before {
+    font-size: 30px;
+    content: "\e902";
+    color: rgb(14, 122, 230);
+}
+
+.icon-lnb-company:before {
+    font-size: 30px;
+    content: "\e903";
+    color: rgb(14, 122, 230);
+}
+
+.icon-lnb-device:before {
+    font-size: 30px;
+    content: "\e904";
+    color: rgb(14, 122, 230);
+}
+
+.icon-lnb-settop:before {
+    font-size: 30px;
+    content: "\e905";
+    color: rgb(14, 122, 230);
+}
+.icon-lnb-remote:before {
+    font-size: 30px;
+    content: "\e906";
+    color: rgb(14, 122, 230);
+}
+
+.icon-lnb-setting:before {
+    font-size: 30px;
+    content: "\e907";
+    color: rgb(14, 122, 230);
+}
+
+.icon-more:before {
+    font-size: 30px;
+    content: "\e908";
+    color: rgb(14, 122, 230);
+}
+
+.icon-plus:before {
+    font-size: 30px;
+    content: "\e909";
+    color: rgb(14, 122, 230);
+}
+
+.icon-calender:before {
+    font-size: 30px;
+    content: "\e90a";
+    color: rgb(14, 122, 230);
+}
+
+.icon-img:before {
+    font-size: 30px;
+    content: "\e90b";
+    color: rgb(14, 122, 230);
+}
+
+.icon-okay:before {
+    font-size: 30px;
+    content: "\e90c";
+    color: rgb(14, 122, 230);
+}
+
+.icon-cancel:before {
+    font-size: 30px;
+    content: "\e90d";
+    color: rgb(14, 122, 230);
+}
+
+.icon-pw-reset:before {
+    font-size: 30px;
+    content: "\e90e";
+    color: rgb(14, 122, 230);
+}
+
+.icon-edit:before {
+    font-size: 30px;
+    content: "\e90f";
+    color: rgb(14, 122, 230);
+}
+
+.icon-delete:before {
+    font-size: 30px;
+    content: "\e910";
+    color: rgb(14, 122, 230);
+}
+
+.icon-close:before {
+    font-size: 30px;
+    content: "\e911";
+    color: rgb(14, 122, 230);
+}
+
+.icon-off:before {
+    display: inline-block;
+    width: 30px;
+    height: 16px;
+    background: url('../images/toggle_off.png') no-repeat 0 0;
+    background-size: auto 16px;
+}

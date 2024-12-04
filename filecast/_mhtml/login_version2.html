@@ -1,0 +1,314 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="Generator" content="EditPlus®">
+<meta name="Author" content="">
+<meta name="Keywords" content="">
+<meta name="Description" content="">
+<meta name="viewport" content=" initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width, user-scalable=no" /> 
+<title> FileCast</title>
+<link rel="stylesheet" href="../_lib/bootstrap/dist/css/bootstrap.css" />
+<link rel="stylesheet" href="../_mobile/_css/filecast.reset.css" />
+<link rel="stylesheet" href="../_mobile/_css/filecast.mobile.style.css" />
+<!-- <link rel="stylesheet" href="http://192.168.10.14/static/_mobile/_css/filecast.mobile.style.css" /> -->
+</head>
+<body>
+<div id="wrap">
+	<!-- header -->
+	<div class="header">
+		<span class="band btn_side">사이트메뉴보이기버튼</span>
+		<h1 class="logo"><a href="#"></a></h1>
+		<div class="btn_login show"><span class="txt">로그인</span></div>
+		<div class="h_mid">
+			<div class="child_protect">
+				<span class="on">자녀안심보호</span>
+			</div>
+			<div class="searchAll col-xs-12">
+				<form action="#" method="post">
+					<fieldset>
+						<input type="text" />
+						<input type="button" class="btn_search"  />
+					</fieldset>
+				</form>
+			</div>
+		</div>
+	</div>
+	<!-- //header -->
+	<!-- wrap_inner -->
+	<div class="wrap_inner">
+		<ul>
+			<li>
+				<div class="gnb">
+					<span class="menu no-padding">충전하기<span class="bg"></span></span>
+					<span class="menu no-padding">이벤트<span class="bg"></span></span>
+					<span class="menu no-padding">추천영화신작<span class="bg"></span></span>
+					<span class="menu no-padding">웹툰<span class="bg"></span></span>
+				</div>	
+			</li>			
+			<li>	
+				<div id="container" class="container no-padding">
+					<!-- content -->
+					<div class="content">
+						<!-- 로그인 -->
+						<div class="new_login_wrap">
+							<h2 class="sub_tit">파일캐스트 로그인<span class="btn_goHome"></span></h2>
+							<div class="top">
+								<form action="#" method="post">
+									<legend class="blind">로그인 입력 폼</legend>
+									<fieldset>
+										<p class="line_style">
+											<input type="text" placeholder="이메일을 입력하세요" class="input_style type1"/><span class="center">@</span><select name="" id=""  class="select_style">
+												<option value="">네이버</option>
+												<option value="">다음</option>
+												<option value="">한메일</option>
+												<option value="">네이트</option>
+												<option value="">핫메일</option>
+												<option value="">지메일</option>
+												<option value="">드림위즈</option>
+												<option value="">직접입력</option>
+											</select>
+										</p>
+										<p><input type="password" placeholder="비밀번호를 입력하세요"  class="input_style type2"/></p>
+										<p class="check_login"><input type="checkbox" class="checkbox"/><label for="">로그인 상태 유지</label></p>
+										<div class="find_pw"><span>아이디 / 비밀번호 찾기</span></div>
+										<span class="btn_n_login">
+											<span class="ico_area"><span class="ico"></span></span>
+											<span class="txt">파일캐스트 로그인</span>
+											<span class="bg"></span>
+										</span>
+									</fieldset>
+								</form>
+								<div class="sns_login_wrap">
+									<p>SNS 계정으로 간편 로그인이 가능합니다.</p>
+									<div class="sns_login_btn">
+										<span class="facebook sns_btn">
+											<span class="ico"></span>
+											<span class="type">페이스북</span>
+										</span>
+										<span class="kakao sns_btn">
+											<span class="ico"></span>
+											<span class="type">카카오톡</span>
+										</span>
+										<span class="naver sns_btn">
+											<span class="ico"></span>
+											<span class="type">네이버</span>
+										</span>
+									</div>
+								</div>
+							</div>
+							<div class="go_join">
+								<div class="inner">
+									<p>아직 파일캐스트 회원이 아니세요?</p>
+									<span class="btn_n_join">
+										<span class="ico_area"><span class="ico"></span></span>
+										<span class="txt">파일캐스트 간편 회원 가입</span>
+										<span class="bg"></span>
+									</span>
+								</div>
+							</div>
+							<div class="btm">					
+								<p class="ex_txt">모바일에서 로그인이 잘 안될 경우 이렇게 해 보세요!</p>					
+								<ul>						
+									<li>							
+										<span><b>안드로이드 : </b></span><span class="text">브라우저 실행 <span>&gt;</span> 메뉴 <span>&gt;</span> 더 보기 <span>&gt;</span> 설정 <span>&gt;</span> 캐시 삭제 <span>&gt;</span> 모든 쿠키 삭제 <span>&gt;</span> 쿠키 허용 체크</span>						
+									</li>						
+									<li>						
+										<span><b>IOS : </b></span><span class="text">설정 <span>&gt;</span> 사파리 <span>&gt;</span> 쿠키 허용 <span>&gt;</span> 방문한 곳 체크</span>						
+									</li>					
+								</ul>				
+							</div>
+						</div>
+						<!-- 낚시페이지 -->
+						<div class="new_login_wrap" style="display: none;">
+							<h2 class="sub_tit">파일캐스트 회원가입<span class="btn_goHome"></span></h2>
+							<div class="filecast_merit">
+								<div class="inner">
+									<ul>
+										<li class="type1">
+											<span class="img"></span>
+											<span class="txt">가입 즉시 <span class="txt_red">무료포인트 지급!</span></span>
+										</li>
+										<li class="type2">
+											<span class="img"></span>
+											<span class="txt"><span class="txt_red">실시간 감상 + 다운로드</span> 모두 OK!</span>
+										</li>
+										<li class="type3">
+											<span class="img"></span>
+											<span class="txt"><span class="txt_red">개인정보 NO!</span> 안전한 개인정보 보호!</span>
+										</li>
+									</ul>
+								</div>
+							</div>
+							<div class="go_join type1">
+								<div class="inner">
+									<p class="tit">파일캐스트 간편 회원 가입</p>
+									<p class="txt">개인정보 NO! 아이디(이메일), 패스워드 입력 만으로 간편하게 회원 가입!</p>
+									<span class="btn_n_join">
+										<span class="ico_area"><span class="ico"></span></span>
+										<span class="txt">파일캐스트 간편 회원 가입</span>
+										<span class="bg"></span>
+									</span>
+								</div>
+							</div>
+							<div class="sns_join">
+								<p class="tit">SNS 계정으로 회원 가입</p>
+								<p class="txt">페이스북, 카카오톡, 네이버 계정으로 편리하게 파일캐스트에 회원 가입!</p>
+								<ul>
+									<li class="facebook">
+										<span class="ico_area"><span class="ico"></span></span>
+										<span class="txt">페이스북 계정으로 회원 가입</span>
+										<span class="bg"></span>
+									</li>
+									<li class="kakao">
+										<span class="ico_area"><span class="ico"></span></span>
+										<span class="txt">카카오톡 계정으로 회원 가입</span>
+										<span class="bg"></span>
+									</li>
+									<li class="naver">
+										<span class="ico_area"><span class="ico"></span></span>
+										<span class="txt">네이버 계정으로 회원 가입</span>
+										<span class="bg"></span>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<!-- 회원가입 -->
+						<div class="new_login_wrap" style="display: none;">
+							<h2 class="sub_tit">파일캐스트 회원가입<span class="btn_goHome"></span></h2>
+							<div class="top_banner">
+								<img src="../_mobile/_img/login/new_join_top.jpg" alt="가장 많은 회원이 이용하는 웹하드 500만 회원의 선택! 200만개 이상의 자료를 무료로 즐기세요!">
+							</div>
+							<p class="new_join_txt">"간편 가입만 해도 무료포인트가 적립됩니다."</p>
+							<div class="top type1">
+								<form action="#" method="post">
+									<legend class="blind">회원가입 입력 폼</legend>
+									<fieldset>
+										<p>
+											<input type="text" placeholder="이메일(3자 이상)" class="input_style type1"/><span class="center">@</span><select name="" id="" class="select_style">
+												<option value="">네이버</option>
+												<option value="">다음</option>
+												<option value="">한메일</option>
+												<option value="">네이트</option>
+												<option value="">핫메일</option>
+												<option value="">지메일</option>
+												<option value="">드림위즈</option>
+												<option value="">직접입력</option>
+											</select>
+										</p>
+										<p class="coupon_txt">※ 무료 쿠폰이 매달 이메일로 발송됩니다.</p>
+										<p class="line_style"><input type="password" placeholder="비밀번호(4자 이상, 영문/숫자 조합)" class="input_style type2"/></p>	
+										<p><input type="password" placeholder="비밀번호 확인" class="input_style type2"/></p>
+										<span class="btn_n_join type1">
+											<span class="ico_area"><span class="ico"></span></span>
+											<span class="txt">파일캐스트 간편 회원 가입</span>
+											<span class="bg"></span>
+										</span>
+									</fieldset>
+								</form>
+							</div>
+							<div class="agree_area">
+								<span class="border_top"></span>
+								<p class="agree"><input type="checkbox" class="checkbox"/> <label for=""><span>이용약관 <span class="line"></span></span> 및 <span>개인정보취급방침<span class="line"></span></span> 동의</label></p>
+							</div>
+							<div class="sns_login_wrap type1">
+								<p>SNS 계정으로 간편 회원가입이 가능합니다.</p>
+								<div class="sns_login_btn">
+									<span class="facebook sns_btn">
+										<span class="ico"></span>
+										<span class="type">페이스북</span>
+									</span>
+									<span class="kakao sns_btn">
+										<span class="ico"></span>
+										<span class="type">카카오톡</span>
+									</span>
+									<span class="naver sns_btn">
+										<span class="ico"></span>
+										<span class="type">네이버</span>
+									</span>
+								</div>
+							</div>
+						</div>	
+					</div>
+					<!-- //content -->
+				</div>
+			</li>
+		</ul>		
+	</div>
+	<!-- //wrap_inner -->
+</div>
+<div class="modal" style="display:none;">
+	<div class="modal-dialog" style="display:block;">
+		<div class="new_login_wrap">
+			<h2 class="sub_tit">파일캐스트 로그인<span class="btn_goHome"></span></h2>
+			<div class="top">
+				<form action="#" method="post">
+					<legend class="blind">로그인 입력 폼</legend>
+					<fieldset>
+						<p class="line_style">
+							<input type="text" placeholder="이메일을 입력하세요" class="input_style type1"/><span class="center">@</span><select name="" id=""  class="select_style">
+								<option value="">네이버</option>
+								<option value="">다음</option>
+								<option value="">한메일</option>
+								<option value="">네이트</option>
+								<option value="">핫메일</option>
+								<option value="">지메일</option>
+								<option value="">드림위즈</option>
+								<option value="">직접입력</option>
+							</select>
+						</p>
+						<p><input type="password" placeholder="비밀번호를 입력하세요"  class="input_style type2"/></p>
+						<p id="mobile-nlogin-txt-notice-err" class="bg-warning" style="display: block;">패스워드를 입력해주세요.</p>
+						<p class="check_login"><input type="checkbox" class="checkbox"/><label for="">로그인 상태 유지</label></p>
+						<div class="find_pw"><span>아이디 / 비밀번호 찾기</span></div>
+						<span class="btn_n_login">
+							<span class="ico_area"><span class="ico"></span></span>
+							<span class="txt">파일캐스트 로그인</span>
+							<span class="bg"></span>
+						</span>
+					</fieldset>
+				</form>
+				<div class="sns_login_wrap">
+					<p>SNS 계정으로 간편 로그인이 가능합니다.</p>
+					<div class="sns_login_btn">
+						<span class="facebook sns_btn">
+							<span class="ico"></span>
+							<span class="type">페이스북</span>
+						</span>
+						<span class="kakao sns_btn">
+							<span class="ico"></span>
+							<span class="type">카카오톡</span>
+						</span>
+						<span class="naver sns_btn">
+							<span class="ico"></span>
+							<span class="type">네이버</span>
+						</span>
+					</div>
+				</div>
+			</div>
+			<div class="go_join">
+				<div class="inner">
+					<p>아직 파일캐스트 회원이 아니세요?</p>
+					<span class="btn_n_join">
+						<span class="ico_area"><span class="ico"></span></span>
+						<span class="txt">파일캐스트 간편 회원 가입</span>
+						<span class="bg"></span>
+					</span>
+				</div>
+			</div>
+			<div class="btm">					
+				<p class="ex_txt">모바일에서 로그인이 잘 안될 경우 이렇게 해 보세요!</p>					
+				<ul>						
+					<li>							
+						<span><b>안드로이드 : </b></span><span class="text">브라우저 실행 <span>&gt;</span> 메뉴 <span>&gt;</span> 더 보기 <span>&gt;</span> 설정 <span>&gt;</span> 캐시 삭제 <span>&gt;</span> 모든 쿠키 삭제 <span>&gt;</span> 쿠키 허용 체크</span>						
+					</li>						
+					<li>						
+						<span><b>IOS : </b></span><span class="text">설정 <span>&gt;</span> 사파리 <span>&gt;</span> 쿠키 허용 <span>&gt;</span> 방문한 곳 체크</span>						
+					</li>					
+				</ul>				
+			</div>
+		</div>
+	</div>
+</div>
+</body>
+</html>
